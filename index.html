@@ -295,11 +295,29 @@ Promise.all([d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.
   const pickTargets=group.children.concat([ocean]);
   let drag=false,lx,ly,downX,downY,moved=false;
   const dom=renderer.domElement;
+  const pointers=new Map(); let pinchDist=0;
   function pick(e){ const r=dom.getBoundingClientRect(); ndc.x=((e.clientX-r.left)/r.width)*2-1; ndc.y=-((e.clientY-r.top)/r.height)*2+1; raycaster.setFromCamera(ndc,camera); const hits=raycaster.intersectObjects(pickTargets,false); if(!hits.length)return null; const o=hits[0].object; return o===ocean?null:(o.userData.lang||null); }
-  dom.addEventListener('pointerdown',e=>{drag=true;moved=false;lx=downX=e.clientX;ly=downY=e.clientY;dom.style.cursor='grabbing';dom.setPointerCapture(e.pointerId);});
-  dom.addEventListener('pointerup',e=>{ drag=false; dom.style.cursor='grab'; if(!moved){ const l=pick(e); if(l) toggleSelect(l); } });
-  dom.addEventListener('pointerleave',()=>{ if(!drag){ setHover(null); showTip(null); } });
+  function pinchDistance(){ const p=[...pointers.values()]; return Math.hypot(p[0].x-p[1].x, p[0].y-p[1].y); }
+  dom.addEventListener('pointerdown',e=>{
+    pointers.set(e.pointerId,{x:e.clientX,y:e.clientY});
+    try{ dom.setPointerCapture(e.pointerId); }catch(_){}
+    if(pointers.size===1){ drag=true;moved=false;lx=downX=e.clientX;ly=downY=e.clientY;dom.style.cursor='grabbing'; }
+    else if(pointers.size===2){ drag=false; moved=true; pinchDist=pinchDistance(); }
+  });
+  function endPointer(e){
+    const wasTwo=pointers.size===2;
+    pointers.delete(e.pointerId);
+    try{ dom.releasePointerCapture(e.pointerId); }catch(_){}
+    if(pointers.size<2) pinchDist=0;
+    if(pointers.size===1){ const p=[...pointers.values()][0]; lx=p.x; ly=p.y; drag=true; moved=true; }
+    else if(pointers.size===0){ drag=false; dom.style.cursor='grab'; if(!moved && !wasTwo){ const l=pick(e); if(l) toggleSelect(l); } }
+  }
+  dom.addEventListener('pointerup',endPointer);
+  dom.addEventListener('pointercancel',endPointer);
+  dom.addEventListener('pointerleave',e=>{ if(pointers.size===0){ setHover(null); showTip(null); } });
   dom.addEventListener('pointermove',e=>{
+    if(pointers.has(e.pointerId)) pointers.set(e.pointerId,{x:e.clientX,y:e.clientY});
+    if(pointers.size>=2){ moved=true; const d=pinchDistance(); if(pinchDist>0 && d>0){ R=Math.max(R0*1.3,Math.min(R0*6, R*(pinchDist/d))); } pinchDist=d; return; }
     if(drag){ if(Math.abs(e.clientX-downX)+Math.abs(e.clientY-downY)>4)moved=true; az-=(e.clientX-lx)*0.006; el=Math.max(-1.45,Math.min(1.45,el+(e.clientY-ly)*0.006)); lx=e.clientX;ly=e.clientY; return; }
     const l=pick(e); if(l){ setHover(l); showTip(l,e.clientX,e.clientY); } else { setHover(null); showTip(null); }
   });
