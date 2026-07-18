@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>World Language &amp; Population-Density Globe</title>
+<meta name="description" content="Interactive 3D globe: plurality spoken language by region, with terrain height proportional to population density, and second-language 'lingua franca' glows.">
+<style>
+  html,body{margin:0;padding:0;height:100%;background:#07080c;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
+  :root{
+    --bg-primary:rgba(20,24,34,0.90);
+    --text-primary:#eef1f6;
+    --text-secondary:#b9c0cb;
+    --text-muted:#8a93a1;
+  }
+</style>
+</head>
+<body>
+<style>
+#gwrap{position:relative;width:100%;height:100vh;overflow:hidden;background:radial-gradient(circle at 50% 42%, #171d2b 0%, #0b0e16 58%, #07080c 100%)}
+#gwrap *{box-sizing:border-box}
+#presets::-webkit-scrollbar,#leg::-webkit-scrollbar{width:8px}
+#presets::-webkit-scrollbar-thumb,#leg::-webkit-scrollbar-thumb{background:rgba(127,127,140,0.4);border-radius:4px}
+</style>
+<h2 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Interactive 3D globe of plurality language and population density for the whole world.</h2>
+<div id="gwrap">
+<div id="c" style="position:absolute;inset:0;z-index:1;touch-action:none;cursor:grab"></div>
+<div id="top" style="position:absolute;top:0;left:0;right:0;z-index:30;background:var(--bg-primary,rgba(248,248,248,0.95));backdrop-filter:blur(4px);padding:7px 12px;border-bottom:1px solid rgba(0,0,0,0.1);box-shadow:0 1px 6px rgba(0,0,0,0.06)">
+ <div style="font-weight:600;font-size:13px;color:var(--text-primary,#1a1a1a)">World language &amp; population-density globe</div>
+ <div style="font-size:11px;color:var(--text-secondary,#555);margin-top:1px">Color = plurality language · height ∝ density. Click/hover to select. Lingua francas dimly tint where they're a widespread second language. Close varieties are merged (Hindustani, Serbo-Croatian, Persian, …).</div>
+ <div id="sel" style="display:none;flex-wrap:wrap;align-items:center;gap:5px 9px;margin-top:6px;font-size:11px;color:var(--text-secondary,#555)"></div>
+</div>
+<div id="presets" style="position:absolute;top:92px;right:8px;z-index:31;display:none;width:212px;max-height:52%;overflow-y:auto;background:var(--bg-primary,rgba(248,248,248,0.96));backdrop-filter:blur(4px);border:1px solid rgba(0,0,0,0.12);border-radius:8px;padding:8px 9px;box-shadow:0 4px 14px rgba(0,0,0,0.14);font-size:11px;color:var(--text-secondary,#555)"></div>
+<div id="tip" style="position:fixed;display:none;pointer-events:none;z-index:40;background:rgba(20,20,26,0.94);color:#f2f2f2;border:1px solid rgba(255,255,255,0.16);border-radius:7px;padding:7px 10px;font-size:12px;line-height:1.4;box-shadow:0 6px 18px rgba(0,0,0,0.35);max-width:230px"></div>
+<div id="leg" style="position:absolute;bottom:0;left:0;right:0;z-index:30;max-height:40%;overflow-y:auto;background:var(--bg-primary,rgba(248,248,248,0.95));backdrop-filter:blur(4px);padding:8px 12px 10px;border-top:1px solid rgba(0,0,0,0.1);box-shadow:0 -1px 6px rgba(0,0,0,0.06);display:flex;flex-wrap:wrap;gap:4px 12px;font-size:11px;color:var(--text-secondary,#555)"></div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+<script>
+const FULL={"Turkish":"#F1B094","Azerbaijani":"#FEC5A1","Turkmen":"#E5AB8A","Uzbek":"#E7B88E","Uyghur":"#F3C79A","Kazakh":"#DAAE83","Karakalpak":"#E0B888","Kyrgyz":"#DFB388","Pashto":"#7E92C9","Pamiri":"#5F93C2","Kurdish":"#5175A6","Balochi":"#4676A4","Persian":"#518DBA","Dari":"#498DB8","Tajik":"#4E8DBA","Urdu":"#70CAE9","Punjabi":"#70CFE8","Sindhi":"#6BCBE4","Shina":"#64CBDB","Hindi":"#6ECBE7","Bengali":"#66C1E0","Marathi":"#66C6DE","Gujarati":"#64C2DD","Oriya":"#66C1E0","Assamese":"#5EBAD9","Kashmiri":"#72D9E7","Konkani":"#5CBDD6","Nepali":"#6BC8E4","Maithili":"#69C4E3","Sinhala":"#45B2BE","Tamil":"#D49CC7","Telugu":"#E194A7","Kannada":"#BE80A1","Malayalam":"#CB92B9","Meitei":"#9FE7C5","Mizo":"#9CE1BF","Angami":"#76B490","Nyishi":"#93CFA9","Tibetan":"#B1D6A0","Dzongkha":"#B0D39D","Khasi":"#50AFA9","Armenian":"#C3A9DD","Georgian":"#8B8F59","Egyptian":"#C77F81","Levantine":"#BA7571","Mesopotamian":"#BF7877","Gulf":"#CA8284","Najdi":"#D18889","Hijazi":"#B87372","Sanaani":"#BA7474","Hadrami":"#CC8386","Omani":"#CF8687","Hebrew":"#C6856B","Russian":"#7B5EA8","Ukrainian":"#9A7FC4","Belarusian":"#5F4589","Tatar":"#D8B074","Bashkir":"#E6C58A","Chuvash":"#CBA05E","Karachay":"#E0BD86","Yakut":"#C9A868","Tuvan":"#E2C596","Chechen":"#B23B3B","Ingush":"#C55A52","Avar":"#9C3030","Kabardian":"#CE6A5F","Ossetian":"#3C79A6","Kalmyk":"#9E7A3C","Mandarin":"#4F9E63","Cantonese":"#86C68C","Wu":"#3E8E72","Min":"#66B884","Xiang":"#9BC26A","Gan":"#B4D488","Zhuang":"#DFC63F","Japanese":"#E07B3C","Korean":"#C85B7C","Mongolian":"#B08A45","Burmese":"#7FB86A","Shan":"#EDD87A","Thai":"#E8CD5A","Lao":"#D2B63E","Vietnamese":"#4FA79E","Khmer":"#5FBDB0","Malay":"#B857A0","Javanese":"#C86BAF","Sundanese":"#7F4FA0","Acehnese":"#CE5288","Batak":"#A85EB2","Minangkabau":"#D67CAE","Balinese":"#EE96CA","Sasak":"#B060A0","Buginese":"#8E4E9C","Banjar":"#DC74B4","Tagalog":"#C04E7E","Cebuano":"#E080A0","Ilocano":"#9A4E86","Hiligaynon":"#EEA0BE","Bikol":"#B85290","Waray":"#D274A0","Kapampangan":"#8A4A72","Pangasinan":"#E68CB0","Maguindanao":"#A85694","Maranao":"#CE6AA2","Tausug":"#7E4470","Tetum":"#B85EA2","English":"#6E8CA8","German":"#7E9BB5","Dutch":"#89A9C2","Danish":"#93AECA","Swedish":"#647F9C","Norwegian":"#7793AF","Icelandic":"#A8C2D8","Luxembourgish":"#9FB6CC","Tok Pisin":"#5E7488","Bislama":"#88A2BA","Spanish":"#D96C5A","Portuguese":"#E08A6B","French":"#C6564A","Italian":"#E29578","Romanian":"#D07A62","Catalan":"#C85E4C","Galician":"#E0A488","Haitian Creole":"#E8B49C","Polish":"#8E6FB8","Czech":"#9D80C6","Slovak":"#A98FCE","Slovene":"#6E52A0","Croatian":"#B79ED8","Serbian":"#7A5CAA","Bosnian":"#C4ADE0","Montenegrin":"#886BB6","Bulgarian":"#6A4C96","Macedonian":"#A488CC","Lithuanian":"#B0BE54","Latvian":"#C6D07A","Finnish":"#3E8E8A","Estonian":"#55A6A0","Hungarian":"#6FBAB2","Greek":"#46B0C0","Albanian":"#8E3B3B","Basque":"#4E8E64","Maltese":"#C98A7C","Moroccan Arabic":"#C87F72","Algerian Arabic":"#D18C7E","Tunisian Arabic":"#BE7568","Libyan Arabic":"#CC8676","Quechua":"#C97A3C","Aymara":"#A85E2E","Guarani":"#8CB44E","Greenlandic":"#96D2DE","Inuktitut":"#7CC6D6","Fijian":"#C864A0","Samoan":"#D67CB0","Tongan":"#B85696"};
+const NC=['Swahili','Zulu','Xhosa','Shona','Kinyarwanda','Kirundi','Luganda','Lingala','Kikongo','Tshiluba','Chichewa','Bemba','Tswana','Sotho','Oshiwambo','Swazi','Yoruba','Igbo','Edo','Ijaw','Efik','Akan','Ewe','Fon','Wolof','Bambara','Mossi','Fula','Mandinka','Sango'];
+NC.forEach((l,i)=>{const c=new THREE.Color();c.setHSL((58+i*(168-58)/(NC.length-1))/360,0.44,0.5);FULL[l]='#'+c.getHexString();});
+Object.assign(FULL,{"Somali":"#C87A4A","Oromo":"#B8683C","Afar":"#D68C5C","Hausa":"#C9A83E","Amharic":"#B87068","Tigrinya":"#C67E76","Hassaniya Arabic":"#CE8A7E","Sudanese Arabic":"#C07A70","Chadian Arabic":"#D0887C","Malagasy":"#C868A8","Afrikaans":"#7E9BC0","Dinka":"#BFB05A","Modern Standard Arabic":"#B0402E"});
+Object.assign(FULL,{"Hindustani":FULL["Hindi"],"Serbo-Croatian":FULL["Serbian"],"Bulgarian/Macedonian":FULL["Bulgarian"]});
+const LANGINFO={"Turkish":[84,90],"Azerbaijani":[23,24],"Turkmen":[7,7],"Uzbek":[34,38],"Uyghur":[11,11],"Kazakh":[13,14],"Karakalpak":[0.8,0.8],"Kyrgyz":[5.2,6],"Tatar":[5,5.2],"Bashkir":[1.2,1.4],"Chuvash":[1,1.1],"Karachay":[0.3,0.35],"Yakut":[0.45,0.47],"Tuvan":[0.28,0.28],"Persian":[57,75],"Dari":[20,30],"Tajik":[8,8.5],"Pashto":[40,50],"Kurdish":[26,30],"Balochi":[8,9],"Pamiri":[0.1,0.1],"Ossetian":[0.6,0.6],"Russian":[150,255],"Ukrainian":[33,40],"Belarusian":[5,9],"Hindi":[345,610],"Urdu":[70,230],"Punjabi":[113,125],"Sindhi":[33,35],"Shina":[1.2,1.5],"Bengali":[240,270],"Marathi":[83,99],"Gujarati":[57,62],"Oriya":[38,43],"Assamese":[15,24],"Kashmiri":[7,7],"Konkani":[2.3,2.5],"Nepali":[16,25],"Maithili":[34,34],"Sinhala":[17,19],"Tamil":[79,86],"Telugu":[83,96],"Kannada":[44,59],"Malayalam":[37,38],"Egyptian":[78,100],"Levantine":[40,45],"Mesopotamian":[32,35],"Gulf":[12,15],"Najdi":[15,18],"Hijazi":[12,14],"Sanaani":[15,15],"Hadrami":[5,5],"Omani":[3,4],"Hebrew":[5,9],"Chechen":[1.6,1.7],"Ingush":[0.5,0.5],"Avar":[1,1],"Kabardian":[1.1,1.2],"Mandarin":[940,1120],"Cantonese":[85,87],"Wu":[82,82],"Min":[70,75],"Xiang":[37,37],"Gan":[22,22],"Burmese":[33,43],"Meitei":[1.8,2],"Mizo":[0.8,1],"Angami":[0.15,0.15],"Nyishi":[0.3,0.3],"Tibetan":[1.2,5],"Dzongkha":[0.6,0.64],"Zhuang":[16,16],"Thai":[36,60],"Lao":[30,30],"Shan":[3.3,4],"Vietnamese":[85,96],"Khmer":[17,18],"Khasi":[1.4,1.6],"Malay":[77,280],"Javanese":[68,82],"Sundanese":[32,42],"Minangkabau":[5.5,7],"Acehnese":[3.5,3.5],"Batak":[8,8],"Balinese":[3.3,3.3],"Sasak":[2.7,2.7],"Buginese":[4,5],"Banjar":[3.5,4],"Tagalog":[28,85],"Cebuano":[20,28],"Ilocano":[8,9],"Hiligaynon":[9,11],"Bikol":[5,6],"Waray":[3.5,4],"Kapampangan":[2,2.5],"Pangasinan":[1.2,1.5],"Maguindanao":[1.3,1.4],"Maranao":[1.1,1.2],"Tausug":[1.2,1.5],"Tetum":[0.5,0.9],"Japanese":[125,128],"Korean":[80,82],"Mongolian":[6,6],"Kalmyk":[0.4,0.4],"Armenian":[6.7,7],"Georgian":[3.7,4],"English":[380,1450],"German":[95,135],"Dutch":[24,30],"Danish":[6,6],"Swedish":[10,13],"Norwegian":[5.3,5.3],"Icelandic":[0.35,0.36],"Luxembourgish":[0.4,0.6],"Tok Pisin":[0.12,4],"Bislama":[0.01,0.2],"Spanish":[485,560],"Portuguese":[250,265],"French":[80,310],"Italian":[65,68],"Romanian":[24,26],"Catalan":[4.1,9],"Galician":[2.4,3],"Haitian Creole":[12,12],"Polish":[40,42],"Czech":[10,11],"Slovak":[5,7],"Slovene":[2.5,2.5],"Croatian":[5,6],"Serbian":[9,12],"Bosnian":[2.5,3],"Montenegrin":[0.25,0.4],"Bulgarian":[8,8],"Macedonian":[1.5,2.5],"Lithuanian":[3,3],"Latvian":[1.5,2],"Finnish":[5.4,5.8],"Estonian":[1.1,1.1],"Hungarian":[13,13],"Greek":[13,13.5],"Albanian":[7.5,8],"Basque":[0.75,1.2],"Maltese":[0.5,0.52],"Moroccan Arabic":[28,32],"Algerian Arabic":[29,32],"Tunisian Arabic":[12,12],"Libyan Arabic":[6,6],"Quechua":[8,9],"Aymara":[1.7,2],"Guarani":[6.5,6.5],"Greenlandic":[0.056,0.057],"Inuktitut":[0.04,0.04],"Fijian":[0.35,0.65],"Samoan":[0.51,0.51],"Tongan":[0.19,0.19]};
+Object.assign(LANGINFO,{"Swahili":[16,100],"Zulu":[12,28],"Xhosa":[8,19],"Shona":[9,10],"Kinyarwanda":[12,12],"Kirundi":[9,9],"Luganda":[6,20],"Lingala":[20,40],"Kikongo":[6,7],"Tshiluba":[6,6],"Chichewa":[12,12],"Bemba":[4,6],"Tswana":[6,8],"Sotho":[7,14],"Oshiwambo":[1.6,1.6],"Swazi":[2.4,2.4],"Yoruba":[46,50],"Igbo":[31,31],"Edo":[1.5,1.5],"Ijaw":[5,5],"Efik":[4,4],"Akan":[11,20],"Ewe":[7,7],"Fon":[2.2,4],"Wolof":[5.5,12],"Bambara":[14,30],"Mossi":[8,9],"Fula":[37,40],"Mandinka":[1.5,4],"Sango":[0.5,5],"Somali":[22,24],"Oromo":[37,45],"Afar":[2,2],"Hausa":[54,80],"Amharic":[35,60],"Tigrinya":[9,9],"Hassaniya Arabic":[4,4],"Sudanese Arabic":[30,35],"Chadian Arabic":[12,14],"Malagasy":[25,25],"Afrikaans":[7,17],"Dinka":[4,4.5],"Modern Standard Arabic":[0,300]});
+Object.assign(LANGINFO,{"Persian":[85,113],"Hindustani":[415,840],"Serbo-Croatian":[17,21],"Bulgarian/Macedonian":[9.5,11]});
+const POP={"irn|Tehran":14200,"irn|Razavi Khorasan":6700,"irn|Esfahan":5300,"irn|Khuzestan":4900,"irn|Fars":5100,"irn|East Azarbaijan":4000,"irn|Mazandaran":3500,"irn|West Azarbaijan":3400,"pak|Punjab":127700,"pak|Sind":55700,"pak|N.W.F.P.":40900,"pak|Baluchistan":14900,"ind|Uttar Pradesh":241000,"ind|Bihar":128000,"ind|Maharashtra":126000,"ind|West Bengal":99000,"ind|Andhra Pradesh":98000,"ind|Madhya Pradesh":86000,"ind|Rajasthan":81000,"ind|Tamil Nadu":77000,"ind|Gujarat":71000,"ind|Karnataka":68000,"ind|Orissa":46000,"ind|Telangana":39000,"ind|Kerala":36000,"ind|Assam":36000,"ind|Jharkhand":40000,"ind|Haryana":30000,"ind|Chhattisgarh":30000,"ind|Punjab":31000,"ind|Delhi":21000,"ind|Uttaranchal":12000,"ind|Jammu and Kashmir":14000,"chn|Xinjiang":25850,"chn|Xizang":3650,"bgd|Dhaka":44215,"bgd|Chittagong":33202,"bgd|Rajshahi":20353,"bgd|Rangpur":17610,"bgd|Khulna":17417,"bgd|Sylhet":11060,"bgd|Barisal":9325,"egy|Al Qahirah":10100,"egy|Al Jizah":9200,"egy|Ash Sharqiyah":7900,"egy|Ad Daqahliyah":6900,"egy|Al Buhayrah":6700,"egy|Al Minya":6000,"egy|Al Iskandariyah":5500,"tur|Istanbul":15655,"tur|Ankara":5782,"tur|Izmir":4479,"tur|Bursa":3214,"pse|Palestine":5400,"rus|Moskva":13010,"rus|Moskovsskaya":8580,"rus|City of St. Petersburg":5600,"rus|Krasnodar":5838,"rus|Sverdlovsk":4269,"rus|Rostov":4200,"rus|Bashkortostan":4091,"rus|Tatarstan":4005,"rus|Chelyabinsk":3419,"rus|Dagestan":3182,"rus|Nizhegorod":3120,"rus|Samara":3179,"rus|Novosibirsk":2780,"rus|Krasnoyarsk":2850,"rus|Kemerovo":2560,"rus|Irkutsk":2350,"rus|Chechnya":1511,"rus|Sakha (Yakutia)":995,"rus|Tuva":337,"ukr|Kiev City":2960,"ukr|Donets'k":4060,"ukr|Dnipropetrovs'k":3096,"ukr|Kharkiv":2634,"ukr|L'viv":2478,"ukr|Odessa":2368,"ukr|Luhans'k":2122,"ukr|Crimea":1913,"blr|City of Minsk":2009,"blr|Gomel":1388};
+Object.assign(POP,{"chn|Guangdong":126012,"chn|Shandong":101527,"chn|Henan":99365,"chn|Jiangsu":84748,"chn|Sichuan":83674,"chn|Hebei":74610,"chn|Hunan":66444,"chn|Zhejiang":64567,"chn|Anhui":61027,"chn|Hubei":57752,"chn|Guangxi":50126,"chn|Yunnan":47209,"chn|Jiangxi":45188,"chn|Liaoning":42591,"chn|Fujian":41540,"chn|Shaanxi":39528,"chn|Guizhou":38562,"chn|Shanxi":34915,"chn|Chongqing":32054,"chn|Heilongjiang":31851,"chn|Gansu":25019,"chn|Shanghai":24870,"chn|Jilin":24073,"chn|Inner Mongol":24049,"chn|Beijing":21893,"chn|Tianjin":13866,"chn|Hainan":10081,"jpn|Tokyo":14048,"jpn|Kanagawa":9237,"jpn|Osaka":8838,"jpn|Aichi":7542,"jpn|Saitama":7345,"jpn|Chiba":6284,"jpn|Hyōgo":5465,"jpn|Hokkaido":5225,"jpn|Fukuoka":5135,"jpn|Shizuoka":3633,"kor|Gyeonggi":13530,"kor|Seoul":9668,"kor|Busan":3392,"kor|South Gyeongsang":3340,"kor|Incheon":2947,"kor|North Gyeongsang":2639,"kor|Daegu":2418,"prk|P'yŏngan-namdo":4051,"prk|P'yŏngyang":3255,"prk|Hamgyŏng-namdo":3066,"mng|Ulaanbaatar":1580,"twn|New Taipei City":4000,"twn|Taichung City":2820,"twn|Kaohsiung City":2740,"twn|Taipei City":2500,"mmr|Yangon":7800,"mmr|Mandalay":6400,"mmr|Ayeyarwady":6400,"mmr|Shan":6200,"tha|Bangkok Metropolis":5588,"tha|Nakhon Ratchasima":2630,"tha|Chiang Mai":1790,"khm|Phnom Penh":2130,"vnm|Hồ Chí Minh city":9000,"vnm|Ha Noi":8054,"vnm|Thanh Hóa":3640,"vnm|Nghệ An":3327,"mys|Selangor":6994,"mys|Johor":4009,"mys|Sabah":3418,"mys|Sarawak":2453,"mys|Kuala Lumpur":1982});
+Object.assign(POP,{"idn|Jawa Barat":50345,"idn|Jawa Timur":41814,"idn|Jawa Tengah":37892,"idn|Sumatera Utara":15589,"idn|Banten":12431,"idn|Jakarta Raya":10562,"idn|Sulawesi Selatan":9463,"idn|Lampung":9420,"idn|Sumatera Selatan":8837,"idn|Riau":7007,"idn|Sumatera Barat":5836,"idn|Nusa Tenggara Barat":5726,"idn|Nusa Tenggara Timur":5715,"idn|Kalimantan Barat":5696,"idn|Aceh":5555,"idn|Bali":4461,"idn|Papua":4304,"idn|Kalimantan Selatan":4294,"idn|Kalimantan Timur":4093,"idn|Yogyakarta":3669,"idn|Jambi":3746,"phl|Cebu":3401,"phl|Cavite":4574,"phl|Bulacan":3877,"phl|Laguna":3382,"phl|Rizal":3330,"phl|Quezon City":2960,"phl|Negros Occidental":2680,"phl|Pampanga":2586,"phl|Nueva Ecija":2396,"phl|Iloilo":2083,"phl|Manila":1846,"phl|Davao":1776});
+Object.assign(POP,{"deu|Baden-Württemberg":11111,"deu|Hessen":6421,"deu|Schleswig-Holstein":2966,"deu|Brandenburg":2557,"fra|Nord":2600,"fra|Paris":2100,"fra|Bouches-du-Rhône":2070,"fra|Rhône":1880,"fra|Gironde":1675,"fra|Seine-Saint-Denis":1682,"ita|Roma":4300,"ita|Milano":3200,"ita|Napoli":3000,"ita|Torino":2200,"nld|Gelderland":2134,"esp|Asturias":1010,"esp|Bizkaia":1159,"esp|Gipuzkoa":727,"che|Zürich":1550,"che|Bern":1040,"che|Vaud":815,"che|Ticino":351,"gbr|Birmingham":1184,"gbr|Glasgow":650,"gbr|Manchester":590,"gbr|Liverpool":509,"gbr|Edinburgh":531,"gbr|Cardiff":384,"gbr|Belfast":352,"dza|Alger":3200,"dza|Oran":1700,"dza|Constantine":1000,"dza|Batna":1200,"mar|Grand Casablanca":4270,"mar|Souss-Massa-Drâa":3600,"mar|Tanger-Tétouan":3100,"mar|Marrakech-Tensift-Al Haouz":3100,"tun|Tunis":1100,"lby|Tripoli":1200});
+Object.assign(POP,{"can|Ontario":14224,"can|Québec":8502,"can|British Columbia":5001,"can|Alberta":4368,"can|Nunavut":37,"usa|California":39431,"usa|Texas":31291,"usa|Florida":23372,"usa|New York":19800,"usa|Pennsylvania":13079,"usa|Illinois":12710,"usa|Ohio":11883,"usa|Georgia":11100,"usa|North Carolina":11046,"usa|Michigan":10140,"usa|New Jersey":9501,"usa|Virginia":8811,"usa|Washington":7958,"usa|Arizona":7582,"usa|Massachusetts":7136,"usa|Tennessee":7228,"usa|Indiana":6924,"usa|Maryland":6263,"usa|Missouri":6245,"usa|Wisconsin":5961,"usa|Colorado":5957,"usa|Minnesota":5793,"usa|Alabama":5158,"mex|Jalisco":8348,"mex|Puebla":6583,"mex|Guanajuato":6167,"mex|Nuevo León":5784,"mex|Chiapas":5544,"mex|Oaxaca":4132,"mex|Baja California":3769,"mex|Yucatán":2321});
+Object.assign(POP,{"col|Valle del Cauca":4476,"ven|Zulia":5126,"ven|Carabobo":2246,"per|Callao":1300,"per|Cusco":428,"per|Ayacucho":181,"bra|Minas Gerais":21323,"bra|Bahia":14871,"bra|Rio Grande do Sul":10883,"bra|Pernambuco":9539,"bra|Ceará":8795,"bra|Pará":8120,"bra|Goiás":7350,"bol|La Paz":2900,"bol|Santa Cruz":3400,"bol|Cochabamba":2000,"pry|Alto Paraná":764,"chl|Región Metropolitana de Santiago":7037,"arg|Buenos Aires":17000,"arg|Córdoba":3800,"arg|Santa Fe":3500,"aus|New South Wales":8339,"aus|Victoria":6800,"aus|Queensland":5460,"aus|Western Australia":2900,"nzl|Waikato":532,"png|East Sepik":451});
+Object.assign(POP,{"nga|Akwa Ibom":5451,"nga|Anambra":4178,"nga|Enugu":4690,"nga|Bauchi":4676,"nga|Jigawa":4361,"nga|Katsina":5802,"nga|Sokoto":3703,"nga|Osun":3417,"nga|Zamfara":3279,"nga|Kwara":2365,"nga|Taraba":2295,"nga|Yobe":2321,"nga|Ebonyi":2177,"nga|Edo":1000,"gha|Greater Accra":5456,"civ|Bas-Sassandra":2687,"civ|Lagunes":2043,"civ|Vallée du Bandama":1965,"mli|Bamako":4228,"gin|Conakry":1661,"ben|Borgou":1202,"ben|Alibori":868,"cod|Nord-Kivu":8986,"cod|Sud-Kivu":8147,"cod|Kasaï-Oriental":3864,"cod|Maniema":2856,"caf|Bangui":812,"cog|Pointe Noire":1421,"ago|Lunda Norte":863,"ago|Uíge":617,"ago|Benguela":562,"eth|Tigray":5936,"tza|Dar-Es-Salaam":7776,"tza|Manyara":1893,"tza|Rukwa":1541,"tza|Dodoma":765,"som|Banaadir":2331,"som|Bakool":1156,"som|Mudug":865,"sdn|Central Darfur":2499,"sdn|North Darfur":2305,"eri|Gash Barka":1104,"eri|Maekel":1053,"moz|Niassa":1811,"mwi|Lilongwe":989,"mwi|Mzimba":936,"mwi|Blantyre":800,"zwe|Manicaland":2038,"zwe|Mashonaland West":1894,"zwe|Mashonaland East":1731,"zwe|Mashonaland Central":1385,"zaf|Gauteng":15099,"zaf|KwaZulu-Natal":12818,"zaf|Western Cape":7433,"zaf|Eastern Cape":7226,"zaf|Limpopo":5405,"zaf|Mpumalanga":5142,"zaf|Northern Cape":1356,"nam|Ohangwena":338,"nam|Omusati":317,"bwa|Kgatleng":122,"lso|Maseru":331,"swz|Hhohho":321,"swz|Shiselweni":204,"cmr|Centre":4200,"cmr|Littoral":3800,"sen|Dakar":3700,"ken|Nairobi":4400,"ken|Central":4500,"uga|Wakiso":91,"mdg|Antananarivo":3600});
+const KURD_TR=['Diyarbakir','Sanliurfa','Mardin','Van','Hakkari','Sirnak','Batman','Siirt','Mus','Bitlis','Agri','Bingöl','Tunceli'];
+const PASH=['Kandahar','Hilmand','Zabul','Uruzgan','Paktika','Paktya','Khost','Nangarhar','Kunar','Laghman','Logar','Farah','Wardak'];
+const INDOV={'Andhra Pradesh':'Telugu','Assam':'Assamese','Goa':'Konkani','Gujarat':'Gujarati','Jammu and Kashmir':'Kashmiri','Karnataka':'Kannada','Kerala':'Malayalam','Maharashtra':'Marathi','Manipur':'Meitei','Meghalaya':'Khasi','Mizoram':'Mizo','Nagaland':'Angami','Orissa':'Oriya','Punjab':'Punjabi','Sikkim':'Nepali','Tamil Nadu':'Tamil','Tripura':'Bengali','West Bengal':'Bengali','Arunachal Pradesh':'Nyishi','Puducherry':'Tamil'};
+const SAUOV={'Ar Riyad':'Najdi','Al Quassim':'Najdi',"Ha'il":'Najdi','Al Jawf':'Najdi','Al Hudud ash Shamaliyah':'Najdi','Tabuk':'Hijazi','Makkah':'Hijazi','Al Madinah':'Hijazi','Al Bahah':'Hijazi','`Asir':'Hijazi','Ash Sharqiyah':'Gulf','Jizan':'Sanaani','Najran':'Sanaani'};
+const YEMOV={'Hadramawt':'Hadrami','Al Mahrah':'Hadrami','Shabwah':'Hadrami','`Adan':'Hadrami','Lahij':'Hadrami','Abyan':'Hadrami'};
+const LKATAM={'Yāpanaya':'Tamil','Kilinŏchchi':'Tamil','Mannārama':'Tamil','Mulativ':'Tamil','Vavuniyāva':'Tamil','Trikuṇāmalaya':'Tamil','Maḍakalapuva':'Tamil'};
+const IDNOV={"Aceh":"Acehnese","Sumatera Utara":"Batak","Sumatera Barat":"Minangkabau","Banten":"Sundanese","Jawa Barat":"Sundanese","Jawa Tengah":"Javanese","Yogyakarta":"Javanese","Jawa Timur":"Javanese","Bali":"Balinese","Nusa Tenggara Barat":"Sasak","Kalimantan Selatan":"Banjar","Sulawesi Selatan":"Buginese"};
+const PHLOV={"Abra":"Ilocano","Agusan del Norte":"Cebuano","Agusan del Sur":"Cebuano","Aklan":"Hiligaynon","Albay":"Bikol","Angeles":"Kapampangan","Antique":"Hiligaynon","Apayao":"Ilocano","Bacolod":"Hiligaynon","Baguio":"Ilocano","Basilan":"Tausug","Benguet":"Ilocano","Biliran":"Waray","Bohol":"Cebuano","Bukidnon":"Cebuano","Butuan":"Cebuano","Cagayan":"Ilocano","Cagayan de Oro":"Cebuano","Camarines Norte":"Bikol","Camarines Sur":"Bikol","Camiguin":"Cebuano","Capiz":"Hiligaynon","Catanduanes":"Bikol","Cebu":"Cebuano","Compostela Valley":"Cebuano","Cotabato":"Cebuano","Dagupan":"Pangasinan","Davao":"Cebuano","Davao Oriental":"Cebuano","Davao del Norte":"Cebuano","Davao del Sur":"Cebuano","Eastern Samar":"Waray","General Santos":"Hiligaynon","Guimaras":"Hiligaynon","Ifugao":"Ilocano","Iligan":"Cebuano","Ilocos Norte":"Ilocano","Ilocos Sur":"Ilocano","Iloilo":"Hiligaynon","Isabela":"Ilocano","Kalinga":"Ilocano","La Union":"Ilocano","Lanao del Norte":"Cebuano","Lanao del Sur":"Maranao","Lapu-Lapu":"Cebuano","Leyte":"Waray","Maguindanao":"Maguindanao","Mandaue":"Cebuano","Masbate":"Bikol","Misamis Occidental":"Cebuano","Misamis Oriental":"Cebuano","Mountain Province":"Ilocano","Naga":"Bikol","Negros Occidental":"Hiligaynon","Negros Oriental":"Cebuano","Northern Samar":"Waray","Nueva Vizcaya":"Ilocano","Ormoc":"Cebuano","Pampanga":"Kapampangan","Pangasinan":"Pangasinan","Quirino":"Ilocano","Samar":"Waray","Santiago":"Ilocano","Sarangani":"Cebuano","Siquijor":"Cebuano","Sorsogon":"Bikol","South Cotabato":"Hiligaynon","Southern Leyte":"Cebuano","Sultan Kudarat":"Hiligaynon","Sulu":"Tausug","Surigao del Norte":"Cebuano","Surigao del Sur":"Cebuano","Tacloban":"Waray","Tarlac":"Kapampangan","Tawi-Tawi":"Tausug","Zamboanga":"Cebuano","Zamboanga Sibugay":"Cebuano","Zamboanga del Norte":"Cebuano","Zamboanga del Sur":"Cebuano"};
+const CFG={
+ tur:{def:'Turkish',ov:Object.fromEntries(KURD_TR.map(p=>[p,'Kurdish']))},
+ irn:{def:'Persian',ov:{'East Azarbaijan':'Azerbaijani','West Azarbaijan':'Azerbaijani','Ardebil':'Azerbaijani','Zanjan':'Azerbaijani','Kordestan':'Kurdish','Kermanshah':'Kurdish','Ilam':'Kurdish','Sistan and Baluchestan':'Balochi'}},
+ uzb:{def:'Uzbek',ov:{'Karakalpakstan':'Karakalpak'}},tjk:{def:'Tajik',ov:{'Gorno-Badakhshan':'Pamiri'}},
+ afg:{def:'Dari',ov:Object.assign(Object.fromEntries(PASH.map(p=>[p,'Pashto'])),{'Jawzjan':'Uzbek','Faryab':'Uzbek'})},
+ kaz:{def:'Kazakh',ov:{}},kgz:{def:'Kyrgyz',ov:{}},tkm:{def:'Turkmen',ov:{}},aze:{def:'Azerbaijani',ov:{}},geo:{def:'Georgian',ov:{}},arm:{def:'Armenian',ov:{}},
+ chn:{def:'Mandarin',ov:{'Xinjiang':'Uyghur','Xizang':'Tibetan','Guangdong':'Cantonese','Guangxi':'Zhuang','Fujian':'Min','Hainan':'Min','Hunan':'Xiang','Jiangxi':'Gan','Shanghai':'Wu','Zhejiang':'Wu'}},
+ pak:{def:'Punjabi',ov:{'Punjab':'Punjabi','Sind':'Sindhi','N.W.F.P.':'Pashto','F.A.T.A.':'Pashto','Baluchistan':'Balochi','Azad Kashmir':'Punjabi','Northern Areas':'Shina','F.C.T.':'Urdu'}},
+ ind:{def:'Hindi',ov:INDOV},
+ irq:{def:'Mesopotamian',ov:{'Arbil':'Kurdish','As-Sulaymaniyah':'Kurdish','Dihok':'Kurdish',"At-Ta'mim":'Kurdish'}},
+ syr:{def:'Levantine',ov:{'Hasaka (Al Haksa)':'Kurdish'}},jor:{def:'Levantine',ov:{}},lbn:{def:'Levantine',ov:{}},
+ isr:{def:'Hebrew',ov:{'HaZafon':'Levantine'}},egy:{def:'Egyptian',ov:{}},
+ sau:{def:'Najdi',ov:SAUOV},yem:{def:'Sanaani',ov:YEMOV},omn:{def:'Omani',ov:{'Musandam':'Gulf'}},
+ are:{def:'Gulf',ov:{}},qat:{def:'Gulf',ov:{}},bhr:{def:'Gulf',ov:{}},kwt:{def:'Gulf',ov:{}},
+ bgd:{def:'Bengali',ov:{}},npl:{def:'Nepali',ov:{'Janakpur':'Maithili'}},btn:{def:'Dzongkha',ov:{}},lka:{def:'Sinhala',ov:LKATAM},
+ rus:{def:'Russian',ov:{'Tatarstan':'Tatar','Bashkortostan':'Bashkir','Chuvash':'Chuvash','Chechnya':'Chechen','Ingush':'Ingush','Dagestan':'Avar','Kabardin-Balkar':'Kabardian','Karachay-Cherkess':'Karachay','North Ossetia':'Ossetian','Kalmyk':'Kalmyk','Sakha (Yakutia)':'Yakut','Tuva':'Tuvan'}},
+ blr:{def:'Russian',ov:{}},
+ ukr:{def:'Ukrainian',ov:{'Crimea':'Russian','Sevastopol':'Russian',"Donets'k":'Russian',"Luhans'k":'Russian','Kharkiv':'Russian',"Dnipropetrovs'k":'Russian','Zaporizhzhya':'Russian','Odessa':'Russian','Mykolayiv':'Russian'}},
+ jpn:{def:'Japanese',ov:{}},prk:{def:'Korean',ov:{}},kor:{def:'Korean',ov:{}},
+ mng:{def:'Mongolian',ov:{'Bayan-Ölgiy':'Kazakh'}},twn:{def:'Min',ov:{}},
+ mmr:{def:'Burmese',ov:{'Shan':'Shan'}},tha:{def:'Thai',ov:{'Pattani':'Malay','Yala':'Malay','Narathiwat':'Malay'}},
+ lao:{def:'Lao',ov:{}},khm:{def:'Khmer',ov:{}},vnm:{def:'Vietnamese',ov:{}},mys:{def:'Malay',ov:{}},
+ idn:{def:'Malay',ov:IDNOV},phl:{def:'Tagalog',ov:PHLOV},brn:{def:'Malay',ov:{}},tls:{def:'Tetum',ov:{}},sgp:{def:'Mandarin',ov:{}}
+};
+Object.assign(CFG,{"alb":{def:"Albanian",ov:{}},"aut":{def:"German",ov:{}},"bel":{def:"French",ov:{"Antwerp":"Dutch","East Flanders":"Dutch","Flemish Brabant":"Dutch","Limburg":"Dutch","West Flanders":"Dutch"}},"bih":{def:"Bosnian",ov:{}},"bgr":{def:"Bulgarian",ov:{}},"hrv":{def:"Croatian",ov:{}},"cyp":{def:"Greek",ov:{}},"cze":{def:"Czech",ov:{}},"dnk":{def:"Danish",ov:{}},"est":{def:"Estonian",ov:{}},"fin":{def:"Finnish",ov:{}},"fra":{def:"French",ov:{}},"deu":{def:"German",ov:{}},"grc":{def:"Greek",ov:{}},"hun":{def:"Hungarian",ov:{}},"isl":{def:"Icelandic",ov:{}},"irl":{def:"English",ov:{}},"ita":{def:"Italian",ov:{}},"lva":{def:"Latvian",ov:{}},"ltu":{def:"Lithuanian",ov:{}},"lux":{def:"Luxembourgish",ov:{}},"mlt":{def:"Maltese",ov:{}},"mda":{def:"Romanian",ov:{"Stîngă Nistrului":"Russian","Transnistria":"Russian"}},"mne":{def:"Montenegrin",ov:{}},"nld":{def:"Dutch",ov:{}},"mkd":{def:"Macedonian",ov:{}},"nor":{def:"Norwegian",ov:{}},"pol":{def:"Polish",ov:{}},"prt":{def:"Portuguese",ov:{}},"rou":{def:"Romanian",ov:{}},"srb":{def:"Serbian",ov:{}},"svk":{def:"Slovak",ov:{}},"svn":{def:"Slovene",ov:{}},"esp":{def:"Spanish",ov:{"Barcelona":"Catalan","Bizkaia":"Basque","Gerona":"Catalan","Gipuzkoa":"Basque","La Coruña":"Galician","Lugo":"Galician","Lérida":"Catalan","Orense":"Galician","Pontevedra":"Galician","Tarragona":"Catalan"}},"swe":{def:"Swedish",ov:{}},"che":{def:"German",ov:{"Fribourg":"French","Genève":"French","Jura":"French","Neuchâtel":"French","Ticino":"Italian","Valais":"French","Vaud":"French"}},"gbr":{def:"English",ov:{}},"grl":{def:"Greenlandic",ov:{}},"mar":{def:"Moroccan Arabic",ov:{}},"dza":{def:"Algerian Arabic",ov:{}},"tun":{def:"Tunisian Arabic",ov:{}},"lby":{def:"Libyan Arabic",ov:{}},"can":{def:"English",ov:{"Nunavut":"Inuktitut","Québec":"French"}},"usa":{def:"English",ov:{}},"mex":{def:"Spanish",ov:{}},"gtm":{def:"Spanish",ov:{}},"blz":{def:"English",ov:{}},"hnd":{def:"Spanish",ov:{}},"slv":{def:"Spanish",ov:{}},"nic":{def:"Spanish",ov:{}},"cri":{def:"Spanish",ov:{}},"pan":{def:"Spanish",ov:{}},"cub":{def:"Spanish",ov:{}},"dom":{def:"Spanish",ov:{}},"hti":{def:"Haitian Creole",ov:{}},"jam":{def:"English",ov:{}},"pri":{def:"Spanish",ov:{}},"bhs":{def:"English",ov:{}},"tto":{def:"English",ov:{}},"col":{def:"Spanish",ov:{}},"ven":{def:"Spanish",ov:{}},"guy":{def:"English",ov:{}},"sur":{def:"Dutch",ov:{}},"ecu":{def:"Spanish",ov:{}},"per":{def:"Spanish",ov:{"Apurímac":"Quechua","Ayacucho":"Quechua","Cusco":"Quechua","Huancavelica":"Quechua"}},"bra":{def:"Portuguese",ov:{}},"bol":{def:"Spanish",ov:{"Chuquisaca":"Quechua","Cochabamba":"Quechua","La Paz":"Aymara","Oruro":"Aymara","Potosí":"Quechua"}},"pry":{def:"Guarani",ov:{}},"chl":{def:"Spanish",ov:{}},"arg":{def:"Spanish",ov:{}},"ury":{def:"Spanish",ov:{}},"aus":{def:"English",ov:{}},"nzl":{def:"English",ov:{}},"png":{def:"Tok Pisin",ov:{}},"fji":{def:"Fijian",ov:{}},"slb":{def:"English",ov:{}},"vut":{def:"Bislama",ov:{}},"ncl":{def:"French",ov:{}},"pyf":{def:"French",ov:{}},"wsm":{def:"Samoan",ov:{}},"ton":{def:"Tongan",ov:{}}});
+Object.assign(CFG,{"gha":{def:"Akan",ov:{}},"civ":{def:"French",ov:{}},"sen":{def:"Wolof",ov:{}},"mli":{def:"Bambara",ov:{}},"bfa":{def:"Mossi",ov:{}},"ner":{def:"Hausa",ov:{}},"gin":{def:"Fula",ov:{}},"ben":{def:"Fon",ov:{}},"tgo":{def:"Ewe",ov:{}},"sle":{def:"English",ov:{}},"lbr":{def:"English",ov:{}},"mrt":{def:"Hassaniya Arabic",ov:{}},"gmb":{def:"Mandinka",ov:{}},"gnb":{def:"Portuguese",ov:{}},"cpv":{def:"Portuguese",ov:{}},"cmr":{def:"French",ov:{}},"tcd":{def:"Chadian Arabic",ov:{}},"caf":{def:"Sango",ov:{}},"cog":{def:"Lingala",ov:{}},"gab":{def:"French",ov:{}},"gnq":{def:"Spanish",ov:{}},"ago":{def:"Portuguese",ov:{}},"ken":{def:"Swahili",ov:{}},"tza":{def:"Swahili",ov:{}},"uga":{def:"Luganda",ov:{}},"rwa":{def:"Kinyarwanda",ov:{}},"bdi":{def:"Kirundi",ov:{}},"som":{def:"Somali",ov:{}},"sdn":{def:"Sudanese Arabic",ov:{}},"eri":{def:"Tigrinya",ov:{}},"dji":{def:"Somali",ov:{}},"mdg":{def:"Malagasy",ov:{}},"moz":{def:"Portuguese",ov:{}},"mwi":{def:"Chichewa",ov:{}},"zmb":{def:"Bemba",ov:{}},"zwe":{def:"Shona",ov:{}},"nam":{def:"Oshiwambo",ov:{}},"bwa":{def:"Tswana",ov:{}},"lso":{def:"Sotho",ov:{}},"swz":{def:"Swazi",ov:{}},"nga":{def:"Hausa",ov:{"Abia":"Igbo","Akwa Ibom":"Efik","Anambra":"Igbo","Bayelsa":"Ijaw","Cross River":"Efik","Delta":"Ijaw","Ebonyi":"Igbo","Edo":"Edo","Ekiti":"Yoruba","Enugu":"Igbo","Imo":"Igbo","Lagos":"Yoruba","Ogun":"Yoruba","Ondo":"Yoruba","Osun":"Yoruba","Oyo":"Yoruba","Rivers":"Ijaw"}},"zaf":{def:"Zulu",ov:{"KwaZulu-Natal":"Zulu","Gauteng":"Zulu","Mpumalanga":"Swazi","Limpopo":"Sotho","North West":"Tswana","Orange Free State":"Sotho","Eastern Cape":"Xhosa","Western Cape":"Afrikaans","Northern Cape":"Afrikaans"}},"eth":{def:"Amharic",ov:{"Oromiya":"Oromo","Tigray":"Tigrinya","Somali":"Somali","Afar":"Afar"}},"cod":{def:"Lingala",ov:{"Bas-Congo":"Kikongo","Kasaï-Occidental":"Tshiluba","Kasaï-Oriental":"Tshiluba","Orientale":"Swahili","Nord-Kivu":"Swahili","Sud-Kivu":"Swahili","Maniema":"Swahili","Katanga":"Swahili"}}});
+const NATDENS={tur:110,irn:52,uzb:79,tjk:69,afg:60,kaz:7,kgz:35,tkm:12,aze:122,geo:65,arm:100,chn:150,pak:287,ind:431,irq:97,syr:118,jor:115,lbn:670,isr:430,egy:103,sau:16,yem:60,omn:15,are:135,qat:240,bhr:2000,kwt:240,bgd:1265,npl:200,btn:20,lka:350,rus:8.4,blr:45,ukr:75,jpn:330,prk:215,kor:515,mng:2.1,twn:650,mmr:82,tha:137,lao:33,khm:95,vnm:314,mys:100,idn:145,phl:368,brn:82,tls:90,sgp:8000,pse:850,alb:100,aut:109,bel:383,bih:69,bgr:63,hrv:73,cyp:131,cze:139,dnk:137,est:30,fin:18,fra:119,deu:233,grc:81,hun:105,isl:3.7,irl:72,ita:200,lva:30,ltu:43,lux:250,mlt:1600,mda:119,mne:62,nld:520,mkd:82,nor:15,pol:122,prt:111,rou:84,srb:91,svk:111,svn:103,esp:94,swe:25,che:219,gbr:280,grl:0.03,mar:83,dza:18,tun:76,lby:4,can:4.2,usa:36,mex:65,gtm:130,blz:18,hnd:89,slv:300,nic:55,cri:100,pan:58,cub:106,dom:225,hti:415,jam:270,pri:320,bhs:39,tto:270,col:46,ven:33,guy:4,sur:4,ecu:71,per:26,bra:25,bol:11,pry:18,chl:26,arg:16,ury:20,aus:3.4,nzl:20,png:20,fji:49,slb:24,vut:27,ncl:15,pyf:79,wsm:70,ton:147,nga:226,gha:137,civ:88,sen:90,mli:18,bfa:80,ner:20,gin:56,ben:115,tgo:154,sle:110,lbr:55,mrt:5,gmb:260,gnb:70,cpv:135,cmr:60,tcd:14,caf:8,cod:42,cog:17,gab:9,gnq:60,ago:27,eth:130,ken:95,tza:73,uga:230,rwa:540,bdi:470,som:27,sdn:26,eri:36,dji:46,mdg:52,moz:42,mwi:220,zmb:25,zwe:42,zaf:51,nam:3.2,bwa:4.2,lso:74,swz:70,ssd:18,esh:2,somld:32};
+const NATPOP={tur:85000,irn:88000,uzb:35000,tjk:10000,afg:41000,kaz:19000,kgz:6900,tkm:6400,aze:10000,geo:3700,arm:3000,chn:1412000,pak:240000,ind:1428000,irq:43000,syr:22000,jor:11000,lbn:5500,isr:9500,egy:111000,sau:36000,yem:34000,omn:4600,are:9400,qat:2700,bhr:1500,kwt:4300,bgd:172000,npl:30000,btn:780,lka:22000,rus:144000,blr:9200,ukr:38000,jpn:124000,prk:26000,kor:51700,mng:3400,twn:23000,mmr:54000,tha:72000,lao:7500,khm:17000,vnm:98000,mys:34000,idn:277000,phl:117000,brn:450,tls:1300,sgp:5900,pse:5400,alb:2800,aut:9000,bel:11600,bih:3200,bgr:6900,hrv:3900,cyp:1200,cze:10700,dnk:5900,est:1300,fin:5500,fra:68000,deu:84000,grc:10400,hun:9700,isl:380,irl:5100,ita:59000,lva:1900,ltu:2800,lux:660,mlt:520,mda:2600,mne:620,nld:17700,mkd:2080,nor:5500,pol:37800,prt:10300,rou:19000,srb:6800,svk:5400,svn:2100,esp:48000,swe:10500,che:8800,gbr:67000,grl:56,mar:37000,dza:45000,tun:12000,lby:6800,can:40000,usa:335000,mex:129000,gtm:17600,blz:410,hnd:10300,slv:6300,nic:6900,cri:5200,pan:4400,cub:11000,dom:11200,hti:11700,jam:2800,pri:3200,bhs:410,tto:1500,col:52000,ven:28000,guy:810,sur:620,ecu:18000,per:34000,bra:216000,bol:12000,pry:6800,chl:19600,arg:46000,ury:3400,aus:26000,nzl:5200,png:10000,fji:930,slb:720,vut:330,ncl:290,pyf:300,wsm:220,ton:105,nga:223000,gha:34000,civ:29000,sen:18000,mli:22000,bfa:23000,ner:27000,gin:14000,ben:13000,tgo:9000,sle:8500,lbr:5400,mrt:4900,gmb:2700,gnb:2100,cpv:590,cmr:28000,tcd:18000,caf:5500,cod:102000,cog:6100,gab:2400,gnq:1700,ago:36000,eth:126000,ken:55000,tza:67000,uga:48000,rwa:14000,bdi:13000,som:18000,sdn:48000,eri:3600,dji:1100,mdg:30000,moz:33000,mwi:21000,zmb:20000,zwe:16000,zaf:60000,nam:2600,bwa:2600,lso:2300,swz:1200,ssd:11000,esh:570,somld:5700};
+const SKIP=new Set(['vnm|Đông Bắc','vnm|Đồng Bằng Sông Hồng','vnm|Đông Nam Bộ']);
+const FAMS=[['Turkic',['Turkish','Azerbaijani','Turkmen','Uzbek','Uyghur','Kazakh','Karakalpak','Kyrgyz','Tatar','Bashkir','Chuvash','Karachay','Yakut','Tuvan']],['Iranian',['Persian','Pashto','Kurdish','Balochi','Pamiri','Ossetian']],['Slavic',['Russian','Ukrainian','Belarusian','Polish','Czech','Slovak','Slovene','Serbo-Croatian','Bulgarian/Macedonian']],['Germanic',['English','German','Dutch','Danish','Swedish','Norwegian','Icelandic','Luxembourgish','Afrikaans','Tok Pisin','Bislama']],['Romance',['Spanish','Portuguese','French','Italian','Romanian','Catalan','Galician','Haitian Creole']],['Baltic',['Lithuanian','Latvian']],['Hellenic',['Greek']],['Albanian',['Albanian']],['Uralic',['Finnish','Estonian','Hungarian']],['Basque',['Basque']],['Indo-Aryan',['Hindustani','Punjabi','Sindhi','Shina','Bengali','Marathi','Gujarati','Oriya','Assamese','Kashmiri','Konkani','Nepali','Maithili','Sinhala']],['Dravidian',['Tamil','Telugu','Kannada','Malayalam']],['Semitic',['Modern Standard Arabic','Egyptian','Levantine','Mesopotamian','Gulf','Najdi','Hijazi','Sanaani','Hadrami','Omani','Hebrew','Maltese','Moroccan Arabic','Algerian Arabic','Tunisian Arabic','Libyan Arabic','Amharic','Tigrinya','Hassaniya Arabic','Sudanese Arabic','Chadian Arabic']],['Cushitic',['Somali','Oromo','Afar']],['Chadic',['Hausa']],['Caucasian',['Chechen','Ingush','Avar','Kabardian']],['Sino-Tibetan',['Mandarin','Cantonese','Wu','Min','Xiang','Gan','Burmese','Meitei','Mizo','Angami','Nyishi','Tibetan','Dzongkha']],['Tai-Kadai',['Zhuang','Thai','Lao','Shan']],['Austroasiatic',['Vietnamese','Khmer','Khasi']],['Austronesian',['Malay','Javanese','Sundanese','Minangkabau','Acehnese','Batak','Balinese','Sasak','Buginese','Banjar','Tagalog','Cebuano','Ilocano','Hiligaynon','Bikol','Waray','Kapampangan','Pangasinan','Maguindanao','Maranao','Tausug','Tetum','Malagasy','Fijian','Samoan','Tongan']],['Niger-Congo',NC],['Nilo-Saharan',['Dinka']],['Japonic',['Japanese']],['Koreanic',['Korean']],['Mongolic',['Mongolian','Kalmyk']],['Quechuan',['Quechua']],['Aymaran',['Aymara']],['Tupian',['Guarani']],['Eskimo-Aleut',['Inuktitut','Greenlandic']],['Other',['Armenian','Georgian']]];
+const LANG2FAM={}; FAMS.forEach(([fam,ls])=>ls.forEach(l=>LANG2FAM[l]=fam));
+const isoList=Object.keys(CFG);
+const base='https://cdn.jsdelivr.net/npm/datamaps@0.5.10/src/js/data/';
+const R0=100, MAXH=12, MINH=0.1, DEG=Math.PI/180;
+const ARABIC=new Set(['Egyptian','Levantine','Mesopotamian','Gulf','Najdi','Hijazi','Sanaani','Hadrami','Omani','Moroccan Arabic','Algerian Arabic','Tunisian Arabic','Libyan Arabic','Hassaniya Arabic','Sudanese Arabic','Chadian Arabic']);
+const ALIAS={'Dari':'Persian','Tajik':'Persian','Urdu':'Hindustani','Hindi':'Hindustani','Croatian':'Serbo-Croatian','Serbian':'Serbo-Croatian','Bosnian':'Serbo-Croatian','Montenegrin':'Serbo-Croatian','Bulgarian':'Bulgarian/Macedonian','Macedonian':'Bulgarian/Macedonian'};
+function canon(l){return ALIAS[l]||l;}
+const L2={
+ 'English':new Set(['ind','pak','bgd','lka','npl','nga','gha','ken','uga','tza','zwe','zmb','mwi','bwa','nam','zaf','sle','lbr','gmb','ssd','cmr','phl','mys','sgp','brn','mlt','nld','dnk','swe','nor','isl','fin','can|Québec','can|Nunavut']),
+ 'French':new Set(['dza','mar','tun','sen','mli','civ','bfa','ner','gin','ben','tgo','cmr','tcd','caf','cog','gab','gnq','cod','mdg','lbn','hti','bel']),
+ 'Russian':new Set(['kaz','kgz','uzb','tjk','tkm','aze','arm','geo','mda','est','lva','ltu','blr','ukr','rus|Tatarstan','rus|Bashkortostan','rus|Chuvash','rus|Chechnya','rus|Ingush','rus|Dagestan','rus|Kabardin-Balkar','rus|Karachay-Cherkess','rus|North Ossetia','rus|Kalmyk','rus|Sakha (Yakutia)','rus|Tuva']),
+ 'Mandarin':new Set(['chn','twn']),
+ 'Hindustani':new Set(['npl','pak','ind|Punjab','ind|Gujarat','ind|Maharashtra','ind|Jammu and Kashmir','ind|Goa','ind|Arunachal Pradesh','ind|Sikkim','ind|Assam']),
+ 'Malay':new Set(['idn','mys','brn','sgp']),
+ 'Portuguese':new Set(['tls','ago','moz','gnb','cpv','gnq']),
+ 'Spanish':new Set(['esp|Barcelona','esp|Bizkaia','esp|Gerona','esp|Gipuzkoa','esp|La Coruña','esp|Lugo','esp|Lérida','esp|Orense','esp|Pontevedra','esp|Tarragona','per|Apurímac','per|Ayacucho','per|Cusco','per|Huancavelica','bol|Chuquisaca','bol|Cochabamba','bol|La Paz','bol|Oruro','bol|Potosí','pry']),
+ 'Persian':new Set(['irn','afg','tjk']),
+ 'Turkish':new Set(['tur','aze','irn|East Azarbaijan','irn|West Azarbaijan','irn|Ardebil','irn|Zanjan']),
+ 'Uzbek':new Set(['uzb']),
+ 'Mongolian':new Set(['mng']),
+ 'Thai':new Set(['lao']),
+ 'Amharic':new Set(['eth']),
+ 'Burmese':new Set(['mmr']),
+ 'Tagalog':new Set(['phl']),
+ 'Modern Standard Arabic':new Set(['irq|Arbil','irq|As-Sulaymaniyah','irq|Dihok',"irq|At-Ta'mim",'syr|Hasaka (Al Haksa)'])
+};
+const host=document.getElementById('c'), tip=document.getElementById('tip'), wrap=document.getElementById('gwrap');
+function fmt(m){ if(m==null)return '—'; if(m===0)return '0'; if(m>=1000)return (m/1000).toFixed(m>=10000?1:2)+' billion'; if(m>=1)return (m>=10?Math.round(m):m.toFixed(1))+' million'; return Math.round(m*1000)+',000'; }
+function ll(lon,lat,r){const ph=lat*DEG,la=lon*DEG,cp=Math.cos(ph);return [r*cp*Math.cos(la),r*cp*Math.sin(la),r*Math.sin(ph)];}
+function elen(a,b){return Math.max(Math.abs(a.x-b.x),Math.abs(a.y-b.y));}
+function vmid(a,b){return new THREE.Vector2((a.x+b.x)/2,(a.y+b.y)/2);}
+function push3(v,r,pos){const p=ll(v.x,v.y,r);pos.push(p[0],p[1],p[2]);}
+function subTri(a,b,c,r,pos,thr,d){
+  if(d<5 && Math.max(elen(a,b),elen(b,c),elen(c,a))>thr){
+    const ab=vmid(a,b),bc=vmid(b,c),ca=vmid(c,a);
+    subTri(a,ab,ca,r,pos,thr,d+1);subTri(ab,b,bc,r,pos,thr,d+1);subTri(ca,bc,c,r,pos,thr,d+1);subTri(ab,bc,ca,r,pos,thr,d+1);
+  } else { push3(a,r,pos);push3(b,r,pos);push3(c,r,pos); }
+}
+function densify(ring,maxSeg){
+  const out=[]; const n=ring.length;
+  for(let i=0;i<n;i++){ const a=ring[i], b=ring[(i+1)%n]; out.push(a);
+    const dist=elen(a,b), k=Math.floor(dist/maxSeg);
+    for(let j=1;j<=k;j++){const f=j/(k+1); out.push(new THREE.Vector2(a.x+(b.x-a.x)*f, a.y+(b.y-a.y)*f));} }
+  return out;
+}
+function buildRegion(feat,h){
+  const g=feat.geometry; if(!g)return null;
+  const polys=g.type==='Polygon'?[g.coordinates]:(g.type==='MultiPolygon'?g.coordinates:null); if(!polys)return null;
+  const pos=[]; const rT=R0+h, SEG=4, THR=5;
+  polys.forEach(poly=>{
+    if(!poly[0]||poly[0].length<4)return;
+    let lo=180,hi=-180; poly[0].forEach(c=>{if(c[0]<lo)lo=c[0];if(c[0]>hi)hi=c[0];}); if(hi-lo>180)return;
+    const mk=r=>{const a=r.map(c=>new THREE.Vector2(c[0],c[1])); if(a.length>1&&a[0].x===a[a.length-1].x&&a[0].y===a[a.length-1].y)a.pop(); return a;};
+    let outer=mk(poly[0]); if(outer.length<3)return;
+    const holesR=[]; for(let k=1;k<poly.length;k++){const hh=mk(poly[k]); if(hh.length>=3)holesR.push(hh);}
+    outer=densify(outer,SEG); const holes=holesR.map(hh=>densify(hh,SEG));
+    let tris=null; try{tris=THREE.ShapeUtils.triangulateShape(outer,holes);}catch(e){tris=null;}
+    const flat=[]; [outer].concat(holes).forEach(r=>r.forEach(v=>flat.push(v)));
+    if(tris){ tris.forEach(t=>{ const a=flat[t[0]],b=flat[t[1]],c=flat[t[2]]; if(a&&b&&c) subTri(a,b,c,rT,pos,THR,0); }); }
+    [outer].concat(holes).forEach(ring=>{ const n=ring.length; for(let i=0;i<n;i++){ const a=ring[i],b=ring[(i+1)%n];
+      const b1=ll(a.x,a.y,R0),b2=ll(b.x,b.y,R0),t1=ll(a.x,a.y,rT),t2=ll(b.x,b.y,rT);
+      pos.push(b1[0],b1[1],b1[2],b2[0],b2[1],b2[2],t2[0],t2[1],t2[2]);
+      pos.push(b1[0],b1[1],b1[2],t2[0],t2[1],t2[2],t1[0],t1[1],t1[2]); } });
+  });
+  if(pos.length<9)return null;
+  const geo=new THREE.BufferGeometry();
+  geo.setAttribute('position',new THREE.Float32BufferAttribute(pos,3));
+  geo.computeVertexNormals();
+  return geo;
+}
+Promise.all([d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json'),
+ ...isoList.map(i=>d3.json(base+i+'.topo.json').catch(()=>null))]).then(res=>{
+  const world=res[0], adm={};
+  isoList.forEach((iso,k)=>{const t=res[k+1];if(!t)return;const key=Object.keys(t.objects)[0];adm[iso]={feats:topojson.feature(t,t.objects[key]).features};});
+  const worldF=topojson.feature(world,world.objects.countries).features;
+  const feats=[]; const langsUsed=new Set();
+  function collect(iso,name,feat,forceLang){
+    if(SKIP.has(iso+'|'+name))return;
+    let lang=forceLang; if(!lang){const cf=CFG[iso]; if(!cf)return; lang=cf.ov[name]||cf.def;}
+    lang=canon(lang);
+    feats.push({iso,name,feat,lang}); langsUsed.add(lang);
+  }
+  isoList.forEach(iso=>{const A=adm[iso];if(!A)return;A.feats.forEach(f=>{if(f.properties.name)collect(iso,f.properties.name,f);});});
+  function addCountry(names,iso,lang){ const f=worldF.find(x=>names.indexOf(x.properties.name)>=0); if(f) collect(iso,names[0],f,lang); }
+  addCountry(['Palestine','Palestina'],'pse','Levantine');
+  addCountry(['S. Sudan','South Sudan','S.Sudan'],'ssd','Dinka');
+  addCountry(['W. Sahara','Western Sahara','W.Sahara'],'esh','Hassaniya Arabic');
+  addCountry(['Somaliland'],'somld','Somali');
+  langsUsed.add('Modern Standard Arabic');
+  feats.forEach(o=>{ const pk=POP[o.iso+'|'+o.name]; const areaKm=d3.geoArea(o.feat)*6371*6371; let dn=0;
+    if(pk!=null && (NATPOP[o.iso]==null || pk<0.8*NATPOP[o.iso])) dn=areaKm>0?pk*1000/areaKm:0;
+    else if(NATDENS[o.iso]!=null) dn=NATDENS[o.iso];
+    else if(pk!=null&&areaKm>0) dn=pk*1000/areaKm;
+    o.dens=dn; });
+  const ds=feats.map(o=>o.dens).filter(d=>d>0).sort((a,b)=>a-b);
+  const dcap=ds[Math.floor(0.97*ds.length)]||1;
+  const scene=new THREE.Scene(), group=new THREE.Group();
+  const ocean=new THREE.Mesh(new THREE.SphereGeometry(R0*0.997,72,48), new THREE.MeshLambertMaterial({color:0xf0f0f0}));
+  scene.add(ocean);
+  feats.forEach(o=>{
+    const h=MINH+(MAXH-MINH)*Math.min(o.dens,dcap)/dcap;
+    const geo=buildRegion(o.feat,h); if(!geo)return;
+    const col=new THREE.Color(FULL[o.lang]||'#cccccc');
+    const mesh=new THREE.Mesh(geo,new THREE.MeshLambertMaterial({color:col.clone(),side:THREE.DoubleSide}));
+    mesh.userData={lang:o.lang, base:col, iso:o.iso, name:o.name};
+    group.add(mesh);
+  });
+  scene.add(group);
+  scene.add(new THREE.AmbientLight(0xffffff,0.68));
+  const dl=new THREE.DirectionalLight(0xffffff,0.72); dl.position.set(1,0.35,0.7); scene.add(dl);
+  const dl2=new THREE.DirectionalLight(0xffffff,0.2); dl2.position.set(-0.8,-0.4,-0.3); scene.add(dl2);
+  const renderer=new THREE.WebGLRenderer({antialias:true,alpha:true});
+  renderer.setPixelRatio(Math.min(2,devicePixelRatio));
+  renderer.domElement.style.display='block';
+  host.appendChild(renderer.domElement);
+  const camera=new THREE.PerspectiveCamera(38,1,1,6000);
+  let az=0.42, el=0.22, R=R0*3.4;
+  function fit(){ const vh=window.innerHeight||0; if(vh>460) wrap.style.height=vh+'px';
+    let w=wrap.clientWidth, h=wrap.clientHeight; if(w<10)w=860; if(h<10)h=700;
+    renderer.setSize(w,h); renderer.domElement.style.width='100%'; renderer.domElement.style.height='100%';
+    camera.aspect=w/h; camera.updateProjectionMatrix(); }
+  window.addEventListener('resize',fit);
+  if(window.ResizeObserver){ try{ new ResizeObserver(fit).observe(wrap); }catch(e){} }
+  fit(); requestAnimationFrame(fit); setTimeout(fit,120); setTimeout(fit,500);
+  function upd(){ camera.position.set(R*Math.cos(el)*Math.cos(az), R*Math.cos(el)*Math.sin(az), R*Math.sin(el)); camera.up.set(0,0,1); camera.lookAt(0,0,0); }
+  const DIM=new THREE.Color(0x0f1720), MSACOL=new THREE.Color(FULL['Modern Standard Arabic']);
+  const SPREADCOL={}; Object.keys(L2).forEach(l=>SPREADCOL[l]=new THREE.Color(FULL[l]));
+  const leg=document.getElementById('leg'), sel=document.getElementById('sel'), legItems={};
+  const selected=new Set(); let hoverLang=null;
+  const STORE_KEY='langDensityGlobe.presets.v1';
+  function readStore(){ try{ const s=localStorage.getItem(STORE_KEY); if(s){ const a=JSON.parse(s); if(Array.isArray(a)) return a.filter(p=>p&&typeof p.name==='string'&&Array.isArray(p.langs)); } }catch(e){} return []; }
+  function writeStore(){ try{ localStorage.setItem(STORE_KEY, JSON.stringify(presets)); }catch(e){} }
+  const presets=readStore(); const presetsPanel=document.getElementById('presets');
+  function escHtml(s){return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+  function sums(langs){let sn=0,st=0;langs.forEach(l=>{const i=LANGINFO[l]||[0,0];sn+=i[0]||0;st+=i[1]||0;});return [sn,st];}
+  function renderPresets(){
+    if(!presets.length){ presetsPanel.style.display='none'; return; }
+    presetsPanel.style.display='block';
+    let html='<div style="font-weight:600;font-size:12px;margin-bottom:6px;color:var(--text-primary,#1a1a1a)">Saved combinations ('+presets.length+')</div>';
+    presets.forEach((p,i)=>{ const [sn,st]=sums(p.langs);
+      html+='<div data-load="'+i+'" title="Click to load" style="cursor:pointer;padding:6px 7px;border-radius:6px;margin-bottom:4px;background:rgba(127,127,140,0.12)">'
+        +'<div style="display:flex;align-items:center;gap:6px"><span style="font-weight:600;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--text-primary,#1a1a1a)">'+escHtml(p.name)+'</span><span data-del="'+i+'" title="Delete" style="opacity:.55;font-weight:700;padding:0 4px;cursor:pointer">×</span></div>'
+        +'<div style="font-size:10px;color:var(--text-secondary,#666);margin-top:2px">'+p.langs.length+' languages</div>'
+        +'<div style="font-size:10px;color:var(--text-secondary,#666)">native '+fmt(sn)+' · total '+fmt(st)+'</div>'
+        +'</div>';
+    });
+    presetsPanel.innerHTML=html;
+  }
+  function savePreset(){ if(!selected.size)return; let nm=window.prompt('Name this language combination:', 'Combo '+(presets.length+1)); if(nm===null)return; nm=(''+nm).trim()||('Combo '+(presets.length+1)); presets.push({name:nm,langs:[...selected]}); writeStore(); renderPresets(); }
+  presetsPanel.addEventListener('click',e=>{
+    const del=e.target.closest('[data-del]');
+    if(del){ e.stopPropagation(); presets.splice(+del.getAttribute('data-del'),1); writeStore(); renderPresets(); return; }
+    const load=e.target.closest('[data-load]');
+    if(load){ const p=presets[+load.getAttribute('data-load')]; if(!p)return; selected.clear(); p.langs.forEach(l=>selected.add(l)); refresh(); updatePanel(); }
+  });
+  function refresh(){
+    const active=new Set(selected); if(hoverLang) active.add(hoverLang); const any=active.size>0;
+    const msaActive=active.has('Modern Standard Arabic'); const actArr=[...active];
+    function spreadColor(m){
+      const lang=m.userData.lang, iso=m.userData.iso, key=iso+'|'+m.userData.name;
+      if(msaActive && ARABIC.has(lang)) return MSACOL;
+      for(let i=0;i<actArr.length;i++){ const s=L2[actArr[i]]; if(s && (s.has(iso)||s.has(key))) return SPREADCOL[actArr[i]]; }
+      return null;
+    }
+    group.children.forEach(m=>{ const b=m.userData.base, lang=m.userData.lang;
+      if(!any){ m.material.color.copy(b); m.material.emissive.setHex(0x000000); return; }
+      if(active.has(lang)){ m.material.color.copy(b); m.material.emissive.copy(b).multiplyScalar(selected.has(lang)?0.6:0.4); return; }
+      const c=spreadColor(m);
+      if(c){ m.material.color.copy(b).lerp(c,0.35).multiplyScalar(0.65); m.material.emissive.copy(c).multiplyScalar(0.10); }
+      else { m.material.color.copy(b).lerp(DIM,0.9); m.material.emissive.setHex(0x000000); }
+    });
+    for(const k in legItems){ const it=legItems[k], on=active.has(k), halfOn=msaActive&&ARABIC.has(k);
+      it.style.opacity=(!any||on)?'1':(halfOn?'0.62':'0.28'); it.style.fontWeight=selected.has(k)?'700':'400';
+      it.firstChild.style.boxShadow=selected.has(k)?'0 0 0 2px rgba(255,255,255,.6)':'none'; }
+  }
+  function updatePanel(){
+    if(!selected.size){ sel.style.display='none'; return; }
+    sel.style.display='flex'; let sn=0,st=0,chips='';
+    selected.forEach(l=>{ const i=LANGINFO[l]||[0,0]; sn+=i[0]||0; st+=i[1]||0;
+      chips+='<span data-l="'+l+'" style="display:inline-flex;align-items:center;gap:4px;cursor:pointer;background:rgba(127,127,140,0.16);border-radius:11px;padding:1px 6px 1px 5px"><span style="width:9px;height:9px;border-radius:2px;background:'+FULL[l]+'"></span>'+l+'<span style="opacity:.55;font-weight:700">×</span></span>'; });
+    sel.innerHTML='<b>Selected ('+selected.size+'):</b>'+chips+'<span style="margin-left:auto;white-space:nowrap;color:var(--text-secondary,#555)"><b>Σ native:</b> '+fmt(sn)+' &nbsp;·&nbsp; <b>Σ total:</b> '+fmt(st)+'</span><span data-save style="cursor:pointer;padding:2px 9px;border-radius:11px;background:rgba(70,130,80,0.2);color:var(--text-primary,#1a4022);font-weight:700">＋ Save combo</span><span data-clear style="cursor:pointer;opacity:.6;text-decoration:underline">clear</span>';
+  }
+  function toggleSelect(l){ if(selected.has(l))selected.delete(l); else selected.add(l); refresh(); updatePanel(); }
+  function setHover(l){ if(l===hoverLang)return; hoverLang=l; refresh(); }
+  function showTip(lang,x,y){
+    if(!lang){ tip.style.display='none'; return; }
+    const info=LANGINFO[lang]||[null,null];
+    const note = lang==='Modern Standard Arabic'
+      ? '<div style="opacity:.8;margin-top:3px;font-style:italic">Formal/written register — no native speakers; shared across the Arabic-speaking world.</div>'
+      : (L2[lang] ? '<div style="opacity:.8;margin-top:3px;font-style:italic">Dim tint = where it\'s also a widespread second language.</div>' : '');
+    tip.innerHTML='<div style="font-weight:700;font-size:13px;margin-bottom:1px">'+lang+'</div><div style="opacity:.75;margin-bottom:3px">'+(LANG2FAM[lang]||'')+' family</div><div>Native speakers: '+fmt(info[0])+'</div><div>Total speakers: '+fmt(info[1])+'</div>'+note+(selected.has(lang)?'<div style="opacity:.7;margin-top:3px">✓ selected — click to remove</div>':'<div style="opacity:.7;margin-top:3px">click to select</div>');
+    tip.style.display='block'; const tw=tip.offsetWidth,th=tip.offsetHeight; let px=x+15,py=y+15;
+    if(px+tw>window.innerWidth)px=x-tw-15; if(py+th>window.innerHeight)py=y-th-15;
+    tip.style.left=px+'px'; tip.style.top=py+'px';
+  }
+  sel.addEventListener('click',e=>{
+    if(e.target.closest('[data-save]')){ savePreset(); return; }
+    const c=e.target.closest('[data-l]'); if(c){toggleSelect(c.getAttribute('data-l'));return;}
+    if(e.target.closest('[data-clear]')){selected.clear();refresh();updatePanel();}
+  });
+  const raycaster=new THREE.Raycaster(), ndc=new THREE.Vector2();
+  const pickTargets=group.children.concat([ocean]);
+  let drag=false,lx,ly,downX,downY,moved=false;
+  const dom=renderer.domElement;
+  function pick(e){ const r=dom.getBoundingClientRect(); ndc.x=((e.clientX-r.left)/r.width)*2-1; ndc.y=-((e.clientY-r.top)/r.height)*2+1; raycaster.setFromCamera(ndc,camera); const hits=raycaster.intersectObjects(pickTargets,false); if(!hits.length)return null; const o=hits[0].object; return o===ocean?null:(o.userData.lang||null); }
+  dom.addEventListener('pointerdown',e=>{drag=true;moved=false;lx=downX=e.clientX;ly=downY=e.clientY;dom.style.cursor='grabbing';dom.setPointerCapture(e.pointerId);});
+  dom.addEventListener('pointerup',e=>{ drag=false; dom.style.cursor='grab'; if(!moved){ const l=pick(e); if(l) toggleSelect(l); } });
+  dom.addEventListener('pointerleave',()=>{ if(!drag){ setHover(null); showTip(null); } });
+  dom.addEventListener('pointermove',e=>{
+    if(drag){ if(Math.abs(e.clientX-downX)+Math.abs(e.clientY-downY)>4)moved=true; az-=(e.clientX-lx)*0.006; el=Math.max(-1.45,Math.min(1.45,el+(e.clientY-ly)*0.006)); lx=e.clientX;ly=e.clientY; return; }
+    const l=pick(e); if(l){ setHover(l); showTip(l,e.clientX,e.clientY); } else { setHover(null); showTip(null); }
+  });
+  dom.addEventListener('wheel',e=>{ e.preventDefault(); R=Math.max(R0*1.3,Math.min(R0*6,R*(1+e.deltaY*0.0013))); },{passive:false});
+  (function loop(){ upd(); renderer.render(scene,camera); requestAnimationFrame(loop); })();
+  FAMS.forEach(([fam,langs])=>{ const present=langs.filter(l=>langsUsed.has(l)); if(!present.length)return;
+    present.forEach(l=>{ const s=document.createElement('span'); s.style.cssText='display:inline-flex;align-items:center;gap:4px;cursor:pointer;transition:opacity .1s';
+      s.innerHTML='<span style="width:10px;height:10px;border-radius:2px;background:'+FULL[l]+';display:inline-block"></span>'+l; legItems[l]=s;
+      s.addEventListener('mouseenter',ev=>{ setHover(l); showTip(l,ev.clientX,ev.clientY); });
+      s.addEventListener('mousemove',ev=>{ showTip(l,ev.clientX,ev.clientY); });
+      s.addEventListener('mouseleave',()=>{ setHover(null); showTip(null); });
+      s.addEventListener('click',()=>{ toggleSelect(l); });
+      leg.appendChild(s); });
+  });
+  renderPresets();
+}).catch(e=>{ host.innerHTML='<div style="color:var(--text-muted);font-size:12px;padding:20px">Render error: '+e.message+'</div>'; });
+</script>
+</body>
+</html>
