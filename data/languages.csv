@@ -78,39 +78,41 @@ Tamil,Dravidian,76,#AD5486,79,86,,FALSE
 Telugu,Dravidian,79,#FC93AC,83,96,,FALSE
 Kannada,Dravidian,78,#BB7489,44,59,,FALSE
 Malayalam,Dravidian,77,#E79FBC,37,38,,FALSE
-Modern Standard Arabic,Semitic,102,#B0402E,0,300,,FALSE
-Egyptian,Semitic,90,#9B6670,78,100,,TRUE
-Levantine,Semitic,93,#BF7475,40,45,,TRUE
-Mesopotamian,Semitic,94,#E0A6A5,32,35,,TRUE
-Gulf,Semitic,96,#B27C79,12,15,,TRUE
-Najdi,Semitic,95,#924B4A,15,18,,TRUE
-Hijazi,Semitic,97,#D78A85,12,14,,TRUE
-Sanaani,Semitic,100,#FBC1B9,15,15,,TRUE
-Hadrami,Semitic,99,#EE9F9C,5,5,,TRUE
-Omani,Semitic,98,#86544F,3,4,,TRUE
-Hebrew,Semitic,83,#DDA6B7,5,9,,FALSE
-Maltese,Semitic,89,#C7909B,0.5,0.52,,FALSE
-Moroccan Arabic,Semitic,85,#EB9EB3,28,32,,TRUE
-Algerian Arabic,Semitic,86,#BC7387,29,32,,TRUE
-Tunisian Arabic,Semitic,87,#84525F,12,12,,TRUE
-Libyan Arabic,Semitic,88,#F9BFCB,6,6,,TRUE
-Amharic,Semitic,82,#A35F7A,35,60,,FALSE
-Tigrinya,Semitic,81,#FFBAD5,9,9,,FALSE
-Hassaniya Arabic,Semitic,84,#904A58,4,4,,TRUE
-Sudanese Arabic,Semitic,91,#D58896,30,35,,TRUE
-Chadian Arabic,Semitic,92,#A85F67,12,14,,TRUE
-Ta'izzi-Adeni Arabic,Semitic,101,#A86057,11.0,11.0,,TRUE
-Tigre,Semitic,80,#8C4B69,1.1,1.1,,FALSE
+Modern Standard Arabic,Semitic,84,#B0402E,0,300,,FALSE
+Egyptian,Semitic,91,#D5817B,78,100,,TRUE
+Levantine,Semitic,94,#E89485,40,45,,TRUE
+Mesopotamian,Semitic,96,#E09077,32,35,,TRUE
+Gulf/Najdi,Semitic,97,#CD8063,27,33,,TRUE
+Gulf,Semitic,,#CD8063,12,15,Gulf/Najdi,TRUE
+Najdi,Semitic,,#CD8063,15,18,Gulf/Najdi,TRUE
+Hijazi,Semitic,98,#C77764,12,14,,TRUE
+Yemeni,Semitic,100,#B4684E,31,31,,TRUE
+Sanaani,Semitic,,#B4684E,15,15,Yemeni,TRUE
+Hadrami,Semitic,,#B4684E,5,5,Yemeni,TRUE
+Omani,Semitic,102,#C07950,3,4,,TRUE
+Hebrew,Semitic,83,#A55E73,5,9,,FALSE
+Maltese,Semitic,90,#BE737D,0.5,0.52,,FALSE
+Moroccan Arabic,Semitic,86,#DA8BB0,28,32,,TRUE
+Algerian Arabic,Semitic,87,#E390AA,29,32,,TRUE
+Tunisian Arabic,Semitic,88,#EA95A7,12,12,,TRUE
+Libyan Arabic,Semitic,89,#D9848E,6,6,,TRUE
+Amharic,Semitic,82,#D188A4,35,60,,FALSE
+Tigrinya,Semitic,81,#825366,9,9,,FALSE
+Hassaniya Arabic,Semitic,85,#BA729C,4,4,,TRUE
+Sudanese Arabic,Semitic,92,#B5655E,30,35,,TRUE
+Chadian Arabic,Semitic,93,#AF5F67,12,14,,TRUE
+Ta'izzi-Adeni Arabic,Semitic,,#B4684E,11.0,11.0,Yemeni,TRUE
+Tigre,Semitic,80,#E99EB9,1.1,1.1,,FALSE
 Somali,Cushitic,104,#A86246,22,24,,FALSE
 Oromo,Cushitic,105,#D58E69,37,45,,FALSE
 Afar,Cushitic,103,#E0A992,2,2,,FALSE
 Sidamo,Cushitic,106,#FEC2A3,4.0,4.0,,FALSE
 Hausa,Chadic,107,#D7B355,54,80,,FALSE
-Chechen,Caucasian,108,#E77E83,1.6,1.7,,FALSE
-Ingush,Caucasian,109,#FEBEBD,0.5,0.5,,FALSE
-Avar,Caucasian,110,#A03F40,1,1,,FALSE
-Kabardian,Caucasian,111,#CF6A62,1.1,1.2,,FALSE
-Abkhaz,Caucasian,112,#B7554A,0.13,0.19,,FALSE
+Chechen,Caucasian,108,#999999,1.6,1.7,,FALSE
+Ingush,Caucasian,109,#B8B8B8,0.5,0.5,,FALSE
+Avar,Caucasian,110,#828282,1,1,,FALSE
+Kabardian,Caucasian,111,#ADADAD,1.1,1.2,,FALSE
+Abkhaz,Caucasian,112,#868686,0.13,0.19,,FALSE
 Mandarin,Sino-Tibetan,113,#4F9E63,940,1120,,FALSE
 Cantonese,Sino-Tibetan,118,#31A378,85,87,,FALSE
 Wu,Sino-Tibetan,114,#7AB185,82,82,,FALSE
@@ -136,10 +138,10 @@ Nùng,Tai-Kadai,136,#DDD48B,1.1,1.1,,FALSE
 Southern Thai,Tai-Kadai,131,#A78905,4.5,5.0,,FALSE
 Tai Dam,Tai-Kadai,134,#CEB84B,1.5,1.5,,FALSE
 Tày,Tai-Kadai,135,#BFBD52,1.8,1.8,,FALSE
-Vietnamese,Austroasiatic,138,#40857C,85,96,,FALSE
-Khmer,Austroasiatic,140,#7DE7DB,17,18,,FALSE
-Khasi,Austroasiatic,141,#47B5AF,1.4,1.6,,FALSE
-Mường,Austroasiatic,139,#64CCBD,1.5,1.5,,FALSE
+Vietnamese,Austroasiatic,138,#935FA7,85,96,,FALSE
+Khmer,Austroasiatic,140,#DC9DE5,17,18,,FALSE
+Khasi,Austroasiatic,141,#B171B3,1.4,1.6,,FALSE
+Mường,Austroasiatic,139,#C189D2,1.5,1.5,,FALSE
 Malay,Austronesian,154,#B374A4,77,280,,FALSE
 Javanese,Austronesian,162,#F890C7,68,82,,FALSE
 Sundanese,Austronesian,159,#B05088,32,42,,FALSE
@@ -275,13 +277,13 @@ Japanese,Japonic,273,#E07B3C,125,128,,FALSE
 Korean,Koreanic,274,#C85B7C,80,82,,FALSE
 Mongolian,Mongolic,275,#907333,6,6,,FALSE
 Kalmyk,Mongolic,276,#BC9D5E,0.4,0.4,,FALSE
-Quechua,Quechuan,277,#CB80DA,8,9,,FALSE
-Aymara,Aymaran,278,#CF7FD6,1.7,2,,FALSE
-Guarani,Tupian,279,#D37DD0,6.5,6.5,,FALSE
-Inuktitut,Eskimo-Aleut,281,#D69AFD,0.04,0.04,,FALSE
-Greenlandic,Eskimo-Aleut,280,#BD85E8,0.056,0.057,,FALSE
+Quechua,Quechuan,277,#9A9A9A,8,9,,FALSE
+Aymara,Aymaran,278,#BABABA,1.7,2,,FALSE
+Guarani,Tupian,279,#A6A6A6,6.5,6.5,,FALSE
+Inuktitut,Eskimo-Aleut,281,#A8A8A8,0.04,0.04,,FALSE
+Greenlandic,Eskimo-Aleut,280,#B6B6B6,0.056,0.057,,FALSE
 Armenian,Other,282,#C3A9DD,6.7,7,,FALSE
-Georgian,Other,283,#8B8F59,3.7,4,,FALSE
+Georgian,Other,283,#A3A3A3,3.7,4,,FALSE
 Dari,Iranian,,#76A4DF,20,30,Persian,FALSE
 Tajik,Iranian,,#76A4DF,8,8.5,Persian,FALSE
 Gilaki,Iranian,18,#A7D8FE,2.4,2.4,,FALSE
@@ -299,6 +301,6 @@ Romani,Indo-Aryan,71,#49AFD7,3.5,3.5,,FALSE
 Kabyle,Berber,298,#EA8407,5.0,5.5,,FALSE
 Tachelhit,Berber,299,#FC9E39,5.0,5.0,,FALSE
 Tamasheq,Berber,300,#BE7C0C,1.2,1.2,,FALSE
-Hmong,Hmong-Mien,301,#CE6D9E,4.0,4.0,,FALSE
-K'iche',Mayan,302,#9858B3,1.1,1.1,,FALSE
-Q'eqchi',Mayan,303,#C781DF,1.4,1.4,,FALSE
+Hmong,Hmong-Mien,301,#A0A0A0,4.0,4.0,,FALSE
+K'iche',Mayan,302,#959595,1.1,1.1,,FALSE
+Q'eqchi',Mayan,303,#B4B4B4,1.4,1.4,,FALSE

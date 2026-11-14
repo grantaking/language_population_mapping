@@ -28,11 +28,13 @@ A language appears in the legend only if some region uses it or it has rows in `
 
 `tools/recolor.py` sets the colors from a language family tree:
 
-- **Hue follows the family tree.** Each family has its own hue band. Its languages are laid out branch by branch along the band, with wider gaps between higher-level branches, so close relatives get close hues. Some families get a distinct band so they read as one group: Niger-Congo greens, Nilo-Saharan indigo, Berber orange (set well apart from the Semitic rose), and one orchid band shared by all the indigenous languages of the Americas (Quechuan, Aymaran, Tupian, Mayan, Eskimo-Aleut).
+- **Hue follows the family tree.** Each family has its own hue band. Its languages are laid out branch by branch along the band, with wider gaps between higher-level branches, so close relatives get close hues. Some families get a distinct band so they read as one group: Niger-Congo greens, Nilo-Saharan indigo, Berber orange (set well apart from the Semitic rose) and Austroasiatic orchid (set apart from the Sino-Tibetan greens).
+- **Arabic varieties shade into each other.** They share one narrow rose band. Hue follows the longitude and lightness the latitude of where each variety is mostly spoken, so neighbours differ only slightly and the colors run in a gradient (Moroccan, Algerian, Tunisian, Libyan, Egyptian, and on east to Omani). Modern Standard Arabic keeps its darker red.
 - **Lightness and saturation keep neighbours apart.** Within its hue, each language gets the lightness and saturation that make it easiest to tell apart from the languages it borders on the map (`tools/language_adjacency.js` finds the borders). Large languages avoid the lightest and darkest shades.
-- **Kept as they were:** the European families (Romance, Germanic, Slavic, Baltic, Greek, Albanian, Uralic), Armenian, Georgian, Japanese, Korean, Mandarin, Modern Standard Arabic and Hmong. Basque, the only minor isolate on the map, is grey.
+- **Kept as they were:** the European families (Romance, Germanic, Slavic, Baltic, Greek, Albanian, Uralic), Armenian, Japanese, Korean, Mandarin and Modern Standard Arabic.
+- **Grey:** Basque, the Caucasian languages, Georgian, Hmong and the indigenous languages of the Americas. Bordering grey languages get different shades.
 
-To recolor after adding a language, give it a place in the tree in `tools/recolor.py` and run `node tools/language_adjacency.js` then `python3 tools/recolor.py` from the folder that contains `data/`. Or just type a color into this column by hand.
+To recolor after adding a language, give it a place in the tree in `tools/recolor.py` and run `node tools/language_adjacency.js` then `python3 tools/recolor.py` from the folder that contains `data/`. To recolor only some families and leave the rest as they are, name them: `python3 tools/recolor.py Semitic Austroasiatic`. Or just type a color into this column by hand.
 
 ## countries.csv
 
@@ -88,6 +90,7 @@ The main results of the check:
 - **Census corrections.** Examples: Islamabad is Punjabi (2023 census), Limpopo is Sepedi (2022 census), Lakshadweep is Malayalam, Taiwan is Mandarin except six Hokkien-leaning counties (2020 census), and Singapore is English (2020 census).
 - **Ukraine.** Russian is shown only in the oblasts that Russia controls for the most part: Crimea, Sevastopol, Luhansk, Donetsk, Zaporizhzhia and Kherson (control from ukraine-war-analytics.com, February 2026). Every other oblast is Ukrainian. The Russian glow still covers the whole country as a second language.
 - **Kosovo** is drawn as its own territory (Albanian; 2024 census population).
+- **Peninsular Arabic** is grouped into four varieties: Gulf/Najdi (Gulf and Najdi), Hijazi, Omani and Yemeni (Sanaani, Ta'izzi-Adeni and Hadrami). The original rows stay in `languages.csv` with `merge_into`, so they can be split back out.
 - **Known limits.**
   - The Philippines, Laos and parts of Indonesia keep their earlier assignments, because no newer province-level data was found.
   - The map's Callao shape also covers part of Puno, so it carries a single language.
@@ -107,6 +110,8 @@ One row per second-language glow zone.
 | `region` | Blank = the whole country glows. Filled = only that region (name must match `regions.csv` exactly). |
 
 Regions where the language is already the plurality language show the full highlight instead of the glow, so a whole-country row is safe even when the language is native in part of that country.
+
+Modern Standard Arabic glows across every Arab League member on the map, plus Western Sahara, so it also covers the Berber, Kurdish and other non-Arabic regions of those countries. Somaliland, which is drawn separately from Somalia and is not a member, is left out.
 
 ## population_by_year.csv
 

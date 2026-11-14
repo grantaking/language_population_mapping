@@ -2,7 +2,8 @@
 Hue: each family gets its own hue band; leaves are laid out depth-first along the band, with wider gaps between
 higher-level branches, so closer relatives get closer hues. Lightness and chroma: chosen per language so that languages
 whose regions border each other on the map are easy to tell apart (adjacency from color/adjacency.js).
-European families, Japanese and Korean keep their colors; non-major isolates are grey."""
+European families, Japanese and Korean keep their colors. Minor isolates, the Caucasian languages, Georgian, Hmong and the
+indigenous languages of the Americas are shades of grey. Arabic varieties form a smooth gradient by geography (see ARABIC)."""
 import csv, json, math, random, sys, collections
 # ---- OKLab / OKLCH helpers ----
 def srgb2lin(c): c/=255; return c/12.92 if c<=0.04045 else ((c+0.055)/1.055)**2.4
@@ -29,18 +30,28 @@ def dE(h1,h2):
 # ----
 S = 'data/languages.csv'   # run from the folder that contains data/
 KEEP_FAM = {'Slavic', 'Germanic', 'Romance', 'Baltic', 'Hellenic', 'Albanian', 'Uralic', 'Japonic', 'Koreanic', 'Other'}
-KEEP_LANG = {'Mandarin', 'Modern Standard Arabic', 'Hmong'}
-GREY = {'Basque': '#9C9C9C'}
+KEEP_LANG = {'Mandarin', 'Modern Standard Arabic'}
+# greys: bordering pairs get different shades
+GREY = {'Basque': '#9C9C9C', 'Georgian': '#A3A3A3', 'Abkhaz': '#868686', 'Chechen': '#999999', 'Ingush': '#B8B8B8', 'Avar': '#828282',
+        'Kabardian': '#ADADAD', 'Hmong': '#A0A0A0', 'Quechua': '#9A9A9A', 'Aymara': '#BABABA', 'Guarani': '#A6A6A6',
+        "K'iche'": '#959595', "Q'eqchi'": '#B4B4B4', 'Inuktitut': '#A8A8A8', 'Greenlandic': '#B6B6B6'}
+# Arabic varieties: one rose band; hue follows longitude and lightness follows latitude of where each is mostly spoken,
+# so neighbouring varieties shade into each other (Moroccan -> Algerian -> Tunisian -> Libyan -> Egyptian ...)
+ARABIC = {'Hassaniya Arabic': (-12, 21), 'Moroccan Arabic': (-6, 32), 'Algerian Arabic': (3, 34), 'Tunisian Arabic': (10, 36),
+          'Libyan Arabic': (17, 29), 'Egyptian': (30, 27), 'Chadian Arabic': (19, 13), 'Sudanese Arabic': (31, 15),
+          'Levantine': (36, 34.5), 'Mesopotamian': (44, 32), 'Hijazi': (40, 22), 'Gulf/Najdi': (47, 25), 'Yemeni': (46, 15), 'Omani': (57, 21)}
+def arabic_color(lon, lat):
+    t = (lon + 12) / 69; u = (lat - 13) / 23   # west -> east: pink-rose -> clay; south -> north: darker -> lighter
+    return oklch2hex(0.58 + 0.18 * u, 0.105, 345 + 65 * t)
 # family: (hue start, hue end, chroma, tree)   hues are OKLCH degrees
 T = {
  'Semitic': (356, 384, 0.095, [
     ['Tigre', 'Tigrinya', 'Amharic'],                                   # Ethiosemitic
     ['Hebrew'],                                                         # Northwest Semitic
-    [['Hassaniya Arabic', 'Moroccan Arabic', 'Algerian Arabic', 'Tunisian Arabic', 'Libyan Arabic', 'Maltese'],   # Arabic: Maghrebi
+    [['Modern Standard Arabic'], ['Hassaniya Arabic', 'Moroccan Arabic', 'Algerian Arabic', 'Tunisian Arabic', 'Libyan Arabic', 'Maltese'],   # Arabic: Maghrebi
      ['Egyptian', 'Sudanese Arabic', 'Chadian Arabic'],
      ['Levantine'], ['Mesopotamian'],
-     ['Najdi', 'Gulf', 'Hijazi', 'Omani', 'Hadrami', 'Sanaani', "Ta'izzi-Adeni Arabic"]]]),
- 'Caucasian': (18, 28, 0.13, [['Chechen', 'Ingush', 'Avar'], ['Kabardian', 'Abkhaz']]),
+     ['Gulf/Najdi', 'Hijazi', 'Yemeni', 'Omani']]]),
  'Cushitic': (40, 48, 0.10, [['Afar', 'Somali', 'Oromo'], ['Sidamo']]),
  'Turkic': (52, 78, 0.075, [['Chuvash'], ['Turkish', 'Gagauz', 'Azerbaijani', 'Turkmen'],
     [['Tatar', 'Bashkir'], ['Karachay'], ['Kazakh', 'Karakalpak'], ['Kyrgyz']], ['Uzbek', 'Uyghur'], ['Yakut', 'Tuvan']]),
@@ -63,18 +74,12 @@ T = {
      ['Tswana', 'Sotho', 'Northern Sotho', 'Lozi'], ['Zulu', 'Xhosa', 'Swazi', 'Ndebele'], ['Tsonga', 'Tswa']]]),
  'Sino-Tibetan': (152, 175, 0.12, [['Mandarin', 'Wu', 'Gan', 'Xiang', 'Min', 'Cantonese'],
     [['Tibetan', 'Dzongkha'], ['Burmese'], ['Karen'], ['Mizo', 'Chin'], ['Meitei'], ['Angami', 'Konyak'], ['Nyishi']]]),
- 'Austroasiatic': (180, 190, 0.10, [['Vietnamese', 'Mường'], ['Khmer'], ['Khasi']]),
+ 'Austroasiatic': (316, 326, 0.12, [['Vietnamese', 'Mường'], ['Khmer'], ['Khasi']]),
  'Indo-Aryan': (195, 238, 0.11, [['Kashmiri', 'Shina'], ['Punjabi', 'Sindhi'], ['Gujarati'], ['Marathi', 'Konkani'], ['Sinhala'],
     ['Hindustani', 'Romani'], ['Nepali'], ['Maithili', 'Oriya', 'Bengali', 'Assamese']]),
  'Iranian': (242, 264, 0.10, [[['Kurdish', 'Balochi', 'Gilaki', 'Mazandarani'], ['Persian', 'Luri']], ['Pashto', 'Pamiri', 'Ossetian']]),
  'Nilo-Saharan': (268, 284, 0.15, [['Songhay', 'Zarma'], ['Kanuri'], ['Berta'], ['Sara', 'Lugbara', "Ma'di"],
     [['Dinka', 'Nuer', 'Luo', 'Acholi', 'Lango', 'Alur', 'Adhola'], ['Karamojong', 'Teso', 'Kakwa'], ['Kalenjin']]]),
- # Amerindian: one orchid band for all indigenous American families
- 'Eskimo-Aleut': (309, 311, 0.15, [['Greenlandic', 'Inuktitut']]),
- 'Mayan': (315, 317, 0.15, [["K'iche'", "Q'eqchi'"]]),
- 'Quechuan': (321, 321, 0.15, [['Quechua']]),
- 'Aymaran': (324, 324, 0.15, [['Aymara']]),
- 'Tupian': (328, 328, 0.15, [['Guarani']]),
  'Austronesian': (333, 349, 0.14, [
     [['Ilocano', 'Pangasinan'], ['Kapampangan'], ['Tagalog', 'Bikol', 'Cebuano', 'Hiligaynon', 'Waray', 'Tausug'], ['Maguindanao', 'Maranao'], ['Gorontalo']],
     [['Malay', 'Minangkabau', 'Banjar', 'Iban'], ['Acehnese'], ['Sundanese'], ['Balinese', 'Sasak'], ['Javanese'], ['Batak'], ['Buginese'], ['Malagasy']],
@@ -97,7 +102,7 @@ for fam, (h0, h1, c, tree) in T.items():
 
 rows = list(csv.DictReader(open(S, encoding='utf-8-sig'))); cols = list(rows[0].keys())
 byname = {r['language']: r for r in rows}
-free = [r['language'] for r in rows if not r['merge_into'] and r['family'] not in KEEP_FAM and r['language'] not in KEEP_LANG and r['language'] not in GREY]
+free = [r['language'] for r in rows if not r['merge_into'] and r['family'] not in KEEP_FAM and r['language'] not in KEEP_LANG and r['language'] not in GREY and r['language'] not in ARABIC]
 missing = [n for n in free if n not in hue]
 if missing: sys.exit('no tree position for: ' + ', '.join(missing))
 extra = [n for n in hue if n not in byname]
@@ -105,7 +110,12 @@ if extra: print('in tree but not in languages.csv:', extra)
 chroma = {n: T[fam_of[n]][2] for n in hue}
 color = {r['language']: r['color'] for r in rows if not r['merge_into']}
 for n, h in GREY.items(): color[n] = h
+for n, (lon, lat) in ARABIC.items(): color[n] = arabic_color(lon, lat)
 
+# optional: keep the current colors of every family not listed in RECOLOR (so a partial recolor leaves the rest alone)
+RECOLOR = set(sys.argv[1:])
+if RECOLOR:
+    free = [n for n in free if fam_of[n] in RECOLOR]
 A = json.load(open('tools/language_adjacency.json'))
 used = set(A['used'])
 pairs = []

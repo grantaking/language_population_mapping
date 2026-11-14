@@ -260,6 +260,9 @@ Amharic,2050,56.5,96.8,scaled,Projected by scaling the current figure with UN WP
 Hebrew,1980,1.94,3.49,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
 Hebrew,2000,3.19,5.74,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
 Hebrew,2050,6.78,12.2,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Modern Standard Arabic,1980,0,97.8,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Modern Standard Arabic,2000,0,169,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Modern Standard Arabic,2050,0,418,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
 Hassaniya Arabic,1980,1.05,1.05,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
 Hassaniya Arabic,2000,1.9,1.9,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
 Hassaniya Arabic,2050,6.67,6.67,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
@@ -293,30 +296,18 @@ Levantine,2050,55.5,62.5,scaled,Projected by scaling the current figure with UN 
 Mesopotamian,1980,9.22,10.1,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
 Mesopotamian,2000,16.6,18.2,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
 Mesopotamian,2050,47.6,52.1,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
-Najdi,1980,2.63,3.16,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
-Najdi,2000,7.02,8.43,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
-Najdi,2050,20.3,24.3,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
-Gulf,1980,1.87,2.34,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
-Gulf,2000,4.22,5.28,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
-Gulf,2050,15.7,19.7,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Gulf/Najdi,1980,4.38,5.35,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Gulf/Najdi,2000,10.5,12.8,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Gulf/Najdi,2050,35.7,43.7,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
 Hijazi,1980,2.11,2.46,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
 Hijazi,2000,5.62,6.56,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
 Hijazi,2050,16.2,18.9,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Yemeni,1980,6.83,6.83,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Yemeni,2000,14.2,14.2,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Yemeni,2050,50.5,50.5,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
 Omani,1980,0.536,0.715,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
 Omani,2000,1.2,1.6,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
 Omani,2050,4.11,5.48,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
-Hadrami,1980,1.11,1.11,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
-Hadrami,2000,2.29,2.29,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
-Hadrami,2050,8.22,8.22,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
-Sanaani,1980,3.28,3.28,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
-Sanaani,2000,6.88,6.88,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
-Sanaani,2050,24.3,24.3,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
-Ta'izzi-Adeni Arabic,1980,2.45,2.45,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
-Ta'izzi-Adeni Arabic,2000,5.03,5.03,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
-Ta'izzi-Adeni Arabic,2050,18.1,18.1,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
-Modern Standard Arabic,1980,0,97.1,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
-Modern Standard Arabic,2000,0,168,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
-Modern Standard Arabic,2050,0,419,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
 Afar,1980,0.529,0.529,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
 Afar,2000,1.02,1.02,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
 Afar,2050,3.15,3.15,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
