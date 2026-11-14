@@ -2,7 +2,7 @@
 
 `index.html` reads these CSV files when the page loads. Edit a file, commit it, and the live map picks up the change on the next GitHub Pages deploy. Nothing in `index.html` needs to change.
 
-The first four files describe the map as it is now ("Current"). The last two drive the **Population year** switch (1980, 2000, 2050); if either is missing, the switch is hidden and the map works as before.
+The first four files describe the map as it is now ("Current"). `population_by_year.csv` and `speakers_by_year.csv` drive the **Population year** switch (1980, 2000, 2050); if either is missing, the switch is hidden and the map works as before. `gdp_by_year.csv` and `world_by_year.csv` add GDP and world shares to the selection panel; if they are missing, those figures are left out.
 
 All files are UTF-8. If you edit them in Excel, save with **File > Save As > CSV UTF-8**, otherwise accented region names (Québec, Bayan-Ölgiy, Đông Bắc) get mangled and stop matching the map. Spreadsheet apps that add or drop the byte-order mark are fine; the page handles both.
 
@@ -117,6 +117,47 @@ To regenerate (needs Node.js):
 cd tools && npm install && cd ..
 node tools/build_speakers_by_year.js
 ```
+
+## gdp_by_year.csv
+
+Country GDP for each year the map shows. One row per country and year.
+
+| column | meaning |
+|---|---|
+| `iso3` | Country code from `countries.csv`. |
+| `year` | 1980, 2000, 2026 (used for "Current") or 2050. |
+| `gdp_billion_usd` | GDP in billions of US dollars at purchasing power parity, constant 2017 prices, so every year is on the same scale. |
+| `source` | Where the figure comes from and how any gap was filled. |
+
+Sources and method:
+
+- **Main series:** OECD ENV-Growth 2025, published in the IIASA Shared Socioeconomic Pathways (SSP) database v3.2. It gives historical estimates to 2025 and projections after that.
+- **2026:** the 2025 estimate moved forward one year at the SSP2 growth rate for 2025 to 2030.
+- **2050:** the SSP2 ("middle of the road") projection.
+- **Gaps in 1980 and 2000** (mostly former Soviet, Yugoslav and Czechoslovak states, plus a few countries whose series start later): the earliest OECD value is carried back with Maddison Project Database 2023 real GDP growth. Where Maddison has no data, GDP per person is held constant and scaled by IIASA population.
+- **Somaliland:** the sources report Somalia as a whole, so Somalia's GDP is split between the two by current population.
+- **Greenland** has no figure in these sources and is left out of the GDP sums.
+
+**Regional GDP** is not stored. The page splits each country's GDP among its regions by population (`regions.csv`), using the same regional pattern for every year.
+
+**Language GDP** in the selection panel and tooltips:
+
+- **Plurality-region GDP:** GDP of the regions where a selected language is the plurality language.
+- **Lingua franca GDP:** GDP of the regions where a selected language has a second-language glow (`second_language.csv`, plus every Arabic-dialect region for Modern Standard Arabic) and no selected language is the plurality.
+
+Each region is counted once, so the two figures can be added. Shares are out of the world total in `world_by_year.csv`.
+
+## world_by_year.csv
+
+The denominators for the shares shown in the selection panel.
+
+| column | meaning |
+|---|---|
+| `year` | 1980, 2000, 2026, 2050. |
+| `population_thousands` | World population, UN World Population Prospects 2024 (medium variant for 2026 and 2050). |
+| `gdp_billion_usd` | World GDP: the sum of every economy in the GDP series, including ones not drawn on the map. Same units as `gdp_by_year.csv`. |
+
+The share of total speakers can be overstated, because people who speak several languages are counted once for each language.
 
 ## tools/census_anchors.csv
 

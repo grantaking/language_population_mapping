@@ -1,0 +1,713 @@
+﻿iso3,year,gdp_billion_usd,source
+tur,1980,411.812,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+tur,2000,975.657,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+tur,2026,3244.222,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+tur,2050,6126.960,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+irn,1980,423.265,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+irn,2000,722.702,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+irn,2026,1505.308,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+irn,2050,2317.340,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+uzb,1980,63.821,OECD ENV-Growth 1990 value carried back to 1980 with Maddison Project 2023 real GDP growth
+uzb,2000,73.409,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+uzb,2026,356.357,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+uzb,2050,950.704,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+tjk,1980,19.459,OECD ENV-Growth 1990 value carried back to 1980 with Maddison Project 2023 real GDP growth
+tjk,2000,8.397,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+tjk,2026,50.228,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+tjk,2050,139.044,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+afg,1980,19.935,OECD ENV-Growth 2005 value carried back to 1980 with Maddison Project 2023 real GDP growth
+afg,2000,14.673,OECD ENV-Growth 2005 value carried back to 2000 with Maddison Project 2023 real GDP growth
+afg,2026,71.594,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+afg,2050,456.046,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+kaz,1980,201.256,OECD ENV-Growth 1990 value carried back to 1980 with Maddison Project 2023 real GDP growth
+kaz,2000,153.405,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+kaz,2026,598.440,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+kaz,2050,1024.200,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+kgz,1980,19.070,OECD ENV-Growth 1990 value carried back to 1980 with Maddison Project 2023 real GDP growth
+kgz,2000,15.199,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+kgz,2026,41.084,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+kgz,2050,98.793,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+tkm,1980,24.353,OECD ENV-Growth 1990 value carried back to 1980 with Maddison Project 2023 real GDP growth
+tkm,2000,20.472,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+tkm,2026,109.506,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+tkm,2050,175.616,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+aze,1980,45.410,OECD ENV-Growth 1990 value carried back to 1980 with Maddison Project 2023 real GDP growth
+aze,2000,33.638,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+aze,2026,169.063,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+aze,2050,276.131,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+geo,1980,43.373,OECD ENV-Growth 1990 value carried back to 1980 with Maddison Project 2023 real GDP growth
+geo,2000,20.064,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+geo,2026,78.052,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+geo,2050,163.996,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+arm,1980,16.248,OECD ENV-Growth 1990 value carried back to 1980 with Maddison Project 2023 real GDP growth
+arm,2000,12.224,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+arm,2026,54.818,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+arm,2050,109.199,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+chn,1980,651.322,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+chn,2000,4358.260,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+chn,2026,30583.611,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+chn,2050,53179.400,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+pak,1980,188.305,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+pak,2000,524.259,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+pak,2026,1427.221,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+pak,2050,4661.670,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+ind,1980,897.754,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+ind,2000,2681.940,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+ind,2026,12498.281,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+ind,2050,34022.900,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+irq,1980,249.037,OECD ENV-Growth 1990 value carried back to 1980 with Maddison Project 2023 real GDP growth
+irq,2000,85.458,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+irq,2026,459.024,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+irq,2050,1821.180,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+syr,1980,18.919,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+syr,2000,71.299,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+syr,2026,66.521,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+syr,2050,214.713,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+jor,1980,23.239,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+jor,2000,44.221,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+jor,2026,117.618,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+jor,2050,266.641,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+lbn,1980,48.434,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+lbn,2000,56.326,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+lbn,2026,71.469,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+lbn,2050,135.694,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+isr,1980,77.825,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+isr,2000,191.787,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+isr,2026,478.088,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+isr,2050,972.422,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+egy,1980,216.864,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+egy,2000,551.319,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+egy,2026,1702.798,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+egy,2050,5804.680,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+sau,1980,591.463,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+sau,2000,719.688,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+sau,2026,2041.768,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+sau,2050,3821.660,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+yem,1980,29.486,OECD ENV-Growth 1990 value carried back to 1980 with Maddison Project 2023 real GDP growth
+yem,2000,69.019,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+yem,2026,65.964,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+yem,2050,260.447,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+omn,1980,23.529,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+omn,2000,85.025,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+omn,2026,178.600,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+omn,2050,347.202,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+are,1980,169.912,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+are,2000,317.069,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+are,2026,826.870,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+are,2050,1464.830,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+qat,1980,34.442,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+qat,2000,51.316,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+qat,2026,294.224,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+qat,2050,451.560,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+bhr,1980,15.867,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+bhr,2000,32.833,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+bhr,2026,86.153,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+bhr,2050,145.813,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+kwt,1980,83.319,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+kwt,2000,112.452,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+kwt,2026,231.607,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+kwt,2050,394.718,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+bgd,1980,138.127,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+bgd,2000,312.734,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+bgd,2026,1467.905,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+bgd,2050,4644.590,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+npl,1980,19.031,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+npl,2000,49.242,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+npl,2026,143.089,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+npl,2050,430.796,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+btn,1980,0.548,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+btn,2000,2.286,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+btn,2026,10.033,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+btn,2050,20.293,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+lka,1980,42.845,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+lka,2000,116.308,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+lka,2026,282.272,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+lka,2050,546.046,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+rus,1980,3082.669,OECD ENV-Growth 1990 value carried back to 1980 with Maddison Project 2023 real GDP growth
+rus,2000,2109.240,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+rus,2026,4222.538,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+rus,2050,6275.870,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+blr,1980,70.889,OECD ENV-Growth 1990 value carried back to 1980 with Maddison Project 2023 real GDP growth
+blr,2000,80.496,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+blr,2026,185.627,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+blr,2050,239.037,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+ukr,1980,728.404,OECD ENV-Growth 1990 value carried back to 1980 with Maddison Project 2023 real GDP growth
+ukr,2000,355.035,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+ukr,2026,445.556,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+ukr,2050,971.928,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+jpn,1980,2543.260,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+jpn,2000,4607.320,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+jpn,2026,5461.806,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+jpn,2050,6518.540,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+prk,1980,32.632,OECD ENV-Growth 2020 value carried back to 1980 assuming constant GDP per person (IIASA population)
+prk,2000,43.927,OECD ENV-Growth 2020 value carried back to 2000 with Maddison Project 2023 real GDP growth
+prk,2026,62.015,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+prk,2050,214.730,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+kor,1980,214.062,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+kor,2000,1079.470,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+kor,2026,2537.271,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+kor,2050,3196.460,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+mng,1980,6.625,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+mng,2000,11.058,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+mng,2026,48.582,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+mng,2050,110.563,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+twn,1980,147.879,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+twn,2000,621.718,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+twn,2026,1490.232,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+twn,2050,1626.870,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+mmr,1980,20.699,OECD ENV-Growth 1990 value carried back to 1980 with Maddison Project 2023 real GDP growth
+mmr,2000,51.516,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+mmr,2026,246.374,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+mmr,2050,527.418,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+tha,1980,185.454,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+tha,2000,617.542,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+tha,2026,1413.210,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+tha,2050,2377.920,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+lao,1980,4.900,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+lao,2000,15.183,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+lao,2026,68.628,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+lao,2050,179.808,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+khm,1980,6.355,OECD ENV-Growth 1990 value carried back to 1980 with Maddison Project 2023 real GDP growth
+khm,2000,17.941,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+khm,2026,96.448,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+khm,2050,344.863,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+vnm,1980,77.864,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+vnm,2000,285.756,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+vnm,2026,1415.900,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+vnm,2050,3929.580,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+mys,1980,104.234,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+mys,2000,370.381,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+mys,2026,1133.904,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+mys,2050,2111.320,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+idn,1980,429.326,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+idn,2000,1200.640,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+idn,2026,4144.240,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+idn,2050,8940.650,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+phl,1980,220.445,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+phl,2000,347.356,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+phl,2026,1248.105,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+phl,2050,3654.480,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+brn,1980,15.553,OECD ENV-Growth 1985 value carried back to 1980 assuming constant GDP per person (IIASA population)
+brn,2000,22.996,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+brn,2026,28.687,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+brn,2050,42.761,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+tls,1980,1.488,OECD ENV-Growth 2000 value carried back to 1980 assuming constant GDP per person (IIASA population)
+tls,2000,2.034,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+tls,2026,4.319,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+tls,2050,12.736,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+sgp,1980,54.025,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+sgp,2000,225.397,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+sgp,2026,660.496,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+sgp,2050,881.886,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+alb,1980,14.850,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+alb,2000,18.655,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+alb,2026,50.522,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+alb,2050,86.926,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+aut,1980,243.538,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+aut,2000,371.254,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+aut,2026,524.057,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+aut,2050,718.406,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+bel,1980,310.483,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+bel,2000,441.068,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+bel,2026,659.169,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+bel,2050,876.962,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+bih,1980,24.346,OECD ENV-Growth 1995 value carried back to 1980 with Maddison Project 2023 real GDP growth
+bih,2000,27.883,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+bih,2026,60.735,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+bih,2050,87.409,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+bgr,1980,113.902,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+bgr,2000,86.092,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+bgr,2026,193.130,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+bgr,2050,293.214,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+hrv,1980,94.419,OECD ENV-Growth 1995 value carried back to 1980 with Maddison Project 2023 real GDP growth
+hrv,2000,81.845,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+hrv,2026,145.405,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+hrv,2050,192.643,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+cyp,1980,7.867,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+cyp,2000,22.874,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+cyp,2026,44.140,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+cyp,2050,75.375,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+cze,1980,251.567,OECD ENV-Growth 1990 value carried back to 1980 with Maddison Project 2023 real GDP growth
+cze,2000,256.286,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+cze,2026,460.337,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+cze,2050,626.963,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+dnk,1980,175.998,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+dnk,2000,261.145,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+dnk,2026,372.885,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+dnk,2050,502.470,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+est,1980,23.388,OECD ENV-Growth 1995 value carried back to 1980 with Maddison Project 2023 real GDP growth
+est,2000,24.815,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+est,2026,52.936,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+est,2050,76.253,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+fin,1980,128.896,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+fin,2000,206.496,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+fin,2026,286.015,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+fin,2050,377.964,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+fra,1980,1631.180,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+fra,2000,2422.940,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+fra,2026,3257.364,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+fra,2050,4434.160,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+deu,1980,2489.260,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+deu,2000,3529.540,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+deu,2026,4642.703,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+deu,2050,6027.310,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+grc,1980,244.003,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+grc,2000,314.820,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+grc,2026,363.025,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+grc,2050,528.070,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+hun,1980,177.371,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+hun,2000,198.162,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+hun,2026,365.778,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+hun,2050,525.997,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+isl,1980,7.189,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+isl,2000,11.680,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+isl,2026,23.870,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+isl,2050,39.233,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+irl,1980,68.443,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+irl,2000,184.153,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+irl,2026,612.382,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+irl,2050,1075.280,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+ita,1980,1786.880,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+ita,2000,2455.660,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+ita,2026,2705.419,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+ita,2050,3528.720,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+lva,1980,40.839,OECD ENV-Growth 1995 value carried back to 1980 with Maddison Project 2023 real GDP growth
+lva,2000,30.754,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+lva,2026,66.002,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+lva,2050,83.321,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+ltu,1980,61.653,OECD ENV-Growth 1995 value carried back to 1980 with Maddison Project 2023 real GDP growth
+ltu,2000,48.456,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+ltu,2026,121.175,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+ltu,2050,149.098,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+lux,1980,17.563,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+lux,2000,43.435,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+lux,2026,82.046,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+lux,2050,110.173,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+mlt,1980,4.944,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+mlt,2000,10.894,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+mlt,2026,30.114,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+mlt,2050,49.282,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+mda,1980,38.763,OECD ENV-Growth 1995 value carried back to 1980 with Maddison Project 2023 real GDP growth
+mda,2000,14.667,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+mda,2026,39.642,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+mda,2050,80.125,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+mne,1980,8.941,OECD ENV-Growth 2000 value carried back to 1980 with Maddison Project 2023 real GDP growth
+mne,2000,7.525,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+mne,2026,15.686,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+mne,2050,23.949,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+nld,1980,461.887,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+nld,2000,755.723,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+nld,2026,1087.997,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+nld,2050,1473.770,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+mkd,1980,23.598,OECD ENV-Growth 1990 value carried back to 1980 with Maddison Project 2023 real GDP growth
+mkd,2000,20.639,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+mkd,2026,39.771,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+mkd,2050,71.117,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+nor,1980,145.232,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+nor,2000,258.117,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+nor,2026,388.027,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+nor,2050,562.701,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+pol,1980,448.556,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+pol,2000,622.421,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+pol,2026,1520.220,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+pol,2050,2289.630,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+prt,1980,179.166,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+prt,2000,312.635,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+prt,2026,400.657,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+prt,2050,592.039,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+rou,1980,322.235,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+rou,2000,273.264,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+rou,2026,687.318,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+rou,2050,962.158,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+srb,1980,118.454,OECD ENV-Growth 1995 value carried back to 1980 with Maddison Project 2023 real GDP growth
+srb,2000,66.942,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+srb,2026,158.152,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+srb,2050,295.459,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+svk,1980,63.133,OECD ENV-Growth 1995 value carried back to 1980 assuming constant GDP per person (IIASA population)
+svk,2000,84.423,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+svk,2026,193.821,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+svk,2050,286.412,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+svn,1980,50.612,OECD ENV-Growth 1990 value carried back to 1980 with Maddison Project 2023 real GDP growth
+svn,2000,52.262,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+svn,2026,93.970,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+svn,2050,129.930,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+esp,1980,858.517,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+esp,2000,1410.020,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+esp,2026,2063.715,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+esp,2050,3088.610,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+swe,1980,243.714,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+swe,2000,360.356,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+swe,2026,611.874,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+swe,2050,919.900,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+che,1980,312.055,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+che,2000,425.254,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+che,2026,661.412,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+che,2050,832.097,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+gbr,1980,1410.420,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+gbr,2000,2275.890,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+gbr,2026,3319.131,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+gbr,2050,5200.750,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+mar,1980,71.277,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+mar,2000,137.682,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+mar,2026,348.109,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+mar,2050,778.583,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+dza,1980,168.229,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+dza,2000,265.913,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+dza,2026,553.492,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+dza,2050,949.780,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+tun,1980,34.625,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+tun,2000,79.750,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+tun,2026,144.708,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+tun,2050,281.555,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+lby,1980,231.104,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+lby,2000,142.053,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+lby,2026,160.760,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+lby,2050,315.629,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+can,1980,785.093,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+can,2000,1268.510,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+can,2026,2023.216,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+can,2050,3285.670,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+usa,1980,7457.370,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+usa,2000,14095.800,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+usa,2026,23507.457,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+usa,2050,32883.500,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+mex,1980,1182.100,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+mex,2000,1899.260,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+mex,2026,2869.689,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+mex,2050,5350.390,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+gtm,1980,47.836,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+gtm,2000,74.769,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+gtm,2026,183.176,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+gtm,2050,452.958,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+blz,1980,0.581,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+blz,2000,2.092,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+blz,2026,4.460,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+blz,2050,10.491,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+hnd,1980,14.946,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+hnd,2000,27.013,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+hnd,2026,67.962,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+hnd,2050,184.924,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+slv,1980,27.517,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+slv,2000,38.731,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+slv,2026,64.661,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+slv,2050,124.747,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+nic,1980,16.311,OECD ENV-Growth 1990 value carried back to 1980 with Maddison Project 2023 real GDP growth
+nic,2000,20.187,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+nic,2026,46.132,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+nic,2050,121.619,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+cri,1980,26.567,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+cri,2000,50.022,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+cri,2026,132.423,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+cri,2050,265.961,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+pan,1980,23.246,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+pan,2000,45.562,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+pan,2026,174.825,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+pan,2050,341.047,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+cub,1980,30.240,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+cub,2000,39.065,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+cub,2026,86.519,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+cub,2050,271.236,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+dom,1980,35.008,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+dom,2000,78.971,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+dom,2026,259.561,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+dom,2050,613.025,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+hti,1980,24.932,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+hti,2000,24.915,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+hti,2026,33.486,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+hti,2050,96.090,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+jam,1980,16.805,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+jam,2000,25.108,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+jam,2026,30.640,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+jam,2050,50.709,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+pri,1980,53.811,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+pri,2000,114.789,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+pri,2026,108.657,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+pri,2050,122.566,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+bhs,1980,7.119,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+bhs,2000,11.969,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+bhs,2026,15.584,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+bhs,2050,22.207,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+tto,1980,16.216,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+tto,2000,22.213,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+tto,2026,37.905,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+tto,2050,53.725,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+col,1980,210.905,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+col,2000,358.742,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+col,2026,881.075,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+col,2050,1932.050,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+ven,1980,268.400,OECD ENV-Growth 2010 value carried back to 1980 with Maddison Project 2023 real GDP growth
+ven,2000,368.893,OECD ENV-Growth 2010 value carried back to 2000 with Maddison Project 2023 real GDP growth
+ven,2026,180.512,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+ven,2050,430.983,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+guy,1980,5.016,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+guy,2000,5.808,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+guy,2026,68.933,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+guy,2050,295.180,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+sur,1980,6.466,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+sur,2000,6.109,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+sur,2026,10.205,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+sur,2050,20.794,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+ecu,1980,67.433,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+ecu,2000,103.684,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+ecu,2026,211.315,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+ecu,2050,416.191,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+per,1980,130.478,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+per,2000,173.771,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+per,2026,488.980,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+per,2050,975.898,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+bra,1980,1362.630,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+bra,2000,2024.630,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+bra,2026,3539.140,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+bra,2050,6760.680,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+bol,1980,31.114,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+bol,2000,45.589,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+bol,2026,108.970,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+bol,2050,241.427,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+pry,1980,26.384,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+pry,2000,45.408,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+pry,2026,106.918,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+pry,2050,221.990,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+chl,1980,104.613,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+chl,2000,237.230,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+chl,2026,535.574,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+chl,2050,852.051,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+arg,1980,610.775,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+arg,2000,686.606,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+arg,2026,1051.569,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+arg,2050,1808.470,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+ury,1980,35.907,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+ury,2000,48.603,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+ury,2026,91.794,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+ury,2050,138.037,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+aus,1980,406.963,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+aus,2000,749.584,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+aus,2026,1481.322,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+aus,2050,2606.700,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+nzl,1980,82.733,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+nzl,2000,122.930,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+nzl,2026,248.270,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+nzl,2050,397.544,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+png,1980,8.108,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+png,2000,14.649,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+png,2026,38.217,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+png,2050,114.366,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+fji,1980,4.785,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+fji,2000,7.941,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+fji,2026,13.775,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+fji,2050,29.212,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+slb,1980,0.569,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+slb,2000,0.831,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+slb,2026,1.588,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+slb,2050,6.264,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+vut,1980,0.277,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+vut,2000,0.492,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+vut,2026,0.879,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+vut,2050,3.305,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+ncl,1980,3.235,OECD ENV-Growth 2020 value carried back to 1980 assuming constant GDP per person (IIASA population)
+ncl,2000,4.800,OECD ENV-Growth 2020 value carried back to 2000 assuming constant GDP per person (IIASA population)
+ncl,2026,12.481,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+ncl,2050,27.003,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+pyf,1980,3.512,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+pyf,2000,4.517,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+pyf,2026,5.609,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+pyf,2050,10.515,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+wsm,1980,0.496,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+wsm,2000,0.695,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+wsm,2026,1.189,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+wsm,2050,2.711,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+ton,1980,0.170,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+ton,2000,0.482,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+ton,2026,0.618,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+ton,2050,1.227,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+gha,1980,27.922,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+gha,2000,54.788,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+gha,2026,209.573,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+gha,2050,633.487,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+civ,1980,49.438,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+civ,2000,68.541,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+civ,2026,199.645,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+civ,2050,690.859,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+sen,1980,14.488,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+sen,2000,25.426,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+sen,2026,81.280,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+sen,2050,281.365,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+mli,1980,10.186,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+mli,2000,17.818,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+mli,2026,58.599,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+mli,2050,249.209,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+bfa,1980,6.702,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+bfa,2000,15.131,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+bfa,2026,61.284,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+bfa,2050,251.101,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+ner,1980,9.060,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+ner,2000,10.567,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+ner,2026,44.040,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+ner,2050,231.003,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+gin,1980,7.056,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+gin,2000,14.048,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+gin,2026,46.930,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+gin,2050,188.820,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+ben,1980,9.326,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+ben,2000,17.015,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+ben,2026,57.923,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+ben,2050,222.735,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+tgo,1980,6.473,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+tgo,2000,8.334,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+tgo,2026,24.041,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+tgo,2050,85.476,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+sle,1980,7.836,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+sle,2000,3.843,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+sle,2026,16.762,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+sle,2050,58.441,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+lbr,1980,12.701,OECD ENV-Growth 2000 value carried back to 1980 with Maddison Project 2023 real GDP growth
+lbr,2000,4.571,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+lbr,2026,9.463,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+lbr,2050,34.785,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+mrt,1980,8.422,OECD ENV-Growth 1990 value carried back to 1980 with Maddison Project 2023 real GDP growth
+mrt,2000,11.241,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+mrt,2026,32.164,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+mrt,2050,96.589,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+gmb,1980,1.588,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+gmb,2000,2.993,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+gmb,2026,7.258,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+gmb,2050,25.435,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+gnb,1980,1.377,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+gnb,2000,2.125,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+gnb,2026,5.651,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+gnb,2050,17.388,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+cpv,1980,0.595,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+cpv,2000,1.910,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+cpv,2026,5.347,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+cpv,2050,12.009,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+cmr,1980,29.023,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+cmr,2000,45.670,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+cmr,2026,124.236,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+cmr,2050,411.558,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+tcd,1980,4.040,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+tcd,2000,8.158,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+tcd,2026,29.360,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+tcd,2050,115.911,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+caf,1980,2.867,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+caf,2000,4.160,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+caf,2026,5.145,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+caf,2050,21.589,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+cog,1980,6.829,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+cog,2000,16.187,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+cog,2026,25.629,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+cog,2050,66.279,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+gab,1980,14.663,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+gab,2000,20.348,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+gab,2026,37.133,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+gab,2050,81.395,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+gnq,1980,0.215,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+gnq,2000,7.942,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+gnq,2026,20.909,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+gnq,2050,42.626,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+ago,1980,61.649,OECD ENV-Growth 1990 value carried back to 1980 with Maddison Project 2023 real GDP growth
+ago,2000,77.118,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+ago,2026,235.503,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+ago,2050,640.197,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+ken,1980,56.559,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+ken,2000,103.079,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+ken,2026,323.612,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+ken,2050,999.747,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+tza,1980,22.923,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+tza,2000,45.367,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+tza,2026,224.318,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+tza,2050,882.480,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+uga,1980,11.723,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+uga,2000,30.049,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+uga,2026,143.860,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+uga,2050,543.283,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+rwa,1980,5.360,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+rwa,2000,6.887,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+rwa,2026,42.424,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+rwa,2050,161.362,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+bdi,1980,3.727,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+bdi,2000,5.094,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+bdi,2026,11.198,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+bdi,2050,42.679,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+som,1980,6.019,"OECD ENV-Growth 2015 value carried back to 1980 assuming constant GDP per person (IIASA population); Somalia excluding Somaliland (66% of the total, by population)"
+som,2000,8.909,"OECD ENV-Growth 2015 value carried back to 2000 assuming constant GDP per person (IIASA population); Somalia excluding Somaliland (66% of the total, by population)"
+som,2026,19.444,"OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030; Somalia excluding Somaliland (66% of the total, by population)"
+som,2050,88.023,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection; Somalia excluding Somaliland (66% of the total, by population)"
+sdn,1980,54.076,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+sdn,2000,123.479,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+sdn,2026,158.393,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+sdn,2050,386.154,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+eri,1980,3.005,OECD ENV-Growth 1995 value carried back to 1980 assuming constant GDP per person (IIASA population)
+eri,2000,3.989,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+eri,2026,7.292,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+eri,2050,24.841,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+dji,1980,2.274,OECD ENV-Growth 1990 value carried back to 1980 with Maddison Project 2023 real GDP growth
+dji,2000,2.130,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+dji,2026,6.941,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+dji,2050,21.745,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+mdg,1980,20.426,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+mdg,2000,25.454,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+mdg,2026,53.327,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+mdg,2050,185.989,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+moz,1980,5.939,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+moz,2000,11.171,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+moz,2026,53.257,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+moz,2050,341.522,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+mwi,1980,7.176,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+mwi,2000,12.450,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+mwi,2026,34.727,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+mwi,2050,135.288,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+zmb,1980,17.468,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+zmb,2000,20.737,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+zmb,2026,78.333,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+zmb,2050,240.842,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+zwe,1980,18.454,OECD ENV-Growth 1990 value carried back to 1980 with Maddison Project 2023 real GDP growth
+zwe,2000,33.227,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+zwe,2026,40.298,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+zwe,2050,91.402,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+nam,1980,8.080,OECD ENV-Growth 1990 value carried back to 1980 with Maddison Project 2023 real GDP growth
+nam,2000,12.896,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+nam,2026,27.163,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+nam,2050,61.667,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+bwa,1980,4.861,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+bwa,2000,19.595,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+bwa,2026,47.906,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+bwa,2050,101.229,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+lso,1980,1.498,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+lso,2000,3.527,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+lso,2026,6.059,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+lso,2050,13.045,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+swz,1980,2.206,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+swz,2000,5.609,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+swz,2026,12.362,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+swz,2050,26.478,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+nga,1980,251.114,OECD ENV-Growth 1990 value carried back to 1980 with Maddison Project 2023 real GDP growth
+nga,2000,339.105,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+nga,2026,1228.097,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+nga,2050,3563.510,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+zaf,1980,364.748,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+zaf,2000,496.167,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+zaf,2026,845.033,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+zaf,2050,1671.170,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+eth,1980,29.619,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+eth,2000,49.214,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+eth,2026,388.436,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+eth,2050,1658.100,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+cod,1980,54.856,OECD ENV-Growth 1990 value carried back to 1980 with Maddison Project 2023 real GDP growth
+cod,2000,34.878,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+cod,2026,143.234,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+cod,2050,612.528,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+pse,1980,4.947,OECD ENV-Growth 1995 value carried back to 1980 with Maddison Project 2023 real GDP growth
+pse,2000,13.159,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+pse,2026,32.033,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+pse,2050,86.231,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+ssd,1980,2.630,OECD ENV-Growth 2015 value carried back to 1980 assuming constant GDP per person (IIASA population)
+ssd,2000,3.796,OECD ENV-Growth 2015 value carried back to 2000 assuming constant GDP per person (IIASA population)
+ssd,2026,6.747,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+ssd,2050,20.123,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+esh,1980,0.199,OECD ENV-Growth 2020 value carried back to 1980 assuming constant GDP per person (IIASA population)
+esh,2000,0.470,OECD ENV-Growth 2020 value carried back to 2000 assuming constant GDP per person (IIASA population)
+esh,2026,1.172,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+esh,2050,2.642,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+somld,1980,3.119,"OECD ENV-Growth 2015 value carried back to 1980 assuming constant GDP per person (IIASA population); Somaliland's share (34%) of the Somalia total, by population"
+somld,2000,4.616,"OECD ENV-Growth 2015 value carried back to 2000 assuming constant GDP per person (IIASA population); Somaliland's share (34%) of the Somalia total, by population"
+somld,2026,10.075,"OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030; Somaliland's share (34%) of the Somalia total, by population"
+somld,2050,45.609,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection; Somaliland's share (34%) of the Somalia total, by population"

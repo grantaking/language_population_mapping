@@ -45,11 +45,13 @@
      data/countries.csv        one row per country (default language, national density and population)
      data/regions.csv          one row per admin-1 region (language override, population, exclude flag)
      data/second_language.csv  one row per second-language glow zone (whole country, or one region)
+     data/gdp_by_year.csv      optional: country GDP by year (PPP, 2017 US dollars)
+     data/world_by_year.csv    optional: world population and GDP by year, used for the shares
    See data/README.md for the column definitions. */
 const DATA_DIR='data/';
 const base='https://cdn.jsdelivr.net/npm/datamaps@0.5.10/src/js/data/';
 const R0=100, MAXH=12, MINH=0.1, DEG=Math.PI/180;
-let FULL,LANGINFO,POP,CFG,NATDENS,NATPOP,SKIP,FAMS,LANG2FAM,isoList,ARABIC,ALIAS,L2,ATLAS_COUNTRIES,POPYR,SPK;
+let FULL,LANGINFO,POP,CFG,NATDENS,NATPOP,SKIP,FAMS,LANG2FAM,isoList,ARABIC,ALIAS,L2,ATLAS_COUNTRIES,POPYR,SPK,GDPYR,WORLD;
 const YEAR_OPTIONS=[['current','Current'],['1980','1980'],['2000','2000'],['2050','2050 (proj.)']];
 const CUR_POP_YEAR='2026'; // population_by_year.csv column treated as "current" for growth ratios
 function canon(l){return ALIAS[l]||l;}
@@ -112,11 +114,22 @@ function buildData(t){
     const l=str(r.language), y=str(r.year); if(!l||!y)return;
     (D.SPK[y]||(D.SPK[y]={}))[l]={n:num(r.native_millions),t:num(r.total_millions),method:str(r.method),source:str(r.source)};
   });
+  // gdp_by_year.csv (optional): country GDP in billions of US dollars (PPP, 2017 prices)
+  D.GDPYR={};
+  (t.gdp_by_year||[]).forEach(r=>{
+    const iso=str(r.iso3).toLowerCase(), y=str(r.year), g=num(r.gdp_billion_usd); if(!iso||!y||g==null)return;
+    (D.GDPYR[iso]||(D.GDPYR[iso]={}))[y]=g;
+  });
+  // world_by_year.csv (optional): world population (thousands) and GDP (billions), the denominators for shares
+  D.WORLD={};
+  (t.world_by_year||[]).forEach(r=>{ const y=str(r.year); if(!y)return; D.WORLD[y]={pop:num(r.population_thousands),gdp:num(r.gdp_billion_usd)}; });
   return D;
 }
 /* BUILD-DATA END */
 const host=document.getElementById('c'), tip=document.getElementById('tip'), wrap=document.getElementById('gwrap');
 function fmt(m){ if(m==null)return '—'; if(m===0)return '0'; if(m>=1000)return (m/1000).toFixed(m>=10000?1:2)+' billion'; if(m>=1)return (m>=10?Math.round(m):m.toFixed(1))+' million'; return Math.round(m*1000)+',000'; }
+function fmtUSD(b){ if(b==null)return '—'; if(b===0)return '$0'; if(b>=1000)return '$'+(b/1000).toFixed(b>=10000?1:2)+' trillion'; if(b>=1)return '$'+(b>=10?Math.round(b):b.toFixed(1))+' billion'; return '$'+Math.round(b*1000)+' million'; }
+function pct(x){ if(x==null||!isFinite(x))return '—'; const p=x*100; return p===0?'0%':(p<0.1?'<0.1%':(p<10?p.toFixed(1):Math.round(p))+'%'); }
 function ll(lon,lat,r){const ph=lat*DEG,la=lon*DEG,cp=Math.cos(ph);return [r*cp*Math.cos(la),r*cp*Math.sin(la),r*Math.sin(ph)];}
 function elen(a,b){return Math.max(Math.abs(a.x-b.x),Math.abs(a.y-b.y));}
 function vmid(a,b){return new THREE.Vector2((a.x+b.x)/2,(a.y+b.y)/2);}
@@ -183,6 +196,10 @@ return Promise.all([d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2/countrie
     else if(NATDENS[o.iso]!=null) dn=NATDENS[o.iso];
     else if(pk!=null&&areaKm>0) dn=pk*1000/areaKm;
     o.dens=dn; });
+  // ---- GDP: each country's GDP is split among its regions by population (area x national density where a region has no figure) ----
+  const KEYS={}; feats.forEach(o=>{ const k=o.iso+'|'+o.name; if(!KEYS[k]) KEYS[k]={iso:o.iso,name:o.name,lang:o.lang}; });
+  const cpop={}; Object.values(KEYS).forEach(r=>{ const k=r.iso+'|'+r.name; r.pop=POP[k]!=null?POP[k]:(keyArea[k]||0)*(NATDENS[r.iso]||0)/1000; cpop[r.iso]=(cpop[r.iso]||0)+r.pop; });
+  Object.values(KEYS).forEach(r=>{ r.share=cpop[r.iso]>0?r.pop/cpop[r.iso]:0; });
   const ds=feats.map(o=>o.dens).filter(d=>d>0).sort((a,b)=>a-b);
   const dcap=ds[Math.floor(0.97*ds.length)]||1;
   const scene=new THREE.Scene(), group=new THREE.Group();
@@ -214,6 +231,18 @@ return Promise.all([d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2/countrie
     });
   }
   function yearLabel(y){ const o=YEAR_OPTIONS.find(o=>o[0]===y); return o?o[1]:y; }
+  const yk=y=>y==='current'?CUR_POP_YEAR:y;
+  const hasGDP=Object.keys(GDPYR).length>0;
+  function regionGDP(r){ const g=GDPYR[r.iso]; const v=g&&g[yk(YEAR)]; return v!=null?v*r.share:0; }
+  function lfCovers(l,r){ // l is a lingua franca (second-language glow) in region r
+    if(l==='Modern Standard Arabic' && ARABIC.has(r.lang)) return true;
+    const s=L2[l]; return !!(s && (s.has(r.iso)||s.has(r.iso+'|'+r.name)));
+  }
+  // GDP where any of langs is the plurality language, and where any is a lingua franca but none is the plurality: each region counted once
+  function gdpFor(langs){ let pl=0,lf=0; const L=[...langs];
+    Object.values(KEYS).forEach(r=>{ if(langs.has(r.lang)){ pl+=regionGDP(r); return; } if(L.some(l=>lfCovers(l,r))) lf+=regionGDP(r); });
+    const w=WORLD[yk(YEAR)]; const wg=w&&w.gdp; return {pl,lf,plS:wg?pl/wg:null,lfS:wg?lf/wg:null}; }
+  function popShare(m){ const w=WORLD[yk(YEAR)]; return (w&&w.pop&&m!=null)?m*1000/w.pop:null; }
   function info(l){ if(YEAR!=='current'){ const s=SPK[YEAR]&&SPK[YEAR][l]; if(s) return [s.n,s.t,s]; } const i=LANGINFO[l]||[null,null]; return [i[0],i[1],null]; }
   scene.add(new THREE.AmbientLight(0xffffff,0.68));
   const dl=new THREE.DirectionalLight(0xffffff,0.72); dl.position.set(1,0.35,0.7); scene.add(dl);
@@ -287,7 +316,13 @@ return Promise.all([d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2/countrie
     sel.style.display='flex'; let sn=0,st=0,chips='';
     selected.forEach(l=>{ const i=info(l); sn+=i[0]||0; st+=i[1]||0;
       chips+='<span data-l="'+l+'" style="display:inline-flex;align-items:center;gap:4px;cursor:pointer;background:rgba(127,127,140,0.16);border-radius:11px;padding:1px 6px 1px 5px"><span style="width:9px;height:9px;border-radius:2px;background:'+FULL[l]+'"></span>'+l+'<span style="opacity:.55;font-weight:700">×</span></span>'; });
-    sel.innerHTML='<b>Selected ('+selected.size+'):</b>'+chips+'<span style="margin-left:auto;white-space:nowrap;color:var(--text-secondary,#555)">'+(YEAR!=='current'?'<b>'+yearLabel(YEAR)+'</b> &nbsp;':'')+'<b>Σ native:</b> '+fmt(sn)+' &nbsp;·&nbsp; <b>Σ total:</b> '+fmt(st)+'</span><span data-save style="cursor:pointer;padding:2px 9px;border-radius:11px;background:rgba(70,130,80,0.2);color:var(--text-primary,#1a4022);font-weight:700">＋ Save combo</span><span data-clear style="cursor:pointer;opacity:.6;text-decoration:underline">clear</span>';
+    const G=hasGDP?gdpFor(selected):null, yl=(YEAR!=='current'?'<b>'+yearLabel(YEAR)+'</b> &nbsp;':'');
+    const stats='<span style="margin-left:auto;display:flex;flex-direction:column;align-items:flex-end;gap:1px;color:var(--text-secondary,#555)">'
+      +'<span>'+yl+'<b>Σ native:</b> '+fmt(sn)+' ('+pct(popShare(sn))+' of world pop.) &nbsp;·&nbsp; <b>Σ total:</b> '+fmt(st)+' ('+pct(popShare(st))+'*)</span>'
+      +(G?'<span><b>Plurality-region GDP:</b> '+fmtUSD(G.pl)+' ('+pct(G.plS)+' of world GDP) &nbsp;·&nbsp; <b>Lingua franca GDP:</b> '+fmtUSD(G.lf)+' ('+pct(G.lfS)+')</span>':'')
+      +'<span style="font-size:9.5px;opacity:.8;max-width:640px;text-align:right">* Total speakers can overlap: people who speak several languages are counted once for each, so this share may be overstated.'
+      +(G?' GDP is PPP in 2017 US dollars, split among regions by population. Lingua franca GDP counts regions where a selected language is a second language and none is the plurality language, so no region is counted twice.':'')+'</span></span>';
+    sel.innerHTML='<b>Selected ('+selected.size+'):</b>'+chips+stats+'<span data-save style="cursor:pointer;padding:2px 9px;border-radius:11px;background:rgba(70,130,80,0.2);color:var(--text-primary,#1a4022);font-weight:700">＋ Save combo</span><span data-clear style="cursor:pointer;opacity:.6;text-decoration:underline">clear</span>';
     placePresets();
   }
   const topBar=document.getElementById('top'), yearsEl=document.getElementById('years'), yearNote=document.getElementById('yearnote');
@@ -324,7 +359,7 @@ return Promise.all([d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2/countrie
     const note = lang==='Modern Standard Arabic'
       ? '<div style="opacity:.8;margin-top:3px;font-style:italic">Formal/written register — no native speakers; shared across the Arabic-speaking world.</div>'
       : (L2[lang] ? '<div style="opacity:.8;margin-top:3px;font-style:italic">Dim tint = where it\'s also a widespread second language.</div>' : '');
-    tip.innerHTML='<div style="font-weight:700;font-size:13px;margin-bottom:1px">'+lang+'</div><div style="opacity:.75;margin-bottom:3px">'+(LANG2FAM[lang]||'')+' family</div><div>Native speakers: '+fmt(inf[0])+'</div><div>Total speakers: '+fmt(inf[1])+'</div>'+yearLine+note+(selected.has(lang)?'<div style="opacity:.7;margin-top:3px">✓ selected — click to remove</div>':'<div style="opacity:.7;margin-top:3px">click to select</div>');
+    tip.innerHTML='<div style="font-weight:700;font-size:13px;margin-bottom:1px">'+lang+'</div><div style="opacity:.75;margin-bottom:3px">'+(LANG2FAM[lang]||'')+' family</div><div>Native speakers: '+fmt(inf[0])+'</div><div>Total speakers: '+fmt(inf[1])+'</div>'+(hasGDP?(()=>{ const g=gdpFor(new Set([lang])); return '<div style="margin-top:3px">Plurality-region GDP: '+fmtUSD(g.pl)+' ('+pct(g.plS)+' of world)</div>'+(g.lf>0?'<div>Lingua franca GDP: '+fmtUSD(g.lf)+' ('+pct(g.lfS)+')</div>':''); })():'')+yearLine+note+(selected.has(lang)?'<div style="opacity:.7;margin-top:3px">✓ selected — click to remove</div>':'<div style="opacity:.7;margin-top:3px">click to select</div>');
     tip.style.display='block'; const tw=tip.offsetWidth,th=tip.offsetHeight; let px=x+15,py=y+15;
     if(px+tw>window.innerWidth)px=x-tw-15; if(py+th>window.innerHeight)py=y-th-15;
     tip.style.left=px+'px'; tip.style.top=py+'px';
@@ -383,11 +418,11 @@ return Promise.all([d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2/countrie
 }
 function showMessage(html){ host.innerHTML='<div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);max-width:440px;text-align:center;color:var(--text-secondary,#b9c0cb);font-size:13px;line-height:1.5;padding:20px">'+html+'</div>'; }
 showMessage('Loading map data…');
-const REQUIRED=['languages','countries','regions','second_language'], OPTIONAL=['population_by_year','speakers_by_year'];
+const REQUIRED=['languages','countries','regions','second_language'], OPTIONAL=['population_by_year','speakers_by_year','gdp_by_year','world_by_year'];
 Promise.all(REQUIRED.map(n=>d3.csv(DATA_DIR+n+'.csv').catch(err=>{ err.file=n+'.csv'; throw err; }))
   .concat(OPTIONAL.map(n=>d3.csv(DATA_DIR+n+'.csv').catch(()=>[]))))
- .then(([languages,countries,regions,second_language,population_by_year,speakers_by_year])=>{
-   ({FULL,LANGINFO,POP,CFG,NATDENS,NATPOP,SKIP,FAMS,LANG2FAM,isoList,ARABIC,ALIAS,L2,ATLAS_COUNTRIES,POPYR,SPK}=buildData({languages,countries,regions,second_language,population_by_year,speakers_by_year}));
+ .then(([languages,countries,regions,second_language,population_by_year,speakers_by_year,gdp_by_year,world_by_year])=>{
+   ({FULL,LANGINFO,POP,CFG,NATDENS,NATPOP,SKIP,FAMS,LANG2FAM,isoList,ARABIC,ALIAS,L2,ATLAS_COUNTRIES,POPYR,SPK,GDPYR,WORLD}=buildData({languages,countries,regions,second_language,population_by_year,speakers_by_year,gdp_by_year,world_by_year}));
    host.innerHTML='';
    return startGlobe();
  })

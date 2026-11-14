@@ -1,0 +1,5 @@
+﻿year,population_thousands,population_source,gdp_billion_usd,gdp_source
+1980,4487654.8,"UN World Population Prospects 2024, world total",40394.2,"Sum of all 198 economies in the GDP series (PPP, 2017 international dollars)"
+2000,6213462.0,"UN World Population Prospects 2024, world total",68198.1,"Sum of all 198 economies in the GDP series (PPP, 2017 international dollars)"
+2026,8335111.5,"UN World Population Prospects 2024, world total (medium-variant projection)",156556.0,"Sum of all 198 economies in the GDP series (PPP, 2017 international dollars)"
+2050,9684721.0,"UN World Population Prospects 2024, world total (medium-variant projection)",286249.0,"Sum of all 198 economies in the GDP series (PPP, 2017 international dollars)"
