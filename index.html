@@ -238,9 +238,10 @@ return Promise.all([d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2/countrie
     if(l==='Modern Standard Arabic' && ARABIC.has(r.lang)) return true;
     const s=L2[l]; return !!(s && (s.has(r.iso)||s.has(r.iso+'|'+r.name)));
   }
-  // GDP where any of langs is the plurality language, and where any is a lingua franca but none is the plurality: each region counted once
+  // plurality GDP: regions where any of langs is the plurality language; lingua franca GDP: those regions plus every region
+  // where any of langs is a second language. Each region is counted once, however many selected languages it has.
   function gdpFor(langs){ let pl=0,lf=0; const L=[...langs];
-    Object.values(KEYS).forEach(r=>{ if(langs.has(r.lang)){ pl+=regionGDP(r); return; } if(L.some(l=>lfCovers(l,r))) lf+=regionGDP(r); });
+    Object.values(KEYS).forEach(r=>{ if(langs.has(r.lang)){ const g=regionGDP(r); pl+=g; lf+=g; return; } if(L.some(l=>lfCovers(l,r))) lf+=regionGDP(r); });
     const w=WORLD[yk(YEAR)]; const wg=w&&w.gdp; return {pl,lf,plS:wg?pl/wg:null,lfS:wg?lf/wg:null}; }
   function popShare(m){ const w=WORLD[yk(YEAR)]; return (w&&w.pop&&m!=null)?m*1000/w.pop:null; }
   function info(l){ if(YEAR!=='current'){ const s=SPK[YEAR]&&SPK[YEAR][l]; if(s) return [s.n,s.t,s]; } const i=LANGINFO[l]||[null,null]; return [i[0],i[1],null]; }
@@ -279,7 +280,7 @@ return Promise.all([d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2/countrie
       html+='<div data-load="'+i+'" title="Click to load" style="cursor:pointer;padding:6px 7px;border-radius:6px;margin-bottom:4px;background:rgba(127,127,140,0.12)">'
         +'<div style="display:flex;align-items:center;gap:6px"><span style="font-weight:600;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--text-primary,#1a1a1a)">'+escHtml(p.name)+'</span><span data-del="'+i+'" title="Delete" style="opacity:.55;font-weight:700;padding:0 4px;cursor:pointer">×</span></div>'
         +'<div style="font-size:10px;color:var(--text-secondary,#666);margin-top:2px">'+p.langs.length+' languages</div>'
-        +'<div style="font-size:10px;color:var(--text-secondary,#666)">native '+fmt(sn)+' · total '+fmt(st)+'</div>'
+        +'<div style="font-size:10px;color:var(--text-secondary,#666)">native '+fmt(sn)+' ('+pct(popShare(sn))+') · total '+fmt(st)+' ('+pct(popShare(st))+')</div>'
         +'</div>';
     });
     presetsPanel.innerHTML=html;
@@ -318,10 +319,10 @@ return Promise.all([d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2/countrie
       chips+='<span data-l="'+l+'" style="display:inline-flex;align-items:center;gap:4px;cursor:pointer;background:rgba(127,127,140,0.16);border-radius:11px;padding:1px 6px 1px 5px"><span style="width:9px;height:9px;border-radius:2px;background:'+FULL[l]+'"></span>'+l+'<span style="opacity:.55;font-weight:700">×</span></span>'; });
     const G=hasGDP?gdpFor(selected):null, yl=(YEAR!=='current'?'<b>'+yearLabel(YEAR)+'</b> &nbsp;':'');
     const stats='<span style="margin-left:auto;display:flex;flex-direction:column;align-items:flex-end;gap:1px;color:var(--text-secondary,#555)">'
-      +'<span>'+yl+'<b>Σ native:</b> '+fmt(sn)+' ('+pct(popShare(sn))+' of world pop.) &nbsp;·&nbsp; <b>Σ total:</b> '+fmt(st)+' ('+pct(popShare(st))+'*)</span>'
+      +'<span>'+yl+'<b>Σ native:</b> '+fmt(sn)+' ('+pct(popShare(sn))+' of world population) &nbsp;·&nbsp; <b>Σ total:</b> '+fmt(st)+' ('+pct(popShare(st))+' of world population*)</span>'
       +(G?'<span><b>Plurality-region GDP:</b> '+fmtUSD(G.pl)+' ('+pct(G.plS)+' of world GDP) &nbsp;·&nbsp; <b>Lingua franca GDP:</b> '+fmtUSD(G.lf)+' ('+pct(G.lfS)+')</span>':'')
       +'<span style="font-size:9.5px;opacity:.8;max-width:640px;text-align:right">* Total speakers can overlap: people who speak several languages are counted once for each, so this share may be overstated.'
-      +(G?' GDP is PPP in 2017 US dollars, split among regions by population. Lingua franca GDP counts regions where a selected language is a second language and none is the plurality language, so no region is counted twice.':'')+'</span></span>';
+      +(G?' GDP is PPP in 2017 US dollars, split among regions by population. Lingua franca GDP covers every region where a selected language is the plurality or a second language; each region is counted once.':'')+'</span></span>';
     sel.innerHTML='<b>Selected ('+selected.size+'):</b>'+chips+stats+'<span data-save style="cursor:pointer;padding:2px 9px;border-radius:11px;background:rgba(70,130,80,0.2);color:var(--text-primary,#1a4022);font-weight:700">＋ Save combo</span><span data-clear style="cursor:pointer;opacity:.6;text-decoration:underline">clear</span>';
     placePresets();
   }
@@ -359,7 +360,7 @@ return Promise.all([d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2/countrie
     const note = lang==='Modern Standard Arabic'
       ? '<div style="opacity:.8;margin-top:3px;font-style:italic">Formal/written register — no native speakers; shared across the Arabic-speaking world.</div>'
       : (L2[lang] ? '<div style="opacity:.8;margin-top:3px;font-style:italic">Dim tint = where it\'s also a widespread second language.</div>' : '');
-    tip.innerHTML='<div style="font-weight:700;font-size:13px;margin-bottom:1px">'+lang+'</div><div style="opacity:.75;margin-bottom:3px">'+(LANG2FAM[lang]||'')+' family</div><div>Native speakers: '+fmt(inf[0])+'</div><div>Total speakers: '+fmt(inf[1])+'</div>'+(hasGDP?(()=>{ const g=gdpFor(new Set([lang])); return '<div style="margin-top:3px">Plurality-region GDP: '+fmtUSD(g.pl)+' ('+pct(g.plS)+' of world)</div>'+(g.lf>0?'<div>Lingua franca GDP: '+fmtUSD(g.lf)+' ('+pct(g.lfS)+')</div>':''); })():'')+yearLine+note+(selected.has(lang)?'<div style="opacity:.7;margin-top:3px">✓ selected — click to remove</div>':'<div style="opacity:.7;margin-top:3px">click to select</div>');
+    tip.innerHTML='<div style="font-weight:700;font-size:13px;margin-bottom:1px">'+lang+'</div><div style="opacity:.75;margin-bottom:3px">'+(LANG2FAM[lang]||'')+' family</div><div>Native speakers: '+fmt(inf[0])+' ('+pct(popShare(inf[0]))+' of world population)</div><div>Total speakers: '+fmt(inf[1])+' ('+pct(popShare(inf[1]))+')</div>'+(hasGDP?(()=>{ const g=gdpFor(new Set([lang])); return '<div style="margin-top:3px">Plurality-region GDP: '+fmtUSD(g.pl)+' ('+pct(g.plS)+' of world)</div>'+'<div>Lingua franca GDP: '+fmtUSD(g.lf)+' ('+pct(g.lfS)+')</div>'; })():'')+yearLine+note+(selected.has(lang)?'<div style="opacity:.7;margin-top:3px">✓ selected — click to remove</div>':'<div style="opacity:.7;margin-top:3px">click to select</div>');
     tip.style.display='block'; const tw=tip.offsetWidth,th=tip.offsetHeight; let px=x+15,py=y+15;
     if(px+tw>window.innerWidth)px=x-tw-15; if(py+th>window.innerHeight)py=y-th-15;
     tip.style.left=px+'px'; tip.style.top=py+'px';

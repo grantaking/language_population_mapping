@@ -143,9 +143,9 @@ Sources and method:
 **Language GDP** in the selection panel and tooltips:
 
 - **Plurality-region GDP:** GDP of the regions where a selected language is the plurality language.
-- **Lingua franca GDP:** GDP of the regions where a selected language has a second-language glow (`second_language.csv`, plus every Arabic-dialect region for Modern Standard Arabic) and no selected language is the plurality.
+- **Lingua franca GDP:** GDP of every region where a selected language is either the plurality language or a second language (`second_language.csv`, plus every Arabic-dialect region for Modern Standard Arabic). It includes the plurality regions, so it is always at least as large as plurality-region GDP.
 
-Each region is counted once, so the two figures can be added. Shares are out of the world total in `world_by_year.csv`.
+Each region is counted once in each figure, however many selected languages it has. Shares are out of the world total in `world_by_year.csv`. Native and total speakers are also shown as shares of world population.
 
 ## world_by_year.csv
 
