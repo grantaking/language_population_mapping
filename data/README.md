@@ -140,6 +140,8 @@ Sources and method:
 
 **Regional GDP** is not stored. The page splits each country's GDP among its regions by population (`regions.csv`), using the same regional pattern for every year.
 
+**GDP view.** The **Height** switch can show GDP per km² instead of people per km². GDP density is the region's GDP divided by its area. Heights use a fixed scale set by today's values (the 97th-percentile region is the tallest), so switching years shows GDP growing or shrinking on the same scale, as the population view does.
+
 **Language GDP** in the selection panel and tooltips:
 
 - **Plurality-region GDP:** GDP of the regions where a selected language is the plurality language.

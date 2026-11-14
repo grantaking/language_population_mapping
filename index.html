@@ -27,7 +27,7 @@
 <div id="c" style="position:absolute;inset:0;z-index:1;touch-action:none;cursor:grab"></div>
 <div id="top" style="position:absolute;top:0;left:0;right:0;z-index:30;background:var(--bg-primary,rgba(248,248,248,0.95));backdrop-filter:blur(4px);padding:7px 12px;border-bottom:1px solid rgba(0,0,0,0.1);box-shadow:0 1px 6px rgba(0,0,0,0.06)">
  <div style="display:flex;align-items:center;flex-wrap:wrap;gap:4px 12px"><div style="font-weight:600;font-size:13px;color:var(--text-primary,#1a1a1a)">World language &amp; population-density globe</div><div id="years" style="display:none;margin-left:auto;align-items:center;gap:6px;font-size:11px;color:var(--text-secondary,#555)"></div></div>
- <div style="font-size:11px;color:var(--text-secondary,#555);margin-top:1px">Color = plurality language · height ∝ density. Click/hover to select. Lingua francas dimly tint where they're a widespread second language. Close varieties are merged (Hindustani, Serbo-Croatian, Persian, …).</div>
+ <div style="font-size:11px;color:var(--text-secondary,#555);margin-top:1px">Color = plurality language · height ∝ <span id="hmode">population density</span>. Click/hover to select. Lingua francas dimly tint where they're a widespread second language. Close varieties are merged (Hindustani, Serbo-Croatian, Persian, …).</div>
  <div id="yearnote" style="display:none;font-size:11px;color:var(--text-secondary,#555);margin-top:3px"></div>
  <div id="sel" style="display:none;flex-wrap:wrap;align-items:center;gap:5px 9px;margin-top:6px;font-size:11px;color:var(--text-secondary,#555)"></div>
 </div>
@@ -200,6 +200,10 @@ return Promise.all([d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2/countrie
   const KEYS={}; feats.forEach(o=>{ const k=o.iso+'|'+o.name; if(!KEYS[k]) KEYS[k]={iso:o.iso,name:o.name,lang:o.lang}; });
   const cpop={}; Object.values(KEYS).forEach(r=>{ const k=r.iso+'|'+r.name; r.pop=POP[k]!=null?POP[k]:(keyArea[k]||0)*(NATDENS[r.iso]||0)/1000; cpop[r.iso]=(cpop[r.iso]||0)+r.pop; });
   Object.values(KEYS).forEach(r=>{ r.share=cpop[r.iso]>0?r.pop/cpop[r.iso]:0; });
+  function gdpDens(o,y){ const k=o.iso+'|'+o.name, r=KEYS[k], g=GDPYR[o.iso], a=keyArea[k]; const v=g&&g[y]; return (r&&v!=null&&a>0)?v*1e9*r.share/a:0; }
+  feats.forEach(o=>{ o.gdens={}; ['1980','2000',CUR_POP_YEAR,'2050'].forEach(y=>{ o.gdens[y]=gdpDens(o,y); }); });
+  const gs=feats.map(o=>o.gdens[CUR_POP_YEAR]).filter(d=>d>0).sort((a,b)=>a-b);
+  const gcap=gs[Math.floor(0.97*gs.length)]||1;
   const ds=feats.map(o=>o.dens).filter(d=>d>0).sort((a,b)=>a-b);
   const dcap=ds[Math.floor(0.97*ds.length)]||1;
   const scene=new THREE.Scene(), group=new THREE.Group();
@@ -210,7 +214,7 @@ return Promise.all([d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2/countrie
     const geo=buildRegion(o.feat,h); if(!geo)return;
     const col=new THREE.Color(FULL[o.lang]||'#cccccc');
     const mesh=new THREE.Mesh(geo,new THREE.MeshLambertMaterial({color:col.clone(),side:THREE.DoubleSide}));
-    mesh.userData={lang:o.lang, base:col, iso:o.iso, name:o.name, dens:o.dens, h:h};
+    mesh.userData={lang:o.lang, base:col, iso:o.iso, name:o.name, dens:o.dens, gdens:o.gdens, h:h};
     group.add(mesh);
   });
   scene.add(group);
@@ -219,11 +223,17 @@ return Promise.all([d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2/countrie
   try{ const y=localStorage.getItem('langDensityGlobe.year'); if(YEAR_OPTIONS.some(o=>o[0]===y)) YEAR=y; }catch(e){}
   const hasYears=Object.keys(POPYR).length>0;
   if(!hasYears) YEAR='current';
+  // ---- height mode: population density (people per km2) or GDP density (GDP per km2), each on its own fixed scale ----
+  let HMODE='pop';
+  const hasGDPData=Object.keys(GDPYR).length>0;
+  try{ if(hasGDPData && localStorage.getItem('langDensityGlobe.height')==='gdp') HMODE='gdp'; }catch(e){}
   function popRatio(iso,y){ if(y==='current')return 1; const p=POPYR[iso]; return (p&&p[y]&&p[CUR_POP_YEAR])?p[y]/p[CUR_POP_YEAR]:1; }
   function applyHeights(){
     const thr=R0+MINH*0.5;
     group.children.forEach(m=>{
-      const u=m.userData, hNew=MINH+(MAXH-MINH)*Math.min(u.dens*popRatio(u.iso,YEAR),dcap)/dcap;
+      const u=m.userData, hNew=HMODE==='gdp'
+        ? MINH+(MAXH-MINH)*Math.min(u.gdens[YEAR==='current'?CUR_POP_YEAR:YEAR]||0,gcap)/gcap
+        : MINH+(MAXH-MINH)*Math.min(u.dens*popRatio(u.iso,YEAR),dcap)/dcap;
       if(Math.abs(hNew-u.h)<1e-6)return;
       const pos=m.geometry.attributes.position, a=pos.array, rNew=R0+hNew;
       for(let i=0;i<a.length;i+=3){ const x=a[i],y=a[i+1],z=a[i+2], r=Math.sqrt(x*x+y*y+z*z); if(r>thr){ const k=rNew/r; a[i]=x*k; a[i+1]=y*k; a[i+2]=z*k; } }
@@ -328,25 +338,35 @@ return Promise.all([d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2/countrie
   }
   const topBar=document.getElementById('top'), yearsEl=document.getElementById('years'), yearNote=document.getElementById('yearnote');
   function placePresets(){ presetsPanel.style.top=(topBar.offsetHeight+8)+'px'; }
+  const hmodeEl=document.getElementById('hmode');
+  function seg(items,attr,cur){ return '<span style="display:inline-flex;border:1px solid rgba(127,127,140,0.35);border-radius:7px;overflow:hidden">'
+      +items.map(([k,lab])=>'<span '+attr+'="'+k+'" style="cursor:pointer;padding:2px 8px;'+(k===cur?'background:rgba(127,127,140,0.32);color:var(--text-primary,#1a1a1a);font-weight:700':'')+'">'+lab+'</span>').join('')+'</span>'; }
   function renderYears(){
-    if(!hasYears){ yearsEl.style.display='none'; return; }
+    if(!hasYears && !hasGDPData){ yearsEl.style.display='none'; return; }
     yearsEl.style.display='flex';
-    yearsEl.innerHTML='<span>Population year</span><span style="display:inline-flex;border:1px solid rgba(127,127,140,0.35);border-radius:7px;overflow:hidden">'
-      +YEAR_OPTIONS.map(([k,lab])=>'<span data-year="'+k+'" style="cursor:pointer;padding:2px 8px;'+(k===YEAR?'background:rgba(127,127,140,0.32);color:var(--text-primary,#1a1a1a);font-weight:700':'')+'">'+lab+'</span>').join('')+'</span>';
-    if(YEAR==='current'){ yearNote.style.display='none'; }
-    else {
-      yearNote.style.display='block';
-      yearNote.innerHTML='<b>'+yearLabel(YEAR)+':</b> heights scale each country\'s current regional pattern to its UN WPP 2024 population'
-        +(YEAR==='2050'?' projection':'')+' on the same height scale. Speaker counts are estimates; hover a language for the method.';
+    yearsEl.innerHTML=(hasGDPData?'<span>Height</span>'+seg([['pop','Population'],['gdp','GDP']],'data-hmode',HMODE)+'<span style="width:6px"></span>':'')
+      +(hasYears?'<span>Year</span>'+seg(YEAR_OPTIONS,'data-year',YEAR):'');
+    hmodeEl.textContent=HMODE==='gdp'?'GDP density (GDP per km², PPP)':'population density';
+    const notes=[];
+    if(HMODE==='gdp') notes.push('<b>GDP view:</b> height shows GDP per km² (PPP, 2017 US dollars). Each country\'s GDP for the chosen year is split among its regions by population; the scale is fixed at today\'s values, so heights grow or shrink with GDP across years.');
+    if(YEAR!=='current'){
+      notes.push('<b>'+yearLabel(YEAR)+':</b> '+(HMODE==='gdp'?'GDP '+(YEAR==='2050'?'projected (SSP2)':'estimated')+' for this year.':'heights scale each country\'s current regional pattern to its UN WPP 2024 population'
+        +(YEAR==='2050'?' projection':'')+' on the same height scale.')+' Speaker counts are estimates; hover a language for the method.');
     }
+    yearNote.style.display=notes.length?'block':'none'; yearNote.innerHTML=notes.join(' ');
     placePresets();
+  }
+  function setHMode(h){
+    if(h===HMODE)return; HMODE=h;
+    try{ localStorage.setItem('langDensityGlobe.height',h); }catch(e){}
+    applyHeights(); renderYears();
   }
   function setYear(y){
     if(y===YEAR)return; YEAR=y;
     try{ localStorage.setItem('langDensityGlobe.year',y); }catch(e){}
     applyHeights(); renderYears(); updatePanel(); renderPresets(); showTip(null);
   }
-  yearsEl.addEventListener('click',e=>{ const b=e.target.closest('[data-year]'); if(b) setYear(b.getAttribute('data-year')); });
+  yearsEl.addEventListener('click',e=>{ const b=e.target.closest('[data-year]'); if(b){ setYear(b.getAttribute('data-year')); return; } const h=e.target.closest('[data-hmode]'); if(h) setHMode(h.getAttribute('data-hmode')); });
   function toggleSelect(l){ if(selected.has(l))selected.delete(l); else selected.add(l); refresh(); updatePanel(); }
   function setHover(l){ if(l===hoverLang)return; hoverLang=l; refresh(); }
   function showTip(lang,x,y){
@@ -412,7 +432,7 @@ return Promise.all([d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2/countrie
       leg.appendChild(s); });
   });
   renderPresets();
-  if(YEAR!=='current') applyHeights();
+  if(YEAR!=='current' || HMODE!=='pop') applyHeights();
   renderYears();
   window.addEventListener('resize',placePresets);
 });
