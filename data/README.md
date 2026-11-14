@@ -17,12 +17,22 @@ One row per language.
 | `language` | Name used everywhere else in the data. Must match exactly. |
 | `family` | Group heading in the legend. |
 | `legend_order` | Position in the legend (any increasing numbers work; gaps are fine). Families appear in the order of their first language. Leave blank to keep a language out of the legend. |
-| `color` | Hex color for the map and legend. |
+| `color` | Hex color for the map and legend (see "How the colors were chosen" below). |
 | `native_millions`, `total_millions` | Global speaker counts shown in the tooltip and summed in the selection panel. |
 | `merge_into` | If filled, this language is drawn as the named language instead (for example `Hindi` with `merge_into = Hindustani`). The merged-into language needs its own row with its own color, counts, and legend position. The member row's color and counts are kept for reference but are not shown. Clear this cell to split a language back out (and give it a `legend_order`). |
 | `arabic_dialect` | TRUE for Arabic varieties. When Modern Standard Arabic is selected, these regions get the MSA tint. |
 
 A language appears in the legend only if some region uses it or it has rows in `second_language.csv`.
+
+### How the colors were chosen
+
+`tools/recolor.py` sets the colors from a language family tree:
+
+- **Hue follows the family tree.** Each family has its own hue band. Its languages are laid out branch by branch along the band, with wider gaps between higher-level branches, so close relatives get close hues. Some families get a distinct band so they read as one group: Niger-Congo greens, Nilo-Saharan indigo, Berber orange (set well apart from the Semitic rose), and one orchid band shared by all the indigenous languages of the Americas (Quechuan, Aymaran, Tupian, Mayan, Eskimo-Aleut).
+- **Lightness and saturation keep neighbours apart.** Within its hue, each language gets the lightness and saturation that make it easiest to tell apart from the languages it borders on the map (`tools/language_adjacency.js` finds the borders). Large languages avoid the lightest and darkest shades.
+- **Kept as they were:** the European families (Romance, Germanic, Slavic, Baltic, Greek, Albanian, Uralic), Armenian, Georgian, Japanese, Korean, Mandarin, Modern Standard Arabic and Hmong. Basque, the only minor isolate on the map, is grey.
+
+To recolor after adding a language, give it a place in the tree in `tools/recolor.py` and run `node tools/language_adjacency.js` then `python3 tools/recolor.py` from the folder that contains `data/`. Or just type a color into this column by hand.
 
 ## countries.csv
 
@@ -76,8 +86,9 @@ The main results of the check:
 - **Home language beats identity.** Barcelona, Tarragona, Bizkaia, Gipuzkoa, A Coruña and Pontevedra are Spanish-dominant at home, and Riga, Daugavpils and Rēzekne are Russian-dominant (2011 census). In the 2024 census, Bolivia's La Paz, Oruro, Chuquisaca and Cochabamba report Spanish as their main language.
 - **Regional languages that were missing.** About 100 languages were added to the legend: Isan (counted as Lao), Northern and Southern Thai, Kenyan, Ugandan, Ghanaian, Guinean and Sierra Leonean languages, Kabyle, Tachelhit, Kanuri, Zarma, K'iche', Q'eqchi', Gagauz, Abkhaz, Luri, Gilaki, Mazandarani and others.
 - **Census corrections.** Examples: Islamabad is Punjabi (2023 census), Limpopo is Sepedi (2022 census), Lakshadweep is Malayalam, Taiwan is Mandarin except six Hokkien-leaning counties (2020 census), and Singapore is English (2020 census).
+- **Ukraine.** Russian is shown only in the oblasts that Russia controls for the most part: Crimea, Sevastopol, Luhansk, Donetsk, Zaporizhzhia and Kherson (control from ukraine-war-analytics.com, February 2026). Every other oblast is Ukrainian. The Russian glow still covers the whole country as a second language.
+- **Kosovo** is drawn as its own territory (Albanian; 2024 census population).
 - **Known limits.**
-  - Ukraine's oblasts use a 2004 home-language survey, the latest available by oblast; surveys since 2022 show a strong shift towards Ukrainian.
   - The Philippines, Laos and parts of Indonesia keep their earlier assignments, because no newer province-level data was found.
   - The map's Callao shape also covers part of Puno, so it carries a single language.
 

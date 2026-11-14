@@ -323,6 +323,10 @@ srb,1980,118.454,OECD ENV-Growth 1995 value carried back to 1980 with Maddison P
 srb,2000,66.942,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
 srb,2026,158.152,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
 srb,2050,295.459,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+xkx,1980,11.842,OECD ENV-Growth 2010 value carried back to 1980 assuming constant GDP per person (IIASA population)
+xkx,2000,13.708,OECD ENV-Growth 2010 value carried back to 2000 assuming constant GDP per person (IIASA population)
+xkx,2026,25.518,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+xkx,2050,44.053,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
 svk,1980,63.133,OECD ENV-Growth 1995 value carried back to 1980 assuming constant GDP per person (IIASA population)
 svk,2000,84.423,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
 svk,2026,193.821,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
