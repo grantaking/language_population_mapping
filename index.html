@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>World Language &amp; Population-Density Globe</title>
+<title>World Language Globe</title>
 <meta name="description" content="Interactive 3D globe: plurality spoken language by region, with terrain height proportional to population density, and second-language 'lingua franca' glows.">
 <style>
   html,body{margin:0;padding:0;height:100%;background:#07080c;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
@@ -26,8 +26,8 @@
 <div id="gwrap">
 <div id="c" style="position:absolute;inset:0;z-index:1;touch-action:none;cursor:grab"></div>
 <div id="top" style="position:absolute;top:0;left:0;right:0;z-index:30;background:var(--bg-primary,rgba(248,248,248,0.95));backdrop-filter:blur(4px);padding:7px 12px;border-bottom:1px solid rgba(0,0,0,0.1);box-shadow:0 1px 6px rgba(0,0,0,0.06)">
- <div style="display:flex;align-items:center;flex-wrap:wrap;gap:4px 12px"><div style="font-weight:600;font-size:13px;color:var(--text-primary,#1a1a1a)">World language &amp; population-density globe</div><div id="years" style="display:none;margin-left:auto;align-items:center;gap:6px;font-size:11px;color:var(--text-secondary,#555)"></div></div>
- <div style="font-size:11px;color:var(--text-secondary,#555);margin-top:1px">Color = plurality language · height ∝ <span id="hmode">population density</span>. Click/hover to select. Lingua francas dimly tint where they're a widespread second language. Close varieties are merged (Hindustani, Serbo-Croatian, Persian, …).</div>
+ <div style="display:flex;align-items:center;flex-wrap:wrap;gap:4px 12px"><div style="font-weight:600;font-size:13px;color:var(--text-primary,#1a1a1a)">World language globe</div><div id="years" style="display:none;margin-left:auto;align-items:center;gap:6px;font-size:11px;color:var(--text-secondary,#555)"></div></div>
+ <div style="font-size:11px;color:var(--text-secondary,#555);margin-top:1px"><span id="hmode">Color: plurality language · Height: people per km²</span> · Click a language to select <span id="about" style="cursor:pointer;text-decoration:underline;opacity:.8;white-space:nowrap">ⓘ About</span></div>
  <div id="yearnote" style="display:none;font-size:11px;color:var(--text-secondary,#555);margin-top:3px"></div>
  <div id="sel" style="display:none;flex-wrap:wrap;align-items:center;gap:5px 9px;margin-top:6px;font-size:11px;color:var(--text-secondary,#555)"></div>
 </div>
@@ -129,6 +129,8 @@ function buildData(t){
 const host=document.getElementById('c'), tip=document.getElementById('tip'), wrap=document.getElementById('gwrap');
 function fmt(m){ if(m==null)return '—'; if(m===0)return '0'; if(m>=1000)return (m/1000).toFixed(m>=10000?1:2)+' billion'; if(m>=1)return (m>=10?Math.round(m):m.toFixed(1))+' million'; return Math.round(m*1000)+',000'; }
 function fmtUSD(b){ if(b==null)return '—'; if(b===0)return '$0'; if(b>=1000)return '$'+(b/1000).toFixed(b>=10000?1:2)+' trillion'; if(b>=1)return '$'+(b>=10?Math.round(b):b.toFixed(1))+' billion'; return '$'+Math.round(b*1000)+' million'; }
+function fmtS(m){ if(m==null)return '—'; return m>=1000?(m/1000).toFixed(2)+'B':(m>=1?Math.round(m)+'M':(m*1000).toFixed(0)+'K'); }
+function fmtUSDS(b){ if(b==null)return '—'; if(b===0)return '$0'; return b>=1000?'$'+(b/1000).toFixed(1)+'T':'$'+(b>=1?Math.round(b):b.toFixed(1))+'B'; }
 function pct(x){ if(x==null||!isFinite(x))return '—'; const p=x*100; return p===0?'0%':(p<0.1?'<0.1%':(p<10?p.toFixed(1):Math.round(p))+'%'); }
 function ll(lon,lat,r){const ph=lat*DEG,la=lon*DEG,cp=Math.cos(ph);return [r*cp*Math.cos(la),r*cp*Math.sin(la),r*Math.sin(ph)];}
 function elen(a,b){return Math.max(Math.abs(a.x-b.x),Math.abs(a.y-b.y));}
@@ -329,10 +331,9 @@ return Promise.all([d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2/countrie
       chips+='<span data-l="'+l+'" style="display:inline-flex;align-items:center;gap:4px;cursor:pointer;background:rgba(127,127,140,0.16);border-radius:11px;padding:1px 6px 1px 5px"><span style="width:9px;height:9px;border-radius:2px;background:'+FULL[l]+'"></span>'+l+'<span style="opacity:.55;font-weight:700">×</span></span>'; });
     const G=hasGDP?gdpFor(selected):null, yl=(YEAR!=='current'?'<b>'+yearLabel(YEAR)+'</b> &nbsp;':'');
     const stats='<span style="margin-left:auto;display:flex;flex-direction:column;align-items:flex-end;gap:1px;color:var(--text-secondary,#555)">'
-      +'<span>'+yl+'<b>Σ native:</b> '+fmt(sn)+' ('+pct(popShare(sn))+' of world population) &nbsp;·&nbsp; <b>Σ total:</b> '+fmt(st)+' ('+pct(popShare(st))+' of world population*)</span>'
-      +(G?'<span><b>Plurality-region GDP:</b> '+fmtUSD(G.pl)+' ('+pct(G.plS)+' of world GDP) &nbsp;·&nbsp; <b>Lingua franca GDP:</b> '+fmtUSD(G.lf)+' ('+pct(G.lfS)+')</span>':'')
-      +'<span style="font-size:9.5px;opacity:.8;max-width:640px;text-align:right">* Total speakers can overlap: people who speak several languages are counted once for each, so this share may be overstated.'
-      +(G?' GDP is PPP in 2017 US dollars, split among regions by population. Lingua franca GDP covers every region where a selected language is the plurality or a second language; each region is counted once.':'')+'</span></span>';
+      +'<span>'+yl+'<b>Native</b> '+fmtS(sn)+' · '+pct(popShare(sn))+' of world &nbsp;|&nbsp; <b>Total</b> <span title="People who speak several languages are counted once for each, so this share may be overstated">'+fmtS(st)+' · '+pct(popShare(st))+'*</span></span>'
+      +(G?'<span><b>GDP</b> plurality regions '+fmtUSDS(G.pl)+' · '+pct(G.plS)+' &nbsp;|&nbsp; lingua franca '+fmtUSDS(G.lf)+' · '+pct(G.lfS)+'</span>':'')
+      +'</span>';
     sel.innerHTML='<b>Selected ('+selected.size+'):</b>'+chips+stats+'<span data-save style="cursor:pointer;padding:2px 9px;border-radius:11px;background:rgba(70,130,80,0.2);color:var(--text-primary,#1a4022);font-weight:700">＋ Save combo</span><span data-clear style="cursor:pointer;opacity:.6;text-decoration:underline">clear</span>';
     placePresets();
   }
@@ -346,16 +347,16 @@ return Promise.all([d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2/countrie
     yearsEl.style.display='flex';
     yearsEl.innerHTML=(hasGDPData?'<span>Height</span>'+seg([['pop','Population'],['gdp','GDP']],'data-hmode',HMODE)+'<span style="width:6px"></span>':'')
       +(hasYears?'<span>Year</span>'+seg(YEAR_OPTIONS,'data-year',YEAR):'');
-    hmodeEl.textContent=HMODE==='gdp'?'GDP density (GDP per km², PPP)':'population density';
-    const notes=[];
-    if(HMODE==='gdp') notes.push('<b>GDP view:</b> height shows GDP per km² (PPP, 2017 US dollars). Each country\'s GDP for the chosen year is split among its regions by population; the scale is fixed at today\'s values, so heights grow or shrink with GDP across years.');
-    if(YEAR!=='current'){
-      notes.push('<b>'+yearLabel(YEAR)+':</b> '+(HMODE==='gdp'?'GDP '+(YEAR==='2050'?'projected (SSP2)':'estimated')+' for this year.':'heights scale each country\'s current regional pattern to its UN WPP 2024 population'
-        +(YEAR==='2050'?' projection':'')+' on the same height scale.')+' Speaker counts are estimates; hover a language for the method.');
-    }
-    yearNote.style.display=notes.length?'block':'none'; yearNote.innerHTML=notes.join(' ');
+    const yr=YEAR==='current'?'':(YEAR==='2050'?' (2050 projection)':' ('+YEAR+' estimate)');
+    hmodeEl.textContent='Color: plurality language · Height: '+(HMODE==='gdp'?'GDP per km²':'people per km²')+yr;
     placePresets();
   }
+  // About box: the method notes, hidden until asked for
+  yearNote.innerHTML='<b>Color</b> is the plurality language of each region; a dim tint marks regions where a language is a widespread second language (lingua franca). Close varieties are merged (Hindustani, Serbo-Croatian, Persian, and others). '
+    +'<b>Height</b> is people per km² or, in GDP view, GDP per km² (PPP, 2017 US dollars; each country\'s GDP split among its regions by population). Both use a fixed scale set by today\'s values. '
+    +'<b>Other years</b> scale each country\'s current regional pattern to its UN population or GDP for that year; 2050 uses projections (UN WPP 2024, SSP2). Speaker counts for other years are estimates; hover a language for the method. '
+    +'<b>Selection totals:</b> shares are of world population or world GDP. *Total speakers overlap, since people who speak several languages are counted once for each, so that share may be overstated. Lingua franca GDP covers every region where a selected language is the plurality or a second language; each region is counted once.';
+  document.getElementById('about').addEventListener('click',()=>{ yearNote.style.display=yearNote.style.display==='block'?'none':'block'; placePresets(); });
   function setHMode(h){
     if(h===HMODE)return; HMODE=h;
     try{ localStorage.setItem('langDensityGlobe.height',h); }catch(e){}
