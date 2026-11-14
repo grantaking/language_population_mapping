@@ -26,8 +26,9 @@
 <div id="gwrap">
 <div id="c" style="position:absolute;inset:0;z-index:1;touch-action:none;cursor:grab"></div>
 <div id="top" style="position:absolute;top:0;left:0;right:0;z-index:30;background:var(--bg-primary,rgba(248,248,248,0.95));backdrop-filter:blur(4px);padding:7px 12px;border-bottom:1px solid rgba(0,0,0,0.1);box-shadow:0 1px 6px rgba(0,0,0,0.06)">
- <div style="font-weight:600;font-size:13px;color:var(--text-primary,#1a1a1a)">World language &amp; population-density globe</div>
+ <div style="display:flex;align-items:center;flex-wrap:wrap;gap:4px 12px"><div style="font-weight:600;font-size:13px;color:var(--text-primary,#1a1a1a)">World language &amp; population-density globe</div><div id="years" style="display:none;margin-left:auto;align-items:center;gap:6px;font-size:11px;color:var(--text-secondary,#555)"></div></div>
  <div style="font-size:11px;color:var(--text-secondary,#555);margin-top:1px">Color = plurality language · height ∝ density. Click/hover to select. Lingua francas dimly tint where they're a widespread second language. Close varieties are merged (Hindustani, Serbo-Croatian, Persian, …).</div>
+ <div id="yearnote" style="display:none;font-size:11px;color:var(--text-secondary,#555);margin-top:3px"></div>
  <div id="sel" style="display:none;flex-wrap:wrap;align-items:center;gap:5px 9px;margin-top:6px;font-size:11px;color:var(--text-secondary,#555)"></div>
 </div>
 <div id="presets" style="position:absolute;top:92px;right:8px;z-index:31;display:none;width:212px;max-height:52%;overflow-y:auto;background:var(--bg-primary,rgba(248,248,248,0.96));backdrop-filter:blur(4px);border:1px solid rgba(0,0,0,0.12);border-radius:8px;padding:8px 9px;box-shadow:0 4px 14px rgba(0,0,0,0.14);font-size:11px;color:var(--text-secondary,#555)"></div>
@@ -48,7 +49,9 @@
 const DATA_DIR='data/';
 const base='https://cdn.jsdelivr.net/npm/datamaps@0.5.10/src/js/data/';
 const R0=100, MAXH=12, MINH=0.1, DEG=Math.PI/180;
-let FULL,LANGINFO,POP,CFG,NATDENS,NATPOP,SKIP,FAMS,LANG2FAM,isoList,ARABIC,ALIAS,L2,ATLAS_COUNTRIES;
+let FULL,LANGINFO,POP,CFG,NATDENS,NATPOP,SKIP,FAMS,LANG2FAM,isoList,ARABIC,ALIAS,L2,ATLAS_COUNTRIES,POPYR,SPK;
+const YEAR_OPTIONS=[['current','Current'],['1980','1980'],['2000','2000'],['2050','2050 (proj.)']];
+const CUR_POP_YEAR='2026'; // population_by_year.csv column treated as "current" for growth ratios
 function canon(l){return ALIAS[l]||l;}
 /* BUILD-DATA START */
 function buildData(t){
@@ -96,6 +99,18 @@ function buildData(t){
   t.second_language.forEach(r=>{
     const l=str(r.language), iso=str(r.iso3).toLowerCase(), reg=str(r.region); if(!l||!iso)return;
     (D.L2[l]||(D.L2[l]=new Set())).add(reg?iso+'|'+reg:iso);
+  });
+  // population_by_year.csv (optional): UN population by country and year
+  D.POPYR={};
+  (t.population_by_year||[]).forEach(r=>{
+    const iso=str(r.iso3).toLowerCase(), y=str(r.year), p=num(r.population_thousands); if(!iso||!y||p==null)return;
+    (D.POPYR[iso]||(D.POPYR[iso]={}))[y]=p;
+  });
+  // speakers_by_year.csv (optional): speaker estimates for other years
+  D.SPK={};
+  (t.speakers_by_year||[]).forEach(r=>{
+    const l=str(r.language), y=str(r.year); if(!l||!y)return;
+    (D.SPK[y]||(D.SPK[y]={}))[l]={n:num(r.native_millions),t:num(r.total_millions),method:str(r.method),source:str(r.source)};
   });
   return D;
 }
@@ -176,10 +191,28 @@ return Promise.all([d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2/countrie
     const geo=buildRegion(o.feat,h); if(!geo)return;
     const col=new THREE.Color(FULL[o.lang]||'#cccccc');
     const mesh=new THREE.Mesh(geo,new THREE.MeshLambertMaterial({color:col.clone(),side:THREE.DoubleSide}));
-    mesh.userData={lang:o.lang, base:col, iso:o.iso, name:o.name};
+    mesh.userData={lang:o.lang, base:col, iso:o.iso, name:o.name, dens:o.dens, h:h};
     group.add(mesh);
   });
   scene.add(group);
+  // ---- population year: heights scale each country's current density by its UN population ratio; the scale stays fixed ----
+  let YEAR='current';
+  try{ const y=localStorage.getItem('langDensityGlobe.year'); if(YEAR_OPTIONS.some(o=>o[0]===y)) YEAR=y; }catch(e){}
+  const hasYears=Object.keys(POPYR).length>0;
+  if(!hasYears) YEAR='current';
+  function popRatio(iso,y){ if(y==='current')return 1; const p=POPYR[iso]; return (p&&p[y]&&p[CUR_POP_YEAR])?p[y]/p[CUR_POP_YEAR]:1; }
+  function applyHeights(){
+    const thr=R0+MINH*0.5;
+    group.children.forEach(m=>{
+      const u=m.userData, hNew=MINH+(MAXH-MINH)*Math.min(u.dens*popRatio(u.iso,YEAR),dcap)/dcap;
+      if(Math.abs(hNew-u.h)<1e-6)return;
+      const pos=m.geometry.attributes.position, a=pos.array, rNew=R0+hNew;
+      for(let i=0;i<a.length;i+=3){ const x=a[i],y=a[i+1],z=a[i+2], r=Math.sqrt(x*x+y*y+z*z); if(r>thr){ const k=rNew/r; a[i]=x*k; a[i+1]=y*k; a[i+2]=z*k; } }
+      pos.needsUpdate=true; m.geometry.computeBoundingSphere(); u.h=hNew;
+    });
+  }
+  function yearLabel(y){ const o=YEAR_OPTIONS.find(o=>o[0]===y); return o?o[1]:y; }
+  function info(l){ if(YEAR!=='current'){ const s=SPK[YEAR]&&SPK[YEAR][l]; if(s) return [s.n,s.t,s]; } const i=LANGINFO[l]||[null,null]; return [i[0],i[1],null]; }
   scene.add(new THREE.AmbientLight(0xffffff,0.68));
   const dl=new THREE.DirectionalLight(0xffffff,0.72); dl.position.set(1,0.35,0.7); scene.add(dl);
   const dl2=new THREE.DirectionalLight(0xffffff,0.2); dl2.position.set(-0.8,-0.4,-0.3); scene.add(dl2);
@@ -206,7 +239,7 @@ return Promise.all([d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2/countrie
   function writeStore(){ try{ localStorage.setItem(STORE_KEY, JSON.stringify(presets)); }catch(e){} }
   const presets=readStore(); const presetsPanel=document.getElementById('presets');
   function escHtml(s){return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
-  function sums(langs){let sn=0,st=0;langs.forEach(l=>{const i=LANGINFO[l]||[0,0];sn+=i[0]||0;st+=i[1]||0;});return [sn,st];}
+  function sums(langs){let sn=0,st=0;langs.forEach(l=>{const i=info(l);sn+=i[0]||0;st+=i[1]||0;});return [sn,st];}
   function renderPresets(){
     if(!presets.length){ presetsPanel.style.display='none'; return; }
     presetsPanel.style.display='block';
@@ -250,19 +283,46 @@ return Promise.all([d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2/countrie
   function updatePanel(){
     if(!selected.size){ sel.style.display='none'; return; }
     sel.style.display='flex'; let sn=0,st=0,chips='';
-    selected.forEach(l=>{ const i=LANGINFO[l]||[0,0]; sn+=i[0]||0; st+=i[1]||0;
+    selected.forEach(l=>{ const i=info(l); sn+=i[0]||0; st+=i[1]||0;
       chips+='<span data-l="'+l+'" style="display:inline-flex;align-items:center;gap:4px;cursor:pointer;background:rgba(127,127,140,0.16);border-radius:11px;padding:1px 6px 1px 5px"><span style="width:9px;height:9px;border-radius:2px;background:'+FULL[l]+'"></span>'+l+'<span style="opacity:.55;font-weight:700">×</span></span>'; });
-    sel.innerHTML='<b>Selected ('+selected.size+'):</b>'+chips+'<span style="margin-left:auto;white-space:nowrap;color:var(--text-secondary,#555)"><b>Σ native:</b> '+fmt(sn)+' &nbsp;·&nbsp; <b>Σ total:</b> '+fmt(st)+'</span><span data-save style="cursor:pointer;padding:2px 9px;border-radius:11px;background:rgba(70,130,80,0.2);color:var(--text-primary,#1a4022);font-weight:700">＋ Save combo</span><span data-clear style="cursor:pointer;opacity:.6;text-decoration:underline">clear</span>';
+    sel.innerHTML='<b>Selected ('+selected.size+'):</b>'+chips+'<span style="margin-left:auto;white-space:nowrap;color:var(--text-secondary,#555)">'+(YEAR!=='current'?'<b>'+yearLabel(YEAR)+'</b> &nbsp;':'')+'<b>Σ native:</b> '+fmt(sn)+' &nbsp;·&nbsp; <b>Σ total:</b> '+fmt(st)+'</span><span data-save style="cursor:pointer;padding:2px 9px;border-radius:11px;background:rgba(70,130,80,0.2);color:var(--text-primary,#1a4022);font-weight:700">＋ Save combo</span><span data-clear style="cursor:pointer;opacity:.6;text-decoration:underline">clear</span>';
+    placePresets();
   }
+  const topBar=document.getElementById('top'), yearsEl=document.getElementById('years'), yearNote=document.getElementById('yearnote');
+  function placePresets(){ presetsPanel.style.top=(topBar.offsetHeight+8)+'px'; }
+  function renderYears(){
+    if(!hasYears){ yearsEl.style.display='none'; return; }
+    yearsEl.style.display='flex';
+    yearsEl.innerHTML='<span>Population year</span><span style="display:inline-flex;border:1px solid rgba(127,127,140,0.35);border-radius:7px;overflow:hidden">'
+      +YEAR_OPTIONS.map(([k,lab])=>'<span data-year="'+k+'" style="cursor:pointer;padding:2px 8px;'+(k===YEAR?'background:rgba(127,127,140,0.32);color:var(--text-primary,#1a1a1a);font-weight:700':'')+'">'+lab+'</span>').join('')+'</span>';
+    if(YEAR==='current'){ yearNote.style.display='none'; }
+    else {
+      yearNote.style.display='block';
+      yearNote.innerHTML='<b>'+yearLabel(YEAR)+':</b> heights scale each country\'s current regional pattern to its UN WPP 2024 population'
+        +(YEAR==='2050'?' projection':'')+' on the same height scale. Speaker counts are estimates; hover a language for the method.';
+    }
+    placePresets();
+  }
+  function setYear(y){
+    if(y===YEAR)return; YEAR=y;
+    try{ localStorage.setItem('langDensityGlobe.year',y); }catch(e){}
+    applyHeights(); renderYears(); updatePanel(); renderPresets(); showTip(null);
+  }
+  yearsEl.addEventListener('click',e=>{ const b=e.target.closest('[data-year]'); if(b) setYear(b.getAttribute('data-year')); });
   function toggleSelect(l){ if(selected.has(l))selected.delete(l); else selected.add(l); refresh(); updatePanel(); }
   function setHover(l){ if(l===hoverLang)return; hoverLang=l; refresh(); }
   function showTip(lang,x,y){
     if(!lang){ tip.style.display='none'; return; }
-    const info=LANGINFO[lang]||[null,null];
+    const inf=info(lang);
+    let yearLine='';
+    if(YEAR!=='current'){
+      const s=inf[2];
+      yearLine='<div style="opacity:.75;margin-top:3px">'+yearLabel(YEAR)+': '+(s?((YEAR==='2050'?'projected':'estimated')+(s.method==='census'?' from census language shares and UN population':' from UN population change')):'no estimate for this year, showing current figures')+'</div>';
+    }
     const note = lang==='Modern Standard Arabic'
       ? '<div style="opacity:.8;margin-top:3px;font-style:italic">Formal/written register — no native speakers; shared across the Arabic-speaking world.</div>'
       : (L2[lang] ? '<div style="opacity:.8;margin-top:3px;font-style:italic">Dim tint = where it\'s also a widespread second language.</div>' : '');
-    tip.innerHTML='<div style="font-weight:700;font-size:13px;margin-bottom:1px">'+lang+'</div><div style="opacity:.75;margin-bottom:3px">'+(LANG2FAM[lang]||'')+' family</div><div>Native speakers: '+fmt(info[0])+'</div><div>Total speakers: '+fmt(info[1])+'</div>'+note+(selected.has(lang)?'<div style="opacity:.7;margin-top:3px">✓ selected — click to remove</div>':'<div style="opacity:.7;margin-top:3px">click to select</div>');
+    tip.innerHTML='<div style="font-weight:700;font-size:13px;margin-bottom:1px">'+lang+'</div><div style="opacity:.75;margin-bottom:3px">'+(LANG2FAM[lang]||'')+' family</div><div>Native speakers: '+fmt(inf[0])+'</div><div>Total speakers: '+fmt(inf[1])+'</div>'+yearLine+note+(selected.has(lang)?'<div style="opacity:.7;margin-top:3px">✓ selected — click to remove</div>':'<div style="opacity:.7;margin-top:3px">click to select</div>');
     tip.style.display='block'; const tw=tip.offsetWidth,th=tip.offsetHeight; let px=x+15,py=y+15;
     if(px+tw>window.innerWidth)px=x-tw-15; if(py+th>window.innerHeight)py=y-th-15;
     tip.style.left=px+'px'; tip.style.top=py+'px';
@@ -314,13 +374,18 @@ return Promise.all([d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2/countrie
       leg.appendChild(s); });
   });
   renderPresets();
+  if(YEAR!=='current') applyHeights();
+  renderYears();
+  window.addEventListener('resize',placePresets);
 });
 }
 function showMessage(html){ host.innerHTML='<div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);max-width:440px;text-align:center;color:var(--text-secondary,#b9c0cb);font-size:13px;line-height:1.5;padding:20px">'+html+'</div>'; }
 showMessage('Loading map data…');
-Promise.all(['languages','countries','regions','second_language'].map(n=>d3.csv(DATA_DIR+n+'.csv').catch(err=>{ err.file=n+'.csv'; throw err; })))
- .then(([languages,countries,regions,second_language])=>{
-   ({FULL,LANGINFO,POP,CFG,NATDENS,NATPOP,SKIP,FAMS,LANG2FAM,isoList,ARABIC,ALIAS,L2,ATLAS_COUNTRIES}=buildData({languages,countries,regions,second_language}));
+const REQUIRED=['languages','countries','regions','second_language'], OPTIONAL=['population_by_year','speakers_by_year'];
+Promise.all(REQUIRED.map(n=>d3.csv(DATA_DIR+n+'.csv').catch(err=>{ err.file=n+'.csv'; throw err; }))
+  .concat(OPTIONAL.map(n=>d3.csv(DATA_DIR+n+'.csv').catch(()=>[]))))
+ .then(([languages,countries,regions,second_language,population_by_year,speakers_by_year])=>{
+   ({FULL,LANGINFO,POP,CFG,NATDENS,NATPOP,SKIP,FAMS,LANG2FAM,isoList,ARABIC,ALIAS,L2,ATLAS_COUNTRIES,POPYR,SPK}=buildData({languages,countries,regions,second_language,population_by_year,speakers_by_year}));
    host.innerHTML='';
    return startGlobe();
  })

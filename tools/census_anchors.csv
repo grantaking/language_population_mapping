@@ -1,0 +1,75 @@
+language,iso3,census_year,used_for,speakers,population_base,share_percent,source,note
+Hindustani,ind,1991,1980,372925019,838583988,,"Census of India 1991, mother tongue (as tabulated in Wikipedia: List of languages by number of native speakers in India)",Hindi + Urdu; nearest available census to 1980 (1981 language tables not found online; Assam was not enumerated in 1981)
+Hindustani,ind,2001,2000,473584753,1028610328,,"Census of India 2001, mother tongue (same table)",Hindi + Urdu
+Hindustani,ind,2011,current,579119824,1210854977,,"Census of India 2011, first language (same table)",Hindi + Urdu
+Bengali,ind,1991,1980,69595738,838583988,,"Census of India 1991, mother tongue (as tabulated in Wikipedia: List of languages by number of native speakers in India)",nearest available census to 1980 (1981 language tables not found online; Assam was not enumerated in 1981)
+Bengali,ind,2001,2000,83193311,1028610328,,"Census of India 2001, mother tongue (same table)",
+Bengali,ind,2011,current,97237669,1210854977,,"Census of India 2011, first language (same table)",
+Marathi,ind,1991,1980,62481681,838583988,,"Census of India 1991, mother tongue (as tabulated in Wikipedia: List of languages by number of native speakers in India)",nearest available census to 1980 (1981 language tables not found online; Assam was not enumerated in 1981)
+Marathi,ind,2001,2000,71936894,1028610328,,"Census of India 2001, mother tongue (same table)",
+Marathi,ind,2011,current,83026680,1210854977,,"Census of India 2011, first language (same table)",
+Telugu,ind,1991,1980,66017615,838583988,,"Census of India 1991, mother tongue (as tabulated in Wikipedia: List of languages by number of native speakers in India)",nearest available census to 1980 (1981 language tables not found online; Assam was not enumerated in 1981)
+Telugu,ind,2001,2000,74002856,1028610328,,"Census of India 2001, mother tongue (same table)",
+Telugu,ind,2011,current,81127740,1210854977,,"Census of India 2011, first language (same table)",
+Tamil,ind,1991,1980,53006368,838583988,,"Census of India 1991, mother tongue (as tabulated in Wikipedia: List of languages by number of native speakers in India)",nearest available census to 1980 (1981 language tables not found online; Assam was not enumerated in 1981)
+Tamil,ind,2001,2000,60793814,1028610328,,"Census of India 2001, mother tongue (same table)",
+Tamil,ind,2011,current,69026881,1210854977,,"Census of India 2011, first language (same table)",
+Gujarati,ind,1991,1980,40673814,838583988,,"Census of India 1991, mother tongue (as tabulated in Wikipedia: List of languages by number of native speakers in India)",nearest available census to 1980 (1981 language tables not found online; Assam was not enumerated in 1981)
+Gujarati,ind,2001,2000,46091617,1028610328,,"Census of India 2001, mother tongue (same table)",
+Gujarati,ind,2011,current,55492554,1210854977,,"Census of India 2011, first language (same table)",
+Kannada,ind,1991,1980,32753676,838583988,,"Census of India 1991, mother tongue (as tabulated in Wikipedia: List of languages by number of native speakers in India)",nearest available census to 1980 (1981 language tables not found online; Assam was not enumerated in 1981)
+Kannada,ind,2001,2000,37924011,1028610328,,"Census of India 2001, mother tongue (same table)",
+Kannada,ind,2011,current,43706512,1210854977,,"Census of India 2011, first language (same table)",
+Oriya,ind,1991,1980,28061313,838583988,,"Census of India 1991, mother tongue (as tabulated in Wikipedia: List of languages by number of native speakers in India)",nearest available census to 1980 (1981 language tables not found online; Assam was not enumerated in 1981)
+Oriya,ind,2001,2000,33017446,1028610328,,"Census of India 2001, mother tongue (same table)",
+Oriya,ind,2011,current,37521324,1210854977,,"Census of India 2011, first language (same table)",
+Malayalam,ind,1991,1980,30377176,838583988,,"Census of India 1991, mother tongue (as tabulated in Wikipedia: List of languages by number of native speakers in India)",nearest available census to 1980 (1981 language tables not found online; Assam was not enumerated in 1981)
+Malayalam,ind,2001,2000,33066392,1028610328,,"Census of India 2001, mother tongue (same table)",
+Malayalam,ind,2011,current,34838819,1210854977,,"Census of India 2011, first language (same table)",
+Punjabi,ind,1991,1980,23378744,838583988,,"Census of India 1991, mother tongue (as tabulated in Wikipedia: List of languages by number of native speakers in India)",nearest available census to 1980 (1981 language tables not found online; Assam was not enumerated in 1981)
+Punjabi,ind,2001,2000,29102477,1028610328,,"Census of India 2001, mother tongue (same table)",
+Punjabi,ind,2011,current,33124726,1210854977,,"Census of India 2011, first language (same table)",
+Assamese,ind,1991,1980,13079696,838583988,,"Census of India 1991, mother tongue (as tabulated in Wikipedia: List of languages by number of native speakers in India)",nearest available census to 1980 (1981 language tables not found online; Assam was not enumerated in 1981)
+Assamese,ind,2001,2000,13168484,1028610328,,"Census of India 2001, mother tongue (same table)",
+Assamese,ind,2011,current,15311351,1210854977,,"Census of India 2011, first language (same table)",
+Maithili,ind,1991,1980,7766921,838583988,,"Census of India 1991, mother tongue (as tabulated in Wikipedia: List of languages by number of native speakers in India)",nearest available census to 1980 (1981 language tables not found online; Assam was not enumerated in 1981)
+Maithili,ind,2001,2000,12179122,1028610328,,"Census of India 2001, mother tongue (same table)",
+Maithili,ind,2011,current,13583464,1210854977,,"Census of India 2011, first language (same table)",
+Kashmiri,ind,2001,2000,5527698,1028610328,,"Census of India 2001, mother tongue (same table)",
+Kashmiri,ind,2011,current,6797587,1210854977,,"Census of India 2011, first language (same table)",
+Nepali,ind,1991,1980,2076645,838583988,,"Census of India 1991, mother tongue (as tabulated in Wikipedia: List of languages by number of native speakers in India)",nearest available census to 1980 (1981 language tables not found online; Assam was not enumerated in 1981)
+Nepali,ind,2001,2000,2871749,1028610328,,"Census of India 2001, mother tongue (same table)",
+Nepali,ind,2011,current,2926168,1210854977,,"Census of India 2011, first language (same table)",
+Sindhi,ind,1991,1980,2122848,838583988,,"Census of India 1991, mother tongue (as tabulated in Wikipedia: List of languages by number of native speakers in India)",nearest available census to 1980 (1981 language tables not found online; Assam was not enumerated in 1981)
+Sindhi,ind,2001,2000,2535485,1028610328,,"Census of India 2001, mother tongue (same table)",
+Sindhi,ind,2011,current,2772264,1210854977,,"Census of India 2011, first language (same table)",
+Konkani,ind,1991,1980,1760607,838583988,,"Census of India 1991, mother tongue (as tabulated in Wikipedia: List of languages by number of native speakers in India)",nearest available census to 1980 (1981 language tables not found online; Assam was not enumerated in 1981)
+Konkani,ind,2001,2000,2489015,1028610328,,"Census of India 2001, mother tongue (same table)",
+Konkani,ind,2011,current,2256502,1210854977,,"Census of India 2011, first language (same table)",
+Meitei,ind,1991,1980,1270216,838583988,,"Census of India 1991, mother tongue (as tabulated in Wikipedia: List of languages by number of native speakers in India)",nearest available census to 1980 (1981 language tables not found online; Assam was not enumerated in 1981)
+Meitei,ind,2001,2000,1466705,1028610328,,"Census of India 2001, mother tongue (same table)",
+Meitei,ind,2011,current,1761079,1210854977,,"Census of India 2011, first language (same table)",
+Punjabi,pak,1981,1980,,,48.17,"Pakistan census 1981, mother tongue share (Wikipedia: Languages of Pakistan)",
+Punjabi,pak,1998,2000,,,44.15,"Pakistan census 1998, mother tongue share (same)",
+Punjabi,pak,2023,current,,,36.98,"Pakistan census 2023, mother tongue share (same)",
+Pashto,pak,1981,1980,,,13.15,"Pakistan census 1981, mother tongue share (Wikipedia: Languages of Pakistan)",
+Pashto,pak,1998,2000,,,15.42,"Pakistan census 1998, mother tongue share (same)",
+Pashto,pak,2023,current,,,18.15,"Pakistan census 2023, mother tongue share (same)",
+Sindhi,pak,1981,1980,,,11.77,"Pakistan census 1981, mother tongue share (Wikipedia: Languages of Pakistan)",
+Sindhi,pak,1998,2000,,,14.1,"Pakistan census 1998, mother tongue share (same)",
+Sindhi,pak,2023,current,,,14.31,"Pakistan census 2023, mother tongue share (same)",
+Hindustani,pak,1981,1980,,,7.6,"Pakistan census 1981, mother tongue share (Wikipedia: Languages of Pakistan)",Urdu
+Hindustani,pak,1998,2000,,,7.57,"Pakistan census 1998, mother tongue share (same)",Urdu
+Hindustani,pak,2023,current,,,9.25,"Pakistan census 2023, mother tongue share (same)",Urdu
+Balochi,pak,1981,1980,,,3.02,"Pakistan census 1981, mother tongue share (Wikipedia: Languages of Pakistan)",
+Balochi,pak,1998,2000,,,3.57,"Pakistan census 1998, mother tongue share (same)",
+Balochi,pak,2023,current,,,3.38,"Pakistan census 2023, mother tongue share (same)",
+Zhuang,chn,1990,1980,15489630,1163629200,,"China census 1990, ethnic group population (Wikipedia: List of ethnic groups in China); ethnicity used as a proxy for speakers",denominator is UN WPP 2024 population for the census year; nearest census with consistent figures to 1980
+Zhuang,chn,2000,2000,16187163,1274435400,,"China census 2000, ethnic group population (Wikipedia: List of ethnic groups in China); ethnicity used as a proxy for speakers",denominator is UN WPP 2024 population for the census year
+Zhuang,chn,2020,current,19568546,1426776300,,"China census 2020, ethnic group population (Wikipedia: List of ethnic groups in China); ethnicity used as a proxy for speakers",denominator is UN WPP 2024 population for the census year
+Uyghur,chn,1990,1980,7214431,1163629200,,"China census 1990, ethnic group population (Wikipedia: List of ethnic groups in China); ethnicity used as a proxy for speakers",denominator is UN WPP 2024 population for the census year; nearest census with consistent figures to 1980
+Uyghur,chn,2000,2000,8405416,1274435400,,"China census 2000, ethnic group population (Wikipedia: List of ethnic groups in China); ethnicity used as a proxy for speakers",denominator is UN WPP 2024 population for the census year
+Uyghur,chn,2020,current,11774538,1426776300,,"China census 2020, ethnic group population (Wikipedia: List of ethnic groups in China); ethnicity used as a proxy for speakers",denominator is UN WPP 2024 population for the census year
+Tibetan,chn,1990,1980,4593330,1163629200,,"China census 1990, ethnic group population (Wikipedia: List of ethnic groups in China); ethnicity used as a proxy for speakers",denominator is UN WPP 2024 population for the census year; nearest census with consistent figures to 1980
+Tibetan,chn,2000,2000,5422954,1274435400,,"China census 2000, ethnic group population (Wikipedia: List of ethnic groups in China); ethnicity used as a proxy for speakers",denominator is UN WPP 2024 population for the census year
+Tibetan,chn,2020,current,7060731,1426776300,,"China census 2020, ethnic group population (Wikipedia: List of ethnic groups in China); ethnicity used as a proxy for speakers",denominator is UN WPP 2024 population for the census year

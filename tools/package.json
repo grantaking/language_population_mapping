@@ -1,0 +1,13 @@
+{
+  "name": "language-globe-tools",
+  "private": true,
+  "description": "Regenerates data/speakers_by_year.csv for the language globe.",
+  "scripts": { "speakers": "node build_speakers_by_year.js" },
+  "dependencies": {
+    "d3-dsv": "^3.0.1",
+    "d3-geo": "^3.1.0",
+    "datamaps": "0.5.10",
+    "topojson-client": "^3.1.0",
+    "world-atlas": "^2.0.2"
+  }
+}

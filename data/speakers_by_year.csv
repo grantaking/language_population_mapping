@@ -1,0 +1,574 @@
+﻿language,year,native_millions,total_millions,method,source
+Turkish,1980,43.8,46.9,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Turkish,2000,62.8,67.3,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Turkish,2050,87,93.4,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Azerbaijani,1980,12,12.5,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Azerbaijani,2000,17.3,18,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Azerbaijani,2050,24.8,25.9,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Turkmen,1980,2.58,2.58,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Turkmen,2000,4.16,4.16,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Turkmen,2050,8.68,8.68,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Uzbek,1980,13.8,15.4,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Uzbek,2000,21.7,24.3,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Uzbek,2050,47.8,53.3,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Uyghur,1980,5.8,5.8,census,Estimated from census language shares (China 1990) and UN WPP 2024 population; other countries scaled by UN population change
+Uyghur,2000,7.94,7.94,census,Estimated from census language shares (China 2000) and UN WPP 2024 population; other countries scaled by UN population change
+Uyghur,2050,9.78,9.78,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Kazakh,1980,9.33,10,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Kazakh,2000,9.52,10.3,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Kazakh,2050,16.3,17.6,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Karakalpak,1980,0.333,0.333,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Karakalpak,2000,0.524,0.524,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Karakalpak,2050,1.1,1.1,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Kyrgyz,1980,2.63,3.03,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Kyrgyz,2000,3.52,4.07,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Kyrgyz,2050,6.76,7.8,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Tatar,1980,4.85,5.04,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Tatar,2000,5.11,5.32,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Tatar,2050,4.75,4.94,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Bashkir,1980,1.16,1.36,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Bashkir,2000,1.23,1.43,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Bashkir,2050,1.14,1.33,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Chuvash,1980,0.97,1.07,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Chuvash,2000,1.02,1.12,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Chuvash,2050,0.95,1.04,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Karachay,1980,0.291,0.34,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Karachay,2000,0.307,0.358,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Karachay,2050,0.285,0.332,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Yakut,1980,0.437,0.456,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Yakut,2000,0.46,0.481,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Yakut,2050,0.427,0.446,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Tuvan,1980,0.272,0.272,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Tuvan,2000,0.286,0.286,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Tuvan,2050,0.266,0.266,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Persian,1980,34,44.3,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Persian,2000,55.6,72.2,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Persian,2050,104,142,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Pashto,1980,9.79,12.2,census,Estimated from census language shares (Pakistan 1981) and UN WPP 2024 population; other countries scaled by UN population change; second-language speakers scaled by population change in second-language zones
+Pashto,2000,19.7,24.6,census,Estimated from census language shares (Pakistan 1998) and UN WPP 2024 population; other countries scaled by UN population change; second-language speakers scaled by population change in second-language zones
+Pashto,2050,59.9,74.9,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Kurdish,1980,11.6,13.4,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Kurdish,2000,17.9,20.6,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Kurdish,2050,30.3,35,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Balochi,1980,2.89,3.26,census,Estimated from census language shares (Pakistan 1981) and UN WPP 2024 population; other countries scaled by UN population change; second-language speakers scaled by population change in second-language zones
+Balochi,2000,5.41,6.08,census,Estimated from census language shares (Pakistan 1998) and UN WPP 2024 population; other countries scaled by UN population change; second-language speakers scaled by population change in second-language zones
+Balochi,2050,10.1,11.3,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Pamiri,1980,0.0366,0.0366,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Pamiri,2000,0.0573,0.0573,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Pamiri,2050,0.141,0.141,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Ossetian,1980,0.582,0.582,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Ossetian,2000,0.614,0.614,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Ossetian,2050,0.57,0.57,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Russian,1980,152,236,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Russian,2000,158,252,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Russian,2050,139,256,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Ukrainian,1980,42,50.9,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Ukrainian,2000,41.3,50.1,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Ukrainian,2050,26.7,32.3,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Belarusian,1980,5,9,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Belarusian,2000,5,9,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Belarusian,2050,5,9,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Polish,1980,37.8,39.7,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Polish,2000,40.5,42.5,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Polish,2050,34.6,36.3,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Czech,1980,9.78,10.8,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Czech,2000,9.73,10.7,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Czech,2050,9.33,10.3,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Slovak,1980,4.59,6.42,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Slovak,2000,4.94,6.91,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Slovak,2050,4.52,6.33,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Slovene,1980,2.26,2.26,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Slovene,2000,2.35,2.35,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Slovene,2050,2.34,2.34,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Serbo-Croatian,1980,20.7,25.5,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Serbo-Croatian,2000,20.2,24.9,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Serbo-Croatian,2050,14,17.4,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Bulgarian/Macedonian,1980,12.1,14.1,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Bulgarian/Macedonian,2000,11.3,13.1,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Bulgarian/Macedonian,2050,7.75,8.97,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+English,1980,251,708,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+English,2000,303,1023,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+English,2050,419,1750,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+German,1980,86.7,123,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+German,2000,91,129,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+German,2050,89.7,127,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Dutch,1980,18.7,23.4,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Dutch,2000,20.8,26.1,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Dutch,2050,24.6,30.7,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Danish,1980,5.1,5.1,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Danish,2000,5.32,5.32,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Danish,2050,6.09,6.09,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Swedish,1980,7.76,10.1,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Swedish,2000,8.28,10.8,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Swedish,2050,10.6,13.7,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Norwegian,1980,3.83,3.83,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Norwegian,2000,4.21,4.21,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Norwegian,2050,5.52,5.52,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Icelandic,1980,0.199,0.204,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Icelandic,2000,0.245,0.252,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Icelandic,2050,0.375,0.386,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Luxembourgish,1980,0.211,0.316,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Luxembourgish,2000,0.254,0.381,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Luxembourgish,2050,0.459,0.688,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Afrikaans,1980,3.19,7.76,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Afrikaans,2000,5.04,12.2,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Afrikaans,2050,8.45,20.5,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Tok Pisin,1980,0.0344,1.15,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Tok Pisin,2000,0.0612,2.04,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Tok Pisin,2050,0.163,5.43,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Bislama,1980,0.0034,0.0675,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Bislama,2000,0.0054,0.109,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Bislama,2050,0.0156,0.311,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Spanish,1980,268,309,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Spanish,2000,375,432,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Spanish,2050,529,615,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Portuguese,1980,130,134,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Portuguese,2000,186,193,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Portuguese,2050,294,316,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+French,1980,47.4,123,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+French,2000,59.1,183,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+French,2050,101,457,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Italian,1980,62.5,65.4,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Italian,2000,63.3,66.2,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Italian,2050,57.2,59.8,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Romanian,1980,29.2,31.6,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Romanian,2000,29.2,31.6,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Romanian,2050,20.2,21.9,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Catalan,1980,3.23,7.09,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Catalan,2000,3.53,7.74,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Catalan,2050,3.84,8.43,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Galician,1980,1.89,2.36,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Galician,2000,2.06,2.58,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Galician,2050,2.25,2.81,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Haitian Creole,1980,5.62,5.62,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Haitian Creole,2000,8.31,8.31,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Haitian Creole,2050,14.6,14.6,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Lithuanian,1980,3.7,3.7,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Lithuanian,2000,3.76,3.76,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Lithuanian,2050,2.42,2.42,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Latvian,1980,2.06,2.75,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Latvian,2000,1.93,2.57,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Latvian,2050,1.24,1.65,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Greek,1980,12.4,12.8,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Greek,2000,13.9,14.4,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Greek,2050,11.7,12.2,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Albanian,1980,7.56,8.06,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Albanian,2000,8.63,9.21,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Albanian,2050,6.1,6.51,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Finnish,1980,4.6,4.94,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Finnish,2000,4.98,5.35,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Finnish,2050,5.14,5.52,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Estonian,1980,1.23,1.23,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Estonian,2000,1.15,1.15,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Estonian,2050,0.97,0.97,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Hungarian,1980,14.5,14.5,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Hungarian,2000,13.8,13.8,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Hungarian,2050,11.8,11.8,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Basque,1980,0.591,0.946,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Basque,2000,0.645,1.03,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Basque,2050,0.703,1.12,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Hindustani,1980,179,352,census,"Estimated from census language shares (India 1991, Pakistan 1981) and UN WPP 2024 population; other countries scaled by UN population change; second-language speakers scaled by population change in second-language zones"
+Hindustani,2000,285,571,census,"Estimated from census language shares (India 2001, Pakistan 1998) and UN WPP 2024 population; other countries scaled by UN population change; second-language speakers scaled by population change in second-language zones"
+Hindustani,2050,475,1012,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Punjabi,1980,49.3,54.6,census,"Estimated from census language shares (India 1991, Pakistan 1981) and UN WPP 2024 population; other countries scaled by UN population change; second-language speakers scaled by population change in second-language zones"
+Punjabi,2000,82,90.7,census,"Estimated from census language shares (India 2001, Pakistan 1998) and UN WPP 2024 population; other countries scaled by UN population change; second-language speakers scaled by population change in second-language zones"
+Punjabi,2050,152,168,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Sindhi,1980,9.43,10,census,"Estimated from census language shares (India 1991, Pakistan 1981) and UN WPP 2024 population; other countries scaled by UN population change; second-language speakers scaled by population change in second-language zones"
+Sindhi,2000,20.1,21.3,census,"Estimated from census language shares (India 2001, Pakistan 1998) and UN WPP 2024 population; other countries scaled by UN population change; second-language speakers scaled by population change in second-language zones"
+Sindhi,2050,46.4,49.2,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Shina,1980,0.386,0.483,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Shina,2000,0.722,0.902,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Shina,2050,1.72,2.15,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Bengali,1980,118,133,census,Estimated from census language shares (India 1991) and UN WPP 2024 population; other countries scaled by UN population change; second-language speakers scaled by population change in second-language zones
+Bengali,2000,179,201,census,Estimated from census language shares (India 2001) and UN WPP 2024 population; other countries scaled by UN population change; second-language speakers scaled by population change in second-language zones
+Bengali,2050,281,317,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Marathi,1980,42.3,50.5,census,Estimated from census language shares (India 1991) and UN WPP 2024 population; other countries scaled by UN population change; second-language speakers scaled by population change in second-language zones
+Marathi,2000,61,72.7,census,Estimated from census language shares (India 2001) and UN WPP 2024 population; other countries scaled by UN population change; second-language speakers scaled by population change in second-language zones
+Marathi,2050,94.1,112,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Gujarati,1980,28.3,30.8,census,Estimated from census language shares (India 1991) and UN WPP 2024 population; other countries scaled by UN population change; second-language speakers scaled by population change in second-language zones
+Gujarati,2000,40.1,43.7,census,Estimated from census language shares (India 2001) and UN WPP 2024 population; other countries scaled by UN population change; second-language speakers scaled by population change in second-language zones
+Gujarati,2050,64.6,70.3,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Oriya,1980,19.2,21.8,census,Estimated from census language shares (India 1991) and UN WPP 2024 population; other countries scaled by UN population change; second-language speakers scaled by population change in second-language zones
+Oriya,2000,28.3,32.1,census,Estimated from census language shares (India 2001) and UN WPP 2024 population; other countries scaled by UN population change; second-language speakers scaled by population change in second-language zones
+Oriya,2050,43.1,48.8,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Assamese,1980,8.68,13.9,census,Estimated from census language shares (India 1991) and UN WPP 2024 population; other countries scaled by UN population change; second-language speakers scaled by population change in second-language zones
+Assamese,2000,10.9,17.5,census,Estimated from census language shares (India 2001) and UN WPP 2024 population; other countries scaled by UN population change; second-language speakers scaled by population change in second-language zones
+Assamese,2050,17,27.2,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Kashmiri,1980,3.28,3.28,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Kashmiri,2000,4.83,4.83,census,Estimated from census language shares (India 2001) and UN WPP 2024 population; other countries scaled by UN population change
+Kashmiri,2050,7.94,7.94,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Konkani,1980,1.22,1.32,census,Estimated from census language shares (India 1991) and UN WPP 2024 population; other countries scaled by UN population change; second-language speakers scaled by population change in second-language zones
+Konkani,2000,2.15,2.34,census,Estimated from census language shares (India 2001) and UN WPP 2024 population; other countries scaled by UN population change; second-language speakers scaled by population change in second-language zones
+Konkani,2050,2.61,2.83,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Nepali,1980,8.4,13.1,census,Estimated from census language shares (India 1991) and UN WPP 2024 population; other countries scaled by UN population change; second-language speakers scaled by population change in second-language zones
+Nepali,2000,13.4,20.9,census,Estimated from census language shares (India 2001) and UN WPP 2024 population; other countries scaled by UN population change; second-language speakers scaled by population change in second-language zones
+Nepali,2050,18.7,29.2,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Maithili,1980,13.7,13.7,census,Estimated from census language shares (India 1991) and UN WPP 2024 population; other countries scaled by UN population change
+Maithili,2000,26.1,26.1,census,Estimated from census language shares (India 2001) and UN WPP 2024 population; other countries scaled by UN population change
+Maithili,2050,38.7,38.7,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Sinhala,1980,10.9,12.2,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Sinhala,2000,14.1,15.8,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Sinhala,2050,18,20.1,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Tamil,1980,41.6,45.3,census,Estimated from census language shares (India 1991) and UN WPP 2024 population; other countries scaled by UN population change; second-language speakers scaled by population change in second-language zones
+Tamil,2000,59.4,64.6,census,Estimated from census language shares (India 2001) and UN WPP 2024 population; other countries scaled by UN population change; second-language speakers scaled by population change in second-language zones
+Tamil,2050,89.3,97.2,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Telugu,1980,45.7,52.9,census,Estimated from census language shares (India 1991) and UN WPP 2024 population; other countries scaled by UN population change; second-language speakers scaled by population change in second-language zones
+Telugu,2000,64.2,74.2,census,Estimated from census language shares (India 2001) and UN WPP 2024 population; other countries scaled by UN population change; second-language speakers scaled by population change in second-language zones
+Telugu,2050,94.1,109,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Kannada,1980,22.3,29.9,census,Estimated from census language shares (India 1991) and UN WPP 2024 population; other countries scaled by UN population change; second-language speakers scaled by population change in second-language zones
+Kannada,2000,32.4,43.4,census,Estimated from census language shares (India 2001) and UN WPP 2024 population; other countries scaled by UN population change; second-language speakers scaled by population change in second-language zones
+Kannada,2050,49.9,66.9,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Malayalam,1980,21.8,22.4,census,Estimated from census language shares (India 1991) and UN WPP 2024 population; other countries scaled by UN population change; second-language speakers scaled by population change in second-language zones
+Malayalam,2000,29.8,30.6,census,Estimated from census language shares (India 2001) and UN WPP 2024 population; other countries scaled by UN population change; second-language speakers scaled by population change in second-language zones
+Malayalam,2050,42,43.1,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Modern Standard Arabic,1980,0,102,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Modern Standard Arabic,2000,0,173,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Modern Standard Arabic,2050,0,412,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Egyptian,1980,28.7,36.8,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Egyptian,2000,47.6,61.1,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Egyptian,2050,105,134,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Levantine,1980,13,14.6,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Levantine,2000,23.9,26.9,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Levantine,2050,55.1,62,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Mesopotamian,1980,9.11,9.97,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Mesopotamian,2000,16.4,17.9,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Mesopotamian,2050,47.8,52.2,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Gulf,1980,1.9,2.38,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Gulf,2000,4.42,5.53,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Gulf,2050,15.8,19.7,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Najdi,1980,2.63,3.16,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Najdi,2000,7.02,8.43,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Najdi,2050,20.3,24.3,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Hijazi,1980,2.11,2.46,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Hijazi,2000,5.62,6.56,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Hijazi,2050,16.2,18.9,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Sanaani,1980,3.23,3.23,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Sanaani,2000,6.89,6.89,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Sanaani,2050,24,24,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Hadrami,1980,1.11,1.11,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Hadrami,2000,2.29,2.29,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Hadrami,2050,8.22,8.22,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Omani,1980,0.536,0.715,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Omani,2000,1.2,1.6,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Omani,2050,4.11,5.48,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Hebrew,1980,1.94,3.49,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Hebrew,2000,3.19,5.74,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Hebrew,2050,6.78,12.2,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Maltese,1980,0.313,0.325,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Maltese,2000,0.365,0.38,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Maltese,2050,0.486,0.506,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Moroccan Arabic,1980,14.2,16.2,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Moroccan Arabic,2000,20.6,23.5,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Moroccan Arabic,2050,31.3,35.7,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Algerian Arabic,1980,11.3,12.5,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Algerian Arabic,2000,18.7,20.6,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Algerian Arabic,2050,35.9,39.6,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Tunisian Arabic,1980,6.44,6.44,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Tunisian Arabic,2000,9.47,9.47,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Tunisian Arabic,2050,12.7,12.7,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Libyan Arabic,1980,2.79,2.79,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Libyan Arabic,2000,4.24,4.24,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Libyan Arabic,2050,7.35,7.35,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Amharic,1980,8.58,14.7,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Amharic,2000,17,29.2,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Amharic,2050,56.5,96.8,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Tigrinya,1980,3,3,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Tigrinya,2000,4.88,4.88,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Tigrinya,2050,14.2,14.2,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Hassaniya Arabic,1980,1.07,1.07,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Hassaniya Arabic,2000,1.91,1.91,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Hassaniya Arabic,2050,6.8,6.8,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Sudanese Arabic,1980,9.67,11.3,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Sudanese Arabic,2000,15.6,18.2,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Sudanese Arabic,2050,47.6,55.6,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Chadian Arabic,1980,2.46,2.87,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Chadian Arabic,2000,4.75,5.55,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Chadian Arabic,2050,21.6,25.2,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Somali,1980,5.75,6.28,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Somali,2000,10.4,11.3,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Somali,2050,36.9,40.2,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Oromo,1980,9.07,11,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Oromo,2000,18,21.9,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Oromo,2050,59.7,72.6,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Afar,1980,0.49,0.49,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Afar,2000,0.973,0.973,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Afar,2050,3.23,3.23,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Hausa,1980,15.7,23.3,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Hausa,2000,27.2,40.3,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Hausa,2050,82.6,122,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Chechen,1980,1.55,1.65,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Chechen,2000,1.64,1.74,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Chechen,2050,1.52,1.61,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Ingush,1980,0.485,0.485,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Ingush,2000,0.511,0.511,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Ingush,2050,0.475,0.475,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Avar,1980,0.97,0.97,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Avar,2000,1.02,1.02,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Avar,2050,0.95,0.95,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Kabardian,1980,1.07,1.16,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Kabardian,2000,1.12,1.23,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Kabardian,2050,1.04,1.14,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Mandarin,1980,658,786,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Mandarin,2000,848,1011,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Mandarin,2050,836,996,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Cantonese,1980,59.6,61,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Cantonese,2000,76.8,78.6,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Cantonese,2050,75.6,77.4,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Wu,1980,57.5,57.5,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Wu,2000,74,74,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Wu,2050,72.9,72.9,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Min,1980,51.6,55.2,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Min,2000,65.1,69.7,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Min,2050,61,65.4,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Xiang,1980,26,26,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Xiang,2000,33.4,33.4,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Xiang,2050,32.9,32.9,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Gan,1980,15.4,15.4,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Gan,2000,19.9,19.9,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Gan,2050,19.6,19.6,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Burmese,1980,20,26.1,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Burmese,2000,27.1,35.4,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Burmese,2050,34.9,45.5,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Meitei,1980,0.879,0.977,census,Estimated from census language shares (India 1991) and UN WPP 2024 population; other countries scaled by UN population change; second-language speakers scaled by population change in second-language zones
+Meitei,2000,1.27,1.41,census,Estimated from census language shares (India 2001) and UN WPP 2024 population; other countries scaled by UN population change; second-language speakers scaled by population change in second-language zones
+Meitei,2050,2.04,2.27,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Mizo,1980,0.375,0.469,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Mizo,2000,0.576,0.72,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Mizo,2050,0.907,1.13,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Angami,1980,0.0703,0.0703,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Angami,2000,0.108,0.108,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Angami,2050,0.17,0.17,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Nyishi,1980,0.141,0.141,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Nyishi,2000,0.216,0.216,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Nyishi,2050,0.34,0.34,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Tibetan,1980,0.672,2.8,census,Estimated from census language shares (China 1990) and UN WPP 2024 population; other countries scaled by UN population change; second-language speakers scaled by population change in second-language zones
+Tibetan,2000,0.932,3.88,census,Estimated from census language shares (China 2000) and UN WPP 2024 population; other countries scaled by UN population change; second-language speakers scaled by population change in second-language zones
+Tibetan,2050,1.07,4.45,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Dzongkha,1980,0.328,0.35,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Dzongkha,2000,0.45,0.48,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Dzongkha,2050,0.658,0.702,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Zhuang,1980,10.9,10.9,census,Estimated from census language shares (China 1990) and UN WPP 2024 population; other countries scaled by UN population change
+Zhuang,2000,13.4,13.4,census,Estimated from census language shares (China 2000) and UN WPP 2024 population; other countries scaled by UN population change
+Zhuang,2050,14.2,14.2,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Thai,1980,23.2,33.2,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Thai,2000,31.9,48.3,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Thai,2050,33.3,62.6,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Lao,1980,12.4,12.4,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Lao,2000,20.5,20.5,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Lao,2050,36.6,36.6,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Shan,1980,2,2.42,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Shan,2000,2.71,3.29,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Shan,2050,3.49,4.24,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Vietnamese,1980,44.1,49.8,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Vietnamese,2000,64.3,72.7,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Vietnamese,2050,91.3,103,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Khmer,1980,4.88,5.17,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Khmer,2000,11.8,12.5,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Khmer,2050,20.6,21.8,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Khasi,1980,0.657,0.75,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Khasi,2000,1.01,1.15,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Khasi,2050,1.59,1.81,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Malay,1980,38,143,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Malay,2000,56.5,209,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Malay,2050,86.8,312,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Javanese,1980,35.5,42.8,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Javanese,2000,51.2,61.8,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Javanese,2050,75.5,91.1,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Sundanese,1980,16.7,21.9,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Sundanese,2000,24.1,31.6,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Sundanese,2050,35.5,46.7,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Minangkabau,1980,2.87,3.65,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Minangkabau,2000,4.14,5.27,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Minangkabau,2050,6.11,7.78,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Acehnese,1980,1.83,1.83,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Acehnese,2000,2.64,2.64,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Acehnese,2050,3.89,3.89,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Batak,1980,4.17,4.17,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Batak,2000,6.02,6.02,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Batak,2050,8.89,8.89,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Balinese,1980,1.72,1.72,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Balinese,2000,2.49,2.49,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Balinese,2050,3.67,3.67,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Sasak,1980,1.41,1.41,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Sasak,2000,2.03,2.03,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Sasak,2050,3,3,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Buginese,1980,2.09,2.61,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Buginese,2000,3.01,3.77,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Buginese,2050,4.44,5.55,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Banjar,1980,1.83,2.09,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Banjar,2000,2.64,3.01,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Banjar,2050,3.89,4.44,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Tagalog,1980,11.5,35,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Tagalog,2000,19.1,57.9,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Tagalog,2050,31.9,96.7,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Cebuano,1980,8.23,11.5,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Cebuano,2000,13.6,19.1,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Cebuano,2050,22.8,31.9,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Ilocano,1980,3.29,3.71,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Ilocano,2000,5.45,6.13,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Ilocano,2050,9.1,10.2,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Hiligaynon,1980,3.71,4.53,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Hiligaynon,2000,6.13,7.5,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Hiligaynon,2050,10.2,12.5,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Bikol,1980,2.06,2.47,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Bikol,2000,3.41,4.09,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Bikol,2050,5.69,6.83,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Waray,1980,1.44,1.65,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Waray,2000,2.39,2.73,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Waray,2050,3.98,4.55,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Kapampangan,1980,0.823,1.03,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Kapampangan,2000,1.36,1.7,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Kapampangan,2050,2.28,2.85,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Pangasinan,1980,0.494,0.618,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Pangasinan,2000,0.818,1.02,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Pangasinan,2050,1.37,1.71,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Maguindanao,1980,0.535,0.576,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Maguindanao,2000,0.886,0.954,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Maguindanao,2050,1.48,1.59,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Maranao,1980,0.453,0.494,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Maranao,2000,0.75,0.818,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Maranao,2050,1.25,1.37,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Tausug,1980,0.494,0.618,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Tausug,2000,0.818,1.02,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Tausug,2050,1.37,1.71,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Tetum,1980,0.227,0.408,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Tetum,2000,0.268,0.483,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Tetum,2050,0.656,1.18,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Malagasy,1980,6.74,6.74,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Malagasy,2000,12.4,12.4,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Malagasy,2050,39.5,39.5,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Fijian,1980,0.242,0.45,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Fijian,2000,0.315,0.585,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Fijian,2050,0.373,0.692,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Samoan,1980,0.381,0.381,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Samoan,2000,0.421,0.421,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Samoan,2050,0.632,0.632,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Tongan,1980,0.18,0.18,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Tongan,2000,0.19,0.19,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Tongan,2050,0.194,0.194,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Swahili,1980,4.11,25.7,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Swahili,2000,7.64,47.7,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Swahili,2050,27.1,169,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Zulu,1980,5.47,12.8,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Zulu,2000,8.64,20.2,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Zulu,2050,14.5,33.8,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Xhosa,1980,3.65,8.67,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Xhosa,2000,5.76,13.7,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Xhosa,2050,9.66,22.9,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Shona,1980,3.8,4.22,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Shona,2000,6.16,6.84,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Shona,2050,13.4,14.9,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Kinyarwanda,1980,4.34,4.34,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Kinyarwanda,2000,6.58,6.58,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Kinyarwanda,2050,18.2,18.2,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Kirundi,1980,2.73,2.73,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Kirundi,2000,3.95,3.95,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Kirundi,2050,14.7,14.7,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Luganda,1980,1.51,5.02,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Luganda,2000,2.74,9.12,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Luganda,2050,9.66,32.2,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Lingala,1980,4.76,9.53,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Lingala,2000,8.86,17.7,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Lingala,2050,36.5,73,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Kikongo,1980,1.37,1.6,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Kikongo,2000,2.6,3.04,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Kikongo,2050,11.2,13.1,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Tshiluba,1980,1.37,1.37,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Tshiluba,2000,2.6,2.6,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Tshiluba,2050,11.2,11.2,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Chichewa,1980,3.32,3.32,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Chichewa,2000,5.96,5.96,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Chichewa,2050,19.6,19.6,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Bemba,1980,1.03,1.55,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Bemba,2000,1.78,2.67,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Bemba,2050,6.73,10.1,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Tswana,1980,2.57,3.42,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Tswana,2000,4.19,5.58,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Tswana,2050,7.44,9.91,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Sotho,1980,3.35,6.69,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Sotho,2000,5.17,10.3,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Sotho,2050,8.5,17,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Oshiwambo,1980,0.497,0.497,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Oshiwambo,2000,0.924,0.924,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Oshiwambo,2050,2.28,2.28,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Swazi,1980,1.1,1.1,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Swazi,2000,1.77,1.77,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Swazi,2050,2.88,2.88,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Yoruba,1980,14.1,15.3,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Yoruba,2000,24.1,26.2,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Yoruba,2050,67.9,73.8,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Igbo,1980,9.48,9.48,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Igbo,2000,16.2,16.2,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Igbo,2050,45.7,45.7,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Edo,1980,0.459,0.459,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Edo,2000,0.785,0.785,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Edo,2050,2.21,2.21,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Ijaw,1980,1.53,1.53,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Ijaw,2000,2.62,2.62,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Ijaw,2050,7.38,7.38,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Efik,1980,1.22,1.22,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Efik,2000,2.09,2.09,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Efik,2050,5.9,5.9,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Akan,1980,3.7,6.72,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Akan,2000,6.08,11,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Akan,2050,15.5,28.2,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Ewe,1980,2.07,2.07,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Ewe,2000,3.63,3.63,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Ewe,2050,11,11,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Fon,1980,0.57,1.04,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Fon,2000,1.05,1.91,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Fon,2050,3.53,6.42,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Wolof,1980,1.66,3.63,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Wolof,2000,2.83,6.18,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Wolof,2050,8.59,18.7,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Bambara,1980,4.05,8.68,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Bambara,2000,6.24,13.4,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Bambara,2050,24.8,53.1,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Mossi,1980,2.27,2.55,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Mossi,2000,3.89,4.38,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Mossi,2050,12.1,13.6,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Fula,1980,12.1,13,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Fula,2000,20.2,21.8,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Fula,2050,55.8,60.4,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Mandinka,1980,0.374,0.997,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Mandinka,2000,0.759,2.02,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Mandinka,2050,2.23,5.94,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Sango,1980,0.213,2.13,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Sango,2000,0.335,3.35,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Sango,2050,0.926,9.26,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Dinka,1980,1.4,1.57,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Dinka,2000,1.96,2.21,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Dinka,2050,5.87,6.61,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Japanese,1980,122,124,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Japanese,2000,130,133,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Japanese,2050,107,110,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Korean,1980,58.2,59.6,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Korean,2000,72.3,74.1,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Korean,2050,72,73.8,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Mongolian,1980,2.89,2.89,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Mongolian,2000,4.14,4.14,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Mongolian,2050,7.58,7.58,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Kalmyk,1980,0.388,0.388,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Kalmyk,2000,0.409,0.409,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Kalmyk,2050,0.38,0.38,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Quechua,1980,3.75,4.22,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Quechua,2000,5.63,6.33,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Quechua,2050,9.83,11.1,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Aymara,1980,0.771,0.908,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Aymara,2000,1.15,1.35,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Aymara,2050,2.14,2.52,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Guarani,1980,2.82,2.82,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Guarani,2000,4.69,4.69,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Guarani,2050,7.89,7.89,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Inuktitut,1980,0.0243,0.0243,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Inuktitut,2000,0.0306,0.0306,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Inuktitut,2050,0.045,0.045,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken
+Greenlandic,1980,0.0508,0.0517,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Greenlandic,2000,0.0567,0.0577,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Greenlandic,2050,0.0502,0.0511,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Armenian,1980,7.16,7.48,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Armenian,2000,7.12,7.44,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Armenian,2050,5.71,5.96,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Georgian,1980,5.04,5.45,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Georgian,2000,4.15,4.48,scaled,Estimated by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
+Georgian,2050,3.56,3.85,scaled,Projected by scaling the current figure with UN WPP 2024 population change where the language is spoken; second-language speakers scaled by population change in second-language zones
