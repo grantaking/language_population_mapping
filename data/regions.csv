@@ -1,0 +1,4178 @@
+﻿iso3,region,language,population_thousands,exclude
+tur,Aydin,,,FALSE
+tur,Izmir,,4479,FALSE
+tur,Balikesir,,,FALSE
+tur,Çanakkale,,,FALSE
+tur,Edirne,,,FALSE
+tur,Kirklareli,,,FALSE
+tur,Tekirdag,,,FALSE
+tur,Bilecik,,,FALSE
+tur,Bursa,,3214,FALSE
+tur,Istanbul,,15655,FALSE
+tur,Kocaeli,,,FALSE
+tur,Sakarya,,,FALSE
+tur,Bolu,,,FALSE
+tur,Eskisehir,,,FALSE
+tur,Kastamonu,,,FALSE
+tur,Antalya,,,FALSE
+tur,Afyonkarahisar,,,FALSE
+tur,Burdur,,,FALSE
+tur,Denizli,,,FALSE
+tur,Isparta,,,FALSE
+tur,Kütahya,,,FALSE
+tur,Manisa,,,FALSE
+tur,Mugla,,,FALSE
+tur,Adiyaman,,,FALSE
+tur,Elazig,,,FALSE
+tur,K. Maras,,,FALSE
+tur,Malatya,,,FALSE
+tur,Mersin,,,FALSE
+tur,Kirsehir,,,FALSE
+tur,Kayseri,,,FALSE
+tur,Nevsehir,,,FALSE
+tur,Hatay,,,FALSE
+tur,Amasya,,,FALSE
+tur,Çorum,,,FALSE
+tur,Giresun,,,FALSE
+tur,Ordu,,,FALSE
+tur,Sinop,,,FALSE
+tur,Sivas,,,FALSE
+tur,Samsun,,,FALSE
+tur,Tokat,,,FALSE
+tur,Artvin,,,FALSE
+tur,Erzurum,,,FALSE
+tur,Erzincan,,,FALSE
+tur,Rize,,,FALSE
+tur,Trabzon,,,FALSE
+tur,Agri,Kurdish,,FALSE
+tur,Bingöl,Kurdish,,FALSE
+tur,Diyarbakir,Kurdish,,FALSE
+tur,Mus,Kurdish,,FALSE
+tur,Bitlis,Kurdish,,FALSE
+tur,Ankara,,5782,FALSE
+tur,Çankiri,,,FALSE
+tur,Zinguldak,,,FALSE
+tur,Konya,,,FALSE
+tur,Karaman,,,FALSE
+tur,Usak,,,FALSE
+tur,Gaziantep,,,FALSE
+tur,Sanliurfa,Kurdish,,FALSE
+tur,Adana,,,FALSE
+tur,Kinkkale,,,FALSE
+tur,Nigde,,,FALSE
+tur,Aksaray,,,FALSE
+tur,Yozgat,,,FALSE
+tur,Gümüshane,,,FALSE
+tur,Bayburt,,,FALSE
+tur,Kars,,,FALSE
+tur,Mardin,Kurdish,,FALSE
+tur,Batman,Kurdish,,FALSE
+tur,Siirt,Kurdish,,FALSE
+tur,Sirnak,Kurdish,,FALSE
+tur,Tunceli,Kurdish,,FALSE
+tur,Hakkari,Kurdish,,FALSE
+tur,Van,Kurdish,,FALSE
+tur,Ardahan,,,FALSE
+tur,Iğdir,,,FALSE
+tur,Kilis,,,FALSE
+tur,Osmaniye,,,FALSE
+tur,Yalova,,,FALSE
+tur,Düzce,,,FALSE
+tur,Karabük,,,FALSE
+tur,Bartın,,,FALSE
+irn,Kohgiluyeh and Buyer Ahmad,,,FALSE
+irn,Bushehr,,,FALSE
+irn,Esfahan,,5300,FALSE
+irn,Fars,,5100,FALSE
+irn,Golestan,,,FALSE
+irn,Mazandaran,,3500,FALSE
+irn,Semnan,,,FALSE
+irn,Tehran,,14200,FALSE
+irn,Yazd,,,FALSE
+irn,Chahar Mahall and Bakhtiari,,,FALSE
+irn,Khuzestan,,4900,FALSE
+irn,Lorestan,,,FALSE
+irn,Ilam,Kurdish,,FALSE
+irn,Hormozgan,,,FALSE
+irn,Ardebil,Azerbaijani,,FALSE
+irn,Markazi,,,FALSE
+irn,Qom,,,FALSE
+irn,Hamadan,,,FALSE
+irn,Zanjan,Azerbaijani,,FALSE
+irn,Qazvin,,,FALSE
+irn,West Azarbaijan,Azerbaijani,3400,FALSE
+irn,East Azarbaijan,Azerbaijani,4000,FALSE
+irn,Kermanshah,Kurdish,,FALSE
+irn,Gilan,,,FALSE
+irn,Kordestan,Kurdish,,FALSE
+irn,South Khorasan,,,FALSE
+irn,Razavi Khorasan,,6700,FALSE
+irn,North Khorasan,,,FALSE
+irn,Sistan and Baluchestan,Balochi,,FALSE
+irn,Kerman,,,FALSE
+irn,Alborz,,,FALSE
+uzb,Bukhoro,,,FALSE
+uzb,Khorezm,,,FALSE
+uzb,Karakalpakstan,Karakalpak,,FALSE
+uzb,Navoi,,,FALSE
+uzb,Samarkand,,,FALSE
+uzb,Kashkadarya,,,FALSE
+uzb,Surkhandarya,,,FALSE
+uzb,Andijon,,,FALSE
+uzb,Ferghana,,,FALSE
+uzb,Namangan,,,FALSE
+uzb,Jizzakh,,,FALSE
+uzb,Sirdaryo,,,FALSE
+uzb,Tashkent,,,FALSE
+tjk,Gorno-Badakhshan,Pamiri,,FALSE
+tjk,Khatlon,,,FALSE
+tjk,Tadzhikistan Territories,,,FALSE
+tjk,Leninabad,,,FALSE
+tjk,Dushanbe,,,FALSE
+afg,Badghis,,,FALSE
+afg,Hirat,,,FALSE
+afg,Bamyan,,,FALSE
+afg,Balkh,,,FALSE
+afg,Faryab,Uzbek,,FALSE
+afg,Jawzjan,Uzbek,,FALSE
+afg,Ghor,,,FALSE
+afg,Sari Pul,,,FALSE
+afg,Farah,Pashto,,FALSE
+afg,Hilmand,Pashto,,FALSE
+afg,Nimroz,,,FALSE
+afg,Uruzgan,Pashto,,FALSE
+afg,Kandahar,Pashto,,FALSE
+afg,Zabul,Pashto,,FALSE
+afg,Ghazni,,,FALSE
+afg,Khost,Pashto,,FALSE
+afg,Paktika,Pashto,,FALSE
+afg,Badakhshan,,,FALSE
+afg,Nuristan,,,FALSE
+afg,Kunar,Pashto,,FALSE
+afg,Kunduz,,,FALSE
+afg,Nangarhar,Pashto,,FALSE
+afg,Takhar,,,FALSE
+afg,Baghlan,,,FALSE
+afg,Kabul,,,FALSE
+afg,Kapisa,,,FALSE
+afg,Parwan,,,FALSE
+afg,Laghman,Pashto,,FALSE
+afg,Logar,Pashto,,FALSE
+afg,Samangan,,,FALSE
+afg,Wardak,Pashto,,FALSE
+afg,Paktya,Pashto,,FALSE
+kaz,Aqtöbe,,,FALSE
+kaz,Qostanay,,,FALSE
+kaz,Qyzylorda,,,FALSE
+kaz,Atyrau,,,FALSE
+kaz,West Kazakhstan,,,FALSE
+kaz,Aqmola,,,FALSE
+kaz,Qaraghandy,,,FALSE
+kaz,North Kazakhstan,,,FALSE
+kaz,Pavlodar,,,FALSE
+kaz,East Kazakhstan,,,FALSE
+kaz,Almaty,,,FALSE
+kaz,Mangghystau,,,FALSE
+kaz,South Kazakhstan,,,FALSE
+kaz,Zhambyl,,,FALSE
+kaz,Almaty City,,,FALSE
+kaz,Astana,,,FALSE
+kgz,Bishkek,,,FALSE
+kgz,Chuy,,,FALSE
+kgz,Ysyk-Köl,,,FALSE
+kgz,Naryn,,,FALSE
+kgz,Batken,,,FALSE
+kgz,Jalal-Abad,,,FALSE
+kgz,Talas,,,FALSE
+kgz,Osh,,,FALSE
+tkm,Balkan,,,FALSE
+tkm,Ahal,,,FALSE
+tkm,Tashauz,,,FALSE
+tkm,Chardzhou,,,FALSE
+tkm,Mary,,,FALSE
+aze,Ağstafa,,,FALSE
+aze,Daşkəsən,,,FALSE
+aze,Gədəbəy,,,FALSE
+aze,Gəncə,,,FALSE
+aze,Xanlar,,,FALSE
+aze,Goranboy,,,FALSE
+aze,Kəlbəcər,,,FALSE
+aze,Mingəçevir,,,FALSE
+aze,Qazax,,,FALSE
+aze,Şəmkir,,,FALSE
+aze,Samux,,,FALSE
+aze,Tovuz,,,FALSE
+aze,Yevlakh Rayon,,,FALSE
+aze,Bakı,,,FALSE
+aze,Abşeron,,,FALSE
+aze,Ağdam,,,FALSE
+aze,Ağdaş,,,FALSE
+aze,Ağsu,,,FALSE
+aze,Hajigabul,,,FALSE
+aze,Astara,,,FALSE
+aze,Bərdə,,,FALSE
+aze,Beyləqan,,,FALSE
+aze,Biləsuvar,,,FALSE
+aze,Cəbrayıl,,,FALSE
+aze,Cəlilabad,,,FALSE
+aze,Dəvəçi,,,FALSE
+aze,Füzuli,,,FALSE
+aze,Göyçay,,,FALSE
+aze,İmişli,,,FALSE
+aze,İsmayıllı,,,FALSE
+aze,Kürdəmir,,,FALSE
+aze,Lankaran,,,FALSE
+aze,Masallı,,,FALSE
+aze,Lerik,,,FALSE
+aze,Neftçala,,,FALSE
+aze,Qobustan,,,FALSE
+aze,Siyəzən,,,FALSE
+aze,Saatlı,,,FALSE
+aze,Sabirabad,,,FALSE
+aze,Salyan,,,FALSE
+aze,Şamaxı,,,FALSE
+aze,Sumqayıt,,,FALSE
+aze,Ucar,,,FALSE
+aze,Xizı,,,FALSE
+aze,Yardımlı,,,FALSE
+aze,Zərdab,,,FALSE
+aze,Ağcabədi,,,FALSE
+aze,Balakən,,,FALSE
+aze,Qəbələ,,,FALSE
+aze,Oğuz,,,FALSE
+aze,Qax,,,FALSE
+aze,Şəki,,,FALSE
+aze,Quba,,,FALSE
+aze,Qusar,,,FALSE
+aze,Xaçmaz,,,FALSE
+aze,Zaqatala,,,FALSE
+aze,Xocavənd,,,FALSE
+aze,Qubadli,,,FALSE
+aze,Şuşa,,,FALSE
+aze,Tərtər,,,FALSE
+aze,Xocalı,,,FALSE
+aze,Zəngilan,,,FALSE
+aze,Sədərək,,,FALSE
+aze,Ordubad,,,FALSE
+aze,Şərur,,,FALSE
+aze,Babək,,,FALSE
+aze,Culfa,,,FALSE
+aze,Naxçıvan,,,FALSE
+aze,Şahbuz,,,FALSE
+aze,Stepanakert,,,FALSE
+aze,Naftalan,,,FALSE
+aze,Shirvan,,,FALSE
+aze,Yevlakh,,,FALSE
+aze,Kangarli,,,FALSE
+geo,Abkhazia,,,FALSE
+geo,Ajaria,,,FALSE
+geo,Guria,,,FALSE
+geo,Samegrelo-Zemo Svaneti,,,FALSE
+geo,Imereti,,,FALSE
+geo,Kakheti,,,FALSE
+geo,Mtskheta-Mtianeti,,,FALSE
+geo,Racha-Lechkhumi-Kvemo Svaneti,,,FALSE
+geo,Tbilisi,,,FALSE
+geo,Kvemo Kartli,,,FALSE
+geo,Samtskhe-Javakheti,,,FALSE
+geo,Shida Kartli,,,FALSE
+arm,Aragatsotn,,,FALSE
+arm,Armavir,,,FALSE
+arm,Shirak,,,FALSE
+arm,Tavush,,,FALSE
+arm,Ararat,,,FALSE
+arm,Gegharkunik,,,FALSE
+arm,Kotayk,,,FALSE
+arm,Lori,,,FALSE
+arm,Erevan,,,FALSE
+arm,Syunik,,,FALSE
+arm,Vayots Dzor,,,FALSE
+chn,Gansu,,25019,FALSE
+chn,Qinghai,,,FALSE
+chn,Guangxi,Zhuang,50126,FALSE
+chn,Guizhou,,38562,FALSE
+chn,Chongqing,,32054,FALSE
+chn,Beijing,,21893,FALSE
+chn,Fujian,Min,41540,FALSE
+chn,Anhui,,61027,FALSE
+chn,Guangdong,Cantonese,126012,FALSE
+chn,Xizang,Tibetan,3650,FALSE
+chn,Xinjiang,Uyghur,25850,FALSE
+chn,Hainan,Min,10081,FALSE
+chn,Ningxia,,,FALSE
+chn,Shaanxi,,39528,FALSE
+chn,Shanxi,,34915,FALSE
+chn,Hubei,,57752,FALSE
+chn,Hunan,Xiang,66444,FALSE
+chn,Sichuan,,83674,FALSE
+chn,Yunnan,,47209,FALSE
+chn,Hebei,,74610,FALSE
+chn,Henan,,99365,FALSE
+chn,Liaoning,,42591,FALSE
+chn,Shandong,,101527,FALSE
+chn,Tianjin,,13866,FALSE
+chn,Jiangxi,Gan,45188,FALSE
+chn,Jiangsu,,84748,FALSE
+chn,Shanghai,Wu,24870,FALSE
+chn,Zhejiang,Wu,64567,FALSE
+chn,Jilin,,24073,FALSE
+chn,Inner Mongol,,24049,FALSE
+chn,Heilongjiang,,31851,FALSE
+chn,Paracel Islands,,,FALSE
+pak,Baluchistan,Balochi,14900,FALSE
+pak,Azad Kashmir,Punjabi,,FALSE
+pak,F.C.T.,Urdu,,FALSE
+pak,Northern Areas,Shina,,FALSE
+pak,F.A.T.A.,Pashto,,FALSE
+pak,Punjab,Punjabi,127700,FALSE
+pak,Sind,Sindhi,55700,FALSE
+pak,N.W.F.P.,Pashto,40900,FALSE
+ind,Chandigarh,,,FALSE
+ind,Delhi,,21000,FALSE
+ind,Himachal Pradesh,,,FALSE
+ind,Haryana,,30000,FALSE
+ind,Jammu and Kashmir,Kashmiri,14000,FALSE
+ind,Andhra Pradesh,Telugu,98000,FALSE
+ind,Kerala,Malayalam,36000,FALSE
+ind,Lakshadweep,,,FALSE
+ind,Orissa,Oriya,46000,FALSE
+ind,Dadra and Nagar Haveli,,,FALSE
+ind,Karnataka,Kannada,68000,FALSE
+ind,Maharashtra,Marathi,126000,FALSE
+ind,Andaman and Nicobar,,,FALSE
+ind,Assam,Assamese,36000,FALSE
+ind,Manipur,Meitei,,FALSE
+ind,Nagaland,Angami,,FALSE
+ind,Meghalaya,Khasi,,FALSE
+ind,Punjab,Punjabi,31000,FALSE
+ind,Rajasthan,,81000,FALSE
+ind,Uttar Pradesh,,241000,FALSE
+ind,Uttaranchal,,12000,FALSE
+ind,Jharkhand,,40000,FALSE
+ind,West Bengal,Bengali,99000,FALSE
+ind,Bihar,,128000,FALSE
+ind,Sikkim,Nepali,,FALSE
+ind,Chhattisgarh,,30000,FALSE
+ind,Madhya Pradesh,,86000,FALSE
+ind,Puducherry,Tamil,,FALSE
+ind,Tamil Nadu,Tamil,77000,FALSE
+ind,Gujarat,Gujarati,71000,FALSE
+ind,Goa,Konkani,,FALSE
+ind,Arunachal Pradesh,Nyishi,,FALSE
+ind,Mizoram,Mizo,,FALSE
+ind,Tripura,Bengali,,FALSE
+ind,Daman and Diu,,,FALSE
+irq,Dihok,Kurdish,,FALSE
+irq,At-Ta'mim,Kurdish,,FALSE
+irq,Arbil,Kurdish,,FALSE
+irq,Ninawa,,,FALSE
+irq,Sala ad-Din,,,FALSE
+irq,An-Najaf,,,FALSE
+irq,Karbala',,,FALSE
+irq,Baghdad,,,FALSE
+irq,Al-Basrah,,,FALSE
+irq,Al-Muthannia,,,FALSE
+irq,Al-Qadisiyah,,,FALSE
+irq,Dhi-Qar,,,FALSE
+irq,Maysan,,,FALSE
+irq,Wasit,,,FALSE
+irq,As-Sulaymaniyah,Kurdish,,FALSE
+irq,Diyala,,,FALSE
+irq,Al-Anbar,,,FALSE
+irq,Babil,,,FALSE
+syr,Lattakia,,,FALSE
+syr,Tartus,,,FALSE
+syr,Ar Raqqah,,,FALSE
+syr,Aleppo,,,FALSE
+syr,Hamah,,,FALSE
+syr,Homs (Hims),,,FALSE
+syr,Idlib,,,FALSE
+syr,Hasaka (Al Haksa),Kurdish,,FALSE
+syr,Dayr Az Zawr,,,FALSE
+syr,As Suwayda',,,FALSE
+syr,Rif Dimashq,,,FALSE
+syr,Quneitra,,,FALSE
+syr,Dar`a,,,FALSE
+syr,Damascus,,,FALSE
+syr,UNDOF,,,FALSE
+jor,Aqaba,,,FALSE
+jor,Mafraq,,,FALSE
+jor,Amman,,,FALSE
+jor,Tafilah,,,FALSE
+jor,Ma`an,,,FALSE
+jor,Irbid,,,FALSE
+jor,Ajlun,,,FALSE
+jor,Jarash,,,FALSE
+jor,Balqa,,,FALSE
+jor,Madaba,,,FALSE
+jor,Karak,,,FALSE
+jor,Zarqa,,,FALSE
+lbn,Beqaa,,,FALSE
+lbn,North Lebanon,,,FALSE
+lbn,Beirut,,,FALSE
+lbn,Mount Lebanon,,,FALSE
+lbn,An Nabatiyah,,,FALSE
+lbn,South Lebanon,,,FALSE
+isr,HaDarom,,,FALSE
+isr,Haifa,,,FALSE
+isr,HaMerkaz,,,FALSE
+isr,HaZafon,Levantine,,FALSE
+isr,Tel Aviv,,,FALSE
+isr,Jerusalem,,,FALSE
+egy,Al Gharbiyah,,,FALSE
+egy,Al Isma`iliyah,,,FALSE
+egy,Al Minufiyah,,,FALSE
+egy,Al Qahirah,,10100,FALSE
+egy,Al Qalyubiyah,,,FALSE
+egy,Ash Sharqiyah,,7900,FALSE
+egy,As Suways,,,FALSE
+egy,Ad Daqahliyah,,6900,FALSE
+egy,Bur Sa`id,,,FALSE
+egy,Dumyat,,,FALSE
+egy,Matruh,,,FALSE
+egy,Al Buhayrah,,6700,FALSE
+egy,Al Fayyum,,,FALSE
+egy,Al Iskandariyah,,5500,FALSE
+egy,Al Jizah,,9200,FALSE
+egy,Al Minya,,6000,FALSE
+egy,Bani Suwayf,,,FALSE
+egy,Kafr ash Shaykh,,,FALSE
+egy,Aswan,,,FALSE
+egy,Asyut,,,FALSE
+egy,Al Wadi at Jadid,,,FALSE
+egy,Qina,,,FALSE
+egy,Suhaj,,,FALSE
+egy,Al Bahr al Ahmar,,,FALSE
+egy,Janub Sina',,,FALSE
+egy,Shamal Sina',,,FALSE
+egy,Luxor,,,FALSE
+sau,Najran,Sanaani,,FALSE
+sau,Ar Riyad,Najdi,,FALSE
+sau,Ash Sharqiyah,Gulf,,FALSE
+sau,Al Madinah,Hijazi,,FALSE
+sau,Al Quassim,Najdi,,FALSE
+sau,Ha'il,Najdi,,FALSE
+sau,Tabuk,Hijazi,,FALSE
+sau,Al Hudud ash Shamaliyah,Najdi,,FALSE
+sau,Al Jawf,Najdi,,FALSE
+sau,Al Bahah,Hijazi,,FALSE
+sau,`Asir,Hijazi,,FALSE
+sau,Jizan,Sanaani,,FALSE
+sau,Makkah,Hijazi,,FALSE
+yem,Sa`dah,,,FALSE
+yem,Al Hudaydah,,,FALSE
+yem,Al Mahwit,,,FALSE
+yem,Dhamar,,,FALSE
+yem,Hajjah,,,FALSE
+yem,Amran,,,FALSE
+yem,Ibb,,,FALSE
+yem,Lahij,Hadrami,,FALSE
+yem,Ta`izz,,,FALSE
+yem,Al Mahrah,Hadrami,,FALSE
+yem,Al Bayda',,,FALSE
+yem,Al Dali',,,FALSE
+yem,Al Jawf,,,FALSE
+yem,Shabwah,Hadrami,,FALSE
+yem,Ma'rib,,,FALSE
+yem,Sana'a,,,FALSE
+yem,Hadramawt,Hadrami,,FALSE
+yem,Amanat Al Asimah,,,FALSE
+yem,Raymah,,,FALSE
+yem,`Adan,Hadrami,,FALSE
+yem,Abyan,Hadrami,,FALSE
+omn,Ad Dakhliyah,,,FALSE
+omn,Al Wusta,,,FALSE
+omn,Ash Sharqiyah South,,,FALSE
+omn,Dhofar,,,FALSE
+omn,Al Dhahira,,,FALSE
+omn,Al Batnah North,,,FALSE
+omn,Musandam,Gulf,,FALSE
+omn,Muscat,,,FALSE
+omn,Al Buraymi,,,FALSE
+omn,Ash Sharqiyah North,,,FALSE
+omn,Al Batnah South,,,FALSE
+are,Ras Al Khaymah,,,FALSE
+are,Umm Al Qaywayn,,,FALSE
+are,Fujayrah,,,FALSE
+are,Neutral Zone,,,FALSE
+are,Ajman,,,FALSE
+are,Sharjah,,,FALSE
+are,Abu Dhabi,,,FALSE
+are,Dubay,,,FALSE
+qat,Ad Dawhah,,,FALSE
+qat,Ar Rayyān,,,FALSE
+qat,Al Wakrah,,,FALSE
+qat,Al Khawr,,,FALSE
+qat,Madinat ach Shamal,,,FALSE
+qat,Umm Salal,,,FALSE
+qat,Al Daayen,,,FALSE
+bhr,Al Janūbīyah,,,FALSE
+bhr,Ash Shamālīyah,,,FALSE
+bhr,Al Wusţá,,,FALSE
+bhr,Al Manāmah,,,FALSE
+bhr,Al Muḩarraq,,,FALSE
+kwt,Al Asimah,,,FALSE
+kwt,Al Farwaniyah,,,FALSE
+kwt,Al Ahmadi,,,FALSE
+kwt,Mubarak Al-Kabeer,,,FALSE
+kwt,Al Jahrah,,,FALSE
+kwt,Hawalli,,,FALSE
+bgd,Dhaka,,44215,FALSE
+bgd,Khulna,,17417,FALSE
+bgd,Barisal,,9325,FALSE
+bgd,Chittagong,,33202,FALSE
+bgd,Sylhet,,11060,FALSE
+bgd,Rajshahi,,20353,FALSE
+bgd,Rangpur,,17610,FALSE
+npl,Gandaki,,,FALSE
+npl,Bheri,,,FALSE
+npl,Dhawalagiri,,,FALSE
+npl,Karnali,,,FALSE
+npl,Lumbini,,,FALSE
+npl,Mahakali,,,FALSE
+npl,Seti,,,FALSE
+npl,Bagmati,,,FALSE
+npl,Janakpur,Maithili,,FALSE
+npl,Narayani,,,FALSE
+npl,Sagarmatha,,,FALSE
+npl,Bhojpur,,,FALSE
+npl,Mechi,,,FALSE
+npl,Rapti,,,FALSE
+btn,Chhukha,,,FALSE
+btn,Daga,,,FALSE
+btn,Ha,,,FALSE
+btn,Paro,,,FALSE
+btn,Gasa,,,FALSE
+btn,Samchi,,,FALSE
+btn,Thimphu,,,FALSE
+btn,Punakha,,,FALSE
+btn,Bumthang,,,FALSE
+btn,Chirang,,,FALSE
+btn,Geylegphug,,,FALSE
+btn,Lhuntshi,,,FALSE
+btn,Tashi Yangtse,,,FALSE
+btn,Shemgang,,,FALSE
+btn,Tongsa,,,FALSE
+btn,Wangdi Phodrang,,,FALSE
+btn,Mongar,,,FALSE
+btn,Pemagatsel,,,FALSE
+btn,Samdrup Jongkhar,,,FALSE
+btn,Tashigang,,,FALSE
+lka,Mahanuvara,,,FALSE
+lka,Mātale,,,FALSE
+lka,Nuvara Ĕliya,,,FALSE
+lka,Ampāra,,,FALSE
+lka,Maḍakalapuva,Tamil,,FALSE
+lka,Pŏḷŏnnaruva,,,FALSE
+lka,Trikuṇāmalaya,Tamil,,FALSE
+lka,Anurādhapura,,,FALSE
+lka,Vavuniyāva,Tamil,,FALSE
+lka,Mannārama,Tamil,,FALSE
+lka,Mulativ,Tamil,,FALSE
+lka,Yāpanaya,Tamil,,FALSE
+lka,Kilinŏchchi,Tamil,,FALSE
+lka,Kuruṇægala,,,FALSE
+lka,Puttalama,,,FALSE
+lka,Ratnapura,,,FALSE
+lka,Gālla,,,FALSE
+lka,Hambantŏṭa,,,FALSE
+lka,Mātara,,,FALSE
+lka,Badulla,,,FALSE
+lka,Mŏṇarāgala,,,FALSE
+lka,Kægalla,,,FALSE
+lka,Kŏḷamba,,,FALSE
+lka,Gampaha,,,FALSE
+lka,Kaḷutara,,,FALSE
+rus,Tomsk,,,FALSE
+rus,Adygey,,,FALSE
+rus,Karachay-Cherkess,Karachay,,FALSE
+rus,Ingush,Ingush,,FALSE
+rus,Kabardin-Balkar,Kabardian,,FALSE
+rus,North Ossetia,Ossetian,,FALSE
+rus,Stavropol',,,FALSE
+rus,Chukchi Autonomous Okrug,,,FALSE
+rus,Kaliningrad,,,FALSE
+rus,Murmansk,,,FALSE
+rus,Novgorod,,,FALSE
+rus,Pskov,,,FALSE
+rus,Leningrad,,,FALSE
+rus,City of St. Petersburg,,5600,FALSE
+rus,Bryansk,,,FALSE
+rus,Smolensk,,,FALSE
+rus,Karelia,,,FALSE
+rus,Arkhangel'sk,,,FALSE
+rus,Ivanovo,,,FALSE
+rus,Kostroma,,,FALSE
+rus,Nizhegorod,,3120,FALSE
+rus,Tver',,,FALSE
+rus,Vologda,,,FALSE
+rus,Yaroslavl',,,FALSE
+rus,Kaluga,,,FALSE
+rus,Kursk,,,FALSE
+rus,Lipetsk,,,FALSE
+rus,Moskovsskaya,,8580,FALSE
+rus,Moskva,,13010,FALSE
+rus,Orel,,,FALSE
+rus,Rostov,,4200,FALSE
+rus,Tula,,,FALSE
+rus,Volgograd,,,FALSE
+rus,Belgorod,,,FALSE
+rus,Krasnodar,,5838,FALSE
+rus,Mordovia,,,FALSE
+rus,Penza,,,FALSE
+rus,Ryazan',,,FALSE
+rus,Tambov,,,FALSE
+rus,Vladimir,,,FALSE
+rus,Voronezh,,,FALSE
+rus,Bashkortostan,Bashkir,4091,FALSE
+rus,Chelyabinsk,,3419,FALSE
+rus,Kurgan,,,FALSE
+rus,Nenets,,,FALSE
+rus,Yamal-Nenets,,,FALSE
+rus,Komi,,,FALSE
+rus,Kirov,,,FALSE
+rus,Mariy-El,,,FALSE
+rus,Sverdlovsk,,4269,FALSE
+rus,Udmurt,,,FALSE
+rus,Astrakhan',,,FALSE
+rus,Chuvash,Chuvash,,FALSE
+rus,Kalmyk,Kalmyk,,FALSE
+rus,Orenburg,,,FALSE
+rus,Samara,,3179,FALSE
+rus,Saratov,,,FALSE
+rus,Tatarstan,Tatar,4005,FALSE
+rus,Ul'yanovsk,,,FALSE
+rus,Khanty-Mansiy,,,FALSE
+rus,Omsk,,,FALSE
+rus,Tyumen',,,FALSE
+rus,Altay,,,FALSE
+rus,Gorno-Altay,,,FALSE
+rus,Kemerovo,,2560,FALSE
+rus,Khakass,,,FALSE
+rus,Novosibirsk,,2780,FALSE
+rus,Chechnya,Chechen,1511,FALSE
+rus,Dagestan,Avar,3182,FALSE
+rus,Irkutsk,,2350,FALSE
+rus,Krasnoyarsk,,2850,FALSE
+rus,Tuva,Tuvan,337,FALSE
+rus,Buryat,,,FALSE
+rus,Amur,,,FALSE
+rus,Chita,,,FALSE
+rus,Primor'ye,,,FALSE
+rus,Sakha (Yakutia),Yakut,995,FALSE
+rus,Yevrey,,,FALSE
+rus,Khabarovsk,,,FALSE
+rus,Maga Buryatdan,,,FALSE
+rus,Sakhalin,,,FALSE
+rus,Perm',,,FALSE
+rus,Kamchatka,,,FALSE
+blr,Brest,,,FALSE
+blr,Gomel,,1388,FALSE
+blr,Mogilev,,,FALSE
+blr,Vitebsk,,,FALSE
+blr,Grodno,,,FALSE
+blr,Minsk,,,FALSE
+blr,City of Minsk,,2009,FALSE
+ukr,Crimea,Russian,1913,FALSE
+ukr,Mykolayiv,Russian,,FALSE
+ukr,Chernihiv,,,FALSE
+ukr,Rivne,,,FALSE
+ukr,Chernivtsi,,,FALSE
+ukr,Ivano-Frankivs'k,,,FALSE
+ukr,Khmel'nyts'kyy,,,FALSE
+ukr,L'viv,,2478,FALSE
+ukr,Ternopil',,,FALSE
+ukr,Transcarpathia,,,FALSE
+ukr,Volyn,,,FALSE
+ukr,Cherkasy,,,FALSE
+ukr,Kirovohrad,,,FALSE
+ukr,Kiev,,,FALSE
+ukr,Odessa,Russian,2368,FALSE
+ukr,Vinnytsya,,,FALSE
+ukr,Zhytomyr,,,FALSE
+ukr,Sumy,,,FALSE
+ukr,Dnipropetrovs'k,Russian,3096,FALSE
+ukr,Donets'k,Russian,4060,FALSE
+ukr,Kharkiv,Russian,2634,FALSE
+ukr,Luhans'k,Russian,2122,FALSE
+ukr,Poltava,,,FALSE
+ukr,Zaporizhzhya,Russian,,FALSE
+ukr,Kiev City,,2960,FALSE
+ukr,Kherson,,,FALSE
+ukr,Sevastopol,Russian,,FALSE
+jpn,Hiroshima,,,FALSE
+jpn,Okayama,,,FALSE
+jpn,Shimane,,,FALSE
+jpn,Tottori,,,FALSE
+jpn,Yamaguchi,,,FALSE
+jpn,Saga,,,FALSE
+jpn,Fukuoka,,5135,FALSE
+jpn,Kumamoto,,,FALSE
+jpn,Miyazaki,,,FALSE
+jpn,Ehime,,,FALSE
+jpn,Kagawa,,,FALSE
+jpn,Kochi,,,FALSE
+jpn,Oita,,,FALSE
+jpn,Tokushima,,,FALSE
+jpn,Aichi,,7542,FALSE
+jpn,Gifu,,,FALSE
+jpn,Ishikawa,,,FALSE
+jpn,Mie,,,FALSE
+jpn,Nagano,,,FALSE
+jpn,Shizuoka,,3633,FALSE
+jpn,Toyama,,,FALSE
+jpn,Hokkaido,,5225,FALSE
+jpn,Fukui,,,FALSE
+jpn,Hyōgo,,5465,FALSE
+jpn,Kyoto,,,FALSE
+jpn,Nara,,,FALSE
+jpn,Osaka,,8838,FALSE
+jpn,Shiga,,,FALSE
+jpn,Wakayama,,,FALSE
+jpn,Chiba,,6284,FALSE
+jpn,Ibaraki,,,FALSE
+jpn,Kanagawa,,9237,FALSE
+jpn,Saitama,,7345,FALSE
+jpn,Tochigi,,,FALSE
+jpn,Tokyo,,14048,FALSE
+jpn,Yamanashi,,,FALSE
+jpn,Akita,,,FALSE
+jpn,Aomori,,,FALSE
+jpn,Fukushima,,,FALSE
+jpn,Iwate,,,FALSE
+jpn,Miyagi,,,FALSE
+jpn,Niigata,,,FALSE
+jpn,Yamagata,,,FALSE
+jpn,Nagasaki,,,FALSE
+jpn,Kagoshima,,,FALSE
+jpn,Okinawa,,,FALSE
+jpn,Gunma,,,FALSE
+prk,Hwanghae-bukto,,,FALSE
+prk,Hwanghae-namdo,,,FALSE
+prk,P'yŏngyang,,3255,FALSE
+prk,Hamgyŏng-bukto,,,FALSE
+prk,Kangwŏn-do,,,FALSE
+prk,Chagang-do,,,FALSE
+prk,Hamgyŏng-namdo,,3066,FALSE
+prk,P'yŏngan-bukto,,,FALSE
+prk,P'yŏngan-namdo,,4051,FALSE
+prk,Ryanggang,,,FALSE
+prk,Rasŏn,,,FALSE
+kor,North Chungcheong,,,FALSE
+kor,Incheon,,2947,FALSE
+kor,Gangwon,,,FALSE
+kor,Seoul,,9668,FALSE
+kor,Gyeonggi,,13530,FALSE
+kor,North Jeolla,,,FALSE
+kor,Gwangju,,,FALSE
+kor,South Chungcheong,,,FALSE
+kor,Daejeon,,,FALSE
+kor,Daegu,,2418,FALSE
+kor,South Gyeongsang,,3340,FALSE
+kor,South Jeolla,,,FALSE
+kor,Busan,,3392,FALSE
+kor,Ulsan,,,FALSE
+kor,North Gyeongsang,,2639,FALSE
+kor,Jeju,,,FALSE
+kor,Sejong,,,FALSE
+mng,Bayan-Ölgiy,Kazakh,,FALSE
+mng,Dornogovi,,,FALSE
+mng,Ömnögovi,,,FALSE
+mng,Hentiy,,,FALSE
+mng,Arhangay,,,FALSE
+mng,Bayanhongor,,,FALSE
+mng,Dzavhan,,,FALSE
+mng,Govi-Altay,,,FALSE
+mng,Hovd,,,FALSE
+mng,Hövsgöl,,,FALSE
+mng,Uvs,,,FALSE
+mng,Bulgan,,,FALSE
+mng,Orhon,,,FALSE
+mng,Dundgovi,,,FALSE
+mng,Selenge,,,FALSE
+mng,Övörhangay,,,FALSE
+mng,Darhan-Uul,,,FALSE
+mng,Töv,,,FALSE
+mng,Govĭ-Sümber,,,FALSE
+mng,Ulaanbaatar,,1580,FALSE
+mng,Dornod,,,FALSE
+mng,Sühbaatar,,,FALSE
+twn,Kaohsiung City,,2740,FALSE
+twn,Pingtung,,,FALSE
+twn,Tainan City,,,FALSE
+twn,Hsinchu City,,,FALSE
+twn,Hsinchu,,,FALSE
+twn,Yilan,,,FALSE
+twn,Keelung City,,,FALSE
+twn,Miaoli,,,FALSE
+twn,Taipei City,,2500,FALSE
+twn,New Taipei City,,4000,FALSE
+twn,Taoyuan,,,FALSE
+twn,Changhua,,,FALSE
+twn,Chiayi,,,FALSE
+twn,Chiayi City,,,FALSE
+twn,Hualien,,,FALSE
+twn,Nantou,,,FALSE
+twn,Taichung City,,2820,FALSE
+twn,Yunlin,,,FALSE
+twn,Taitung,,,FALSE
+twn,Penghu,,,FALSE
+twn,Kinmen,,,FALSE
+twn,Lienchiang,,,FALSE
+mmr,Kayah,,,FALSE
+mmr,Kayin,,,FALSE
+mmr,Mandalay,,6400,FALSE
+mmr,Bago,,,FALSE
+mmr,Yangon,,7800,FALSE
+mmr,Mon,,,FALSE
+mmr,Rakhine,,,FALSE
+mmr,Chin,,,FALSE
+mmr,Ayeyarwady,,6400,FALSE
+mmr,Magway,,,FALSE
+mmr,Shan,Shan,6200,FALSE
+mmr,Tanintharyi,,,FALSE
+mmr,Kachin,,,FALSE
+mmr,Sagaing,,,FALSE
+tha,Mae Hong Son,,,FALSE
+tha,Chumphon,,,FALSE
+tha,Nakhon Si Thammarat,,,FALSE
+tha,Phuket,,,FALSE
+tha,Phangnga,,,FALSE
+tha,Ranong,,,FALSE
+tha,Surat Thani,,,FALSE
+tha,Krabi,,,FALSE
+tha,Phatthalung,,,FALSE
+tha,Satun,,,FALSE
+tha,Songkhla,,,FALSE
+tha,Trang,,,FALSE
+tha,Yala,Malay,,FALSE
+tha,Chiang Rai,,,FALSE
+tha,Chiang Mai,,1790,FALSE
+tha,Lampang,,,FALSE
+tha,Lamphun,,,FALSE
+tha,Nan,,,FALSE
+tha,Phayao,,,FALSE
+tha,Phrae,,,FALSE
+tha,Phitsanulok,,,FALSE
+tha,Sukhothai,,,FALSE
+tha,Uttaradit,,,FALSE
+tha,Kanchanaburi,,,FALSE
+tha,Kamphaeng Phet,,,FALSE
+tha,Phichit,,,FALSE
+tha,Phetchabun,,,FALSE
+tha,Suphan Buri,,,FALSE
+tha,Tak,,,FALSE
+tha,Uthai Thani,,,FALSE
+tha,Ang Thong,,,FALSE
+tha,Chai Nat,,,FALSE
+tha,Lop Buri,,,FALSE
+tha,Nakhon Nayok,,,FALSE
+tha,Prachin Buri,,,FALSE
+tha,Nakhon Sawan,,,FALSE
+tha,Phra Nakhon Si Ayutthaya,,,FALSE
+tha,Pathum Thani,,,FALSE
+tha,Sing Buri,,,FALSE
+tha,Saraburi,,,FALSE
+tha,Bangkok Metropolis,,5588,FALSE
+tha,Nonthaburi,,,FALSE
+tha,Nakhon Pathom,,,FALSE
+tha,Phetchaburi,,,FALSE
+tha,Prachuap Khiri Khan,,,FALSE
+tha,Ratchaburi,,,FALSE
+tha,Samut Prakan,,,FALSE
+tha,Samut Sakhon,,,FALSE
+tha,Samut Songkhram,,,FALSE
+tha,Si Sa Ket,,,FALSE
+tha,Ubon Ratchathani,,,FALSE
+tha,Amnat Charoen,,,FALSE
+tha,Yasothon,,,FALSE
+tha,Chon Buri,,,FALSE
+tha,Chachoengsao,,,FALSE
+tha,Chanthaburi,,,FALSE
+tha,Sa Kaeo,,,FALSE
+tha,Rayong,,,FALSE
+tha,Trat,,,FALSE
+tha,Buri Ram,,,FALSE
+tha,Chaiyaphum,,,FALSE
+tha,Khon Kaen,,,FALSE
+tha,Kalasin,,,FALSE
+tha,Maha Sarakham,,,FALSE
+tha,Nakhon Ratchasima,,2630,FALSE
+tha,Roi Et,,,FALSE
+tha,Surin,,,FALSE
+tha,Loei,,,FALSE
+tha,Nong Khai,,,FALSE
+tha,Sakon Nakhon,,,FALSE
+tha,Udon Thani,,,FALSE
+tha,Nong Bua Lam Phu,,,FALSE
+tha,Nakhon Phanom,,,FALSE
+tha,Mukdahan,,,FALSE
+tha,Narathiwat,Malay,,FALSE
+tha,Pattani,Malay,,FALSE
+tha,Bueng Kan,,,FALSE
+lao,Bokeo,,,FALSE
+lao,Louang Namtha,,,FALSE
+lao,Xaignabouri,,,FALSE
+lao,Champasak,,,FALSE
+lao,Saravan,,,FALSE
+lao,Savannakhét,,,FALSE
+lao,Vientiane [prefecture],,,FALSE
+lao,Vientiane,,,FALSE
+lao,Xiangkhoang,,,FALSE
+lao,Houaphan,,,FALSE
+lao,Louangphrabang,,,FALSE
+lao,Oudômxai,,,FALSE
+lao,Phôngsali,,,FALSE
+lao,Bolikhamxai,,,FALSE
+lao,Khammouan,,,FALSE
+lao,Attapu,,,FALSE
+lao,Xékong,,,FALSE
+khm,Bântéay Méanchey,,,FALSE
+khm,Batdâmbâng,,,FALSE
+khm,Kaôh Kong,,,FALSE
+khm,Pouthisat,,,FALSE
+khm,Siemréab,,,FALSE
+khm,Otdar Mean Chey,,,FALSE
+khm,Krong Pailin,,,FALSE
+khm,Kâmpóng Cham,,,FALSE
+khm,Kâmpóng Chhnang,,,FALSE
+khm,Kândal,,,FALSE
+khm,Kâmpóng Spœ,,,FALSE
+khm,Kâmpóng Thum,,,FALSE
+khm,Phnom Penh,,2130,FALSE
+khm,Prey Vêng,,,FALSE
+khm,Preah Vihéar,,,FALSE
+khm,Stœng Trêng,,,FALSE
+khm,Krâchéh,,,FALSE
+khm,Môndól Kiri,,,FALSE
+khm,Rôtânôkiri,,,FALSE
+khm,Kâmpôt,,,FALSE
+khm,Kep,,,FALSE
+khm,Krong Preah Sihanouk,,,FALSE
+khm,Svay Rieng,,,FALSE
+khm,Takêv,,,FALSE
+vnm,Quảng Ninh,,,FALSE
+vnm,Tây Ninh,,,FALSE
+vnm,Điện Biên,,,FALSE
+vnm,Đông Bắc,,,TRUE
+vnm,Thái Nguyên,,,FALSE
+vnm,Lai Chau,,,FALSE
+vnm,Lạng Sơn,,,FALSE
+vnm,Son La,,,FALSE
+vnm,Thanh Hóa,,3640,FALSE
+vnm,Tuyên Quang,,,FALSE
+vnm,Yên Bái,,,FALSE
+vnm,Hòa Bình,,,FALSE
+vnm,Hải Dương,,,FALSE
+vnm,Hải Phòng,,,FALSE
+vnm,Đồng Bằng Sông Hồng,,,TRUE
+vnm,Ha Noi,,8054,FALSE
+vnm,Bắc Ninh,,,FALSE
+vnm,Vĩnh Phúc,,,FALSE
+vnm,Ninh Bình,,,FALSE
+vnm,Hà Nam,,,FALSE
+vnm,Nam Định,,,FALSE
+vnm,Phú Thọ,,,FALSE
+vnm,Bắc Giang,,,FALSE
+vnm,Thái Bình,,,FALSE
+vnm,Ha Tinh,,,FALSE
+vnm,Nghệ An,,3327,FALSE
+vnm,Quảng Bình,,,FALSE
+vnm,Dak Lak,,,FALSE
+vnm,Gia Lai,,,FALSE
+vnm,Khánh Hòa,,,FALSE
+vnm,Lâm Đồng,,,FALSE
+vnm,Ninh Thuận,,,FALSE
+vnm,Phú Yên,,,FALSE
+vnm,Bình Dương,,,FALSE
+vnm,Tiền Giang,,,FALSE
+vnm,Đắk Nông,,,FALSE
+vnm,Bình Phước,,,FALSE
+vnm,Bình Định,,,FALSE
+vnm,Kon Tum,,,FALSE
+vnm,Quàng Nam,,,FALSE
+vnm,Quảng Ngãi,,,FALSE
+vnm,Quảng Trị,,,FALSE
+vnm,Thừa Thiên - Huế,,,FALSE
+vnm,Đà Nẵng,,,FALSE
+vnm,Bà Rịa - Vũng Tàu,,,FALSE
+vnm,Bình Thuận,,,FALSE
+vnm,Đông Nam Bộ,,,TRUE
+vnm,An Giang,,,FALSE
+vnm,Can Tho,,,FALSE
+vnm,Ð?ng Tháp,,,FALSE
+vnm,Hồ Chí Minh city,,9000,FALSE
+vnm,Kiên Giang,,,FALSE
+vnm,Long An,,,FALSE
+vnm,Bến Tre,,,FALSE
+vnm,Hau Giang,,,FALSE
+vnm,Bạc Liêu,,,FALSE
+vnm,Cà Mau,,,FALSE
+vnm,Sóc Trăng,,,FALSE
+vnm,Trà Vinh,,,FALSE
+vnm,Vĩnh Long,,,FALSE
+vnm,Cao Bằng,,,FALSE
+vnm,Hà Giang,,,FALSE
+vnm,Lào Cai,,,FALSE
+mys,Perak,,,FALSE
+mys,Pulau Pinang,,,FALSE
+mys,Kedah,,,FALSE
+mys,Perlis,,,FALSE
+mys,Johor,,4009,FALSE
+mys,Kelantan,,,FALSE
+mys,Melaka,,,FALSE
+mys,Negeri Sembilan,,,FALSE
+mys,Pahang,,,FALSE
+mys,Selangor,,6994,FALSE
+mys,Trengganu,,,FALSE
+mys,Sabah,,3418,FALSE
+mys,Sarawak,,2453,FALSE
+mys,Kuala Lumpur,,1982,FALSE
+mys,Putrajaya,,,FALSE
+mys,Labuan,,,FALSE
+idn,Aceh,Acehnese,5555,FALSE
+idn,Kalimantan Timur,,4093,FALSE
+idn,Jawa Barat,Sundanese,50345,FALSE
+idn,Jawa Tengah,Javanese,37892,FALSE
+idn,Bengkulu,,,FALSE
+idn,Banten,Sundanese,12431,FALSE
+idn,Jakarta Raya,,10562,FALSE
+idn,Kalimantan Barat,,5696,FALSE
+idn,Lampung,,9420,FALSE
+idn,Sumatera Selatan,,8837,FALSE
+idn,Bangka-Belitung,,,FALSE
+idn,Bali,Balinese,4461,FALSE
+idn,Jawa Timur,Javanese,41814,FALSE
+idn,Kalimantan Selatan,Banjar,4294,FALSE
+idn,Nusa Tenggara Timur,,5715,FALSE
+idn,Sulawesi Selatan,Buginese,9463,FALSE
+idn,Sulawesi Barat,,,FALSE
+idn,Kepulauan Riau,,,FALSE
+idn,Gorontalo,,,FALSE
+idn,Jambi,,3746,FALSE
+idn,Kalimantan Tengah,,,FALSE
+idn,Irian Jaya Barat,,,FALSE
+idn,Sumatera Utara,Batak,15589,FALSE
+idn,Riau,,7007,FALSE
+idn,Sulawesi Utara,,,FALSE
+idn,Maluku Utara,,,FALSE
+idn,Sumatera Barat,Minangkabau,5836,FALSE
+idn,Yogyakarta,Javanese,3669,FALSE
+idn,Maluku,,,FALSE
+idn,Nusa Tenggara Barat,Sasak,5726,FALSE
+idn,Sulawesi Tenggara,,,FALSE
+idn,Sulawesi Tengah,,,FALSE
+idn,Papua,,4304,FALSE
+phl,Tawi-Tawi,Tausug,,FALSE
+phl,Bohol,Cebuano,,FALSE
+phl,Cebu,Cebuano,3401,FALSE
+phl,Negros Oriental,Cebuano,,FALSE
+phl,Siquijor,Cebuano,,FALSE
+phl,Negros Occidental,Hiligaynon,2680,FALSE
+phl,Basilan,Tausug,,FALSE
+phl,Zamboanga del Norte,Cebuano,,FALSE
+phl,Zamboanga Sibugay,Cebuano,,FALSE
+phl,Zamboanga del Sur,Cebuano,,FALSE
+phl,Misamis Occidental,Cebuano,,FALSE
+phl,Sulu,Tausug,,FALSE
+phl,Aklan,Hiligaynon,,FALSE
+phl,Antique,Hiligaynon,,FALSE
+phl,Capiz,Hiligaynon,,FALSE
+phl,Iloilo,Hiligaynon,2083,FALSE
+phl,Guimaras,Hiligaynon,,FALSE
+phl,Palawan,,,FALSE
+phl,Romblon,,,FALSE
+phl,Albay,Bikol,,FALSE
+phl,Camarines Norte,Bikol,,FALSE
+phl,Camarines Sur,Bikol,,FALSE
+phl,Catanduanes,Bikol,,FALSE
+phl,Masbate,Bikol,,FALSE
+phl,Sorsogon,Bikol,,FALSE
+phl,Abra,Ilocano,,FALSE
+phl,Batanes,,,FALSE
+phl,Cagayan,Ilocano,,FALSE
+phl,Apayao,Ilocano,,FALSE
+phl,Ilocos Norte,Ilocano,,FALSE
+phl,Ilocos Sur,Ilocano,,FALSE
+phl,Aurora,,,FALSE
+phl,Isabela,Ilocano,,FALSE
+phl,Ifugao,Ilocano,,FALSE
+phl,Mountain Province,Ilocano,,FALSE
+phl,Nueva Vizcaya,Ilocano,,FALSE
+phl,Quirino,Ilocano,,FALSE
+phl,Bataan,,,FALSE
+phl,Tarlac,Kapampangan,,FALSE
+phl,Nueva Ecija,,2396,FALSE
+phl,Pampanga,Kapampangan,2586,FALSE
+phl,Benguet,Ilocano,,FALSE
+phl,Zambales,,,FALSE
+phl,La Union,Ilocano,,FALSE
+phl,Pangasinan,Pangasinan,,FALSE
+phl,Cavite,,4574,FALSE
+phl,Batangas,,,FALSE
+phl,Bulacan,,3877,FALSE
+phl,Laguna,,3382,FALSE
+phl,Rizal,,3330,FALSE
+phl,Marinduque,,,FALSE
+phl,Mindoro Occidental,,,FALSE
+phl,Mindoro Oriental,,,FALSE
+phl,Quezon,,,FALSE
+phl,Lanao del Norte,Cebuano,,FALSE
+phl,Lanao del Sur,Maranao,,FALSE
+phl,Maguindanao,Maguindanao,,FALSE
+phl,Cotabato,Cebuano,,FALSE
+phl,Sultan Kudarat,Hiligaynon,,FALSE
+phl,Biliran,Waray,,FALSE
+phl,Eastern Samar,Waray,,FALSE
+phl,Leyte,Waray,,FALSE
+phl,Samar,Waray,,FALSE
+phl,Southern Leyte,Cebuano,,FALSE
+phl,Northern Samar,Waray,,FALSE
+phl,Agusan del Norte,Cebuano,,FALSE
+phl,Agusan del Sur,Cebuano,,FALSE
+phl,Bukidnon,Cebuano,,FALSE
+phl,Camiguin,Cebuano,,FALSE
+phl,Davao del Norte,Cebuano,,FALSE
+phl,Compostela Valley,Cebuano,,FALSE
+phl,Surigao del Norte,Cebuano,,FALSE
+phl,Surigao del Sur,Cebuano,,FALSE
+phl,Misamis Oriental,Cebuano,,FALSE
+phl,Davao del Sur,Cebuano,,FALSE
+phl,Davao Oriental,Cebuano,,FALSE
+phl,Sarangani,Cebuano,,FALSE
+phl,South Cotabato,Hiligaynon,,FALSE
+phl,Kalinga,Ilocano,,FALSE
+phl,Zamboanga,Cebuano,,FALSE
+phl,Mandaue,Cebuano,,FALSE
+phl,Lapu-Lapu,Cebuano,,FALSE
+phl,Bacolod,Hiligaynon,,FALSE
+phl,Davao,Cebuano,1776,FALSE
+phl,General Santos,Hiligaynon,,FALSE
+phl,Iligan,Cebuano,,FALSE
+phl,Cagayan de Oro,Cebuano,,FALSE
+phl,Butuan,Cebuano,,FALSE
+phl,Puerto Princesa,,,FALSE
+phl,Ormoc,Cebuano,,FALSE
+phl,Tacloban,Waray,,FALSE
+phl,Naga,Bikol,,FALSE
+phl,Santiago,Ilocano,,FALSE
+phl,Angeles,Kapampangan,,FALSE
+phl,Baguio,Ilocano,,FALSE
+phl,Olongapo,,,FALSE
+phl,Dagupan,Pangasinan,,FALSE
+phl,Mandaluyong City,,,FALSE
+phl,Manila,,1846,FALSE
+phl,Navotas,,,FALSE
+phl,Caloocan,,,FALSE
+phl,Malabon,,,FALSE
+phl,Valenzuela,,,FALSE
+phl,Quezon City,,2960,FALSE
+phl,Marikina,,,FALSE
+phl,San Juan,,,FALSE
+phl,Pasig,,,FALSE
+phl,Makati,,,FALSE
+phl,Pasay,,,FALSE
+phl,Paranaque,,,FALSE
+phl,Las Pinas,,,FALSE
+phl,Muntinlupa,,,FALSE
+phl,Taguig,,,FALSE
+phl,Pateros,,,FALSE
+phl,Lucena,,,FALSE
+brn,Belait,,,FALSE
+brn,Brunei and Muara,,,FALSE
+brn,Temburong,,,FALSE
+brn,Tutong,,,FALSE
+tls,Dili,,,FALSE
+tls,Liquica,,,FALSE
+tls,Ambeno,,,FALSE
+tls,Aileu,,,FALSE
+tls,Ainaro,,,FALSE
+tls,Baucau,,,FALSE
+tls,Bobonaro,,,FALSE
+tls,Cova Lima,,,FALSE
+tls,Ermera,,,FALSE
+tls,Manatuto,,,FALSE
+tls,Manufahi,,,FALSE
+tls,Viqueque,,,FALSE
+tls,Lautem,,,FALSE
+sgp,Central Singapore,,,FALSE
+sgp,South West,,,FALSE
+sgp,North West,,,FALSE
+sgp,North East,,,FALSE
+sgp,South East,,,FALSE
+alb,Durrës,,,FALSE
+alb,Fier,,,FALSE
+alb,Shkodër,,,FALSE
+alb,Kukës,,,FALSE
+alb,Vlorë,,,FALSE
+alb,Korçë,,,FALSE
+alb,Berat,,,FALSE
+alb,Elbasan,,,FALSE
+alb,Gjirokastër,,,FALSE
+alb,Dibër,,,FALSE
+alb,Lezhë,,,FALSE
+aut,Vorarlberg,,,FALSE
+aut,Burgenland,,,FALSE
+aut,Steiermark,,,FALSE
+aut,Kärnten,,,FALSE
+aut,Oberösterreich,,,FALSE
+aut,Salzburg,,,FALSE
+aut,Tirol,,,FALSE
+aut,Niederösterreich,,,FALSE
+aut,Wien,,,FALSE
+bel,Hainaut,,,FALSE
+bel,Limburg,Dutch,,FALSE
+bel,Brussels,,,FALSE
+bel,Flemish Brabant,Dutch,,FALSE
+bel,Namur,,,FALSE
+bel,Luxembourg,,,FALSE
+bel,East Flanders,Dutch,,FALSE
+bel,West Flanders,Dutch,,FALSE
+bel,Antwerp,Dutch,,FALSE
+bel,Liege,,,FALSE
+bel,Walloon Brabant,,,FALSE
+bih,West Bosnia,,,FALSE
+bih,Una-Sana,,,FALSE
+bih,Central Bosnia,,,FALSE
+bih,West Herzegovina,,,FALSE
+bih,Herzegovina-Neretva,,,FALSE
+bih,Tuzla,,,FALSE
+bih,Zenica-Doboj,,,FALSE
+bih,Sarajevo,,,FALSE
+bih,Bosnian Podrinje,,,FALSE
+bih,Posavina,,,FALSE
+bih,Doboj,,,FALSE
+bih,Banja Luka,,,FALSE
+bih,Brčko Distrikt,,,FALSE
+bih,Bijeljina,,,FALSE
+bih,Vlasenica,,,FALSE
+bih,Sarajevo-romanija,,,FALSE
+bih,Foča,,,FALSE
+bih,Trebinje,,,FALSE
+bgr,Sliven,,,FALSE
+bgr,Haskovo,,,FALSE
+bgr,Stara Zagora,,,FALSE
+bgr,Pazardzhik,,,FALSE
+bgr,Plovdiv,,,FALSE
+bgr,Smolyan,,,FALSE
+bgr,Kardzhali,,,FALSE
+bgr,Grad Sofiya,,,FALSE
+bgr,Sofia,,,FALSE
+bgr,Pernik,,,FALSE
+bgr,Gabrovo,,,FALSE
+bgr,Lovech,,,FALSE
+bgr,Pleven,,,FALSE
+bgr,Veliko Tarnovo,,,FALSE
+bgr,Montana,,,FALSE
+bgr,Vratsa,,,FALSE
+bgr,Kyustendil,,,FALSE
+bgr,Vidin,,,FALSE
+bgr,Burgas,,,FALSE
+bgr,Yambol,,,FALSE
+bgr,Razgrad,,,FALSE
+bgr,Targovishte,,,FALSE
+bgr,Shumen,,,FALSE
+bgr,Dobrich,,,FALSE
+bgr,Varna,,,FALSE
+bgr,Silistra,,,FALSE
+bgr,Ruse,,,FALSE
+bgr,Blagoevgrad,,,FALSE
+hrv,Dubrovacko-Neretvanska,,,FALSE
+hrv,Šibensko-Kninska,,,FALSE
+hrv,Splitsko-Dalmatinska,,,FALSE
+hrv,Zadarska,,,FALSE
+hrv,Krapinsko-Zagorska,,,FALSE
+hrv,Karlovacka,,,FALSE
+hrv,Licko-Senjska,,,FALSE
+hrv,Primorsko-Goranska,,,FALSE
+hrv,Sisacko-Moslavacka,,,FALSE
+hrv,Zagrebacka,,,FALSE
+hrv,Grad Zagreb,,,FALSE
+hrv,Istarska,,,FALSE
+hrv,Brodsko-Posavska,,,FALSE
+hrv,Osjecko-Baranjska,,,FALSE
+hrv,Vukovarsko-Srijemska,,,FALSE
+hrv,Viroviticko-Podravska,,,FALSE
+hrv,Bjelovarska-Bilogorska,,,FALSE
+hrv,Koprivničko-Križevačka,,,FALSE
+hrv,Medimurska,,,FALSE
+hrv,Varaždinska,,,FALSE
+cyp,Larnaca,,,FALSE
+cyp,Nicosia,,,FALSE
+cyp,Paphos,,,FALSE
+cyp,Famagusta,,,FALSE
+cyp,Limassol,,,FALSE
+cze,Ústecký,,,FALSE
+cze,Plzeňský,,,FALSE
+cze,Jihomoravský,,,FALSE
+cze,Zlínský,,,FALSE
+cze,Olomoucký,,,FALSE
+cze,Pardubický,,,FALSE
+cze,Karlovarský,,,FALSE
+cze,Jihočeský,,,FALSE
+cze,Vysočina,,,FALSE
+cze,Prague,,,FALSE
+cze,Středočeský,,,FALSE
+cze,Liberecký,,,FALSE
+cze,Královéhradecký,,,FALSE
+cze,Moravskoslezský,,,FALSE
+dnk,Midtjylland,,,FALSE
+dnk,Syddanmark,,,FALSE
+dnk,Nordjylland,,,FALSE
+dnk,Hovedstaden,,,FALSE
+dnk,Sjaælland,,,FALSE
+est,Harju,,,FALSE
+est,Ida-Viru,,,FALSE
+est,Järva,,,FALSE
+est,Jõgeva,,,FALSE
+est,Lääne-Viru,,,FALSE
+est,Tartu,,,FALSE
+est,Hiiu,,,FALSE
+est,Lääne,,,FALSE
+est,Pärnu,,,FALSE
+est,Põlva,,,FALSE
+est,Rapla,,,FALSE
+est,Valga,,,FALSE
+est,Viljandi,,,FALSE
+est,Võru,,,FALSE
+est,Saare,,,FALSE
+fin,Lapland,,,FALSE
+fin,Central Finland,,,FALSE
+fin,Northern Savonia,,,FALSE
+fin,Kainuu,,,FALSE
+fin,Northern Ostrobothnia,,,FALSE
+fin,Central Ostrobothnia,,,FALSE
+fin,Ostrobothnia,,,FALSE
+fin,Southern Ostrobothnia,,,FALSE
+fin,Päijät-Häme,,,FALSE
+fin,Tavastia Proper,,,FALSE
+fin,Pirkanmaa,,,FALSE
+fin,Kymenlaakso,,,FALSE
+fin,South Karelia,,,FALSE
+fin,Southern Savonia,,,FALSE
+fin,North Karelia,,,FALSE
+fin,Finland Proper,,,FALSE
+fin,Satakunta,,,FALSE
+fin,Uusimaa,,,FALSE
+fra,Martinique,,,FALSE
+fra,Guyane française,,,FALSE
+fra,La Réunion,,,FALSE
+fra,Mayotte,,,FALSE
+fra,Guadeloupe,,,FALSE
+fra,Ain,,,FALSE
+fra,Aisne,,,FALSE
+fra,Allier,,,FALSE
+fra,Alpes-de-Haute-Provence,,,FALSE
+fra,Alpes-Maritimes,,,FALSE
+fra,Ardèche,,,FALSE
+fra,Ardennes,,,FALSE
+fra,Ariège,,,FALSE
+fra,Aube,,,FALSE
+fra,Aude,,,FALSE
+fra,Aveyron,,,FALSE
+fra,Bas-Rhin,,,FALSE
+fra,Bouches-du-Rhône,,2070,FALSE
+fra,Calvados,,,FALSE
+fra,Cantal,,,FALSE
+fra,Charente,,,FALSE
+fra,Charente-Maritime,,,FALSE
+fra,Cher,,,FALSE
+fra,Corrèze,,,FALSE
+fra,Corse-du-Sud,,,FALSE
+fra,Côte-d'Or,,,FALSE
+fra,Côtes-d'Armor,,,FALSE
+fra,Creuse,,,FALSE
+fra,Deux-Sèvres,,,FALSE
+fra,Dordogne,,,FALSE
+fra,Doubs,,,FALSE
+fra,Drôme,,,FALSE
+fra,Essonne,,,FALSE
+fra,Eure,,,FALSE
+fra,Eure-et-Loir,,,FALSE
+fra,Finistère,,,FALSE
+fra,Gard,,,FALSE
+fra,Gers,,,FALSE
+fra,Gironde,,1675,FALSE
+fra,Haute-Rhin,,,FALSE
+fra,Haute-Corse,,,FALSE
+fra,Haute-Garonne,,,FALSE
+fra,Haute-Loire,,,FALSE
+fra,Haute-Marne,,,FALSE
+fra,Haute-Saône,,,FALSE
+fra,Haute-Savoie,,,FALSE
+fra,Haute-Vienne,,,FALSE
+fra,Hautes-Alpes,,,FALSE
+fra,Hautes-Pyrénées,,,FALSE
+fra,Hauts-de-Seine,,,FALSE
+fra,Hérault,,,FALSE
+fra,Ille-et-Vilaine,,,FALSE
+fra,Indre,,,FALSE
+fra,Indre-et-Loire,,,FALSE
+fra,Isère,,,FALSE
+fra,Jura,,,FALSE
+fra,Landes,,,FALSE
+fra,Loir-et-Cher,,,FALSE
+fra,Loire,,,FALSE
+fra,Loire-Atlantique,,,FALSE
+fra,Loiret,,,FALSE
+fra,Lot,,,FALSE
+fra,Lot-et-Garonne,,,FALSE
+fra,Lozère,,,FALSE
+fra,Maine-et-Loire,,,FALSE
+fra,Manche,,,FALSE
+fra,Marne,,,FALSE
+fra,Mayenne,,,FALSE
+fra,Meurhe-et-Moselle,,,FALSE
+fra,Meuse,,,FALSE
+fra,Morbihan,,,FALSE
+fra,Moselle,,,FALSE
+fra,Nièvre,,,FALSE
+fra,Nord,,2600,FALSE
+fra,Oise,,,FALSE
+fra,Orne,,,FALSE
+fra,Paris,,2100,FALSE
+fra,Pas-de-Calais,,,FALSE
+fra,Puy-de-Dôme,,,FALSE
+fra,Pyrénées-Atlantiques,,,FALSE
+fra,Pyrénées-Orientales,,,FALSE
+fra,Rhône,,1880,FALSE
+fra,Saône-et-Loire,,,FALSE
+fra,Sarthe,,,FALSE
+fra,Savoie,,,FALSE
+fra,Seien-et-Marne,,,FALSE
+fra,Seine-Maritime,,,FALSE
+fra,Seine-Saint-Denis,,1682,FALSE
+fra,Somme,,,FALSE
+fra,Tarn,,,FALSE
+fra,Tarn-et-Garonne,,,FALSE
+fra,Territoire de Belfort,,,FALSE
+fra,Val-d'Oise,,,FALSE
+fra,Val-de-Marne,,,FALSE
+fra,Var,,,FALSE
+fra,Vaucluse,,,FALSE
+fra,Vendée,,,FALSE
+fra,Vienne,,,FALSE
+fra,Vosges,,,FALSE
+fra,Yonne,,,FALSE
+fra,Yvelines,,,FALSE
+deu,Nordrhein-Westfalen,,,FALSE
+deu,Baden-Württemberg,,11111,FALSE
+deu,Hessen,,6421,FALSE
+deu,Bremen,,,FALSE
+deu,Niedersachsen,,,FALSE
+deu,Thüringen,,,FALSE
+deu,Hamburg,,,FALSE
+deu,Schleswig-Holstein,,2966,FALSE
+deu,Rheinland-Pfalz,,,FALSE
+deu,Saarland,,,FALSE
+deu,Bayern,,,FALSE
+deu,Berlin,,,FALSE
+deu,Sachsen-Anhalt,,,FALSE
+deu,Sachsen,,,FALSE
+deu,Brandenburg,,2557,FALSE
+deu,Mecklenburg-Vorpommern,,,FALSE
+grc,Ionioi Nisoi,,,FALSE
+grc,Attiki,,,FALSE
+grc,Peloponnisos,,,FALSE
+grc,Dytiki Ellada,,,FALSE
+grc,Dytiki Makedonia,,,FALSE
+grc,Thessalia,,,FALSE
+grc,Ipeiros,,,FALSE
+grc,Voreio Aigaio,,,FALSE
+grc,Stereá Elláda,,,FALSE
+grc,Kriti,,,FALSE
+grc,Kentriki Makedonia,,,FALSE
+grc,Ayion Oros,,,FALSE
+grc,Anatoliki Makedonia kai Thraki,,,FALSE
+grc,Notio Aigaio,,,FALSE
+hun,Vas,,,FALSE
+hun,Baranya,,,FALSE
+hun,Gyor-Moson-Sopron,,,FALSE
+hun,Somogy,,,FALSE
+hun,Veszprém,,,FALSE
+hun,Zala,,,FALSE
+hun,Budapest,,,FALSE
+hun,Bács-Kiskun,,,FALSE
+hun,Fejér,,,FALSE
+hun,Komárom-Esztergom,,,FALSE
+hun,Pest,,,FALSE
+hun,Tolna,,,FALSE
+hun,Nógrád,,,FALSE
+hun,Borsod-Abaúj-Zemplén,,,FALSE
+hun,Szabolcs-Szatmár-Bereg,,,FALSE
+hun,Békés,,,FALSE
+hun,Csongrád,,,FALSE
+hun,Hajdú-Bihar,,,FALSE
+hun,Heves,,,FALSE
+hun,Jász-Nagykun-Szolnok,,,FALSE
+hun,Szombathely,,,FALSE
+hun,Sopron,,,FALSE
+hun,Gyôr,,,FALSE
+hun,Tatabánya,,,FALSE
+hun,Érd,,,FALSE
+hun,Székesfehérvár,,,FALSE
+hun,Zalaegerszeg,,,FALSE
+hun,Nagykanizsa,,,FALSE
+hun,Kaposvár,,,FALSE
+hun,Pécs,,,FALSE
+hun,Szekszárd,,,FALSE
+hun,Kecskemét,,,FALSE
+hun,Szeged,,,FALSE
+hun,Hódmezôvásárhely,,,FALSE
+hun,Szolnok,,,FALSE
+hun,Békéscsaba,,,FALSE
+hun,Eger,,,FALSE
+hun,Salgótarján,,,FALSE
+hun,Miskolc,,,FALSE
+hun,Nyíregyháza,,,FALSE
+hun,Debrecen,,,FALSE
+hun,Dunaújváros,,,FALSE
+isl,Reykjavík,,,FALSE
+isl,Vestfirðir,,,FALSE
+isl,Austurland,,,FALSE
+isl,Norðurland vestra,,,FALSE
+isl,Norðurland eystra,,,FALSE
+isl,Suðurnes,,,FALSE
+isl,Suðurland,,,FALSE
+isl,Höfuðborgarsvæði,,,FALSE
+isl,Vesturland,,,FALSE
+irl,Waterford,,,FALSE
+irl,Monaghan,,,FALSE
+irl,Galway,,,FALSE
+irl,Cork,,,FALSE
+irl,Limerick,,,FALSE
+irl,South Tipperary,,,FALSE
+irl,South Dublin,,,FALSE
+irl,Fingal,,,FALSE
+irl,Dublin,,,FALSE
+irl,Dún Laoghaire–Rathdown,,,FALSE
+irl,Louth,,,FALSE
+irl,Mayo,,,FALSE
+irl,Meath,,,FALSE
+irl,Offaly,,,FALSE
+irl,Westmeath,,,FALSE
+irl,Wexford,,,FALSE
+irl,Wicklow,,,FALSE
+irl,Kildare,,,FALSE
+irl,Kilkenny,,,FALSE
+irl,Laoighis,,,FALSE
+irl,North Tipperary,,,FALSE
+irl,Kerry,,,FALSE
+irl,Roscommon,,,FALSE
+irl,Sligo,,,FALSE
+irl,Donegal,,,FALSE
+irl,Leitrim,,,FALSE
+irl,Longford,,,FALSE
+irl,Clare,,,FALSE
+irl,Carlow,,,FALSE
+irl,Cavan,,,FALSE
+ita,Modena,,,FALSE
+ita,Reggio Emilia,,,FALSE
+ita,Parma,,,FALSE
+ita,Piacenza,,,FALSE
+ita,Bologna,,,FALSE
+ita,Ferrara,,,FALSE
+ita,Ravenna,,,FALSE
+ita,Forlì-Cesena,,,FALSE
+ita,Rimini,,,FALSE
+ita,Genova,,,FALSE
+ita,Savona,,,FALSE
+ita,Imperia,,,FALSE
+ita,La Spezia,,,FALSE
+ita,Carbonia-Iglesias,,,FALSE
+ita,Medio Campidano,,,FALSE
+ita,Oristrano,,,FALSE
+ita,Sassari,,,FALSE
+ita,Olbia-Tempio,,,FALSE
+ita,Nuoro,,,FALSE
+ita,Ogliastra,,,FALSE
+ita,Cagliari,,,FALSE
+ita,Grosseto,,,FALSE
+ita,Livorno,,,FALSE
+ita,Pisa,,,FALSE
+ita,Massa-Carrara,,,FALSE
+ita,Lucca,,,FALSE
+ita,Pistoia,,,FALSE
+ita,Prato,,,FALSE
+ita,Firenze,,,FALSE
+ita,Arezzo,,,FALSE
+ita,Siena,,,FALSE
+ita,Matera,,,FALSE
+ita,Potenza,,,FALSE
+ita,Cosenza,,,FALSE
+ita,Crotene,,,FALSE
+ita,Catanzaro,,,FALSE
+ita,Vibo Valentia,,,FALSE
+ita,Reggio Calabria,,,FALSE
+ita,Caserta,,,FALSE
+ita,Napoli,,3000,FALSE
+ita,Benevento,,,FALSE
+ita,Avellino,,,FALSE
+ita,Salerno,,,FALSE
+ita,Campobasso,,,FALSE
+ita,Isernia,,,FALSE
+ita,Bari,,,FALSE
+ita,Foggia,,,FALSE
+ita,Barletta-Andria Trani,,,FALSE
+ita,Brindisi,,,FALSE
+ita,Lecce,,,FALSE
+ita,Taranto,,,FALSE
+ita,Trapani,,,FALSE
+ita,Palermo,,,FALSE
+ita,Messina,,,FALSE
+ita,Enna,,,FALSE
+ita,Catania,,,FALSE
+ita,Siracusa,,,FALSE
+ita,Ragusa,,,FALSE
+ita,Caltanissetta,,,FALSE
+ita,Agrigento,,,FALSE
+ita,Pescara,,,FALSE
+ita,Teramo,,,FALSE
+ita,L'Aquila,,,FALSE
+ita,Chieti,,,FALSE
+ita,Roma,,4300,FALSE
+ita,Viterbo,,,FALSE
+ita,Rieti,,,FALSE
+ita,Frosinone,,,FALSE
+ita,Latina,,,FALSE
+ita,Ancona,,,FALSE
+ita,Pesaro e Urbino,,,FALSE
+ita,Macerata,,,FALSE
+ita,Fermo,,,FALSE
+ita,Ascoli Piceno,,,FALSE
+ita,Perugia,,,FALSE
+ita,Terni,,,FALSE
+ita,Turin,,,FALSE
+ita,Biella,,,FALSE
+ita,Vercelli,,,FALSE
+ita,Verbano-Cusio-Ossola,,,FALSE
+ita,Novara,,,FALSE
+ita,Alessandria,,,FALSE
+ita,Asti,,,FALSE
+ita,Cuneo,,,FALSE
+ita,Aoste,,,FALSE
+ita,Bergamo,,,FALSE
+ita,Sondrio,,,FALSE
+ita,Brescia,,,FALSE
+ita,Mantova,,,FALSE
+ita,Cremona,,,FALSE
+ita,Lodi,,,FALSE
+ita,Pavia,,,FALSE
+ita,Milano,,3200,FALSE
+ita,Varese,,,FALSE
+ita,Como,,,FALSE
+ita,Lecco,,,FALSE
+ita,Monza e Brianza,,,FALSE
+ita,Udine,,,FALSE
+ita,Pordenone,,,FALSE
+ita,Gorizia,,,FALSE
+ita,Trieste,,,FALSE
+ita,Bozen,,,FALSE
+ita,Trento,,,FALSE
+ita,Venezia,,,FALSE
+ita,Rovigo,,,FALSE
+ita,Padova,,,FALSE
+ita,Verona,,,FALSE
+ita,Vicenza,,,FALSE
+ita,Treviso,,,FALSE
+ita,Belluno,,,FALSE
+lva,Balvu,,,FALSE
+lva,Kraslavas,,,FALSE
+lva,Ludzas,,,FALSE
+lva,Rezeknes,,,FALSE
+lva,Saldus,,,FALSE
+lva,Aluksne,,,FALSE
+lva,Valkas,,,FALSE
+lva,Bauska,,,FALSE
+lva,Cesu,,,FALSE
+lva,Daugavpils,,,FALSE
+lva,Dobele,,,FALSE
+lva,Gulbene,,,FALSE
+lva,Jelgava,,,FALSE
+lva,Jekabpils,,,FALSE
+lva,Limbaži,,,FALSE
+lva,Madona,,,FALSE
+lva,Ogre,,,FALSE
+lva,Preilu,,,FALSE
+lva,Talsi,,,FALSE
+lva,Tukums,,,FALSE
+lva,Valmiera,,,FALSE
+lva,Riga,,,FALSE
+lva,Liepāja,,,FALSE
+lva,Rezekne,,,FALSE
+lva,Ventspils,,,FALSE
+lva,Kuldigas,,,FALSE
+lva,Alsungas,,,FALSE
+lva,Brocenu,,,FALSE
+lva,Skrundas,,,FALSE
+lva,Vainodes,,,FALSE
+lva,Aizputes,,,FALSE
+lva,Priekules,,,FALSE
+lva,Grobinas,,,FALSE
+lva,Nicas,,,FALSE
+lva,Rucavas,,,FALSE
+lva,Pavilostas,,,FALSE
+lva,Durbes,,,FALSE
+lva,Dundagas,,,FALSE
+lva,Rojas,,,FALSE
+lva,Mersraga,,,FALSE
+lva,Neretas,,,FALSE
+lva,Krustpils,,,FALSE
+lva,Salas,,,FALSE
+lva,Plavinu,,,FALSE
+lva,Kokneses,,,FALSE
+lva,Aizkraukles,,,FALSE
+lva,Skriveru,,,FALSE
+lva,Jaunjelgavas,,,FALSE
+lva,Viesites,,,FALSE
+lva,Aknistes,,,FALSE
+lva,Vecumnieku,,,FALSE
+lva,Iecavas,,,FALSE
+lva,Ozolnieku,,,FALSE
+lva,Rundales,,,FALSE
+lva,Tervetes,,,FALSE
+lva,Auces,,,FALSE
+lva,Rugaju,,,FALSE
+lva,Vilakas,,,FALSE
+lva,Baltinavas,,,FALSE
+lva,Karsavas,,,FALSE
+lva,Ciblas,,,FALSE
+lva,Zilupes,,,FALSE
+lva,Dagdas,,,FALSE
+lva,Aglonas,,,FALSE
+lva,Ilukstes,,,FALSE
+lva,Livanu,,,FALSE
+lva,Varkavas,,,FALSE
+lva,Riebinu,,,FALSE
+lva,Vilanu,,,FALSE
+lva,Ādaži,,,FALSE
+lva,Alojas,,,FALSE
+lva,Babites,,,FALSE
+lva,Baldones,,,FALSE
+lva,Carnikavas,,,FALSE
+lva,Engures,,,FALSE
+lva,Garkalnes,,,FALSE
+lva,Ikskiles,,,FALSE
+lva,Incukalna,,,FALSE
+lva,Jaunpils,,,FALSE
+lva,Jurmala,,,FALSE
+lva,Kandavas,,,FALSE
+lva,Keguma,,,FALSE
+lva,Kekavas,,,FALSE
+lva,Krimuldas,,,FALSE
+lva,Lielvardes,,,FALSE
+lva,Malpils,,,FALSE
+lva,Marupes,,,FALSE
+lva,Olaines,,,FALSE
+lva,Ropazu,,,FALSE
+lva,Salacgrivas,,,FALSE
+lva,Salaspils,,,FALSE
+lva,Saulkrastu,,,FALSE
+lva,Sejas,,,FALSE
+lva,Siguldas,,,FALSE
+lva,Stopinu,,,FALSE
+lva,Amatas,,,FALSE
+lva,Apes,,,FALSE
+lva,Beverinas,,,FALSE
+lva,Burtnieku,,,FALSE
+lva,Cesvaines,,,FALSE
+lva,Erglu,,,FALSE
+lva,Jaunpiebalgas,,,FALSE
+lva,Kocenu,,,FALSE
+lva,Ligatnes,,,FALSE
+lva,Lubanas,,,FALSE
+lva,Mazsalacas,,,FALSE
+lva,Nauksenu,,,FALSE
+lva,Pargaujas,,,FALSE
+lva,Priekulu,,,FALSE
+lva,Strencu,,,FALSE
+lva,Rujienas,,,FALSE
+lva,Vecpiebalgas,,,FALSE
+lva,Smiltenes,,,FALSE
+lva,Raunas,,,FALSE
+lva,Varaklanu,,,FALSE
+ltu,Alytaus,,,FALSE
+ltu,Kauno,,,FALSE
+ltu,Marijampoles,,,FALSE
+ltu,Panevezio,,,FALSE
+ltu,Šiauliai,,,FALSE
+ltu,Taurages,,,FALSE
+ltu,Utenos,,,FALSE
+ltu,Vilniaus,,,FALSE
+ltu,Klaipedos,,,FALSE
+ltu,Telšiai,,,FALSE
+lux,Diekirch,,,FALSE
+lux,Grevenmacher,,,FALSE
+lux,Luxembourg,,,FALSE
+mlt,Attard,,,FALSE
+mlt,Mdina,,,FALSE
+mlt,Imtarfa,,,FALSE
+mlt,Rabat,,,FALSE
+mlt,Mġarr,,,FALSE
+mlt,Mellieħa,,,FALSE
+mlt,St. Paul's Bay,,,FALSE
+mlt,Mosta,,,FALSE
+mlt,Naxxar,,,FALSE
+mlt,Lija,,,FALSE
+mlt,Balzan,,,FALSE
+mlt,Iklin,,,FALSE
+mlt,Għargħur,,,FALSE
+mlt,Swieqi,,,FALSE
+mlt,Pembroke,,,FALSE
+mlt,St. Julian's,,,FALSE
+mlt,Sliema,,,FALSE
+mlt,San Ġwann,,,FALSE
+mlt,Gżira,,,FALSE
+mlt,Birkirkara,,,FALSE
+mlt,Msida,,,FALSE
+mlt,Ta' Xbiex,,,FALSE
+mlt,Pietà,,,FALSE
+mlt,Santa Venera,,,FALSE
+mlt,Ħamrun,,,FALSE
+mlt,Qormi,,,FALSE
+mlt,Żebbuġ,,,FALSE
+mlt,Dingli,,,FALSE
+mlt,Siġġiewi,,,FALSE
+mlt,Valletta,,,FALSE
+mlt,Kalkara,,,FALSE
+mlt,Birgu,,,FALSE
+mlt,Xgħajra,,,FALSE
+mlt,Senglea,,,FALSE
+mlt,Floriana,,,FALSE
+mlt,Cospicua,,,FALSE
+mlt,Żabbar,,,FALSE
+mlt,Marsa,,,FALSE
+mlt,Paola,,,FALSE
+mlt,Fgura,,,FALSE
+mlt,Tarxien,,,FALSE
+mlt,Żejtun,,,FALSE
+mlt,Marsaskala,,,FALSE
+mlt,Marsaxlokk,,,FALSE
+mlt,Luqa,,,FALSE
+mlt,Santa Luċija,,,FALSE
+mlt,Gudja,,,FALSE
+mlt,Għaxaq,,,FALSE
+mlt,Birżebbuġa,,,FALSE
+mlt,Mqabba,,,FALSE
+mlt,Kirkop,,,FALSE
+mlt,Safi,,,FALSE
+mlt,Qrendi,,,FALSE
+mlt,Żurrieq,,,FALSE
+mlt,Saint Lawrence,,,FALSE
+mlt,Għarb,,,FALSE
+mlt,Għasri,,,FALSE
+mlt,Xagħra,,,FALSE
+mlt,Nadur,,,FALSE
+mlt,Qala,,,FALSE
+mlt,Kerċem,,,FALSE
+mlt,Victoria,,,FALSE
+mlt,"Fontana, Gozo",,,FALSE
+mlt,Munxar,,,FALSE
+mlt,Sannat,,,FALSE
+mlt,Xewkija,,,FALSE
+mlt,Għajnsielem,,,FALSE
+mda,Briceni,,,FALSE
+mda,Donduseni,,,FALSE
+mda,Edineţ,,,FALSE
+mda,Ocniţa,,,FALSE
+mda,Rîşcani,,,FALSE
+mda,Bălţi,,,FALSE
+mda,Drochia,,,FALSE
+mda,Făleşti,,,FALSE
+mda,Glodeni,,,FALSE
+mda,Sîngerei,,,FALSE
+mda,Ungheni,,,FALSE
+mda,Cahul,,,FALSE
+mda,Taraclia,,,FALSE
+mda,Comrat,,,FALSE
+mda,Chişinău,,,FALSE
+mda,Stîngă Nistrului,Russian,,FALSE
+mda,Anenii Noi,,,FALSE
+mda,Basarabeasca,,,FALSE
+mda,Cantemir,,,FALSE
+mda,Calarasi,,,FALSE
+mda,Cimişlia,,,FALSE
+mda,Criuleni,,,FALSE
+mda,Floreşti,,,FALSE
+mda,Grigoriopol,,,FALSE
+mda,Transnistria,Russian,,FALSE
+mda,Hîncesti,,,FALSE
+mda,Ialoveni,,,FALSE
+mda,Leova,,,FALSE
+mda,Nisporeni,,,FALSE
+mda,Orhei,,,FALSE
+mda,Rezina,,,FALSE
+mda,Şoldăneşti,,,FALSE
+mda,Străşeni,,,FALSE
+mda,Teleneşti,,,FALSE
+mda,Causeni,,,FALSE
+mda,Bender,,,FALSE
+mda,Ştefan Voda,,,FALSE
+mda,Camenca,,,FALSE
+mda,Soroca,,,FALSE
+mne,Bar,,,FALSE
+mne,Ulcinj,,,FALSE
+mne,Budva,,,FALSE
+mne,Cetinje,,,FALSE
+mne,Rožaje,,,FALSE
+mne,Plav,,,FALSE
+mne,Herceg Novi,,,FALSE
+mne,Kotor,,,FALSE
+mne,Andrijevica,,,FALSE
+mne,Berane,,,FALSE
+mne,Bijelo Polje,,,FALSE
+mne,Danilovgrad,,,FALSE
+mne,Kolašin,,,FALSE
+mne,Mojkovac,,,FALSE
+mne,Nikšic,,,FALSE
+mne,Plužine,,,FALSE
+mne,Pljevlja,,,FALSE
+mne,Podgorica,,,FALSE
+mne,Tivat,,,FALSE
+mne,Šavnik,,,FALSE
+mne,Žabljak,,,FALSE
+nld,Noord-Brabant,,,FALSE
+nld,Utrecht,,,FALSE
+nld,Zuid-Holland,,,FALSE
+nld,Noord-Holland,,,FALSE
+nld,Saba,,,FALSE
+nld,St. Eustatius,,,FALSE
+nld,Bonaire,,,FALSE
+nld,Drenthe,,,FALSE
+nld,Friesland,,,FALSE
+nld,Gelderland,,2134,FALSE
+nld,Groningen,,,FALSE
+nld,Limburg,,,FALSE
+nld,Overijssel,,,FALSE
+nld,Flevoland,,,FALSE
+nld,Zeeland,,,FALSE
+mkd,Resen,,,FALSE
+mkd,Vevčani,,,FALSE
+mkd,Bitola,,,FALSE
+mkd,Demir Hisar,,,FALSE
+mkd,Ohrid,,,FALSE
+mkd,Debarca,,,FALSE
+mkd,Skopje,,,FALSE
+mkd,Plasnica,,,FALSE
+mkd,Prilep,,,FALSE
+mkd,Probistip,,,FALSE
+mkd,Radovis,,,FALSE
+mkd,Kriva Palanka,,,FALSE
+mkd,Vardar,,,FALSE
+mkd,Saraj,,,FALSE
+mkd,Sopiste,,,FALSE
+mkd,Northeastern,,,FALSE
+mkd,Štip,,,FALSE
+mkd,Studenicani,,,FALSE
+mkd,Cair,,,FALSE
+mkd,Sveti Nikole,,,FALSE
+mkd,Veles,,,FALSE
+mkd,Vraneštica,,,FALSE
+mkd,Zelenikovo,,,FALSE
+mkd,Želino,,,FALSE
+mkd,Aracinovo,,,FALSE
+mkd,Lipkovo,,,FALSE
+mkd,Butel,,,FALSE
+mkd,Caška,,,FALSE
+mkd,Centar,,,FALSE
+mkd,Zrnovci,,,FALSE
+mkd,Cešinovo-Obleševo,,,FALSE
+mkd,Cucer Sandevo,,,FALSE
+mkd,Demir Kapija,,,FALSE
+mkd,Dolneni,,,FALSE
+mkd,Gazi Baba,,,FALSE
+mkd,Gradsko,,,FALSE
+mkd,Lozovo,,,FALSE
+mkd,Konce,,,FALSE
+mkd,Ilinden,,,FALSE
+mkd,Karbinci,,,FALSE
+mkd,Karpoš,,,FALSE
+mkd,Kavadartsi,,,FALSE
+mkd,Aerodrom,,,FALSE
+mkd,Kisela Voda,,,FALSE
+mkd,Kocani,,,FALSE
+mkd,Kratovo,,,FALSE
+mkd,Krivogaštani,,,FALSE
+mkd,Kruševo,,,FALSE
+mkd,Kumanovo,,,FALSE
+mkd,Brod,,,FALSE
+mkd,Pelagonia,,,FALSE
+mkd,Negotino,,,FALSE
+mkd,Novatsi,,,FALSE
+mkd,Gjorce Petrov,,,FALSE
+mkd,Zajas,,,FALSE
+mkd,Centar župa,,,FALSE
+mkd,Debar,,,FALSE
+mkd,Drugovo,,,FALSE
+mkd,Kicevo,,,FALSE
+mkd,Mavrovo and Rostusa,,,FALSE
+mkd,Oslomej,,,FALSE
+mkd,Tearce,,,FALSE
+mkd,Tetovo,,,FALSE
+mkd,Polog,,,FALSE
+mkd,Bogovinje,,,FALSE
+mkd,Brvenica,,,FALSE
+mkd,Gostivar,,,FALSE
+mkd,Jegunovce,,,FALSE
+mkd,Southeastern,,,FALSE
+mkd,Valandovo,,,FALSE
+mkd,Vasilevo,,,FALSE
+mkd,Bogdanci,,,FALSE
+mkd,Bosilovo,,,FALSE
+mkd,Novo Selo,,,FALSE
+mkd,Dojran,,,FALSE
+mkd,Vinitsa,,,FALSE
+mkd,Berovo,,,FALSE
+mkd,Delcevo,,,FALSE
+mkd,Makedonska Kamenica,,,FALSE
+mkd,Phecevo,,,FALSE
+mkd,Struga,,,FALSE
+mkd,Rankovce,,,FALSE
+mkd,Šuto Orizari,,,FALSE
+nor,Bouvet Island,,,FALSE
+nor,Finnmark,,,FALSE
+nor,Nordland,,,FALSE
+nor,Troms,,,FALSE
+nor,Svalbard,,,FALSE
+nor,Møre og Romsdal,,,FALSE
+nor,Sør-Trøndelag,,,FALSE
+nor,Aust-Agder,,,FALSE
+nor,Hordaland,,,FALSE
+nor,Rogaland,,,FALSE
+nor,Sogn og Fjordane,,,FALSE
+nor,Vest-Agder,,,FALSE
+nor,Akershus,,,FALSE
+nor,Buskerud,,,FALSE
+nor,Hedmark,,,FALSE
+nor,Oppland,,,FALSE
+nor,Oslo,,,FALSE
+nor,Telemark,,,FALSE
+nor,Vestfold,,,FALSE
+nor,Østfold,,,FALSE
+nor,Nord-Trøndelag,,,FALSE
+pol,Warmian-Masurian,,,FALSE
+pol,Pomeranian,,,FALSE
+pol,Lower Silesian,,,FALSE
+pol,West Pomeranian,,,FALSE
+pol,Lubusz,,,FALSE
+pol,Greater Poland,,,FALSE
+pol,Kuyavian-Pomeranian,,,FALSE
+pol,Silesian,,,FALSE
+pol,Łódź,,,FALSE
+pol,Masovian,,,FALSE
+pol,Świętokrzyskie,,,FALSE
+pol,Podlachian,,,FALSE
+pol,Lublin,,,FALSE
+pol,Subcarpathian,,,FALSE
+pol,Opole,,,FALSE
+pol,Lesser Poland,,,FALSE
+prt,Setúbal,,,FALSE
+prt,Azores,,,FALSE
+prt,Madeira,,,FALSE
+prt,Aveiro,,,FALSE
+prt,Leiria,,,FALSE
+prt,Viana do Castelo,,,FALSE
+prt,Beja,,,FALSE
+prt,Évora,,,FALSE
+prt,Faro,,,FALSE
+prt,Lisboa,,,FALSE
+prt,Portalegre,,,FALSE
+prt,Santarém,,,FALSE
+prt,Braga,,,FALSE
+prt,Bragança,,,FALSE
+prt,Castelo Branco,,,FALSE
+prt,Coimbra,,,FALSE
+prt,Guarda,,,FALSE
+prt,Porto,,,FALSE
+prt,Viseu,,,FALSE
+prt,Vila Real,,,FALSE
+rou,Dolj,,,FALSE
+rou,Gorj,,,FALSE
+rou,Mehedinti,,,FALSE
+rou,Olt,,,FALSE
+rou,Teleorman,,,FALSE
+rou,Bucharest,,,FALSE
+rou,Calarasi,,,FALSE
+rou,Dâmbovita,,,FALSE
+rou,Giurgiu,,,FALSE
+rou,Ialomita,,,FALSE
+rou,Constanta,,,FALSE
+rou,Arad,,,FALSE
+rou,Bihor,,,FALSE
+rou,Caras-Severin,,,FALSE
+rou,Timis,,,FALSE
+rou,Botosani,,,FALSE
+rou,Alba,,,FALSE
+rou,Bistrita-Nasaud,,,FALSE
+rou,Cluj,,,FALSE
+rou,Hunedoara,,,FALSE
+rou,Maramures,,,FALSE
+rou,Mures,,,FALSE
+rou,Salaj,,,FALSE
+rou,Satu Mare,,,FALSE
+rou,Arges,,,FALSE
+rou,Sibiu,,,FALSE
+rou,Vâlcea,,,FALSE
+rou,Brasov,,,FALSE
+rou,Covasna,,,FALSE
+rou,Harghita,,,FALSE
+rou,Iasi,,,FALSE
+rou,Neamt,,,FALSE
+rou,Prahova,,,FALSE
+rou,Suceava,,,FALSE
+rou,Bacau,,,FALSE
+rou,Braila,,,FALSE
+rou,Buzau,,,FALSE
+rou,Galati,,,FALSE
+rou,Vaslui,,,FALSE
+rou,Vrancea,,,FALSE
+rou,Ilfov,,,FALSE
+rou,Tulcea,,,FALSE
+srb,Južno-Backi,,,FALSE
+srb,Južno-Banatski,,,FALSE
+srb,Srednje-Banatski,,,FALSE
+srb,Pirotski,,,FALSE
+srb,Borski,,,FALSE
+srb,Zlatiborski,,,FALSE
+srb,Zapadno-Backi,,,FALSE
+srb,Severno-Backi,,,FALSE
+srb,Severno-Banatski,,,FALSE
+srb,Branicevski,,,FALSE
+srb,Sremski,,,FALSE
+srb,Moravicki,,,FALSE
+srb,Nišavski,,,FALSE
+srb,Podunavski,,,FALSE
+srb,Pomoravski,,,FALSE
+srb,Raški,,,FALSE
+srb,Toplicki,,,FALSE
+srb,Grad Beograd,,,FALSE
+srb,Kolubarski,,,FALSE
+srb,Macvanski,,,FALSE
+srb,Šumadijski,,,FALSE
+srb,Pcinjski,,,FALSE
+srb,Jablanicki,,,FALSE
+srb,Zajecarski,,,FALSE
+svk,Bratislavský,,,FALSE
+svk,Banskobystrický,,,FALSE
+svk,Žilinský,,,FALSE
+svk,Nitriansky,,,FALSE
+svk,Trenciansky,,,FALSE
+svk,Trnavský,,,FALSE
+svk,Košický,,,FALSE
+svk,Prešov,,,FALSE
+svn,Velike Lašče,,,FALSE
+svn,Velenje,,,FALSE
+svn,Vitanje,,,FALSE
+svn,Vodice,,,FALSE
+svn,Vrhnika,,,FALSE
+svn,Vuzenica,,,FALSE
+svn,Zasavska,,,FALSE
+svn,Zrece,,,FALSE
+svn,Bled,,,FALSE
+svn,Bohinj,,,FALSE
+svn,Cerkno,,,FALSE
+svn,Gorenja vas-Poljane,,,FALSE
+svn,Idrija,,,FALSE
+svn,Kranj,,,FALSE
+svn,Kranjska Gora,,,FALSE
+svn,Naklo,,,FALSE
+svn,Radovljica,,,FALSE
+svn,Škofja Loka,,,FALSE
+svn,Tolmin,,,FALSE
+svn,Tržič,,,FALSE
+svn,Železniki,,,FALSE
+svn,Žiri,,,FALSE
+svn,Ajdovščina,,,FALSE
+svn,Bovec,,,FALSE
+svn,Brda,,,FALSE
+svn,Divaca,,,FALSE
+svn,Hrpelje-Kozina,,,FALSE
+svn,Izola,,,FALSE
+svn,Kanal,,,FALSE
+svn,Kobarid,,,FALSE
+svn,Komen,,,FALSE
+svn,Koper,,,FALSE
+svn,Miren-Kostanjevica,,,FALSE
+svn,Piran,,,FALSE
+svn,Sežana,,,FALSE
+svn,Vipava,,,FALSE
+svn,Beltinci,,,FALSE
+svn,Dornava,,,FALSE
+svn,Gorišnica,,,FALSE
+svn,Juršinci,,,FALSE
+svn,Kobilje,,,FALSE
+svn,Moravske Toplice,,,FALSE
+svn,Murska Sobota,,,FALSE
+svn,Odranci,,,FALSE
+svn,Ormož,,,FALSE
+svn,Sveti Jurij,,,FALSE
+svn,Turnišče,,,FALSE
+svn,Zavrc,,,FALSE
+svn,Šalovci,,,FALSE
+svn,Kuzma,,,FALSE
+svn,Cerkvenjak,,,FALSE
+svn,Benedikt,,,FALSE
+svn,Sveta Ana,,,FALSE
+svn,Hodoš,,,FALSE
+svn,Grad,,,FALSE
+svn,Destrnik,,,FALSE
+svn,Dobrova-Polhov Gradec,,,FALSE
+svn,Domžale,,,FALSE
+svn,Kamnik,,,FALSE
+svn,Kocevje,,,FALSE
+svn,Lenart,,,FALSE
+svn,Loška dolina,,,FALSE
+svn,Luce,,,FALSE
+svn,Majšperk,,,FALSE
+svn,Novo Mesto,,,FALSE
+svn,Bistrica ob Sotli,,,FALSE
+svn,Podvelka,,,FALSE
+svn,Preddvor,,,FALSE
+svn,Ptuj,,,FALSE
+svn,Ravne na Koroškem,,,FALSE
+svn,Ribnica,,,FALSE
+svn,Ruše,,,FALSE
+svn,Šentjur pri Celju,,,FALSE
+svn,Slovenska Bistrica,,,FALSE
+svn,Videm,,,FALSE
+svn,Vojnik,,,FALSE
+svn,Žalec,,,FALSE
+svn,Komenda,,,FALSE
+svn,Oplotnica,,,FALSE
+svn,Hajdina,,,FALSE
+svn,Miklavž na Dravskem polju,,,FALSE
+svn,Hoce-Slivnica,,,FALSE
+svn,Trnovska vas,,,FALSE
+svn,Žetale,,,FALSE
+svn,Podlehnik,,,FALSE
+svn,Prevalje,,,FALSE
+svn,Selnica ob Dravi,,,FALSE
+svn,Lovrenc na Pohorju,,,FALSE
+svn,Trzin,,,FALSE
+svn,Jezersko,,,FALSE
+svn,Žužemberk,,,FALSE
+svn,Dobrna,,,FALSE
+svn,Tabor,,,FALSE
+svn,Vransko,,,FALSE
+svn,Mirna Pec,,,FALSE
+svn,Prebold,,,FALSE
+svn,Polzela,,,FALSE
+svn,Kostel,,,FALSE
+svn,Braslovce,,,FALSE
+svn,Sodražica,,,FALSE
+svn,Dolenjske Toplice,,,FALSE
+svn,Horjul,,,FALSE
+svn,Solcava,,,FALSE
+svn,Dobje,,,FALSE
+svn,Dobrepolje,,,FALSE
+svn,Bloke,,,FALSE
+svn,Podcetrtek,,,FALSE
+svn,Maribor,,,FALSE
+svn,Ribnica na Pohorju,,,FALSE
+svn,Jesenice,,,FALSE
+svn,Žirovnica,,,FALSE
+svn,Nova Goriška,,,FALSE
+svn,Šempeter-Vrtojba,,,FALSE
+svn,Črenšovci,,,FALSE
+svn,Lendava,,,FALSE
+svn,Ljutomer,,,FALSE
+svn,Križevci,,,FALSE
+svn,Veržej,,,FALSE
+svn,Sveti Andraž v Slovenskih Goricah,,,FALSE
+svn,Razkrižje,,,FALSE
+svn,Velika Polana,,,FALSE
+svn,Dobrovnik,,,FALSE
+svn,Markovci,,,FALSE
+svn,Apace,,,FALSE
+svn,Šmartno in Litiji,,,FALSE
+svn,Cankova,,,FALSE
+svn,Gornja Radgona,,,FALSE
+svn,Gornji Petrovci,,,FALSE
+svn,Puconci,,,FALSE
+svn,Radenci,,,FALSE
+svn,Rogašovci,,,FALSE
+svn,Borovnica,,,FALSE
+svn,Brežice,,,FALSE
+svn,Krsko,,,FALSE
+svn,Brezovica,,,FALSE
+svn,Celje,,,FALSE
+svn,Cerklje na Gorenjskem,,,FALSE
+svn,Cerknica,,,FALSE
+svn,Črna na Koroškem,,,FALSE
+svn,Crnomelj,,,FALSE
+svn,Dol pri Ljubljani,,,FALSE
+svn,Dravograd,,,FALSE
+svn,Duplek,,,FALSE
+svn,Gornji Grad,,,FALSE
+svn,Grosuplje,,,FALSE
+svn,Hrastnik,,,FALSE
+svn,Trbovlje,,,FALSE
+svn,Ig,,,FALSE
+svn,Ilirska Bistrica,,,FALSE
+svn,Ivancna Gorica,,,FALSE
+svn,Kidricevo,,,FALSE
+svn,Kozje,,,FALSE
+svn,Krško,,,FALSE
+svn,Kungota,,,FALSE
+svn,Laško,,,FALSE
+svn,Litija,,,FALSE
+svn,Ljubljana,,,FALSE
+svn,Ljubno,,,FALSE
+svn,Logatec,,,FALSE
+svn,Loški Potok,,,FALSE
+svn,Lukovica,,,FALSE
+svn,Medvode,,,FALSE
+svn,Mengeš,,,FALSE
+svn,Metlika,,,FALSE
+svn,Mežica,,,FALSE
+svn,Mislinja,,,FALSE
+svn,Moravce,,,FALSE
+svn,Mozirje,,,FALSE
+svn,Muta,,,FALSE
+svn,Nazarje,,,FALSE
+svn,Pesnica,,,FALSE
+svn,Pivka,,,FALSE
+svn,Postojna,,,FALSE
+svn,Race-Fram,,,FALSE
+svn,Radece,,,FALSE
+svn,Radlje ob Dravi,,,FALSE
+svn,Rogaška Slatina,,,FALSE
+svn,Rogatec,,,FALSE
+svn,Semic,,,FALSE
+svn,Šenčur,,,FALSE
+svn,Šentilj,,,FALSE
+svn,Šentjernej,,,FALSE
+svn,Sevnica,,,FALSE
+svn,Škocjan,,,FALSE
+svn,Škofljica,,,FALSE
+svn,Slovenj Gradec,,,FALSE
+svn,Slovenske Konjice,,,FALSE
+svn,Šmarje pri Jelšah,,,FALSE
+svn,Šmartno ob Paki,,,FALSE
+svn,Šoštanj,,,FALSE
+svn,Starše,,,FALSE
+svn,Štore,,,FALSE
+svn,Trebnje,,,FALSE
+esp,Álava,,,FALSE
+esp,Albacete,,,FALSE
+esp,Alicante,,,FALSE
+esp,Almería,,,FALSE
+esp,Asturias,,1010,FALSE
+esp,Ávila,,,FALSE
+esp,Badajoz,,,FALSE
+esp,Baleares,,,FALSE
+esp,Barcelona,Catalan,,FALSE
+esp,Burgos,,,FALSE
+esp,Cáceres,,,FALSE
+esp,Cádiz,,,FALSE
+esp,Cantabria,,,FALSE
+esp,Castellón,,,FALSE
+esp,Ceuta,,,FALSE
+esp,Ciudad Real,,,FALSE
+esp,Córdoba,,,FALSE
+esp,Cuenca,,,FALSE
+esp,Gerona,Catalan,,FALSE
+esp,Granada,,,FALSE
+esp,Guadalajara,,,FALSE
+esp,Gipuzkoa,Basque,727,FALSE
+esp,Huelva,,,FALSE
+esp,Huesca,,,FALSE
+esp,Jaén,,,FALSE
+esp,La Coruña,Galician,,FALSE
+esp,La Rioja,,,FALSE
+esp,Las Palmas,,,FALSE
+esp,León,,,FALSE
+esp,Lérida,Catalan,,FALSE
+esp,Lugo,Galician,,FALSE
+esp,Madrid,,,FALSE
+esp,Málaga,,,FALSE
+esp,Melilla,,,FALSE
+esp,Murcia,,,FALSE
+esp,Navarra,,,FALSE
+esp,Orense,Galician,,FALSE
+esp,Palencia,,,FALSE
+esp,Pontevedra,Galician,,FALSE
+esp,Salamanca,,,FALSE
+esp,Santa Cruz de Tenerife,,,FALSE
+esp,Segovia,,,FALSE
+esp,Sevilla,,,FALSE
+esp,Soria,,,FALSE
+esp,Tarragona,Catalan,,FALSE
+esp,Teruel,,,FALSE
+esp,Toledo,,,FALSE
+esp,Valencia,,,FALSE
+esp,Valladolid,,,FALSE
+esp,Bizkaia,Basque,1159,FALSE
+esp,Zamora,,,FALSE
+esp,Zaragoza,,,FALSE
+swe,Gävleborg,,,FALSE
+swe,Jönköping,,,FALSE
+swe,Kalmar,,,FALSE
+swe,Dalarna,,,FALSE
+swe,Kronoberg,,,FALSE
+swe,Orebro,,,FALSE
+swe,Östergötland,,,FALSE
+swe,Södermanland,,,FALSE
+swe,Västmanland,,,FALSE
+swe,Halland,,,FALSE
+swe,Värmland,,,FALSE
+swe,Jämtland,,,FALSE
+swe,Norrbotten,,,FALSE
+swe,Västernorrland,,,FALSE
+swe,Västerbotten,,,FALSE
+swe,Gotland,,,FALSE
+swe,Stockholm,,,FALSE
+swe,Uppsala,,,FALSE
+swe,Blekinge,,,FALSE
+swe,Västra Götaland,,,FALSE
+swe,Skåne,,,FALSE
+che,Genève,French,,FALSE
+che,Jura,French,,FALSE
+che,Neuchâtel,French,,FALSE
+che,Aargau,,,FALSE
+che,Lucerne,,,FALSE
+che,Nidwalden,,,FALSE
+che,Valais,French,,FALSE
+che,Appenzell Ausserrhoden,,,FALSE
+che,Sankt Gallen,,,FALSE
+che,Ticino,Italian,351,FALSE
+che,Glarus,,,FALSE
+che,Graubünden,,,FALSE
+che,Schaffhausen,,,FALSE
+che,Schwyz,,,FALSE
+che,Thurgau,,,FALSE
+che,Uri,,,FALSE
+che,Zürich,,1550,FALSE
+che,Zug,,,FALSE
+che,Fribourg,French,,FALSE
+che,Vaud,French,815,FALSE
+che,Basel-Landschaft,,,FALSE
+che,Bern,,1040,FALSE
+che,Basel-Stadt,,,FALSE
+che,Solothurn,,,FALSE
+che,Obwalden,,,FALSE
+che,Appenzell Innerrhoden,,,FALSE
+gbr,East Ayrshire,,,FALSE
+gbr,East Dunbartonshire,,,FALSE
+gbr,East Renfrewshire,,,FALSE
+gbr,Glasgow,,650,FALSE
+gbr,Inverclyde,,,FALSE
+gbr,North Ayshire,,,FALSE
+gbr,North Lanarkshire,,,FALSE
+gbr,Renfrewshire,,,FALSE
+gbr,South Ayrshire,,,FALSE
+gbr,South Lanarkshire,,,FALSE
+gbr,West Dunbartonshire,,,FALSE
+gbr,Aberdeen,,,FALSE
+gbr,Aberdeenshire,,,FALSE
+gbr,Moray,,,FALSE
+gbr,Falkirk,,,FALSE
+gbr,Stirling,,,FALSE
+gbr,Clackmannanshire,,,FALSE
+gbr,Perthshire and Kinross,,,FALSE
+gbr,Angus,,,FALSE
+gbr,Dundee,,,FALSE
+gbr,Fife,,,FALSE
+gbr,East Lothian,,,FALSE
+gbr,Edinburgh,,531,FALSE
+gbr,Midlothian,,,FALSE
+gbr,West Lothian,,,FALSE
+gbr,Scottish Borders,,,FALSE
+gbr,Darlington,,,FALSE
+gbr,Durham,,,FALSE
+gbr,Hartlepool,,,FALSE
+gbr,Middlesbrough,,,FALSE
+gbr,Redcar and Cleveland,,,FALSE
+gbr,Stockton-on-Tees,,,FALSE
+gbr,Northumberland,,,FALSE
+gbr,Hampshire,,,FALSE
+gbr,Southampton,,,FALSE
+gbr,Milton Keynes,,,FALSE
+gbr,Gloucestershire,,,FALSE
+gbr,Buckinghamshire,,,FALSE
+gbr,Hertfordshire,,,FALSE
+gbr,Bath and North East Somerset,,,FALSE
+gbr,Bristol,,,FALSE
+gbr,North Somerset,,,FALSE
+gbr,South Gloucestershire,,,FALSE
+gbr,Somerset,,,FALSE
+gbr,Devon,,,FALSE
+gbr,Bournemouth,,,FALSE
+gbr,Dorset,,,FALSE
+gbr,Poole,,,FALSE
+gbr,Cambridgeshire,,,FALSE
+gbr,Leicestershire,,,FALSE
+gbr,Kingston upon Hull,,,FALSE
+gbr,North East Lincolnshire,,,FALSE
+gbr,North Lincolnshire,,,FALSE
+gbr,Derby,,,FALSE
+gbr,Derbyshire,,,FALSE
+gbr,Barking and Dagenham,,,FALSE
+gbr,Bexley,,,FALSE
+gbr,Brent,,,FALSE
+gbr,Bromley,,,FALSE
+gbr,Camden,,,FALSE
+gbr,Croydon,,,FALSE
+gbr,Ealing,,,FALSE
+gbr,Enfield,,,FALSE
+gbr,Greenwich,,,FALSE
+gbr,Hammersmith and Fulham,,,FALSE
+gbr,Hounslow,,,FALSE
+gbr,Islington,,,FALSE
+gbr,Kensington and Chelsea,,,FALSE
+gbr,Merton,,,FALSE
+gbr,Redbridge,,,FALSE
+gbr,Richmond upon Thames,,,FALSE
+gbr,Sutton,,,FALSE
+gbr,Tower Hamlets,,,FALSE
+gbr,Waltham Forest,,,FALSE
+gbr,Wandsworth,,,FALSE
+gbr,Westminster,,,FALSE
+gbr,Lincolnshire,,,FALSE
+gbr,Belfast,,352,FALSE
+gbr,Derry,,,FALSE
+gbr,Omagh,,,FALSE
+gbr,Armagh,,,FALSE
+gbr,Newry and Mourne,,,FALSE
+gbr,Banbridge,,,FALSE
+gbr,Craigavon,,,FALSE
+gbr,Dungannon,,,FALSE
+gbr,Lisburn,,,FALSE
+gbr,Cookstown,,,FALSE
+gbr,Antrim,,,FALSE
+gbr,Magherafelt,,,FALSE
+gbr,Ballymena,,,FALSE
+gbr,Larne,,,FALSE
+gbr,Carrickfergus,,,FALSE
+gbr,Newtownabbey,,,FALSE
+gbr,North Down,,,FALSE
+gbr,Down,,,FALSE
+gbr,Coleraine,,,FALSE
+gbr,Ballymoney,,,FALSE
+gbr,Limavady,,,FALSE
+gbr,Castlereagh,,,FALSE
+gbr,Carmarthenshire,,,FALSE
+gbr,Ceredigion,,,FALSE
+gbr,Pembrokeshire,,,FALSE
+gbr,Halton,,,FALSE
+gbr,Cornwall,,,FALSE
+gbr,Powys,,,FALSE
+gbr,Bridgend,,,FALSE
+gbr,Caerphilly,,,FALSE
+gbr,Merthyr Tydfil,,,FALSE
+gbr,"Rhondda, Cynon, Taff",,,FALSE
+gbr,Cardiff,,384,FALSE
+gbr,Vale of Glamorgan,,,FALSE
+gbr,Neath Port Talbot,,,FALSE
+gbr,Swansea,,,FALSE
+gbr,York,,,FALSE
+gbr,Telford and Wrekin,,,FALSE
+gbr,Blackburn with Darwen,,,FALSE
+gbr,Lancashire,,,FALSE
+gbr,East Riding of Yorkshire,,,FALSE
+gbr,Denbighshire,,,FALSE
+gbr,Flintshire,,,FALSE
+gbr,Wrexham,,,FALSE
+gbr,Anglesey,,,FALSE
+gbr,Conwy,,,FALSE
+gbr,Gwynedd,,,FALSE
+gbr,Blaenau Gwent,,,FALSE
+gbr,Monmouthshire,,,FALSE
+gbr,Newport,,,FALSE
+gbr,Torfaen,,,FALSE
+gbr,Strabane,,,FALSE
+gbr,Fermanagh,,,FALSE
+gbr,Ards,,,FALSE
+gbr,Dumfries and Galloway,,,FALSE
+gbr,Cumbria,,,FALSE
+gbr,North Yorkshire,,,FALSE
+gbr,Plymouth,,,FALSE
+gbr,Torbay,,,FALSE
+gbr,Essex,,,FALSE
+gbr,Suffolk,,,FALSE
+gbr,Norfolk,,,FALSE
+gbr,Brighton and Hove,,,FALSE
+gbr,Havering,,,FALSE
+gbr,Thurrock,,,FALSE
+gbr,East Sussex,,,FALSE
+gbr,Medway,,,FALSE
+gbr,Southend-on-Sea,,,FALSE
+gbr,Orkney,,,FALSE
+gbr,Highland,,,FALSE
+gbr,Argyll and Bute,,,FALSE
+gbr,Shetland Islands,,,FALSE
+gbr,West Sussex,,,FALSE
+gbr,Northamptonshire,,,FALSE
+gbr,Warwickshire,,,FALSE
+gbr,Oxfordshire,,,FALSE
+gbr,Luton,,,FALSE
+gbr,Hillingdon,,,FALSE
+gbr,Kingston upon Thames,,,FALSE
+gbr,Surrey,,,FALSE
+gbr,Swindon,,,FALSE
+gbr,Wiltshire,,,FALSE
+gbr,Isle of Wight,,,FALSE
+gbr,Portsmouth,,,FALSE
+gbr,Peterborough,,,FALSE
+gbr,Leicester,,,FALSE
+gbr,Rutland,,,FALSE
+gbr,Nottingham,,,FALSE
+gbr,Nottinghamshire,,,FALSE
+gbr,Hackney,,,FALSE
+gbr,Haringey,,,FALSE
+gbr,Harrow,,,FALSE
+gbr,Lambeth,,,FALSE
+gbr,Lewisham,,,FALSE
+gbr,Newham,,,FALSE
+gbr,Southwark,,,FALSE
+gbr,Eilean Siar,,,FALSE
+gbr,Moyle,,,FALSE
+gbr,Warrington,,,FALSE
+gbr,Herefordshire,,,FALSE
+gbr,Worcestershire,,,FALSE
+gbr,Staffordshire,,,FALSE
+gbr,Stoke-on-Trent,,,FALSE
+gbr,Shropshire,,,FALSE
+gbr,Kent,,,FALSE
+gbr,City,,,FALSE
+gbr,Newcastle upon Tyne,,,FALSE
+gbr,North Tyneside,,,FALSE
+gbr,South Tyneside,,,FALSE
+gbr,Sunderland,,,FALSE
+gbr,Gateshead,,,FALSE
+gbr,Knowsley,,,FALSE
+gbr,Sefton,,,FALSE
+gbr,Liverpool,,509,FALSE
+gbr,Merseyside,,,FALSE
+gbr,Blackpool,,,FALSE
+gbr,Kirklees,,,FALSE
+gbr,Calderdale,,,FALSE
+gbr,Bradford,,,FALSE
+gbr,Leeds,,,FALSE
+gbr,Wakefield,,,FALSE
+gbr,Salford,,,FALSE
+gbr,Wigan,,,FALSE
+gbr,Bolton,,,FALSE
+gbr,Bury,,,FALSE
+gbr,Rochdale,,,FALSE
+gbr,Oldham,,,FALSE
+gbr,Tameside,,,FALSE
+gbr,Stockport,,,FALSE
+gbr,Manchester,,590,FALSE
+gbr,Trafford,,,FALSE
+gbr,Rotherham,,,FALSE
+gbr,Sheffield,,,FALSE
+gbr,Barnsley,,,FALSE
+gbr,Doncaster,,,FALSE
+gbr,Birmingham,,1184,FALSE
+gbr,Sandwell,,,FALSE
+gbr,Dudley,,,FALSE
+gbr,Wolverhampton,,,FALSE
+gbr,Walsall,,,FALSE
+gbr,Solihull,,,FALSE
+gbr,Coventry,,,FALSE
+gbr,Central Bedfordshire,,,FALSE
+gbr,Bedford,,,FALSE
+gbr,Reading,,,FALSE
+gbr,West Berkshire,,,FALSE
+gbr,Wokingham,,,FALSE
+gbr,Bracknell Forest,,,FALSE
+gbr,Royal Borough of Windsor and Maidenhead,,,FALSE
+gbr,Slough,,,FALSE
+gbr,Barnet,,,FALSE
+gbr,Cheshire East,,,FALSE
+gbr,Cheshire West and Chester,,,FALSE
+gbr,Isles of Scilly,,,FALSE
+grl,Pituffik,,,FALSE
+grl,Kommuneqarfik Sermersooq,,,FALSE
+grl,Kommune Kujalleq,,,FALSE
+grl,Qeqqata Kommunia,,,FALSE
+grl,Nationalparken,,,FALSE
+grl,Qaasuitsup Kommunia,,,FALSE
+mar,Tanger - Tétouan,,,FALSE
+mar,Fès - Boulemane,,,FALSE
+mar,Taza - Al Hoceima - Taounate,,,FALSE
+mar,Gharb - Chrarda - Béni Hssen,,,FALSE
+mar,Chaouia - Ouardigha,,,FALSE
+mar,Grand Casablanca,,4270,FALSE
+mar,Rabat - Salé - Zemmour - Zaer,,,FALSE
+mar,Meknès - Tafilalet,,,FALSE
+mar,Tadla - Azilal,,,FALSE
+mar,Oriental,,,FALSE
+mar,Souss - Massa - Draâ,,,FALSE
+mar,Marrakech - Tensift - Al Haouz,,,FALSE
+mar,Doukkala - Abda,,,FALSE
+mar,Laâyoune - Boujdour - Sakia El Hamra,,,FALSE
+mar,Guelmim - Es-Semara,,,FALSE
+mar,Oued el Dahab,,,FALSE
+dza,Adrar,,,FALSE
+dza,Aïn Témouchent,,,FALSE
+dza,Oran,,1700,FALSE
+dza,Sidi Bel Abbès,,,FALSE
+dza,Tlemcen,,,FALSE
+dza,Béchar,,,FALSE
+dza,Naâma,,,FALSE
+dza,Tindouf,,,FALSE
+dza,Annaba,,,FALSE
+dza,El Tarf,,,FALSE
+dza,Jijel,,,FALSE
+dza,Skikda,,,FALSE
+dza,Illizi,,,FALSE
+dza,Tamanghasset,,,FALSE
+dza,El Bayadh,,,FALSE
+dza,El Oued,,,FALSE
+dza,Ghardaïa,,,FALSE
+dza,Laghouat,,,FALSE
+dza,Ouargla,,,FALSE
+dza,Alger,,3200,FALSE
+dza,Boumerdès,,,FALSE
+dza,Tizi Ouzou,,,FALSE
+dza,Tipaza,,,FALSE
+dza,Aïn Defla,,,FALSE
+dza,Chlef,,,FALSE
+dza,Mascara,,,FALSE
+dza,Mostaganem,,,FALSE
+dza,Relizane,,,FALSE
+dza,Saïda,,,FALSE
+dza,Tiaret,,,FALSE
+dza,Tissemsilt,,,FALSE
+dza,Bordj Bou Arréridj,,,FALSE
+dza,Béjaïa,,,FALSE
+dza,Blida,,,FALSE
+dza,Bouira,,,FALSE
+dza,Biskra,,,FALSE
+dza,Djelfa,,,FALSE
+dza,Médéa,,,FALSE
+dza,M'Sila,,,FALSE
+dza,Sétif,,,FALSE
+dza,Batna,,1200,FALSE
+dza,Constantine,,1000,FALSE
+dza,Guelma,,,FALSE
+dza,Khenchela,,,FALSE
+dza,Mila,,,FALSE
+dza,Oum el Bouaghi,,,FALSE
+dza,Souk Ahras,,,FALSE
+dza,Tébessa,,,FALSE
+tun,Tozeur,,,FALSE
+tun,Manubah,,,FALSE
+tun,Béja,,,FALSE
+tun,Ben Arous (Tunis Sud),,,FALSE
+tun,Bizerte,,,FALSE
+tun,Jendouba,,,FALSE
+tun,Nabeul,,,FALSE
+tun,Tunis,,1100,FALSE
+tun,Le Kef,,,FALSE
+tun,Kassérine,,,FALSE
+tun,Gabès,,,FALSE
+tun,Gafsa,,,FALSE
+tun,Sidi Bou Zid,,,FALSE
+tun,Sfax,,,FALSE
+tun,Siliana,,,FALSE
+tun,Mahdia,,,FALSE
+tun,Monastir,,,FALSE
+tun,Kairouan,,,FALSE
+tun,Sousse,,,FALSE
+tun,Zaghouan,,,FALSE
+tun,Médenine,,,FALSE
+tun,Kebili,,,FALSE
+tun,Tataouine,,,FALSE
+lby,Ghadamis,,,FALSE
+lby,Al Jufrah,,,FALSE
+lby,Al Kufrah,,,FALSE
+lby,Al Marqab,,,FALSE
+lby,Ash Shati',,,FALSE
+lby,Ghat,,,FALSE
+lby,Murzuq,,,FALSE
+lby,Misratah,,,FALSE
+lby,Sabha,,,FALSE
+lby,Al Jifarah,,,FALSE
+lby,An Nuqat al Khams,,,FALSE
+lby,Az Zawiyah,,,FALSE
+lby,Mizdah,,,FALSE
+lby,Tajura' wa an Nawahi al Arba,,,FALSE
+lby,Al Marj,,,FALSE
+lby,Al Jabal al Akhdar,,,FALSE
+lby,Ajdabiya,,,FALSE
+lby,Benghazi,,,FALSE
+lby,Surt,,,FALSE
+lby,Al Qubbah,,,FALSE
+lby,Al Butnan,,,FALSE
+lby,Wadi al Hayaa,,,FALSE
+can,Manitoba,,,FALSE
+can,Saskatchewan,,,FALSE
+can,Alberta,,4368,FALSE
+can,British Columbia,,5001,FALSE
+can,Nunavut,Inuktitut,37,FALSE
+can,Northwest Territories,,,FALSE
+can,Yukon,,,FALSE
+can,Ontario,,14224,FALSE
+can,Québec,French,8502,FALSE
+can,New Brunswick,,,FALSE
+can,Nova Scotia,,,FALSE
+can,Newfoundland and Labrador,,,FALSE
+can,Prince Edward Island,,,FALSE
+usa,Alabama,,5158,FALSE
+usa,Alaska,,,FALSE
+usa,Arizona,,7582,FALSE
+usa,Arkansas,,,FALSE
+usa,California,,39431,FALSE
+usa,Colorado,,5957,FALSE
+usa,Connecticut,,,FALSE
+usa,Delaware,,,FALSE
+usa,District of Columbia,,,FALSE
+usa,Florida,,23372,FALSE
+usa,Georgia,,11100,FALSE
+usa,Hawaii,,,FALSE
+usa,Idaho,,,FALSE
+usa,Illinois,,12710,FALSE
+usa,Indiana,,6924,FALSE
+usa,Iowa,,,FALSE
+usa,Kansas,,,FALSE
+usa,Kentucky,,,FALSE
+usa,Louisiana,,,FALSE
+usa,Maine,,,FALSE
+usa,Maryland,,6263,FALSE
+usa,Massachusetts,,7136,FALSE
+usa,Michigan,,10140,FALSE
+usa,Minnesota,,5793,FALSE
+usa,Mississippi,,,FALSE
+usa,Missouri,,6245,FALSE
+usa,Montana,,,FALSE
+usa,Nebraska,,,FALSE
+usa,Nevada,,,FALSE
+usa,New Hampshire,,,FALSE
+usa,New Jersey,,9501,FALSE
+usa,New Mexico,,,FALSE
+usa,New York,,19800,FALSE
+usa,North Carolina,,11046,FALSE
+usa,North Dakota,,,FALSE
+usa,Ohio,,11883,FALSE
+usa,Oklahoma,,,FALSE
+usa,Oregon,,,FALSE
+usa,Pennsylvania,,13079,FALSE
+usa,Rhode Island,,,FALSE
+usa,South Carolina,,,FALSE
+usa,South Dakota,,,FALSE
+usa,Tennessee,,7228,FALSE
+usa,Texas,,31291,FALSE
+usa,Utah,,,FALSE
+usa,Vermont,,,FALSE
+usa,Virginia,,8811,FALSE
+usa,Washington,,7958,FALSE
+usa,West Virginia,,,FALSE
+usa,Wisconsin,,5961,FALSE
+usa,Wyoming,,,FALSE
+mex,Baja California,,3769,FALSE
+mex,Baja California Sur,,,FALSE
+mex,Coahuila,,,FALSE
+mex,Chihuahua,,,FALSE
+mex,Durango,,,FALSE
+mex,Sinaloa,,,FALSE
+mex,Sonora,,,FALSE
+mex,Zacatecas,,,FALSE
+mex,Nuevo León,,5784,FALSE
+mex,San Luis Potosí,,,FALSE
+mex,Tamaulipas,,,FALSE
+mex,Aguascalientes,,,FALSE
+mex,Colima,,,FALSE
+mex,Jalisco,,8348,FALSE
+mex,Michoacán,,,FALSE
+mex,Nayarit,,,FALSE
+mex,Campeche,,,FALSE
+mex,Oaxaca,,4132,FALSE
+mex,Puebla,,6583,FALSE
+mex,Tabasco,,,FALSE
+mex,Tlaxcala,,,FALSE
+mex,Distrito Federal,,,FALSE
+mex,Guanajuato,,6167,FALSE
+mex,Guerrero,,,FALSE
+mex,Hidalgo,,,FALSE
+mex,México,,,FALSE
+mex,Morelos,,,FALSE
+mex,Querétaro,,,FALSE
+mex,Veracruz,,,FALSE
+mex,Chiapas,,5544,FALSE
+mex,Quintana Roo,,,FALSE
+mex,Yucatán,,2321,FALSE
+gtm,Baja Verapaz,,,FALSE
+gtm,Huehuetenango,,,FALSE
+gtm,Petén,,,FALSE
+gtm,Quezaltenango,,,FALSE
+gtm,Retalhuleu,,,FALSE
+gtm,San Marcos,,,FALSE
+gtm,Alta Verapaz,,,FALSE
+gtm,Chimaltenango,,,FALSE
+gtm,Escuintla,,,FALSE
+gtm,Guatemala,,,FALSE
+gtm,Suchitepéquez,,,FALSE
+gtm,Sacatepéquez,,,FALSE
+gtm,Sololá,,,FALSE
+gtm,Totonicapán,,,FALSE
+gtm,El Progreso,,,FALSE
+gtm,Santa Rosa,,,FALSE
+gtm,Izabal,,,FALSE
+gtm,Chiquimula,,,FALSE
+gtm,Jalapa,,,FALSE
+gtm,Jutiapa,,,FALSE
+gtm,Zacapa,,,FALSE
+gtm,Quiché,,,FALSE
+blz,Belize,,,FALSE
+blz,Cayo,,,FALSE
+blz,Corozal,,,FALSE
+blz,Orange Walk,,,FALSE
+blz,Stann Creek,,,FALSE
+blz,Toledo,,,FALSE
+hnd,Atlántida,,,FALSE
+hnd,Colón,,,FALSE
+hnd,Francisco Morazán,,,FALSE
+hnd,Gracias a Dios,,,FALSE
+hnd,Islas de la Bahía,,,FALSE
+hnd,Olancho,,,FALSE
+hnd,Yoro,,,FALSE
+hnd,Valle,,,FALSE
+hnd,Comayagua,,,FALSE
+hnd,Cortés,,,FALSE
+hnd,Intibucá,,,FALSE
+hnd,La Paz,,,FALSE
+hnd,Santa Bárbara,,,FALSE
+hnd,Copán,,,FALSE
+hnd,Lempira,,,FALSE
+hnd,Ocotepeque,,,FALSE
+hnd,Choluteca,,,FALSE
+hnd,El Paraíso,,,FALSE
+slv,Ahuachapán,,,FALSE
+slv,Cabañas,,,FALSE
+slv,Cuscatlán,,,FALSE
+slv,La Libertad,,,FALSE
+slv,La Paz,,,FALSE
+slv,Sonsonate,,,FALSE
+slv,San Salvador,,,FALSE
+slv,La Unión,,,FALSE
+slv,Morazán,,,FALSE
+slv,San Miguel,,,FALSE
+slv,San Vicente,,,FALSE
+slv,Usulután,,,FALSE
+slv,Chalatenango,,,FALSE
+slv,Santa Ana,,,FALSE
+nic,Rivas,,,FALSE
+nic,Rio San Juan,,,FALSE
+nic,Atlántico Sur,,,FALSE
+nic,Carazo,,,FALSE
+nic,Granada,,,FALSE
+nic,Jinotega,,,FALSE
+nic,Atlántico Norte,,,FALSE
+nic,León,,,FALSE
+nic,Managua,,,FALSE
+nic,Masaya,,,FALSE
+nic,Chinandega,,,FALSE
+nic,Estelí,,,FALSE
+nic,Madriz,,,FALSE
+nic,Matagalpa,,,FALSE
+nic,Nueva Segovia,,,FALSE
+nic,Boaco,,,FALSE
+nic,Chontales,,,FALSE
+cri,Cartago,,,FALSE
+cri,Heredia,,,FALSE
+cri,Limón,,,FALSE
+cri,Puntarenas,,,FALSE
+cri,San José,,,FALSE
+cri,Alajuela,,,FALSE
+cri,Guanacaste,,,FALSE
+pan,Chiriquí,,,FALSE
+pan,Coclé,,,FALSE
+pan,Colón,,,FALSE
+pan,Herrera,,,FALSE
+pan,Los Santos,,,FALSE
+pan,Panama,,,FALSE
+pan,Veraguas,,,FALSE
+pan,Darién,,,FALSE
+pan,Kuna Yala,,,FALSE
+pan,Bocas del Toro,,,FALSE
+pan,Ngöbe Buglé,,,FALSE
+pan,Emberá,,,FALSE
+cub,Cienfuegos,,,FALSE
+cub,Isla de la Juventud,,,FALSE
+cub,Pinar del Río,,,FALSE
+cub,Sancti Spíritus,,,FALSE
+cub,Ciego de Ávila,,,FALSE
+cub,Camagüey,,,FALSE
+cub,Guantánamo,,,FALSE
+cub,Granma,,,FALSE
+cub,Holguín,,,FALSE
+cub,Las Tunas,,,FALSE
+cub,Santiago de Cuba,,,FALSE
+cub,Ciudad de la Habana,,,FALSE
+cub,Artemisa,,,FALSE
+cub,Matanzas,,,FALSE
+cub,Villa Clara,,,FALSE
+cub,Mayabeque,,,FALSE
+dom,Santiago,,,FALSE
+dom,Santiago Rodríguez,,,FALSE
+dom,Valverde,,,FALSE
+dom,San Juan,,,FALSE
+dom,Santo Domingo,,,FALSE
+dom,Sánchez Ramírez,,,FALSE
+dom,San Pedro de Macorís,,,FALSE
+dom,Monte Cristi,,,FALSE
+dom,Puerto Plata,,,FALSE
+dom,Dajabón,,,FALSE
+dom,Espaillat,,,FALSE
+dom,Hermanas,,,FALSE
+dom,Bahoruco,,,FALSE
+dom,Barahona,,,FALSE
+dom,Independencia,,,FALSE
+dom,La Estrelleta,,,FALSE
+dom,Pedernales,,,FALSE
+dom,Azua,,,FALSE
+dom,La Vega,,,FALSE
+dom,Monseñor Nouel,,,FALSE
+dom,Peravia,,,FALSE
+dom,San José de Ocoa,,,FALSE
+dom,Duarte,,,FALSE
+dom,Hato Mayor,,,FALSE
+dom,Monte Plata,,,FALSE
+dom,María Trinidad Sánchez,,,FALSE
+dom,Samaná,,,FALSE
+dom,San Cristóbal,,,FALSE
+dom,Distrito Nacional,,,FALSE
+dom,El Seybo,,,FALSE
+dom,La Altagracia,,,FALSE
+dom,La Romana,,,FALSE
+hti,Grand'Anse,,,FALSE
+hti,Nippes,,,FALSE
+hti,Nord-Ouest,,,FALSE
+hti,Sud,,,FALSE
+hti,L'Artibonite,,,FALSE
+hti,Centre,,,FALSE
+hti,Nord-Est,,,FALSE
+hti,Nord,,,FALSE
+hti,Ouest,,,FALSE
+hti,Sud-Est,,,FALSE
+jam,Clarendon,,,FALSE
+jam,Hanover,,,FALSE
+jam,Manchester,,,FALSE
+jam,Saint Elizabeth,,,FALSE
+jam,Saint James,,,FALSE
+jam,Trelawny,,,FALSE
+jam,Westmoreland,,,FALSE
+jam,Kingston,,,FALSE
+jam,Portland,,,FALSE
+jam,Saint Ann,,,FALSE
+jam,Saint Catherine,,,FALSE
+jam,Saint Mary,,,FALSE
+jam,Saint Andrew,,,FALSE
+jam,Saint Thomas,,,FALSE
+pri,Puerto Rico,,,FALSE
+bhs,New Providence,,,FALSE
+bhs,City of Freeport,,,FALSE
+bhs,West Grand Bahama,,,FALSE
+bhs,East Grand Bahama,,,FALSE
+bhs,Grand Cay,,,FALSE
+bhs,North Abaco,,,FALSE
+bhs,Central Abaco,,,FALSE
+bhs,South Abaco,,,FALSE
+bhs,Moore's Island,,,FALSE
+bhs,Berry Islands,,,FALSE
+bhs,North Andros,,,FALSE
+bhs,Central Andros,,,FALSE
+bhs,Mangrove Cay,,,FALSE
+bhs,South Andros,,,FALSE
+bhs,Black Point,,,FALSE
+bhs,Exuma,,,FALSE
+bhs,Spanish Wells,,,FALSE
+bhs,Harbour Island,,,FALSE
+bhs,North Eleuthera,,,FALSE
+bhs,Central Eleuthera,,,FALSE
+bhs,South Eleuthera,,,FALSE
+bhs,Cat Island,,,FALSE
+bhs,San Salvador,,,FALSE
+bhs,Rum Cay,,,FALSE
+bhs,Long Island,,,FALSE
+bhs,Ragged Island,,,FALSE
+bhs,Crooked Island and Long Cay,,,FALSE
+bhs,Acklins,,,FALSE
+bhs,Mayaguana,,,FALSE
+bhs,Inagua,,,FALSE
+bhs,Bimini,,,FALSE
+bhs,Hope Town,,,FALSE
+tto,Eastern Tobago,,,FALSE
+tto,Western Tobago,,,FALSE
+tto,Diego Martin,,,FALSE
+tto,Siparia,,,FALSE
+tto,Arima,,,FALSE
+tto,Sangre Grande,,,FALSE
+tto,Rio Claro-Mayaro,,,FALSE
+tto,San Juan-Laventille,,,FALSE
+tto,Princes Town,,,FALSE
+tto,Couva-Tabaquite-Talparo,,,FALSE
+tto,Penal-Debe,,,FALSE
+tto,Point Fortin,,,FALSE
+tto,Tunapuna/Piarco,,,FALSE
+tto,San Fernando,,,FALSE
+tto,Chaguanas,,,FALSE
+tto,Port of Spain,,,FALSE
+col,Amazonas,,,FALSE
+col,Antioquia,,,FALSE
+col,Boyacá,,,FALSE
+col,Córdoba,,,FALSE
+col,Santander,,,FALSE
+col,La Guajira,,,FALSE
+col,San Andrés y Providencia,,,FALSE
+col,Caldas,,,FALSE
+col,Cundinamarca,,,FALSE
+col,Bogota,,,FALSE
+col,Quindío,,,FALSE
+col,Risaralda,,,FALSE
+col,Tolima,,,FALSE
+col,Caquetá,,,FALSE
+col,Cauca,,,FALSE
+col,Huila,,,FALSE
+col,Nariño,,,FALSE
+col,Putumayo,,,FALSE
+col,Valle del Cauca,,4476,FALSE
+col,Atlántico,,,FALSE
+col,Bolívar,,,FALSE
+col,Cesar,,,FALSE
+col,Chocó,,,FALSE
+col,Magdalena,,,FALSE
+col,Sucre,,,FALSE
+col,Arauca,,,FALSE
+col,Norte de Santander,,,FALSE
+col,Casanare,,,FALSE
+col,Guaviare,,,FALSE
+col,Guainía,,,FALSE
+col,Meta,,,FALSE
+col,Vaupés,,,FALSE
+col,Vichada,,,FALSE
+ven,Falcón,,,FALSE
+ven,Apure,,,FALSE
+ven,Barinas,,,FALSE
+ven,Mérida,,,FALSE
+ven,Táchira,,,FALSE
+ven,Trujillo,,,FALSE
+ven,Zulia,,5126,FALSE
+ven,Cojedes,,,FALSE
+ven,Carabobo,,2246,FALSE
+ven,Lara,,,FALSE
+ven,Portuguesa,,,FALSE
+ven,Yaracuy,,,FALSE
+ven,Amazonas,,,FALSE
+ven,Bolívar,,,FALSE
+ven,Anzoátegui,,,FALSE
+ven,Aragua,,,FALSE
+ven,Vargas,,,FALSE
+ven,Distrito Capital,,,FALSE
+ven,Dependencias Federales,,,FALSE
+ven,Guárico,,,FALSE
+ven,Monagas,,,FALSE
+ven,Miranda,,,FALSE
+ven,Nueva Esparta,,,FALSE
+ven,Sucre,,,FALSE
+ven,Delta Amacuro,,,FALSE
+guy,Mahaica-Berbice,,,FALSE
+guy,Potaro-Siparuni,,,FALSE
+guy,Upper Takutu-Upper Essequibo,,,FALSE
+guy,Upper Demerara-Berbice,,,FALSE
+guy,Barima-Waini,,,FALSE
+guy,Pomeroon-Supenaam,,,FALSE
+guy,East Berbice-Corentyne,,,FALSE
+guy,Demerara-Mahaica,,,FALSE
+guy,Essequibo Islands-West Demerara,,,FALSE
+guy,Cuyuni-Mazaruni,,,FALSE
+sur,Nickerie,,,FALSE
+sur,Brokopondo,,,FALSE
+sur,Marowijne,,,FALSE
+sur,Para,,,FALSE
+sur,Sipaliwini,,,FALSE
+sur,Commewijne,,,FALSE
+sur,Coronie,,,FALSE
+sur,Paramaribo,,,FALSE
+sur,Saramacca,,,FALSE
+sur,Wanica,,,FALSE
+ecu,Azuay,,,FALSE
+ecu,El Oro,,,FALSE
+ecu,Loja,,,FALSE
+ecu,Zamora Chinchipe,,,FALSE
+ecu,Galápagos,,,FALSE
+ecu,Bolivar,,,FALSE
+ecu,Cañar,,,FALSE
+ecu,Cotopaxi,,,FALSE
+ecu,Guayas,,,FALSE
+ecu,Los Rios,,,FALSE
+ecu,Manabi,,,FALSE
+ecu,Chimborazo,,,FALSE
+ecu,Morona Santiago,,,FALSE
+ecu,Orellana,,,FALSE
+ecu,Pichincha,,,FALSE
+ecu,Pastaza,,,FALSE
+ecu,Napo,,,FALSE
+ecu,Tungurahua,,,FALSE
+ecu,Esmeraldas,,,FALSE
+ecu,Carchi,,,FALSE
+ecu,Imbabura,,,FALSE
+ecu,Sucumbios,,,FALSE
+ecu,Santa Elena,,,FALSE
+ecu,Santo Domingo de los Tsáchilas,,,FALSE
+per,Callao,,1300,FALSE
+per,Lambayeque,,,FALSE
+per,Piura,,,FALSE
+per,Tumbes,,,FALSE
+per,Apurímac,Quechua,,FALSE
+per,Arequipa,,,FALSE
+per,Cusco,Quechua,428,FALSE
+per,Madre de Dios,,,FALSE
+per,Moquegua,,,FALSE
+per,Tacna,,,FALSE
+per,Ancash,,,FALSE
+per,Cajamarca,,,FALSE
+per,Huánuco,,,FALSE
+per,La Libertad,,,FALSE
+per,Pasco,,,FALSE
+per,San Martín,,,FALSE
+per,Ucayali,,,FALSE
+per,Amazonas,,,FALSE
+per,Loreto,,,FALSE
+per,Ayacucho,Quechua,181,FALSE
+per,Lima Province,,,FALSE
+per,Huancavelica,Quechua,,FALSE
+per,Ica,,,FALSE
+per,Junín,,,FALSE
+per,Lima,,,FALSE
+bra,Goiás,,7350,FALSE
+bra,São Paulo,,,FALSE
+bra,Pernambuco,,9539,FALSE
+bra,Acre,,,FALSE
+bra,Amazonas,,,FALSE
+bra,Maranhão,,,FALSE
+bra,Pará,,8120,FALSE
+bra,Rondônia,,,FALSE
+bra,Tocantins,,,FALSE
+bra,Distrito Federal,,,FALSE
+bra,Mato Grosso do Sul,,,FALSE
+bra,Minas Gerais,,21323,FALSE
+bra,Mato Grosso,,,FALSE
+bra,Rio Grande do Sul,,10883,FALSE
+bra,Paraná,,,FALSE
+bra,Santa Catarina,,,FALSE
+bra,Ceará,,8795,FALSE
+bra,Piauí,,,FALSE
+bra,Alagoas,,,FALSE
+bra,Bahia,,14871,FALSE
+bra,Espírito Santo,,,FALSE
+bra,Paraíba,,,FALSE
+bra,Rio de Janeiro,,,FALSE
+bra,Rio Grande do Norte,,,FALSE
+bra,Sergipe,,,FALSE
+bra,Roraima,,,FALSE
+bra,Amapá,,,FALSE
+bol,Cochabamba,Quechua,2000,FALSE
+bol,Chuquisaca,Quechua,,FALSE
+bol,El Beni,,,FALSE
+bol,La Paz,Aymara,2900,FALSE
+bol,Oruro,Aymara,,FALSE
+bol,Pando,,,FALSE
+bol,Potosí,Quechua,,FALSE
+bol,Santa Cruz,,3400,FALSE
+bol,Tarija,,,FALSE
+pry,Asunción,,,FALSE
+pry,Alto Paraguay,,,FALSE
+pry,Boquerón,,,FALSE
+pry,Concepción,,,FALSE
+pry,Cordillera,,,FALSE
+pry,Presidente Hayes,,,FALSE
+pry,San Pedro,,,FALSE
+pry,Central,,,FALSE
+pry,Guairá,,,FALSE
+pry,Misiones,,,FALSE
+pry,Ñeembucú,,,FALSE
+pry,Paraguarí,,,FALSE
+pry,Amambay,,,FALSE
+pry,Alto Paraná,,764,FALSE
+pry,Caaguazú,,,FALSE
+pry,Caazapá,,,FALSE
+pry,Canindeyú,,,FALSE
+pry,Itapúa,,,FALSE
+chl,Aisén del General Carlos Ibáñez del Campo,,,FALSE
+chl,Magallanes y Antártica Chilena,,,FALSE
+chl,Tarapacá,,,FALSE
+chl,Arica y Parinacota,,,FALSE
+chl,Antofagasta,,,FALSE
+chl,Atacama,,,FALSE
+chl,Coquimbo,,,FALSE
+chl,Región Metropolitana de Santiago,,7037,FALSE
+chl,Valparaíso,,,FALSE
+chl,La Araucanía,,,FALSE
+chl,Los Ríos,,,FALSE
+chl,Bío-Bío,,,FALSE
+chl,Libertador General Bernardo O'Higgins,,,FALSE
+chl,Los Lagos,,,FALSE
+chl,Maule,,,FALSE
+arg,Santa Cruz,,,FALSE
+arg,Tierra del Fuego,,,FALSE
+arg,San Juan,,,FALSE
+arg,Chubut,,,FALSE
+arg,Mendoza,,,FALSE
+arg,Neuquén,,,FALSE
+arg,Buenos Aires,,17000,FALSE
+arg,La Pampa,,,FALSE
+arg,Río Negro,,,FALSE
+arg,San Luis,,,FALSE
+arg,Córdoba,,3800,FALSE
+arg,Catamarca,,,FALSE
+arg,Jujuy,,,FALSE
+arg,La Rioja,,,FALSE
+arg,Salta,,,FALSE
+arg,Santiago del Estero,,,FALSE
+arg,Tucumán,,,FALSE
+arg,Chaco,,,FALSE
+arg,Formosa,,,FALSE
+arg,Corrientes,,,FALSE
+arg,Entre Ríos,,,FALSE
+arg,Santa Fe,,3500,FALSE
+arg,Misiones,,,FALSE
+arg,Ciudad de Buenos Aires,,,FALSE
+ury,Salto,,,FALSE
+ury,Soriano,,,FALSE
+ury,Cerro Largo,,,FALSE
+ury,Durazno,,,FALSE
+ury,Rivera,,,FALSE
+ury,Tacuarembó,,,FALSE
+ury,Treinta y Tres,,,FALSE
+ury,Canelones,,,FALSE
+ury,Florida,,,FALSE
+ury,Lavalleja,,,FALSE
+ury,Maldonado,,,FALSE
+ury,Montevideo,,,FALSE
+ury,Rocha,,,FALSE
+ury,Colonia,,,FALSE
+ury,San José,,,FALSE
+ury,Artigas,,,FALSE
+ury,Flores,,,FALSE
+ury,Paysandú,,,FALSE
+ury,Río Negro,,,FALSE
+aus,Macquarie Island,,,FALSE
+aus,Jervis Bay Territory,,,FALSE
+aus,Northern Territory,,,FALSE
+aus,Western Australia,,2900,FALSE
+aus,Australian Capital Territory,,,FALSE
+aus,New South Wales,,8339,FALSE
+aus,South Australia,,,FALSE
+aus,Victoria,,6800,FALSE
+aus,Queensland,,5460,FALSE
+aus,Norfolk Island,,,FALSE
+aus,Tasmania,,,FALSE
+nzl,Manawatu-Wanganui,,,FALSE
+nzl,Gisborne District,,,FALSE
+nzl,Hawke's Bay,,,FALSE
+nzl,Auckland,,,FALSE
+nzl,Bay of Plenty,,,FALSE
+nzl,Canterbury,,,FALSE
+nzl,Marlborough District,,,FALSE
+nzl,Nelson City,,,FALSE
+nzl,Tasman District,,,FALSE
+nzl,Northland,,,FALSE
+nzl,Taranaki,,,FALSE
+nzl,West Coast,,,FALSE
+nzl,Otago,,,FALSE
+nzl,Southland,,,FALSE
+nzl,Waikato,,532,FALSE
+nzl,Wellington,,,FALSE
+nzl,Chatham Islands Territory,,,FALSE
+nzl,Kermadec Islands,,,FALSE
+nzl,Tokelau,,,FALSE
+nzl,Three Kings Islands,,,FALSE
+nzl,Antipodes Islands,,,FALSE
+nzl,Campbell Islands,,,FALSE
+nzl,Auckland Islands,,,FALSE
+nzl,The Snares,,,FALSE
+png,Enga,,,FALSE
+png,East Sepik,,451,FALSE
+png,Madang,,,FALSE
+png,Sandaun,,,FALSE
+png,Chimbu,,,FALSE
+png,Eastern Highlands,,,FALSE
+png,Gulf,,,FALSE
+png,North Solomons,,,FALSE
+png,Southern Highlands,,,FALSE
+png,Western Highlands,,,FALSE
+png,Western,,,FALSE
+png,Central,,,FALSE
+png,East New Britain,,,FALSE
+png,Manus,,,FALSE
+png,Milne Bay,,,FALSE
+png,Morobe,,,FALSE
+png,National Capital District,,,FALSE
+png,New Ireland,,,FALSE
+png,Northern,,,FALSE
+png,West New Britain,,,FALSE
+fji,Central,,,FALSE
+fji,Eastern,,,FALSE
+fji,Northern,,,FALSE
+fji,Western,,,FALSE
+fji,Rotuma,,,FALSE
+slb,Malaita,,,FALSE
+slb,Rennell and Bellona,,,FALSE
+slb,Central,,,FALSE
+slb,Guadalcanal,,,FALSE
+slb,Isabel,,,FALSE
+slb,Temotu,,,FALSE
+slb,Western,,,FALSE
+slb,Choiseul,,,FALSE
+slb,Makira,,,FALSE
+slb,Capital Territory (Honiara),,,FALSE
+vut,Torba,,,FALSE
+vut,Sanma,,,FALSE
+vut,Tafea,,,FALSE
+vut,Malampa,,,FALSE
+vut,Penama,,,FALSE
+vut,Shefa,,,FALSE
+ncl,Îles Loyauté,,,FALSE
+ncl,Sud,,,FALSE
+ncl,Nord,,,FALSE
+pyf,Windward Islands,,,FALSE
+pyf,Leeward Islands,,,FALSE
+pyf,Tuamotu-Gambier,,,FALSE
+pyf,Austral Islands,,,FALSE
+pyf,Marquesas Islands,,,FALSE
+wsm,Tuamasaga,,,FALSE
+wsm,A'ana,,,FALSE
+wsm,Aiga-i-le-Tai,,,FALSE
+wsm,Atua,,,FALSE
+wsm,Va'a-o-Fonoti,,,FALSE
+wsm,Fa'asaleleaga,,,FALSE
+wsm,Gaga'emauga,,,FALSE
+wsm,Gaga'ifomauga,,,FALSE
+wsm,Vaisigano,,,FALSE
+wsm,Satupa'itea,,,FALSE
+wsm,Palauli,,,FALSE
+ton,Tongatapu,,,FALSE
+ton,Vava'u,,,FALSE
+ton,Niuas,,,FALSE
+ton,Ha'apai,,,FALSE
+ton,'Eua,,,FALSE
+gha,Northern,,,FALSE
+gha,Upper East,,,FALSE
+gha,Upper West,,,FALSE
+gha,Ashanti,,,FALSE
+gha,Brong Ahafo,,,FALSE
+gha,Central,,,FALSE
+gha,Eastern,,,FALSE
+gha,Western,,,FALSE
+gha,Greater Accra,,5456,FALSE
+gha,Volta,,,FALSE
+civ,Savanes,,,FALSE
+civ,Denguélé,,,FALSE
+civ,Bafing,,,FALSE
+civ,Dix-Huit Montagnes,,,FALSE
+civ,Worodougou,,,FALSE
+civ,Marahoué,,,FALSE
+civ,Fromager,,,FALSE
+civ,Haut-Sassandra,,,FALSE
+civ,Sud-Bandama,,,FALSE
+civ,Bas-Sassandra,,2687,FALSE
+civ,Zanzan,,,FALSE
+civ,Vallée du Bandama,,1965,FALSE
+civ,Agnéby,,,FALSE
+civ,N'zi-Comoé,,,FALSE
+civ,Lagunes,,2043,FALSE
+civ,Moyen-Cavally,,,FALSE
+civ,Moyen-Comoe,,,FALSE
+civ,Lacs,,,FALSE
+civ,Sud-Comoé,,,FALSE
+sen,Sédhiou,,,FALSE
+sen,Kédougou,,,FALSE
+sen,Kaffrine,,,FALSE
+sen,Saint-Louis,,,FALSE
+sen,Dakar,,3700,FALSE
+sen,Diourbel,,,FALSE
+sen,Fatick,,,FALSE
+sen,Kaolack,,,FALSE
+sen,Louga,,,FALSE
+sen,Matam,,,FALSE
+sen,Thiès,,,FALSE
+sen,Kolda,,,FALSE
+sen,Ziguinchor,,,FALSE
+sen,Tambacounda,,,FALSE
+mli,Timbuktu,,,FALSE
+mli,Kidal,,,FALSE
+mli,Gao,,,FALSE
+mli,Bamako,,4228,FALSE
+mli,Kayes,,,FALSE
+mli,Sikasso,,,FALSE
+mli,Mopti,,,FALSE
+mli,Ségou,,,FALSE
+mli,Koulikoro,,,FALSE
+bfa,Kompienga,,,FALSE
+bfa,Gourma,,,FALSE
+bfa,Houet,,,FALSE
+bfa,Kénédougou,,,FALSE
+bfa,Banwa,,,FALSE
+bfa,Kossi,,,FALSE
+bfa,Balé,,,FALSE
+bfa,Mou Houn,,,FALSE
+bfa,Oudalan,,,FALSE
+bfa,Soum,,,FALSE
+bfa,Nayala,,,FALSE
+bfa,Sourou,,,FALSE
+bfa,Bam,,,FALSE
+bfa,Boulkiemdé,,,FALSE
+bfa,Kourwéogo,,,FALSE
+bfa,Bazéga,,,FALSE
+bfa,Kadiogo,,,FALSE
+bfa,Oubritenga,,,FALSE
+bfa,Passoré,,,FALSE
+bfa,Zondoma,,,FALSE
+bfa,Sanguié,,,FALSE
+bfa,Sissili,,,FALSE
+bfa,Ziro,,,FALSE
+bfa,Loroum,,,FALSE
+bfa,Yatenga,,,FALSE
+bfa,Namentenga,,,FALSE
+bfa,Sanmatenga,,,FALSE
+bfa,Boulgou,,,FALSE
+bfa,Koulpélogo,,,FALSE
+bfa,Ganzourgou,,,FALSE
+bfa,Kouritenga,,,FALSE
+bfa,Nahouri,,,FALSE
+bfa,Zoundwéogo,,,FALSE
+bfa,Bougouriba,,,FALSE
+bfa,Ioba,,,FALSE
+bfa,Tuy,,,FALSE
+bfa,Léraba,,,FALSE
+bfa,Komoé,,,FALSE
+bfa,Poni,,,FALSE
+bfa,Gnagna,,,FALSE
+bfa,Komondjari,,,FALSE
+bfa,Séno,,,FALSE
+bfa,Yagha,,,FALSE
+bfa,Tapoa,,,FALSE
+bfa,Noumbiel,,,FALSE
+ner,Tillabéri,,,FALSE
+ner,Diffa,,,FALSE
+ner,Agadez,,,FALSE
+ner,Maradi,,,FALSE
+ner,Zinder,,,FALSE
+ner,Dosso,,,FALSE
+ner,Niamey,,,FALSE
+ner,Tahoua,,,FALSE
+gin,Beyla,,,FALSE
+gin,Boffa,,,FALSE
+gin,Boke,,,FALSE
+gin,Conakry,,1661,FALSE
+gin,Coyah,,,FALSE
+gin,Dabola,,,FALSE
+gin,Dalaba,,,FALSE
+gin,Dinguiraye,,,FALSE
+gin,Dubréka,,,FALSE
+gin,Faranah,,,FALSE
+gin,Forécariah,,,FALSE
+gin,Fria,,,FALSE
+gin,Gaoual,,,FALSE
+gin,Guéckédou,,,FALSE
+gin,Kankan,,,FALSE
+gin,Kérouané,,,FALSE
+gin,Kindia,,,FALSE
+gin,Kissidougou,,,FALSE
+gin,Koubia,,,FALSE
+gin,Koundara,,,FALSE
+gin,Kouroussa,,,FALSE
+gin,Labé,,,FALSE
+gin,Lélouma,,,FALSE
+gin,Lola,,,FALSE
+gin,Macenta,,,FALSE
+gin,Mali,,,FALSE
+gin,Mamou,,,FALSE
+gin,Mandiana,,,FALSE
+gin,Nzérékoré,,,FALSE
+gin,Pita,,,FALSE
+gin,Siguiri,,,FALSE
+gin,Tougué,,,FALSE
+gin,Yomou,,,FALSE
+gin,Télimélé,,,FALSE
+ben,Borgou,,1202,FALSE
+ben,Alibori,,868,FALSE
+ben,Collines,,,FALSE
+ben,Atlantique,,,FALSE
+ben,Littoral,,,FALSE
+ben,Kouffo,,,FALSE
+ben,Ouémé,,,FALSE
+ben,Zou,,,FALSE
+ben,Plateau,,,FALSE
+ben,Mono,,,FALSE
+ben,Atakora,,,FALSE
+ben,Donga,,,FALSE
+tgo,Plateaux,,,FALSE
+tgo,Maritime,,,FALSE
+tgo,Kara,,,FALSE
+tgo,Centre,,,FALSE
+tgo,Savanes,,,FALSE
+sle,Southern,,,FALSE
+sle,Western,,,FALSE
+sle,Northern,,,FALSE
+sle,Eastern,,,FALSE
+lbr,River Gee,,,FALSE
+lbr,Gbapolu,,,FALSE
+lbr,Grand Kru,,,FALSE
+lbr,Maryland,,,FALSE
+lbr,Sinoe,,,FALSE
+lbr,Bomi,,,FALSE
+lbr,Bong,,,FALSE
+lbr,Grand Bassa,,,FALSE
+lbr,Grand Cape Mount,,,FALSE
+lbr,Lofa,,,FALSE
+lbr,Montserrado,,,FALSE
+lbr,Margibi,,,FALSE
+lbr,Nimba,,,FALSE
+lbr,River Cess,,,FALSE
+lbr,Grand Gedeh,,,FALSE
+mrt,Tiris Zemmour,,,FALSE
+mrt,Brakna,,,FALSE
+mrt,Dakhlet Nouadhibou,,,FALSE
+mrt,Inchiri,,,FALSE
+mrt,Nouakchott,,,FALSE
+mrt,Trarza,,,FALSE
+mrt,Assaba,,,FALSE
+mrt,Guidimaka,,,FALSE
+mrt,Gorgol,,,FALSE
+mrt,Adrar,,,FALSE
+mrt,Hodh ech Chargui,,,FALSE
+mrt,Hodh el Gharbi,,,FALSE
+mrt,Tagant,,,FALSE
+gmb,Central River,,,FALSE
+gmb,Upper River,,,FALSE
+gmb,Banjul,,,FALSE
+gmb,Lower River,,,FALSE
+gmb,West Coast,,,FALSE
+gmb,North Bank,,,FALSE
+gnb,Biombo,,,FALSE
+gnb,Bissau,,,FALSE
+gnb,Bolama,,,FALSE
+gnb,Cacheu,,,FALSE
+gnb,Oio,,,FALSE
+gnb,Quinara,,,FALSE
+gnb,Bafatá,,,FALSE
+gnb,Gabú,,,FALSE
+gnb,Tombali,,,FALSE
+cpv,Brava,,,FALSE
+cpv,São Filipe,,,FALSE
+cpv,Mosteiros,,,FALSE
+cpv,Santa Catarina do Fogo,,,FALSE
+cpv,Tarrafal,,,FALSE
+cpv,Santa Catarina,,,FALSE
+cpv,São Miguel,,,FALSE
+cpv,Santa Cruz,,,FALSE
+cpv,São Salvador do Mundo,,,FALSE
+cpv,São Lourenço dos Órgãos,,,FALSE
+cpv,São Domingos,,,FALSE
+cpv,Ribeira Grande de Santiago,,,FALSE
+cpv,Praia,,,FALSE
+cpv,Maio,,,FALSE
+cpv,Boa Vista,,,FALSE
+cpv,Sal,,,FALSE
+cpv,Ribeira Brava,,,FALSE
+cpv,Tarrafal de São Nicolau,,,FALSE
+cpv,São Vicente,,,FALSE
+cpv,Porto Novo,,,FALSE
+cpv,Ribeira Grande,,,FALSE
+cpv,Paul,,,FALSE
+cmr,Extrême-Nord,,,FALSE
+cmr,Littoral,,3800,FALSE
+cmr,Nord-Ouest,,,FALSE
+cmr,Centre,,4200,FALSE
+cmr,Est,,,FALSE
+cmr,Adamaoua,,,FALSE
+cmr,Nord,,,FALSE
+cmr,Ouest,,,FALSE
+cmr,Sud-Ouest,,,FALSE
+cmr,Sud,,,FALSE
+tcd,Hadjer-Lamis,,,FALSE
+tcd,Kanem,,,FALSE
+tcd,Lac,,,FALSE
+tcd,Batha,,,FALSE
+tcd,Wadi Fira,,,FALSE
+tcd,Guéra,,,FALSE
+tcd,Ouaddaï,,,FALSE
+tcd,Logone Occidental,,,FALSE
+tcd,Logone Oriental,,,FALSE
+tcd,Mayo-Kebbi Est,,,FALSE
+tcd,Tandjilé,,,FALSE
+tcd,Mandoul,,,FALSE
+tcd,Salamat,,,FALSE
+tcd,Ville de N'Djamena,,,FALSE
+tcd,Mayo-Kebbi Ouest,,,FALSE
+tcd,Borkou,,,FALSE
+tcd,Tibesti,,,FALSE
+tcd,Ennedi,,,FALSE
+tcd,Chari-Baguirmi,,,FALSE
+tcd,Barh El Gazel,,,FALSE
+tcd,Sila,,,FALSE
+tcd,Moyen-Chari,,,FALSE
+caf,Bangui,,812,FALSE
+caf,Ombella-M'Poko,,,FALSE
+caf,Basse-Kotto,,,FALSE
+caf,Lobaye,,,FALSE
+caf,Mambéré-Kadéï,,,FALSE
+caf,Sangha-Mbaéré,,,FALSE
+caf,Nana-Mambéré,,,FALSE
+caf,Ouham-Pendé,,,FALSE
+caf,Bamingui-Bangoran,,,FALSE
+caf,Nana-Grébizi,,,FALSE
+caf,Kémo,,,FALSE
+caf,Ouaka,,,FALSE
+caf,Ouham,,,FALSE
+caf,Vakaga,,,FALSE
+caf,Haute-Kotto,,,FALSE
+caf,Haut-Mbomou,,,FALSE
+caf,Mbomou,,,FALSE
+cog,Cuvette-Ouest,,,FALSE
+cog,Bouenza,,,FALSE
+cog,Likouala,,,FALSE
+cog,Sangha,,,FALSE
+cog,Pool,,,FALSE
+cog,Cuvette,,,FALSE
+cog,Kouilou,,,FALSE
+cog,Lékoumou,,,FALSE
+cog,Niari,,,FALSE
+cog,Plateaux,,,FALSE
+cog,Brazzaville,,,FALSE
+cog,Pointe Noire,,1421,FALSE
+gab,Estuaire,,,FALSE
+gab,Ogooué-Ivindo,,,FALSE
+gab,Wouleu-Ntem,,,FALSE
+gab,Moyen-Ogooué,,,FALSE
+gab,Ngounié,,,FALSE
+gab,Nyanga,,,FALSE
+gab,Ogooué-Maritime,,,FALSE
+gab,Haut-Ogooué,,,FALSE
+gab,Ogooué-Lolo,,,FALSE
+gnq,Annobón,,,FALSE
+gnq,Centro Sur,,,FALSE
+gnq,Kié-Ntem,,,FALSE
+gnq,Litoral,,,FALSE
+gnq,Wele-Nzás,,,FALSE
+gnq,Bioko Norte,,,FALSE
+gnq,Bioko Sur,,,FALSE
+ago,Lunda Norte,,863,FALSE
+ago,Lunda Sul,,,FALSE
+ago,Malanje,,,FALSE
+ago,Bengo,,,FALSE
+ago,Cuanza Norte,,,FALSE
+ago,Cuanza Sul,,,FALSE
+ago,Luanda,,,FALSE
+ago,Uíge,,617,FALSE
+ago,Zaire,,,FALSE
+ago,Cabinda,,,FALSE
+ago,Bié,,,FALSE
+ago,Benguela,,562,FALSE
+ago,Cuando Cubango,,,FALSE
+ago,Cunene,,,FALSE
+ago,Huambo,,,FALSE
+ago,Huíla,,,FALSE
+ago,Moxico,,,FALSE
+ago,Namibe,,,FALSE
+ken,Coast,,,FALSE
+ken,Central,,4500,FALSE
+ken,Nairobi,,4400,FALSE
+ken,Nyanza,,,FALSE
+ken,Eastern,,,FALSE
+ken,Rift Valley,,,FALSE
+ken,Western,,,FALSE
+ken,North-Eastern,,,FALSE
+tza,Mbeya,,,FALSE
+tza,Rukwa,,1541,FALSE
+tza,Zanzibar South and Central,,,FALSE
+tza,Mwanza,,,FALSE
+tza,Shinyanga,,,FALSE
+tza,Tabora,,,FALSE
+tza,Kagera,,,FALSE
+tza,Kigoma,,,FALSE
+tza,Dar-Es-Salaam,,7776,FALSE
+tza,Morogoro,,,FALSE
+tza,Kaskazini-Pemba,,,FALSE
+tza,Kusini-Pemba,,,FALSE
+tza,Pwani,,,FALSE
+tza,Kaskazini-Unguja,,,FALSE
+tza,Zanzibar West,,,FALSE
+tza,Dodoma,,765,FALSE
+tza,Iringa,,,FALSE
+tza,Lindi,,,FALSE
+tza,Mtwara,,,FALSE
+tza,Ruvuma,,,FALSE
+tza,Singida,,,FALSE
+tza,Arusha,,,FALSE
+tza,Manyara,,1893,FALSE
+tza,Kilimanjaro,,,FALSE
+tza,Mara,,,FALSE
+tza,Tanga,,,FALSE
+tza,Katavi,,,FALSE
+tza,Simiyu,,,FALSE
+tza,Geita,,,FALSE
+tza,Njombe,,,FALSE
+uga,Kalangala,,,FALSE
+uga,Jinja,,,FALSE
+uga,Kumi,,,FALSE
+uga,Kaberamaido,,,FALSE
+uga,Kayunga,,,FALSE
+uga,Iganga,,,FALSE
+uga,Kamuli,,,FALSE
+uga,Amolatar,,,FALSE
+uga,Kaliro,,,FALSE
+uga,Namutumba,,,FALSE
+uga,Soroti,,,FALSE
+uga,Mukono,,,FALSE
+uga,Pallisa,,,FALSE
+uga,Sembabule,,,FALSE
+uga,Mpigi,,,FALSE
+uga,Adjumani,,,FALSE
+uga,Arua,,,FALSE
+uga,Koboko,,,FALSE
+uga,Buliisa,,,FALSE
+uga,Nebbi,,,FALSE
+uga,Moyo,,,FALSE
+uga,Yumbe,,,FALSE
+uga,Maracha,,,FALSE
+uga,Kampala,,,FALSE
+uga,Kiboga,,,FALSE
+uga,Nakasongola,,,FALSE
+uga,Wakiso,,91,FALSE
+uga,Luweero,,,FALSE
+uga,Mubende,,,FALSE
+uga,Mityana,,,FALSE
+uga,Nakaseke,,,FALSE
+uga,Kitgum,,,FALSE
+uga,Gulu,,,FALSE
+uga,Lira,,,FALSE
+uga,Dokolo,,,FALSE
+uga,Pader,,,FALSE
+uga,Masindi,,,FALSE
+uga,Oyam,,,FALSE
+uga,Bundibugyo,,,FALSE
+uga,Hoima,,,FALSE
+uga,Kabarole,,,FALSE
+uga,Kyenjojo,,,FALSE
+uga,Kibale,,,FALSE
+uga,Kapchorwa,,,FALSE
+uga,Bukwa,,,FALSE
+uga,Sironko,,,FALSE
+uga,Mbale,,,FALSE
+uga,Manafwa,,,FALSE
+uga,Bugiri,,,FALSE
+uga,Busia,,,FALSE
+uga,Butaleja,,,FALSE
+uga,Mayuge,,,FALSE
+uga,Tororo,,,FALSE
+uga,Katakwi,,,FALSE
+uga,Kotido,,,FALSE
+uga,Amuria,,,FALSE
+uga,Kaabong,,,FALSE
+uga,Abim,,,FALSE
+uga,Moroto,,,FALSE
+uga,Nakapiripirit,,,FALSE
+uga,Rakai,,,FALSE
+uga,Masaka,,,FALSE
+uga,Bushenyi,,,FALSE
+uga,Kasese,,,FALSE
+uga,Kamwenge,,,FALSE
+uga,Ibanda,,,FALSE
+uga,Isingiro,,,FALSE
+uga,Mbarara,,,FALSE
+uga,Ntungamo,,,FALSE
+uga,Rukungiri,,,FALSE
+uga,Kabale,,,FALSE
+uga,Kisoro,,,FALSE
+uga,Kanungu,,,FALSE
+uga,Zombo,,,FALSE
+uga,Ngora,,,FALSE
+uga,Bukedea,,,FALSE
+uga,Luuka,,,FALSE
+uga,Buyende,,,FALSE
+uga,Budaka,,,FALSE
+uga,Kibuku,,,FALSE
+uga,Serere,,,FALSE
+uga,Buikwe,,,FALSE
+uga,Buvuma,,,FALSE
+uga,Butambala,,,FALSE
+uga,Gomba,,,FALSE
+uga,Amuru,,,FALSE
+uga,Kyankwanzi,,,FALSE
+uga,Lamwo,,,FALSE
+uga,Apac,,,FALSE
+uga,Kole,,,FALSE
+uga,Alebtong,,,FALSE
+uga,Otuke,,,FALSE
+uga,Agago,,,FALSE
+uga,Kiryandongo,,,FALSE
+uga,Ntoroko,,,FALSE
+uga,Kyegegwa,,,FALSE
+uga,Kween,,,FALSE
+uga,Bulambuli,,,FALSE
+uga,Namayingo,,,FALSE
+uga,Napak,,,FALSE
+uga,Amudat,,,FALSE
+uga,Lwengo,,,FALSE
+uga,Lyantonde,,,FALSE
+uga,Bukomansimbi,,,FALSE
+uga,Kalungu,,,FALSE
+uga,Rubirizi,,,FALSE
+uga,Mitooma,,,FALSE
+uga,Sheema,,,FALSE
+uga,Buhweju,,,FALSE
+uga,Nwoya,,,FALSE
+uga,Bududa,,,FALSE
+rwa,Southern,,,FALSE
+rwa,Western,,,FALSE
+rwa,Eastern,,,FALSE
+rwa,Northern,,,FALSE
+rwa,Kigali City,,,FALSE
+bdi,Cankuzo,,,FALSE
+bdi,Karuzi,,,FALSE
+bdi,Rutana,,,FALSE
+bdi,Ruyigi,,,FALSE
+bdi,Bubanza,,,FALSE
+bdi,Bururi,,,FALSE
+bdi,Cibitoke,,,FALSE
+bdi,Gitega,,,FALSE
+bdi,Kayanza,,,FALSE
+bdi,Makamba,,,FALSE
+bdi,Ngozi,,,FALSE
+bdi,Kirundo,,,FALSE
+bdi,Muyinga,,,FALSE
+bdi,Bujumbura Mairie,,,FALSE
+bdi,Muramvya,,,FALSE
+bdi,Bujumbura Rural,,,FALSE
+bdi,Mwaro,,,FALSE
+som,Bari,,,FALSE
+som,Bakool,,1156,FALSE
+som,Bay,,,FALSE
+som,Gedo,,,FALSE
+som,Jubbada Dhexe,,,FALSE
+som,Shabeellaha Hoose,,,FALSE
+som,Banaadir,,2331,FALSE
+som,Galguduud,,,FALSE
+som,Hiiraan,,,FALSE
+som,Shabeellaha Dhexe,,,FALSE
+som,Mudug,,865,FALSE
+som,Nugaal,,,FALSE
+som,Jubbada Hoose,,,FALSE
+sdn,Blue Nile,,,FALSE
+sdn,Red Sea,,,FALSE
+sdn,Southern Darfur,,,FALSE
+sdn,Eastern Darfur,,,FALSE
+sdn,Western Darfur,,,FALSE
+sdn,Central Darfur,,2499,FALSE
+sdn,Khartoum,,,FALSE
+sdn,Gezira,,,FALSE
+sdn,Gedarif,,,FALSE
+sdn,River Nile,,,FALSE
+sdn,Northern,,,FALSE
+sdn,White Nile,,,FALSE
+sdn,Sennar,,,FALSE
+sdn,North Darfur,,2305,FALSE
+sdn,South Kordufan,,,FALSE
+sdn,North Kordufan,,,FALSE
+sdn,Kassala,,,FALSE
+eri,Gash Barka,,1104,FALSE
+eri,Anseba,,,FALSE
+eri,Debub,,,FALSE
+eri,Semenawi Keyih Bahri,,,FALSE
+eri,Maekel,,1053,FALSE
+eri,Debubawi Keyih Bahri,,,FALSE
+dji,Ali Sabieh,,,FALSE
+dji,Djibouti,,,FALSE
+dji,Arta,,,FALSE
+dji,Dikhil,,,FALSE
+dji,Obock,,,FALSE
+dji,Tadjourah,,,FALSE
+mdg,Alaotra-Mangoro,,,FALSE
+mdg,Amoron'i Mania,,,FALSE
+mdg,Analamanga,,,FALSE
+mdg,Analanjirofo,,,FALSE
+mdg,Androy,,,FALSE
+mdg,Anosy,,,FALSE
+mdg,Atsimo-Andrefana,,,FALSE
+mdg,Atsimo-Atsinanana,,,FALSE
+mdg,Atsinanana,,,FALSE
+mdg,Betsiboka,,,FALSE
+mdg,Boeny,,,FALSE
+mdg,Bongolava,,,FALSE
+mdg,Diana,,,FALSE
+mdg,Haute Matsiatra,,,FALSE
+mdg,Ihorombe,,,FALSE
+mdg,Itasy,,,FALSE
+mdg,Melaky,,,FALSE
+mdg,Menabe,,,FALSE
+mdg,Sava,,,FALSE
+mdg,Sofia,,,FALSE
+mdg,Vakinankaratra,,,FALSE
+mdg,Vatovavy-Fitovinany,,,FALSE
+moz,Tete,,,FALSE
+moz,Manica,,,FALSE
+moz,Cabo Delgado,,,FALSE
+moz,Niassa,,1811,FALSE
+moz,Nampula,,,FALSE
+moz,Gaza,,,FALSE
+moz,Sofala,,,FALSE
+moz,Zambezia,,,FALSE
+moz,Inhambane,,,FALSE
+moz,Maputo,,,FALSE
+mwi,Chitipa,,,FALSE
+mwi,Kasungu,,,FALSE
+mwi,Mzimba,,936,FALSE
+mwi,Nkhata Bay,,,FALSE
+mwi,Nkhotakota,,,FALSE
+mwi,Rumphi,,,FALSE
+mwi,Machinga,,,FALSE
+mwi,Dedza,,,FALSE
+mwi,Dowa,,,FALSE
+mwi,Lilongwe,,989,FALSE
+mwi,Mangochi,,,FALSE
+mwi,Mchinji,,,FALSE
+mwi,Ntcheu,,,FALSE
+mwi,Ntchisi,,,FALSE
+mwi,Salima,,,FALSE
+mwi,Balaka,,,FALSE
+mwi,Chikwawa,,,FALSE
+mwi,Chiradzulu,,,FALSE
+mwi,Thyolo,,,FALSE
+mwi,Nsanje,,,FALSE
+mwi,Zomba,,,FALSE
+mwi,Blantyre,,800,FALSE
+mwi,Mwanza,,,FALSE
+mwi,Mulanje,,,FALSE
+mwi,Phalombe,,,FALSE
+mwi,Likoma,,,FALSE
+mwi,Neno,,,FALSE
+zmb,Luapula,,,FALSE
+zmb,Northern,,,FALSE
+zmb,Central,,,FALSE
+zmb,Copperbelt,,,FALSE
+zmb,Eastern,,,FALSE
+zmb,Lusaka,,,FALSE
+zmb,North-Western,,,FALSE
+zmb,Southern,,,FALSE
+zmb,Western,,,FALSE
+zmb,Muchinga,,,FALSE
+zwe,Mashonaland Central,,1385,FALSE
+zwe,Harare,,,FALSE
+zwe,Matabeleland North,,,FALSE
+zwe,Midlands,,,FALSE
+zwe,Mashonaland East,,1731,FALSE
+zwe,Manicaland,,2038,FALSE
+zwe,Matabeleland South,,,FALSE
+zwe,Bulawayo,,,FALSE
+zwe,Masvingo,,,FALSE
+zwe,Mashonaland West,,1894,FALSE
+nam,Karas,,,FALSE
+nam,Hardap,,,FALSE
+nam,Khomas,,,FALSE
+nam,Kunene,,,FALSE
+nam,Erongo,,,FALSE
+nam,Otjozondjupa,,,FALSE
+nam,Omusati,,317,FALSE
+nam,Oshana,,,FALSE
+nam,Ohangwena,,338,FALSE
+nam,Omaheke,,,FALSE
+nam,Kavango,,,FALSE
+nam,Oshikoto,,,FALSE
+nam,Caprivi,,,FALSE
+bwa,Ghanzi,,,FALSE
+bwa,Kgalagadi,,,FALSE
+bwa,North-West,,,FALSE
+bwa,Central,,,FALSE
+bwa,Kgatleng,,122,FALSE
+bwa,Kweneng,,,FALSE
+bwa,South-East,,,FALSE
+bwa,Southern,,,FALSE
+bwa,North-East,,,FALSE
+bwa,Gaborone,,,FALSE
+bwa,Francistown,,,FALSE
+bwa,Lobatse,,,FALSE
+bwa,Selebi-Phikwe,,,FALSE
+bwa,Sowa,,,FALSE
+bwa,Jwaneng,,,FALSE
+lso,Berea,,,FALSE
+lso,Maseru,,331,FALSE
+lso,Mohale's Hoek,,,FALSE
+lso,Quthing,,,FALSE
+lso,Butha-Buthe,,,FALSE
+lso,Leribe,,,FALSE
+lso,Mokhotlong,,,FALSE
+lso,Qacha's Nek,,,FALSE
+lso,Thaba-Tseka,,,FALSE
+lso,Mafeteng,,,FALSE
+swz,Hhohho,,321,FALSE
+swz,Lubombo,,,FALSE
+swz,Manzini,,,FALSE
+swz,Shiselweni,,204,FALSE
+nga,Borno,,,FALSE
+nga,Abia,Igbo,,FALSE
+nga,Akwa Ibom,Efik,5451,FALSE
+nga,Imo,Igbo,,FALSE
+nga,Rivers,Ijaw,,FALSE
+nga,Bayelsa,Ijaw,,FALSE
+nga,Benue,,,FALSE
+nga,Cross River,Efik,,FALSE
+nga,Taraba,,2295,FALSE
+nga,Kwara,,2365,FALSE
+nga,Lagos,Yoruba,,FALSE
+nga,Niger,,,FALSE
+nga,Ogun,Yoruba,,FALSE
+nga,Ondo,Yoruba,,FALSE
+nga,Ekiti,Yoruba,,FALSE
+nga,Osun,Yoruba,3417,FALSE
+nga,Oyo,Yoruba,,FALSE
+nga,Anambra,Igbo,4178,FALSE
+nga,Bauchi,,4676,FALSE
+nga,Gombe,,,FALSE
+nga,Delta,Ijaw,,FALSE
+nga,Edo,Edo,1000,FALSE
+nga,Enugu,Igbo,4690,FALSE
+nga,Ebonyi,Igbo,2177,FALSE
+nga,Kaduna,,,FALSE
+nga,Kogi,,,FALSE
+nga,Plateau,,,FALSE
+nga,Nassarawa,,,FALSE
+nga,Jigawa,,4361,FALSE
+nga,Kano,,,FALSE
+nga,Katsina,,5802,FALSE
+nga,Sokoto,,3703,FALSE
+nga,Zamfara,,3279,FALSE
+nga,Yobe,,2321,FALSE
+nga,Kebbi,,,FALSE
+nga,Adamawa,,,FALSE
+nga,Federal Capital Territory,,,FALSE
+zaf,Northern Cape,Afrikaans,1356,FALSE
+zaf,Western Cape,Afrikaans,7433,FALSE
+zaf,North West,Tswana,,FALSE
+zaf,Orange Free State,Sotho,,FALSE
+zaf,Gauteng,Zulu,15099,FALSE
+zaf,Mpumalanga,Swazi,5142,FALSE
+zaf,Limpopo,Sotho,5405,FALSE
+zaf,KwaZulu-Natal,Zulu,12818,FALSE
+zaf,Eastern Cape,Xhosa,7226,FALSE
+eth,Amhara,,,FALSE
+eth,Tigray,Tigrinya,5936,FALSE
+eth,Afar,Afar,,FALSE
+eth,"Southern Nations, Nationalities and Peoples",,,FALSE
+eth,Gambela Peoples,,,FALSE
+eth,Oromiya,Oromo,,FALSE
+eth,Benshangul-Gumaz,,,FALSE
+eth,Addis Ababa,,,FALSE
+eth,Somali,Somali,,FALSE
+eth,Dire Dawa,,,FALSE
+eth,Harari People,,,FALSE
+cod,Équateur,,,FALSE
+cod,Orientale,Swahili,,FALSE
+cod,Bandundu,,,FALSE
+cod,Kasaï-Occidental,Tshiluba,,FALSE
+cod,Bas-Congo,Kikongo,,FALSE
+cod,Kinshasa City,,,FALSE
+cod,Sud-Kivu,Swahili,8147,FALSE
+cod,Maniema,Swahili,2856,FALSE
+cod,Kasaï-Oriental,Tshiluba,3864,FALSE
+cod,Katanga,Swahili,,FALSE
+cod,Nord-Kivu,Swahili,8986,FALSE
+pse,Palestine,,5400,FALSE
+ssd,S. Sudan,,,FALSE
+esh,W. Sahara,,,FALSE
+somld,Somaliland,,,FALSE
