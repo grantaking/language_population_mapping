@@ -711,3 +711,11 @@ somld,1980,3.119,"OECD ENV-Growth 2015 value carried back to 1980 assuming const
 somld,2000,4.616,"OECD ENV-Growth 2015 value carried back to 2000 assuming constant GDP per person (IIASA population); Somaliland's share (34%) of the Somalia total, by population"
 somld,2026,10.075,"OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030; Somaliland's share (34%) of the Somalia total, by population"
 somld,2050,45.609,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection; Somaliland's share (34%) of the Somalia total, by population"
+hkg,1980,85.755,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+hkg,2000,242.049,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+hkg,2026,486.409,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+hkg,2050,586.393,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"
+mac,1980,11.969,OECD ENV-Growth 1990 value carried back to 1980 assuming constant GDP per person (IIASA population)
+mac,2000,21.828,"OECD ENV-Growth 2025 (SSP database v3.2), historical reference"
+mac,2026,86.083,OECD ENV-Growth 2025 (SSP database v3.2): 2025 estimate moved to 2026 with the SSP2 growth rate for 2025-2030
+mac,2050,164.939,"OECD ENV-Growth 2025 (SSP database v3.2), SSP2 middle-of-the-road projection"

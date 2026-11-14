@@ -49,6 +49,7 @@ One row per admin-1 region (province, state, oblast, and so on).
 | `iso3` | Country code from `countries.csv`. |
 | `region` | Region name exactly as it appears in the map files. Do not rename these; a changed name will no longer match a shape. |
 | `language` | Plurality language for this region. Blank = use the country's `default_language`. |
+| `language_source` | Why the region has that language: the census, survey or reference used, with figures where available. Not read by the map. |
 | `population_thousands` | Region population in thousands, estimated for 2026 (see below). Blank = use the national density. |
 | `population_year` | Year of the underlying census or estimate, before it was brought forward to 2026. |
 | `population_source` | Where the figure comes from: the source unit's name, its Wikidata item or the census table it was taken from, and any adjustment (a share by area, a city subtracted from its county, two units added together). Not read by the map. |
@@ -65,6 +66,22 @@ One row per admin-1 region (province, state, oblast, and so on).
 5. **2026 estimate.** Each figure is moved from its own year to 2026 with the country's UN growth over the same years, then every country is scaled so its regions add up to the UN 2026 total (except Somalia and Somaliland, which the UN reports together). For most countries the scaling is within a few percent; it is larger where the latest census is old (Libya, Eritrea), where only a proxy exists (Singapore, which uses each district's share of registered voters), or where districts were split after the census (Uganda).
 
 Uninhabited regions (Bouvet Island, New Zealand's subantarctic islands, the Paracel Islands) are set to 0.
+
+### How the plurality languages were checked (November 2026)
+
+Every region was checked against the best available data, using one rule: the **main language spoken at home** where a census or large survey asks it, otherwise **mother tongue / first language**. Where a country publishes no language data at all (Nigeria, Iran, Myanmar and much of Africa), the language of the largest ethnic group in the census, or a standard regional reference, is used instead, and `language_source` says so.
+
+The main results of the check:
+
+- **Home language beats identity.** Barcelona, Tarragona, Bizkaia, Gipuzkoa, A Coruña and Pontevedra are Spanish-dominant at home, and Riga, Daugavpils and Rēzekne are Russian-dominant (2011 census). In the 2024 census, Bolivia's La Paz, Oruro, Chuquisaca and Cochabamba report Spanish as their main language.
+- **Regional languages that were missing.** About 100 languages were added to the legend: Isan (counted as Lao), Northern and Southern Thai, Kenyan, Ugandan, Ghanaian, Guinean and Sierra Leonean languages, Kabyle, Tachelhit, Kanuri, Zarma, K'iche', Q'eqchi', Gagauz, Abkhaz, Luri, Gilaki, Mazandarani and others.
+- **Census corrections.** Examples: Islamabad is Punjabi (2023 census), Limpopo is Sepedi (2022 census), Lakshadweep is Malayalam, Taiwan is Mandarin except six Hokkien-leaning counties (2020 census), and Singapore is English (2020 census).
+- **Known limits.**
+  - Ukraine's oblasts use a 2004 home-language survey, the latest available by oblast; surveys since 2022 show a strong shift towards Ukrainian.
+  - The Philippines, Laos and parts of Indonesia keep their earlier assignments, because no newer province-level data was found.
+  - The map's Callao shape also covers part of Puno, so it carries a single language.
+
+`hand_lang_review.py` in `tools/` lists every change with its source.
 
 Three Vietnamese rows (Đông Bắc, Đồng Bằng Sông Hồng, Đông Nam Bộ) carry regional names in the map files, but their shapes are the provinces of Bắc Kạn, Hưng Yên and Đồng Nai. They are now included and use those provinces' populations.
 
