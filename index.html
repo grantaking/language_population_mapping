@@ -176,7 +176,9 @@ return Promise.all([d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2/countrie
   function addCountry(names,iso,lang){ const f=worldF.find(x=>names.indexOf(x.properties.name)>=0); if(f) collect(iso,names[0],f,lang); }
   ATLAS_COUNTRIES.forEach(c=>{ const cf=CFG[c.iso]; const ov=cf&&cf.ov[c.names[0]]; addCountry(c.names,c.iso,(ov||(cf&&cf.def)||null)); });
   Object.keys(L2).forEach(l=>langsUsed.add(canon(l)));
-  feats.forEach(o=>{ const pk=POP[o.iso+'|'+o.name]; const areaKm=d3.geoArea(o.feat)*6371*6371; let dn=0;
+  // a region name can cover several shapes (islands, or a city and province sharing a name): density uses their combined area
+  const keyArea={}; feats.forEach(o=>{ o.areaKm=d3.geoArea(o.feat)*6371*6371; const k=o.iso+'|'+o.name; keyArea[k]=(keyArea[k]||0)+o.areaKm; });
+  feats.forEach(o=>{ const pk=POP[o.iso+'|'+o.name]; const areaKm=keyArea[o.iso+'|'+o.name]; let dn=0;
     if(pk!=null && (NATPOP[o.iso]==null || pk<0.8*NATPOP[o.iso])) dn=areaKm>0?pk*1000/areaKm:0;
     else if(NATDENS[o.iso]!=null) dn=NATDENS[o.iso];
     else if(pk!=null&&areaKm>0) dn=pk*1000/areaKm;

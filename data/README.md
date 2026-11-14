@@ -33,8 +33,8 @@ One row per country or territory.
 | `iso3` | Lowercase three-letter code (plus `somld` for Somaliland). |
 | `country` | Readable name. Not used by the map. |
 | `default_language` | Plurality language for every region in the country that has no language of its own in `regions.csv`. |
-| `national_density_per_km2` | Fallback density for regions without a usable population figure. |
-| `national_population_thousands` | Used to sanity-check region populations (see below). |
+| `national_density_per_km2` | Fallback density for regions without a usable population figure: the UN 2026 population divided by the country's total area on the map. |
+| `national_population_thousands` | UN World Population Prospects 2024 estimate for 2026. Used to sanity-check region populations (see below). |
 | `geometry` | `admin1` = drawn region by region from the datamaps province files. `country` = drawn as one shape from the world-atlas country layer, for places with no province file. |
 | `atlas_names` | For `geometry = country` only: the name(s) of the shape in the world-atlas layer, separated by `|`. The first name is the region name used in `regions.csv` and `second_language.csv`. |
 
@@ -49,10 +49,24 @@ One row per admin-1 region (province, state, oblast, and so on).
 | `iso3` | Country code from `countries.csv`. |
 | `region` | Region name exactly as it appears in the map files. Do not rename these; a changed name will no longer match a shape. |
 | `language` | Plurality language for this region. Blank = use the country's `default_language`. |
-| `population_thousands` | Region population in thousands. Blank = use the national density. |
+| `population_thousands` | Region population in thousands, estimated for 2026 (see below). Blank = use the national density. |
+| `population_year` | Year of the underlying census or estimate, before it was brought forward to 2026. |
+| `population_source` | Where the figure comes from: the source unit's name, its Wikidata item or the census table it was taken from, and any adjustment (a share by area, a city subtracted from its county, two units added together). Not read by the map. |
 | `exclude` | TRUE to leave the region off the map. |
 
-**How height is computed:** if a region has a population and it is less than 80% of its country's national population, density = population / region area. Otherwise the region uses `national_density_per_km2`. (The 80% check screens out bad source figures that equal a whole country's population.) Heights are then scaled so the 97th-percentile density is the tallest.
+**How height is computed:** if a region has a population and it is less than 80% of its country's national population, density = population / region area. Otherwise the region uses `national_density_per_km2`. (The 80% check screens out bad source figures that equal a whole country's population.) When several shapes share one region name (an island group, or a city and province drawn separately under one name), their areas are added together. Heights are then scaled so the 97th-percentile density is the tallest.
+
+### How the region populations were built
+
+1. **Matching.** Each map region was matched to Natural Earth 10m admin-1 units by overlapping area. Natural Earth carries each unit's ISO 3166-2 code and Wikidata item.
+2. **Figures.** For each unit, the latest population statement on Wikidata was taken, looked up by ISO code and by Natural Earth's link, with the better name match kept. Stale codes and wrong links were checked by hand (Morocco's ISO codes were reassigned in 2015, so its pre-2015 regions use census tables instead). Vietnam uses figures from before its 2025 province merger, because the map shows the old provinces.
+3. **Census tables.** Where Wikidata has no figure or the map shows older borders, figures come from census tables on Wikipedia and statoids.com, listed in `tools/hand_pops.csv` (by Natural Earth unit) and `tools/hand_map_pops.csv` (by map region). Former regions are rebuilt by adding up their present-day parts, for example Ghana's pre-2019 Northern Region = Northern + Savannah + North East.
+4. **Clean-up.** A Wikidata item used by several units is shared by area. A city counted inside its county is subtracted from the county. Units still without a figure get a share of the remaining national total by area, capped at 3 times the national mean density; their source says so.
+5. **2026 estimate.** Each figure is moved from its own year to 2026 with the country's UN growth over the same years, then every country is scaled so its regions add up to the UN 2026 total (except Somalia and Somaliland, which the UN reports together). For most countries the scaling is within a few percent; it is larger where the latest census is old (Libya, Eritrea), where only a proxy exists (Singapore, which uses each district's share of registered voters), or where districts were split after the census (Uganda).
+
+Uninhabited regions (Bouvet Island, New Zealand's subantarctic islands, the Paracel Islands) are set to 0.
+
+Three Vietnamese rows (Đông Bắc, Đồng Bằng Sông Hồng, Đông Nam Bộ) carry regional names in the map files, but their shapes are the provinces of Bắc Kạn, Hưng Yên and Đồng Nai. They are now included and use those provinces' populations.
 
 ## second_language.csv
 

@@ -62,12 +62,14 @@ D.ATLAS_COUNTRIES.forEach(c => {
   const f = worldF.find(x => c.names.indexOf(x.properties.name) >= 0); if (!f) return;
   const cf = D.CFG[c.iso]; collect(c.iso, c.names[0], f, (cf && (cf.ov[c.names[0]] || cf.def)) || null);
 });
+const keyArea = {};
+regions.forEach(o => { o.areaKm = d3geo.geoArea(o.feat) * 6371 * 6371; const k = o.iso + '|' + o.name; keyArea[k] = (keyArea[k] || 0) + o.areaKm; });
 regions.forEach(o => {
-  const pk = D.POP[o.iso + '|' + o.name]; const areaKm = d3geo.geoArea(o.feat) * 6371 * 6371; let dn = 0;
+  const pk = D.POP[o.iso + '|' + o.name]; const areaKm = keyArea[o.iso + '|' + o.name]; let dn = 0;
   if (pk != null && (D.NATPOP[o.iso] == null || pk < 0.8 * D.NATPOP[o.iso])) dn = areaKm > 0 ? pk * 1000 / areaKm : 0;
   else if (D.NATDENS[o.iso] != null) dn = D.NATDENS[o.iso];
   else if (pk != null && areaKm > 0) dn = pk * 1000 / areaKm;
-  o.pop = dn * areaKm; // people, current
+  o.pop = dn * o.areaKm; // people, current
 });
 
 // ---- population ratios ----
