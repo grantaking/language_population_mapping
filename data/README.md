@@ -182,6 +182,8 @@ Sources and method:
 
 Each region is counted once in each figure, however many selected languages it has. Shares are out of the world total in `world_by_year.csv`. Native and total speakers are also shown as shares of world population.
 
+**Language area** works the same way: **plurality-region area** is the land area of the regions where a selected language is the plurality language, and **lingua franca area** adds every region where it is a second language. Areas are measured from the map shapes, so no file stores them. Shares are out of the total area of all mapped regions (Antarctica is not mapped), and they are the same in every year.
+
 ## world_by_year.csv
 
 The denominators for the shares shown in the selection panel.
