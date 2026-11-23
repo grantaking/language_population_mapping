@@ -111,7 +111,11 @@ One row per second-language glow zone.
 
 Regions where the language is already the plurality language show the full highlight instead of the glow, so a whole-country row is safe even when the language is native in part of that country.
 
-English glows across the UAE, Qatar, Kuwait and Bahrain, where foreign residents are about half to nine-tenths of the population and English is the common working language between communities (GLMM national statistics, 2024). Saudi Arabia and Oman are left out because Arabic dominates more of daily life there.
+English glows across the UAE, Qatar, Kuwait and Bahrain, where foreign residents are about half to nine-tenths of the population and English is the common working language between communities (GLMM national statistics, 2024). Saudi Arabia and Oman are left out because Arabic dominates more of daily life there. English also glows where it is an official or working language that links communities: Hong Kong, Fiji, Eswatini, Lesotho, Rwanda, Bhutan, Cyprus, Luxembourg and the Brussels region. High English proficiency alone (for example Germany or Austria) does not count, because English is not the shared everyday language there.
+
+French glows across francophone Africa, the Maghreb, Lebanon, Haiti, Madagascar and Belgium, plus Luxembourg, Djibouti and Burundi, where it is the language of government and the common working language. Mauritania, Rwanda and Vanuatu are left out because French has lost ground there (to Arabic, English and Bislama).
+
+Spanish glows across all of Belize, where roughly half the population speaks it alongside English and Kriol.
 
 Modern Standard Arabic glows across the Arab League members on the map, plus Western Sahara, so it also covers the Berber, Kurdish and other non-Arabic regions of those countries. Somalia, Djibouti and Somaliland are left out, because Arabic is not widely used there as a common language.
 
