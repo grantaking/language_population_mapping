@@ -20,7 +20,7 @@ One row per language.
 | `color` | Hex color for the map and legend (see "How the colors were chosen" below). |
 | `native_millions`, `total_millions` | Global speaker counts shown in the tooltip and summed in the selection panel. |
 | `merge_into` | If filled, this language is drawn as the named language instead (for example `Hindi` with `merge_into = Hindustani`). The merged-into language needs its own row with its own color, counts, and legend position. The member row's color and counts are kept for reference but are not shown. Clear this cell to split a language back out (and give it a `legend_order`). |
-| `arabic_dialect` | TRUE for Arabic varieties. When Modern Standard Arabic is selected, these regions get the MSA tint. |
+| `arabic_dialect` | TRUE for Arabic varieties. When Modern Standard Arabic is selected, these regions get the MSA tint. Each variety is also paired with Modern Standard Arabic: hovering over or selecting a variety highlights MSA too, and a selected variety's totals include MSA's speakers, GDP and area (each region still counted once). MSA can also be selected on its own. |
 
 A language appears in the legend only if some region uses it or it has rows in `second_language.csv`.
 

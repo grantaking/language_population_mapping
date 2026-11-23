@@ -285,12 +285,15 @@ return Promise.all([d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2/countrie
   const SPREADCOL={}; Object.keys(L2).forEach(l=>SPREADCOL[l]=new THREE.Color(FULL[l]));
   const leg=document.getElementById('leg'), sel=document.getElementById('sel'), legItems={};
   const selected=new Set(); let hoverLang=null;
+  // every Arabic variety is paired with Modern Standard Arabic: hovering or selecting one also brings in MSA
+  const MSA='Modern Standard Arabic';
+  function withMSA(langs){ const out=new Set(langs); if(FULL[MSA] && [...out].some(l=>ARABIC.has(l))) out.add(MSA); return out; }
   const STORE_KEY='langDensityGlobe.presets.v1';
   function readStore(){ try{ const s=localStorage.getItem(STORE_KEY); if(s){ const a=JSON.parse(s); if(Array.isArray(a)) return a.filter(p=>p&&typeof p.name==='string'&&Array.isArray(p.langs)); } }catch(e){} return []; }
   function writeStore(){ try{ localStorage.setItem(STORE_KEY, JSON.stringify(presets)); }catch(e){} }
   const presets=readStore(); const presetsPanel=document.getElementById('presets');
   function escHtml(s){return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
-  function sums(langs){let sn=0,st=0;langs.forEach(l=>{const i=info(l);sn+=i[0]||0;st+=i[1]||0;});return [sn,st];}
+  function sums(langs){let sn=0,st=0;withMSA(langs).forEach(l=>{const i=info(l);sn+=i[0]||0;st+=i[1]||0;});return [sn,st];}
   function renderPresets(){
     if(!presets.length){ presetsPanel.style.display='none'; return; }
     presetsPanel.style.display='block';
@@ -312,7 +315,7 @@ return Promise.all([d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2/countrie
     if(load){ const p=presets[+load.getAttribute('data-load')]; if(!p)return; selected.clear(); p.langs.forEach(l=>selected.add(l)); refresh(); updatePanel(); }
   });
   function refresh(){
-    const active=new Set(selected); if(hoverLang) active.add(hoverLang); const any=active.size>0;
+    const base=new Set(selected); if(hoverLang) base.add(hoverLang); const active=withMSA(base); const any=active.size>0;
     const msaActive=active.has('Modern Standard Arabic'); const actArr=[...active];
     function spreadColor(m){
       const lang=m.userData.lang, iso=m.userData.iso, key=iso+'|'+m.userData.name;
@@ -333,10 +336,12 @@ return Promise.all([d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2/countrie
   }
   function updatePanel(){
     if(!selected.size){ sel.style.display='none'; return; }
-    sel.style.display='flex'; let sn=0,st=0,chips='';
-    selected.forEach(l=>{ const i=info(l); sn+=i[0]||0; st+=i[1]||0;
+    sel.style.display='flex'; let sn=0,st=0,chips=''; const eff=withMSA(selected);
+    eff.forEach(l=>{ const i=info(l); sn+=i[0]||0; st+=i[1]||0; });
+    selected.forEach(l=>{
       chips+='<span data-l="'+l+'" style="display:inline-flex;align-items:center;gap:4px;cursor:pointer;background:rgba(127,127,140,0.16);border-radius:11px;padding:1px 6px 1px 5px"><span style="width:9px;height:9px;border-radius:2px;background:'+FULL[l]+'"></span>'+l+'<span style="opacity:.55;font-weight:700">×</span></span>'; });
-    const G=hasGDP?gdpFor(selected):null, A=areaFor(selected), yl=(YEAR!=='current'?'<b>'+yearLabel(YEAR)+'</b> &nbsp;':'');
+    if(!selected.has(MSA) && eff.has(MSA)) chips+='<span title="Added with the Arabic varieties; select it on its own to keep it when they are removed" style="display:inline-flex;align-items:center;gap:4px;border:1px dashed rgba(127,127,140,0.5);border-radius:11px;padding:0 6px 0 5px;opacity:.85"><span style="width:9px;height:9px;border-radius:2px;background:'+FULL[MSA]+'"></span>+ '+MSA+'</span>';
+    const G=hasGDP?gdpFor(eff):null, A=areaFor(eff), yl=(YEAR!=='current'?'<b>'+yearLabel(YEAR)+'</b> &nbsp;':'');
     const stats='<span style="margin-left:auto;display:flex;flex-direction:column;align-items:flex-end;gap:1px;color:var(--text-secondary,#555)">'
       +'<span>'+yl+'<b>Native</b> '+fmtS(sn)+' · '+pct(popShare(sn))+' of world &nbsp;|&nbsp; <b>Total</b> <span title="People who speak several languages are counted once for each, so this share may be overstated">'+fmtS(st)+' · '+pct(popShare(st))+'*</span></span>'
       +(G?'<span><b>GDP</b> plurality regions '+fmtUSDS(G.pl)+' · '+pct(G.plS)+' &nbsp;|&nbsp; lingua franca '+fmtUSDS(G.lf)+' · '+pct(G.lfS)+'</span>':'')
@@ -387,7 +392,8 @@ return Promise.all([d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2/countrie
       yearLine='<div style="opacity:.75;margin-top:3px">'+yearLabel(YEAR)+': '+(s?((YEAR==='2050'?'projected':'estimated')+(s.method==='census'?' from census language shares and UN population':' from UN population change')):'no estimate for this year, showing current figures')+'</div>';
     }
     const note = lang==='Modern Standard Arabic'
-      ? '<div style="opacity:.8;margin-top:3px;font-style:italic">Formal/written register — no native speakers; shared across the Arabic-speaking world.</div>'
+      ? '<div style="opacity:.8;margin-top:3px;font-style:italic">Formal and written register with no native speakers, shared across the Arabic-speaking world.</div>'
+      : ARABIC.has(lang) ? '<div style="opacity:.8;margin-top:3px;font-style:italic">Highlighted with Modern Standard Arabic, which is selected along with it.</div>'
       : (L2[lang] ? '<div style="opacity:.8;margin-top:3px;font-style:italic">Dim tint = where it\'s also a widespread second language.</div>' : '');
     tip.innerHTML='<div style="font-weight:700;font-size:13px;margin-bottom:1px">'+lang+'</div><div style="opacity:.75;margin-bottom:3px">'+(LANG2FAM[lang]||'')+' family</div><div>Native speakers: '+fmt(inf[0])+' ('+pct(popShare(inf[0]))+' of world population)</div><div>Total speakers: '+fmt(inf[1])+' ('+pct(popShare(inf[1]))+')</div>'+(hasGDP?(()=>{ const g=gdpFor(new Set([lang])); return '<div style="margin-top:3px">Plurality-region GDP: '+fmtUSD(g.pl)+' ('+pct(g.plS)+' of world)</div>'+'<div>Lingua franca GDP: '+fmtUSD(g.lf)+' ('+pct(g.lfS)+')</div>'; })():'')+(()=>{ const a=areaFor(new Set([lang])); return '<div style="margin-top:3px">Plurality-region area: '+fmtKm(a.pl)+' ('+pct(a.plS)+' of world land)</div><div>Lingua franca area: '+fmtKm(a.lf)+' ('+pct(a.lfS)+')</div>'; })()+yearLine+note+(selected.has(lang)?'<div style="opacity:.7;margin-top:3px">✓ selected — click to remove</div>':'<div style="opacity:.7;margin-top:3px">click to select</div>');
     tip.style.display='block'; const tw=tip.offsetWidth,th=tip.offsetHeight; let px=x+15,py=y+15;
