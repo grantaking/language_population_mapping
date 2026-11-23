@@ -117,6 +117,8 @@ French glows across francophone Africa, the Maghreb, Lebanon, Haiti, Madagascar 
 
 Spanish glows across all of Belize, where roughly half the population speaks it alongside English and Kriol.
 
+Danish glows across Greenland, where it links Greenlanders and the Danish-speaking minority and is still widely used in government, education and business. Greenland has no GDP figure, so this adds land area but no GDP.
+
 Modern Standard Arabic glows across the Arab League members on the map, plus Western Sahara, so it also covers the Berber, Kurdish and other non-Arabic regions of those countries. Somalia, Djibouti and Somaliland are left out, because Arabic is not widely used there as a common language.
 
 ## population_by_year.csv
